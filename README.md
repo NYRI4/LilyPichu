@@ -1,6 +1,3 @@
-# LilyPichu
-A theme based on @Melonturtle_ stream design
-
 ![Banner](https://nyri4.github.io/LilyPichu/assets/banner.png)
 
 ---
