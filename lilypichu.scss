@@ -1,0 +1,36 @@
+@import 'https://nyri4.github.io/LilyPichu/stuff/variables.scss';
+@import 'https://nyri4.github.io/LilyPichu/stuff/chat.scss';
+@import 'https://nyri4.github.io/LilyPichu/stuff/server-list.scss';
+@import 'https://nyri4.github.io/LilyPichu/stuff/channel-list.scss';
+@import 'https://nyri4.github.io/LilyPichu/stuff/channel-bar.scss';
+@import 'https://nyri4.github.io/LilyPichu/stuff/member-list.scss';
+@import 'https://nyri4.github.io/LilyPichu/stuff/settings.scss';
+@import 'https://nyri4.github.io/LilyPichu/stuff/friends.scss';
+@import 'https://nyri4.github.io/LilyPichu/stuff/overlay.scss';
+@import 'https://nyri4.github.io/LilyPichu/stuff/other.scss';
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+
+// Right popout
+@media (min-width: 1200px) {
+  .chatContent-a9vAAp + :last-child { 
+      position: fixed;
+      top: 280px; bottom: 120px; right: 60px;
+      width: 320px;
+  }
+  .tabBody-3YRQ8W { transform: none;}
+  
+  // Adding space for right popout
+  .guilds-1SWlCJ + :nth-child(2) { margin-right: 450px; border-radius: 0 var(--border-radius) var(--border-radius) 0;}
+
+  // User area
+  .panels-j1Uci_ > .container-3baos1 { 
+    position: fixed;
+    width: 305px; height: 50px;
+    bottom: 28px; right: 60px;
+    background-color: var(--background-primary);
+    border-radius: var(--border-radius);
+  }
+  .container-2lgZY8 { overflow: visible;}
+  
+  .layers-3iHuyZ > :nth-child(2) { margin-right: 450px;}
+}

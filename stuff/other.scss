@@ -1,0 +1,150 @@
+:root { 
+
+// Adding a custom font
+::-webkit-input-placeholder, body, button, input, select, textarea { font-family: 'Nunito' !important; font-weight: bold !important;}
+
+// Background
+.bg-h5JY_x { background-color: var(--background-tertiary-alt);}
+
+// Windows button
+.winButton-iRh8-Z { 
+  background-color: var(--background-primary);
+
+  &:last-child { border-bottom-left-radius: 8px;}
+}
+
+// More border radius
+button, input, textarea, .item-PXvHYJ:not([class^=tabBarItem-]), .menu-3sdvDG { border-radius: var(--border-radius);}
+
+// Modals
+.modal-yWgWj-, .root-1gCeng, .uploadModal-2ifh8j { 
+  border-radius: var(--border-radius); 
+  background-color: var(--background-secondary); 
+  box-shadow: 0 2px 10px 0 rgba(0,0,0,.2), 0 0 0 1px rgba(56, 31, 31, 0.11);
+}
+
+.footer-2gL1pp, .footer-3mqk7D { 
+  border-radius: 0 0 var(--border-radius) var(--border-radius); 
+  background-color: var(--background-tertiary); 
+  box-shadow: 0 2px 10px 0 rgba(0,0,0,.2), 0 0 0 1px rgba(56, 31, 31, 0.11);
+}
+
+// -- Better menus --
+.scroller-3BxosC {
+  padding: 0;
+
+  &::-webkit-scrollbar, .separator-2I32lJ { display: none;}
+  .item-1tOPte { padding: 10px 10px 10px 13px; margin: 0; transition: 0.15s; border-radius: 0;}
+
+  // Submenu
+  .submenuContainer-2gbm7M .layer-v9HyYc { margin: 0 -8px;}
+
+  & > .item-1tOPte {
+    &:first-child { border-radius: var(--border-radius) var(--border-radius) 0 0;}
+    &:not(.ring-13rgEW):nth-last-child(2), &.focused-3afm-j:nth-last-child(3) { border-radius: 0 0 var(--border-radius) var(--border-radius) !important;}
+  }
+
+  // Menu
+  & > div {
+
+    // First label
+    &:first-child > .item-1tOPte:first-child { border-radius: var(--border-radius) var(--border-radius) 0 0;}
+
+    // Last label
+    &:nth-last-child(2) > .item-1tOPte:last-child, 
+    &:nth-last-child(3) > .item-1tOPte:last-child { border-radius: 0 0 var(--border-radius) var(--border-radius);}
+  }
+}
+
+// Status picker
+#status-picker { 
+  left: -6px; width: 319px;
+
+  .description-2L932D { display: none;}
+}
+
+/* Custom status modal */
+.select-2fjwPw,
+.popout-VcNcHB {
+  border: none;
+}
+.select-2fjwPw.open-kZ53_U,
+.popout-VcNcHB {
+  background-color: var(--background-secondary-alt);
+  transition: 0.15s;
+}
+.theme-dark .footer-2gL1pp {
+  background: var(--background-tertiary);
+}
+
+// Custom status modal
+.select-2fjwPw, .popout-VcNcHB { border: none;}
+
+// Delete Discord wordmark
+.titleBar-AC4pGV .wordmark-2iDDfm { display: none;}
+
+// Powercord toast
+.powercord-toast {
+    border-radius: var(--border-radius);
+
+    .header { border-radius: var(--border-radius) var(--border-radius) 0 0;}
+
+    .buttons > .button-38aScr { 
+        &:first-child { border-bottom-left-radius: var(--border-radius);}
+        &:last-child { border-bottom-right-radius: var(--border-radius);}
+    }
+}
+
+// Colored emoji
+.sprite-2iCowe { filter: none !important;}
+
+// Create a server popout
+.header-3msK0M { overflow-x: visible;}
+
+// Discover
+.discoverHeader-Ijkm_M { text-align: center; margin-left: 0;}
+.pageWrapper-1PgVDX { background-color: var(--background-primary);}
+.categoryItem-1QIroW.selectedCategoryItem-FHKU_o .itemInner-gPkiWb { background-color: var(--background-secondary);}
+.notice-2X5hT5 { border-top-left-radius: 0; background-color: var(--background-tertiary);}
+.button-2PWmas:hover { background-color: transparent;}
+
+// Call tile
+.tile-2naSqK { 
+  background-color: var(--background-secondary-alt);
+
+  .button-3HqqDX { background-color: var(--background-accent);}
+}
+
+// Joining message
+.contentWrapper-3WC1ID { background: var(--background-secondary);}
+
+// Welcome message
+.root-1gCeng:not(.modal-qgFCbT) { background: var(--background-secondary);}
+
+// Keyboard shortcuts
+.keyboardShortcutsModal-3piNz7 { background: var(--background-secondary);}
+
+// Discord game
+.scroller-1JpcIc { background: var(--background-primary);}
+.whyYouMightLikeIt-2zZIIj, .content-35aVm0, .bodySection-jqkkIP, .row-1bU71H { background: var(--background-secondary);}
+
+// -- ✔️ Plugin support --
+
+// PermisssionViewer support
+#permissions-modal-wrapper #permissions-modal {
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,.2), 0 0 0 1px rgba(56, 31, 31, 0.11) !important;
+    border-color: var(--background-tertiary) !important;
+}
+#permissions-modal-wrapper .header {
+  background: var(--background-tertiary) !important;
+  text-align: center !important;
+}
+#permissions-modal-wrapper .role-side,
+#permissions-modal-wrapper .perm-side {
+  background: var(--background-secondary) !important;
+}
+
+// Member Count support
+#MemberCount { background-color: var(--background-secondary) !important;}
+
+}

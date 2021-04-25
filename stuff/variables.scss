@@ -1,0 +1,106 @@
+:root {
+
+    // -- Custom variables --
+    --playing: #8ea6fc;
+    --spotify: #5fce86;
+    --streaming: #9b77da;
+    --xbox: #53a853;
+    --background-tertiary-alt: #FFC7D4;
+    --border-radius: 20px;
+}
+
+.theme-dark {
+
+    // Text
+    --text-normal: #f8e1e5;
+    --header-primary: #f8e1e5;
+    --interactive-normal: #fab1bd;
+    --channels-default: #f8e1e5;
+
+    --text-muted: #e2c1c7;
+    --interactive-muted: #ad8c91;
+
+    --header-secondary: #e2c1c7;
+    --interactive-hover: #e2c1c7;
+    --interactive-active: #e2c1c7;
+
+    // Background color
+    --background-primary: #5e3640;
+    --background-secondary: #49292f;
+    --background-secondary-alt: #3b1d24;
+    --background-tertiary: #220f14;
+    --background-floating: #221115;
+    --background-accent: #c5536c;
+    --channeltextarea-background: var(--background-secondary);
+    --background-modifier-hover: rgba(56, 31, 31, 0.32);
+    --background-modifier-active: rgba(19, 12, 12, 0.32);
+    --background-modifier-selected: rgba(31, 21, 21, 0.32);
+
+    // Scrollbar
+    --scrollbar-auto-thumb: var(--background-tertiary);
+    --scrollbar-auto-track: var(--background-secondary-alt);
+    --scrollbar-thin-thumb: var(--background-tertiary);
+    --scrollbar-thin-track: transparent;
+
+    // Other
+    --deprecated-quickswitcher-input-background: var(--background-primary);
+
+    .colorBrand-ROmMP1 { color: #c5536c;}
+    .colorDefault-2K3EoJ.focused-3afm-j, .colorDefault-2K3EoJ:active:not(.hideInteraction-1iHO1O) { background-color: var(--background-modifier-hover) !important;}
+
+    // Buttons
+    .lookFilled-1Gx00P { background-color: #c5536c !important;}
+    .lookFilled-1Gx00P:active, .lookFilled-1Gx00P:hover { background-color: #b64a61 !important;}
+    .lookOutlined-3sRXeN:not(.colorWhite-rEQuAQ) { color: #c5536c; border-color: #c5536c;}
+
+    // Hover background
+    .colorDefault-2K3EoJ.focused-3afm-j, .colorDefault-2K3EoJ:active:not(.hideInteraction-1iHO1O) { color: var(--interactive-normal);}
+}
+
+.theme-light {
+
+    // Text
+    --text-normal: #a86373;
+    --header-primary: #a86373;
+    --interactive-normal: #a86373;
+    --channels-default: #a86373;
+
+    --text-muted: #a86373;
+    --interactive-muted: #cf92a0;
+
+    --header-secondary: #cf92a0;
+    --interactive-hover: #be7d8c;
+    --interactive-active: #b36f7f;
+
+    // Background color
+    --background-primary: #FFFFFF;
+    --background-secondary: #ffeeee;
+    --background-secondary-alt: #fdc7c7;
+    --background-tertiary: #ffbbbb;
+    --background-floating: #ffbbbb;
+    --background-accent: #c5536c;
+    --channeltextarea-background: var(--background-secondary);
+    --background-modifier-hover: rgba(56, 31, 31, 0.062);
+    --background-modifier-active: rgba(19, 12, 12, 0.123);
+    --background-modifier-selected: rgba(31, 21, 21, 0.11);
+
+    // Scrollbar
+    --scrollbar-auto-thumb: var(--background-tertiary);
+    --scrollbar-auto-track: var(--background-secondary-alt);
+    --scrollbar-thin-thumb: var(--background-tertiary);
+    --scrollbar-thin-track: transparent;
+
+    // Other
+    --deprecated-quickswitcher-input-background: var(--background-primary);
+
+    .colorBrand-ROmMP1 { color: #c5536c;}
+    .colorDefault-2K3EoJ.focused-3afm-j, .colorDefault-2K3EoJ:active:not(.hideInteraction-1iHO1O) { background-color: var(--background-modifier-hover) !important;}
+
+    // Buttons
+    .lookFilled-1Gx00P { background-color: #c5536c !important;}
+    .lookFilled-1Gx00P:active, .lookFilled-1Gx00P:hover { background-color: #b64a61 !important;}
+    .lookOutlined-3sRXeN:not(.colorWhite-rEQuAQ) { color: #c5536c; border-color: #c5536c;}
+
+    // Hover background
+    .colorDefault-2K3EoJ.focused-3afm-j, .colorDefault-2K3EoJ:active:not(.hideInteraction-1iHO1O) { color: var(--interactive-normal);}
+}

@@ -1,0 +1,69 @@
+:root {
+
+// Embed
+.embedFull-2tM8-- { 
+    border: none; margin-left: 10px;
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0; bottom: 0; left: -10px;
+        width: 0;
+        border: 3px solid;
+        border-color: inherit;
+        border-radius: 5px 0 0 5px;
+    }
+}
+
+// Code blocks
+.hljs { border: none; border-radius: var(--border-radius);}
+
+// Audio player
+.wrapperAudio-1jDe0Q { padding: 10px 0 0 0; border-radius: var(--border-radius);}
+.audioMetadata-3zOuGv { padding: 5px 10px;}
+.audioControls-2HsaU6 { border-radius: 0 0 var(--border-radius) var(--border-radius);}
+
+// Spoiler
+.spoilerText-3p6IlD.hidden-HHr2R9, .spoilerText-3p6IlD.hidden-HHr2R9:hover { background-color: var(--background-secondary-alt);}
+
+// Discord invite
+.wrapper-35wsBm { border-radius: var(--border-radius);}
+
+// Spotify session
+.invite-18yqGF { background-color: var(--background-secondary); border: none; border-radius: var(--border-radius);}
+
+// Spotify embed
+.embedSpotify-tvxDCr { border-radius: var(--border-radius);}
+
+// Discord Gift
+.tile-2OwFgW { background-color: var(--background-secondary); border-radius: var(--border-radius);}
+.tileHorizontal-3eee4N.tile-2OwFgW:hover { background-color: var(--background-secondary-alt);}
+.invalidPoop-pnUbq7 { background-color: rgba(0, 0, 0, 0.103);}
+
+// # @ / autocomplete menu
+.autocomplete-1vrmpx, .option-1B5ZV8 { background-color: var(--background-secondary-alt);}
+.categoryHeader-O1zU94, .selected-1Tbx07 { background-color: var(--background-tertiary);}
+
+// @everyone popout
+.everyonePopout-nEbJY3 { background-color: var(--background-primary); box-shadow: 0 2px 10px 0 rgba(0,0,0,.2), 0 0 0 1px rgba(56, 31, 31, 0.11);}
+
+// Emoji picker
+.emojiItem-14v6tW.emojiItemSelected-1aLkfV { background-color: var(--background-modifier-selected);}
+.searchBar-5di9mG { border-radius: var(--border-radius);}
+
+// Reactions modal
+.scroller-1-nKid { background: var(--background-tertiary);}
+.container-1If-HZ, .reactors-Blmlhw { background: var(--background-secondary);}
+.reactionSelected-1pqISm { background-color: #6e85d321;}
+
+// Deleting message modal
+.message-2qRu38 { background: var(--background-primary); box-shadow: 0 2px 10px 0 rgba(0,0,0,.2), 0 0 0 1px rgba(56, 31, 31, 0.11);}
+
+// Attachements
+.textContainer-C0szpm, .footer-2yA7Ep { border: none;}
+
+// Emoji popout
+.popoutContainer-1MXdqN { border-radius: var(--border-radius);}
+
+}
