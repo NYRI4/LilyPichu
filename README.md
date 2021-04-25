@@ -2,7 +2,7 @@
 
 ---
 
-# Comfy
+# LilyPichu
 ![Preview](https://nyri4.github.io/LilyPichu/assets/capture.png)
 
 ## 📥 Installation
