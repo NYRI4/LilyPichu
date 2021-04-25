@@ -1,0 +1,10 @@
+{
+    "icon": "assets/flower.png",
+    "name": "LilyPichu",
+    "description": "A theme based on @Melonturtle_ stream design",
+    "version": "1.0",
+    "author": "Nyria#3863",
+    "theme": "lilypichu.scss",
+    "consent": "false",
+    "license": "MIT"
+}
