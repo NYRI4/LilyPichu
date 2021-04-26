@@ -15,4 +15,5 @@ git clone https://github.com/NYRI4/LilyPichu
 
 ### BetterDiscord
 
-Soon :3
+1. Go [here](https://betterdiscord.net/ghdl?id=3675)
+2. Save the file into your theme folder
