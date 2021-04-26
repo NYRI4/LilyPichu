@@ -36,13 +36,44 @@ button, input, textarea, .item-PXvHYJ:not([class^=tabBarItem-]), .menu-3sdvDG { 
   &::-webkit-scrollbar, .separator-2I32lJ { display: none;}
   .item-1tOPte { padding: 10px 10px 10px 13px; margin: 0; transition: 0.15s; border-radius: 0;}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
   // Submenu
   .submenuContainer-2gbm7M .layer-v9HyYc { margin: 0 -8px;}
 
   & > .item-1tOPte {
     &:first-child { border-radius: var(--border-radius) var(--border-radius) 0 0;}
-    &:not(.ring-13rgEW):nth-last-child(2), &.focused-3afm-j:nth-last-child(3) { border-radius: 0 0 var(--border-radius) var(--border-radius) !important;}
+    &:not(.ring-13rgEW):nth-last-child(2) { border-radius: 0 0 var(--border-radius) var(--border-radius) !important;}
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   // Menu
   & > div {
