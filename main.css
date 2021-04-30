@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap");
 @import url("https://discord-custom-covers.github.io/usrbg/dist/usrbg.css");
+@import url("https://monstrousdev.github.io/themes/addons/user-tags.css");
 :root {
   --playing: #8ea6fc;
   --spotify: #5fce86;
@@ -447,50 +448,50 @@
 :root .userPopout-3XzG_A {
   width: unset;
   max-width: 800px;
-  max-height: 400px;
   flex-direction: row;
   border-radius: var(--border-radius);
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(56, 31, 31, 0.11);
   transform: translateZ(0);
 }
 :root .userPopout-3XzG_A .header-2BwW8b {
-  max-width: 250px;
+  max-width: 280px;
+  min-width: 200px;
   display: flex;
   flex-direction: column;
   z-index: 1;
+  background-color: var(--background-primary);
 }
 :root .userPopout-3XzG_A .header-2BwW8b .wrapper-3t9DeA::after {
   content: "";
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 70%;
   height: 100%;
   z-index: -1;
   pointer-events: none;
-  opacity: 0.5;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: var(--user-popout-position) center;
   background-image: var(--user-background);
-  -webkit-mask-image: linear-gradient(#000, transparent);
 }
-:root .userPopout-3XzG_A .scroller-2FKFPG, :root .userPopout-3XzG_A .footer-1fjuF6 {
+:root .userPopout-3XzG_A .header-2BwW8b .activityUserPopout-2yItg2 {
+  margin: 8px;
+  border-radius: var(--border-radius);
+}
+:root .userPopout-3XzG_A .body-3iLsc4, :root .userPopout-3XzG_A .footer-1fjuF6 {
   z-index: 1;
 }
-:root .userPopout-3XzG_A .headerNormal-T_seeN {
-  background-color: var(--background-primary);
-}
-:root .userPopout-3XzG_A .headerPlaying-j0WQBV {
+:root .userPopout-3XzG_A .headerPlaying-j0WQBV .activityUserPopout-2yItg2 {
   background-color: var(--playing);
 }
-:root .userPopout-3XzG_A .headerSpotify-zpWxgT {
+:root .userPopout-3XzG_A .headerSpotify-zpWxgT .activityUserPopout-2yItg2 {
   background-color: var(--spotify);
 }
-:root .userPopout-3XzG_A .headerStreaming-2FjmGz {
+:root .userPopout-3XzG_A .headerStreaming-2FjmGz .activityUserPopout-2yItg2 {
   background-color: var(--streaming);
 }
-:root .userPopout-3XzG_A .headerXbox-3G-4PF {
+:root .userPopout-3XzG_A .headerXbox-3G-4PF .activityUserPopout-2yItg2 {
   background-color: var(--xbox);
 }
 :root .userPopout-3XzG_A .body-3iLsc4 {
@@ -516,7 +517,7 @@
   pointer-events: none;
 }
 :root .userPopout-3XzG_A .body-3iLsc4 .rolesList-22qj2L .roleCircle-3xAZ1j {
-  width: 0;
+  width: 14.29px;
 }
 :root .userPopout-3XzG_A .body-3iLsc4 .rolesList-22qj2L .roleName-32vpEy {
   text-align: center;
@@ -527,19 +528,41 @@
 :root .userPopout-3XzG_A .footer-1fjuF6 {
   display: none;
 }
-:root .modal-3c3bKg .root-SR8cQa {
+:root .container-3XJ8ns {
+  border-radius: var(--border-radius);
+  border: none;
+}
+:root .container-3XJ8ns .item-2J2GlB .popoutRoleDot-1XPcoA {
+  border: none;
+}
+:root .container-3XJ8ns .item-2J2GlB:hover {
   border-radius: var(--border-radius);
 }
-:root .modal-3c3bKg .root-SR8cQa .topSectionPlaying-1J5E4n {
+:root .modal-3c3bKg .root-SR8cQa {
+  border-radius: var(--border-radius);
+  transform: translateZ(0);
+}
+:root .modal-3c3bKg .root-SR8cQa > *:first-child {
+  background-color: var(--background-secondary-alt);
+}
+:root .modal-3c3bKg .root-SR8cQa .activity-1ythUs {
+  position: relative;
+  z-index: 1;
+}
+:root .modal-3c3bKg .root-SR8cQa .activityProfile-2bJRaP {
+  margin: 10px;
+  border-radius: var(--border-radius);
+}
+:root .modal-3c3bKg .root-SR8cQa .topSectionPlaying-1J5E4n .activityProfile-2bJRaP {
   background-color: var(--playing);
 }
-:root .modal-3c3bKg .root-SR8cQa .topSectionSpotify-1lI0-P {
+:root .modal-3c3bKg .root-SR8cQa .topSectionSpotify-1lI0-P .activityProfile-2bJRaP {
   background-color: var(--spotify);
 }
-:root .modal-3c3bKg .root-SR8cQa .topSectionStreaming-1Tpf5X {
+:root .modal-3c3bKg .root-SR8cQa .topSectionStreaming-1Tpf5X .activityProfile-2bJRaP {
   background-color: var(--streaming);
 }
-:root .modal-3c3bKg .root-SR8cQa .topSectionXbox-3fWLjS {
+:root .modal-3c3bKg .root-SR8cQa .topSectionXbox-3fWLjS .activityProfile-2bJRaP {
   background-color: var(--xbox);
 }
 :root .modal-3c3bKg .root-SR8cQa .header-QKLPzZ {
@@ -562,28 +585,47 @@
 :root .modal-3c3bKg .root-SR8cQa .header-QKLPzZ .avatar-3EQepX rect {
   display: none;
 }
+:root .modal-3c3bKg .root-SR8cQa .header-QKLPzZ .avatar-3EQepX.wrapper-3t9DeA::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  pointer-events: none;
+  background: var(--user-background) center/cover no-repeat;
+}
 :root .modal-3c3bKg .root-SR8cQa .header-QKLPzZ .headerInfo-30uryT {
   grid-column: 2/4;
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center;
+  z-index: 1;
 }
 :root .modal-3c3bKg .root-SR8cQa .tabBarContainer-1s1u-z {
   padding: 0;
+  border-top: none;
 }
 :root .modal-3c3bKg .root-SR8cQa .tabBar-2MuP6- {
   justify-content: space-around;
 }
 :root .modal-3c3bKg .root-SR8cQa .tabBarItem-1b8RUP {
   margin-right: 0;
+  z-index: 1;
+  position: relative;
 }
-:root .modal-3c3bKg .root-SR8cQa .userInfoSection-2acyCx {
+:root .modal-3c3bKg .root-SR8cQa .body-3ND3kc {
+  z-index: 1;
+}
+:root .modal-3c3bKg .root-SR8cQa .body-3ND3kc .userInfoSection-2acyCx {
   border-top: none;
 }
-:root .modal-3c3bKg .root-SR8cQa .userInfoSection-2acyCx .connectedAccounts-repVzS {
+:root .modal-3c3bKg .root-SR8cQa .body-3ND3kc .userInfoSection-2acyCx .connectedAccounts-repVzS {
   justify-content: flex-start;
 }
-:root .modal-3c3bKg .root-SR8cQa .userInfoSection-2acyCx .connectedAccounts-repVzS .connectedAccount-36nQx7 {
+:root .modal-3c3bKg .root-SR8cQa .body-3ND3kc .userInfoSection-2acyCx .connectedAccounts-repVzS .connectedAccount-36nQx7 {
   position: relative;
   width: 110px;
   flex-direction: column;
@@ -592,28 +634,28 @@
   margin: 5px;
   padding: 10px;
 }
-:root .modal-3c3bKg .root-SR8cQa .userInfoSection-2acyCx .connectedAccounts-repVzS .connectedAccount-36nQx7 .connectedAccountIcon-3P3V6F {
+:root .modal-3c3bKg .root-SR8cQa .body-3ND3kc .userInfoSection-2acyCx .connectedAccounts-repVzS .connectedAccount-36nQx7 .connectedAccountIcon-3P3V6F {
   position: relative;
   margin-bottom: 10px;
   width: 45px;
   height: 45px;
   z-index: 2;
 }
-:root .modal-3c3bKg .root-SR8cQa .userInfoSection-2acyCx .connectedAccounts-repVzS .connectedAccount-36nQx7 .connectedAccountNameInner-1phBvE {
+:root .modal-3c3bKg .root-SR8cQa .body-3ND3kc .userInfoSection-2acyCx .connectedAccounts-repVzS .connectedAccount-36nQx7 .connectedAccountNameInner-1phBvE {
   position: relative;
   z-index: 1;
   width: 100%;
   justify-content: center;
   overflow: visible;
 }
-:root .modal-3c3bKg .root-SR8cQa .userInfoSection-2acyCx .connectedAccounts-repVzS .connectedAccount-36nQx7 .connectedAccountNameInner-1phBvE .connectedAccountName-f8AEe2 {
+:root .modal-3c3bKg .root-SR8cQa .body-3ND3kc .userInfoSection-2acyCx .connectedAccounts-repVzS .connectedAccount-36nQx7 .connectedAccountNameInner-1phBvE .connectedAccountName-f8AEe2 {
   text-align: center;
   margin: 0;
 }
-:root .modal-3c3bKg .root-SR8cQa .userInfoSection-2acyCx .connectedAccounts-repVzS .connectedAccount-36nQx7 .connectedAccountNameInner-1phBvE span {
+:root .modal-3c3bKg .root-SR8cQa .body-3ND3kc .userInfoSection-2acyCx .connectedAccounts-repVzS .connectedAccount-36nQx7 .connectedAccountNameInner-1phBvE span {
   display: none;
 }
-:root .modal-3c3bKg .root-SR8cQa .userInfoSection-2acyCx .connectedAccounts-repVzS .connectedAccount-36nQx7 .anchor-3Z-8Bb {
+:root .modal-3c3bKg .root-SR8cQa .body-3ND3kc .userInfoSection-2acyCx .connectedAccounts-repVzS .connectedAccount-36nQx7 .anchor-3Z-8Bb {
   position: absolute;
   top: 0;
   left: 0;
@@ -621,10 +663,10 @@
   height: 100%;
   z-index: 2;
 }
-:root .modal-3c3bKg .root-SR8cQa .userInfoSection-2acyCx .connectedAccounts-repVzS .connectedAccount-36nQx7 .anchor-3Z-8Bb > svg {
+:root .modal-3c3bKg .root-SR8cQa .body-3ND3kc .userInfoSection-2acyCx .connectedAccounts-repVzS .connectedAccount-36nQx7 .anchor-3Z-8Bb > svg {
   display: none;
 }
-:root .modal-3c3bKg .root-SR8cQa .userInfoSection-2acyCx .connectedAccounts-repVzS .connectedAccount-36nQx7 .connectedAccountIcon-3P3V6F + .connectedAccountNameInner-1phBvE::before {
+:root .modal-3c3bKg .root-SR8cQa .body-3ND3kc .userInfoSection-2acyCx .connectedAccounts-repVzS .connectedAccount-36nQx7 .connectedAccountIcon-3P3V6F + .connectedAccountNameInner-1phBvE::before {
   content: "";
   position: absolute;
   top: -65px;
@@ -635,37 +677,37 @@
   border-radius: var(--border-radius);
   opacity: 0.25;
 }
-:root .modal-3c3bKg .root-SR8cQa .userInfoSection-2acyCx .connectedAccounts-repVzS .connectedAccount-36nQx7 .connectedAccountIcon-3P3V6F[src="/assets/5d69e29f0d71aaa04ed9725100199b4e.png"] + .connectedAccountNameInner-1phBvE::before {
+:root .modal-3c3bKg .root-SR8cQa .body-3ND3kc .userInfoSection-2acyCx .connectedAccounts-repVzS .connectedAccount-36nQx7 .connectedAccountIcon-3P3V6F[src="/assets/5d69e29f0d71aaa04ed9725100199b4e.png"] + .connectedAccountNameInner-1phBvE::before {
   background-color: #191717;
 }
-:root .modal-3c3bKg .root-SR8cQa .userInfoSection-2acyCx .connectedAccounts-repVzS .connectedAccount-36nQx7 .connectedAccountIcon-3P3V6F[src="/assets/f0655521c19c08c4ea4e508044ec7d8c.png"] + .connectedAccountNameInner-1phBvE::before {
+:root .modal-3c3bKg .root-SR8cQa .body-3ND3kc .userInfoSection-2acyCx .connectedAccounts-repVzS .connectedAccount-36nQx7 .connectedAccountIcon-3P3V6F[src="/assets/f0655521c19c08c4ea4e508044ec7d8c.png"] + .connectedAccountNameInner-1phBvE::before {
   background-color: #1ED760;
 }
-:root .modal-3c3bKg .root-SR8cQa .userInfoSection-2acyCx .connectedAccounts-repVzS .connectedAccount-36nQx7 .connectedAccountIcon-3P3V6F[src="/assets/f09c1c70a67ceaaeb455d163f3f9cbb8.png"] + .connectedAccountNameInner-1phBvE::before {
+:root .modal-3c3bKg .root-SR8cQa .body-3ND3kc .userInfoSection-2acyCx .connectedAccounts-repVzS .connectedAccount-36nQx7 .connectedAccountIcon-3P3V6F[src="/assets/f09c1c70a67ceaaeb455d163f3f9cbb8.png"] + .connectedAccountNameInner-1phBvE::before {
   background-color: #000000;
 }
-:root .modal-3c3bKg .root-SR8cQa .userInfoSection-2acyCx .connectedAccounts-repVzS .connectedAccount-36nQx7 .connectedAccountIcon-3P3V6F[src="/assets/0d44ba28e39303de3832db580a252456.png"] + .connectedAccountNameInner-1phBvE::before {
+:root .modal-3c3bKg .root-SR8cQa .body-3ND3kc .userInfoSection-2acyCx .connectedAccounts-repVzS .connectedAccount-36nQx7 .connectedAccountIcon-3P3V6F[src="/assets/0d44ba28e39303de3832db580a252456.png"] + .connectedAccountNameInner-1phBvE::before {
   background-color: #5DC21E;
 }
-:root .modal-3c3bKg .root-SR8cQa .userInfoSection-2acyCx .connectedAccounts-repVzS .connectedAccount-36nQx7 .connectedAccountIcon-3P3V6F[src="/assets/3abe9ce5a00cc24bd8aae04bf5968f4c.png"] + .connectedAccountNameInner-1phBvE::before {
+:root .modal-3c3bKg .root-SR8cQa .body-3ND3kc .userInfoSection-2acyCx .connectedAccounts-repVzS .connectedAccount-36nQx7 .connectedAccountIcon-3P3V6F[src="/assets/3abe9ce5a00cc24bd8aae04bf5968f4c.png"] + .connectedAccountNameInner-1phBvE::before {
   background-color: #FF4500;
 }
-:root .modal-3c3bKg .root-SR8cQa .userInfoSection-2acyCx .connectedAccounts-repVzS .connectedAccount-36nQx7 .connectedAccountIcon-3P3V6F[src="/assets/edbbf6107b2cd4334d582b26e1ac786d.png"] + .connectedAccountNameInner-1phBvE::before {
+:root .modal-3c3bKg .root-SR8cQa .body-3ND3kc .userInfoSection-2acyCx .connectedAccounts-repVzS .connectedAccount-36nQx7 .connectedAccountIcon-3P3V6F[src="/assets/edbbf6107b2cd4334d582b26e1ac786d.png"] + .connectedAccountNameInner-1phBvE::before {
   background-color: #553092;
 }
-:root .modal-3c3bKg .root-SR8cQa .userInfoSection-2acyCx .connectedAccounts-repVzS .connectedAccount-36nQx7 .connectedAccountIcon-3P3V6F[src="/assets/4662875160dc4c56954003ebda995414.png"] + .connectedAccountNameInner-1phBvE::before {
+:root .modal-3c3bKg .root-SR8cQa .body-3ND3kc .userInfoSection-2acyCx .connectedAccounts-repVzS .connectedAccount-36nQx7 .connectedAccountIcon-3P3V6F[src="/assets/4662875160dc4c56954003ebda995414.png"] + .connectedAccountNameInner-1phBvE::before {
   background-color: #1DA1F2;
 }
-:root .modal-3c3bKg .root-SR8cQa .userInfoSection-2acyCx .connectedAccounts-repVzS .connectedAccount-36nQx7 .connectedAccountIcon-3P3V6F[src="/assets/449cca50c1452b4ace3cbe9bc5ae0fd6.png"] + .connectedAccountNameInner-1phBvE::before {
+:root .modal-3c3bKg .root-SR8cQa .body-3ND3kc .userInfoSection-2acyCx .connectedAccounts-repVzS .connectedAccount-36nQx7 .connectedAccountIcon-3P3V6F[src="/assets/449cca50c1452b4ace3cbe9bc5ae0fd6.png"] + .connectedAccountNameInner-1phBvE::before {
   background-color: #D9252A;
 }
-:root .modal-3c3bKg .root-SR8cQa .userInfoSection-2acyCx .connectedAccounts-repVzS .connectedAccount-36nQx7 .connectedAccountIcon-3P3V6F[src="/assets/8c289d499232cd8e9582b4a5639d9d1d.png"] + .connectedAccountNameInner-1phBvE::before {
+:root .modal-3c3bKg .root-SR8cQa .body-3ND3kc .userInfoSection-2acyCx .connectedAccounts-repVzS .connectedAccount-36nQx7 .connectedAccountIcon-3P3V6F[src="/assets/8c289d499232cd8e9582b4a5639d9d1d.png"] + .connectedAccountNameInner-1phBvE::before {
   background-color: #009AE5;
 }
-:root .modal-3c3bKg .root-SR8cQa .userInfoSection-2acyCx .connectedAccounts-repVzS .connectedAccount-36nQx7 .connectedAccountIcon-3P3V6F[src="/assets/8d8f815f3d81a33b1e70ec7c22e1b6fe.png"] + .connectedAccountNameInner-1phBvE::before {
+:root .modal-3c3bKg .root-SR8cQa .body-3ND3kc .userInfoSection-2acyCx .connectedAccounts-repVzS .connectedAccount-36nQx7 .connectedAccountIcon-3P3V6F[src="/assets/8d8f815f3d81a33b1e70ec7c22e1b6fe.png"] + .connectedAccountNameInner-1phBvE::before {
   background-color: #2D3283;
 }
-:root .modal-3c3bKg .root-SR8cQa .userInfoSection-2acyCx .connectedAccounts-repVzS .connectedAccount-36nQx7 .connectedAccountIcon-3P3V6F[src="/assets/806953fe1cc616477175cbcdf90d5cd3.png"] + .connectedAccountNameInner-1phBvE::before {
+:root .modal-3c3bKg .root-SR8cQa .body-3ND3kc .userInfoSection-2acyCx .connectedAccounts-repVzS .connectedAccount-36nQx7 .connectedAccountIcon-3P3V6F[src="/assets/806953fe1cc616477175cbcdf90d5cd3.png"] + .connectedAccountNameInner-1phBvE::before {
   background-color: #CEA146;
 }
 
@@ -1208,7 +1250,7 @@
 :root .scroller-3BxosC > .item-1tOPte:first-child {
   border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
-:root .scroller-3BxosC > .item-1tOPte:not(.ring-13rgEW):nth-last-child(2), :root .scroller-3BxosC > .item-1tOPte.focused-3afm-j:nth-last-child(3) {
+:root .scroller-3BxosC > .item-1tOPte:not(.ring-13rgEW):nth-last-child(2) {
   border-radius: 0 0 var(--border-radius) var(--border-radius) !important;
 }
 :root .scroller-3BxosC > div:first-child > .item-1tOPte:first-child {
