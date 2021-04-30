@@ -30,61 +30,16 @@ button, input, textarea, .item-PXvHYJ:not([class^=tabBarItem-]), .menu-3sdvDG { 
 }
 
 // -- Better menus --
+.menu-3sdvDG { overflow: hidden;}
+
 .scroller-3BxosC {
   padding: 0;
 
   &::-webkit-scrollbar, .separator-2I32lJ { display: none;}
   .item-1tOPte { padding: 10px 10px 10px 13px; margin: 0; transition: 0.15s; border-radius: 0;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
   // Submenu
   .submenuContainer-2gbm7M .layer-v9HyYc { margin: 0 -8px;}
-
-  & > .item-1tOPte {
-    &:first-child { border-radius: var(--border-radius) var(--border-radius) 0 0;}
-    &:not(.ring-13rgEW):nth-last-child(2) { border-radius: 0 0 var(--border-radius) var(--border-radius) !important;}
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  // Menu
-  & > div {
-
-    // First label
-    &:first-child > .item-1tOPte:first-child { border-radius: var(--border-radius) var(--border-radius) 0 0;}
-
-    // Last label
-    &:nth-last-child(2) > .item-1tOPte:last-child, 
-    &:nth-last-child(3) > .item-1tOPte:last-child { border-radius: 0 0 var(--border-radius) var(--border-radius);}
-  }
 }
 
 // Status picker

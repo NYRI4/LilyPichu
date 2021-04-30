@@ -1232,6 +1232,9 @@
   background-color: var(--background-tertiary);
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(56, 31, 31, 0.11);
 }
+:root .menu-3sdvDG {
+  overflow: hidden;
+}
 :root .scroller-3BxosC {
   padding: 0;
 }
@@ -1246,18 +1249,6 @@
 }
 :root .scroller-3BxosC .submenuContainer-2gbm7M .layer-v9HyYc {
   margin: 0 -8px;
-}
-:root .scroller-3BxosC > .item-1tOPte:first-child {
-  border-radius: var(--border-radius) var(--border-radius) 0 0;
-}
-:root .scroller-3BxosC > .item-1tOPte:not(.ring-13rgEW):nth-last-child(2) {
-  border-radius: 0 0 var(--border-radius) var(--border-radius) !important;
-}
-:root .scroller-3BxosC > div:first-child > .item-1tOPte:first-child {
-  border-radius: var(--border-radius) var(--border-radius) 0 0;
-}
-:root .scroller-3BxosC > div:nth-last-child(2) > .item-1tOPte:last-child, :root .scroller-3BxosC > div:nth-last-child(3) > .item-1tOPte:last-child {
-  border-radius: 0 0 var(--border-radius) var(--border-radius);
 }
 :root #status-picker {
   left: -6px;
