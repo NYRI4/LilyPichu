@@ -118,6 +118,18 @@
     .footer-1fjuF6 { display: none;}
 }
 
+// Add role menu
+.container-3XJ8ns {
+    border-radius: var(--border-radius);
+    border: none;
+    
+    .item-2J2GlB {
+        .popoutRoleDot-1XPcoA { border: none;}
+        
+        &:hover { border-radius: var(--border-radius);} 
+    }
+}
+
 // -- User modal --
 .modal-3c3bKg {
     .root-SR8cQa {
