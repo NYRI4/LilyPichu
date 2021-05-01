@@ -18,7 +18,7 @@
 }
 
 // More border radius
-button, input, textarea, .item-PXvHYJ:not([class^=tabBarItem-]), .menu-3sdvDG { border-radius: var(--border-radius);}
+button, input, textarea, .item-PXvHYJ:not([class^=tabBarItem-]), .menu-3sdvDG { border-radius: var(--border-radius) !important;}
 
 // Modals
 .modal-yWgWj-, .root-1gCeng, .uploadModal-2ifh8j { 

@@ -161,14 +161,38 @@
 .notDetected-33MY4s { border-radius: var(--border-radius);}
 .addGamePopout-2RY8Ju { border: none; box-shadow: 0 2px 10px 0 rgba(0,0,0,.2), 0 0 0 1px rgba(56, 31, 31, 0.11); border-radius: var(--border-radius);}
 
-// Theme toggler - Powercord
-.cardPrimary-1Hv-to { border: none; border-radius: var(--border-radius);}
-
-// Themes tab - Powercord
-.powercord-entities-manage-tabs, .developerPortalCtaWrapper-2XNafh { border-radius: var(--border-radius);}
-
 // Hypesquad
 .membershipDialog-rVL-t_ { border-radius: var(--border-radius);}
+
+// -- Powercord --
+
+// Theme toggler
+.cardPrimary-1Hv-to { border: none; border-radius: var(--border-radius);}
+
+// Themes tab
+.powercord-entities-manage-tabs, .developerPortalCtaWrapper-2XNafh { border-radius: var(--border-radius);}
+
+// BetterDiscord
+.bd-addon-list .bd-addon-card, .bd-search-wrapper, #floating-editor-window { border-radius: var(--border-radius);}
+
+.bd-select { 
+    border: none; transition: 0.15s;
+    border-radius: var(--border-radius);
+
+    .menu-open { border-radius: var(--border-radius) var(--border-radius) 0 0;}
+
+    .bd-select-options { 
+        border: none;
+        border-radius: var(--border-radius);
+
+        &:last-child { border-radius: 0 0 var(--border-radius) var(--border-radius);}
+    }
+}
+
+.bd-controls>.bd-addon-button {
+    &:first-of-type { border-radius: var(--border-radius) 0 0 var(--border-radius);}
+    &:last-of-type { border-radius: 0 var(--border-radius) var(--border-radius) 0;}
+}
 
 // Experiments
 .container-cMG81i { border-radius: var(--border-radius);}

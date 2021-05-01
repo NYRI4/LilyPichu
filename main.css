@@ -1002,6 +1002,9 @@
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(56, 31, 31, 0.11);
   border-radius: var(--border-radius);
 }
+:root .membershipDialog-rVL-t_ {
+  border-radius: var(--border-radius);
+}
 :root .cardPrimary-1Hv-to {
   border: none;
   border-radius: var(--border-radius);
@@ -1009,8 +1012,29 @@
 :root .powercord-entities-manage-tabs, :root .developerPortalCtaWrapper-2XNafh {
   border-radius: var(--border-radius);
 }
-:root .membershipDialog-rVL-t_ {
+:root .bd-addon-list .bd-addon-card, :root .bd-search-wrapper, :root #floating-editor-window {
   border-radius: var(--border-radius);
+}
+:root .bd-select {
+  border: none;
+  transition: 0.15s;
+  border-radius: var(--border-radius);
+}
+:root .bd-select .menu-open {
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+:root .bd-select .bd-select-options {
+  border: none;
+  border-radius: var(--border-radius);
+}
+:root .bd-select .bd-select-options:last-child {
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+}
+:root .bd-controls > .bd-addon-button:first-of-type {
+  border-radius: var(--border-radius) 0 0 var(--border-radius);
+}
+:root .bd-controls > .bd-addon-button:last-of-type {
+  border-radius: 0 var(--border-radius) var(--border-radius) 0;
 }
 :root .container-cMG81i {
   border-radius: var(--border-radius);
@@ -1308,7 +1332,7 @@
   border-bottom-left-radius: 8px;
 }
 :root button, :root input, :root textarea, :root .item-PXvHYJ:not([class^=tabBarItem-]), :root .menu-3sdvDG {
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius) !important;
 }
 :root .modal-yWgWj-, :root .root-1gCeng, :root .uploadModal-2ifh8j {
   border-radius: var(--border-radius);
