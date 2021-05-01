@@ -4,7 +4,11 @@
 ::-webkit-input-placeholder, body, button, input, select, textarea { font-family: 'Nunito' !important; font-weight: bold !important;}
 
 // Background
-.bg-h5JY_x { background-color: var(--background-tertiary-alt);}
+.bg-h5JY_x { 
+  background: var(--background-tertiary-alt);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
 
 // Windows button
 .winButton-iRh8-Z { 
@@ -89,14 +93,16 @@ button, input, textarea, .item-PXvHYJ:not([class^=tabBarItem-]), .menu-3sdvDG { 
 
 // Discover
 .discoverHeader-Ijkm_M { text-align: center; margin-left: 0;}
+.categoryItem-1QIroW .itemInner-gPkiWb { background-color: transparent;}
 .pageWrapper-1PgVDX { background-color: var(--background-primary);}
-.categoryItem-1QIroW.selectedCategoryItem-FHKU_o .itemInner-gPkiWb { background-color: var(--background-secondary);}
 .notice-2X5hT5 { border-top-left-radius: 0; background-color: var(--background-tertiary);}
 .button-2PWmas:hover { background-color: transparent;}
+.headerImage-3X1tyY, .card-3DjzTQ { border-radius: var(--border-radius);}
 
 // Call tile
 .tile-2naSqK { 
   background-color: var(--background-secondary-alt);
+  border-radius: var(--border-radius);
 
   .button-3HqqDX { background-color: var(--background-accent);}
 }

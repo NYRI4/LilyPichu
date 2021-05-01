@@ -1,5 +1,26 @@
 :root { 
-    .guilds-1SWlCJ .scroller-1Bvpku { padding-top: 8px;}
+    .guilds-1SWlCJ .scroller-1Bvpku { 
+        padding-top: 8px;
+
+        .wrapper-25eVIn foreignObject { mask: none; border-radius: var(--border-radius);}
+        
+        .folder-1hbNCn { background-color: transparent;}
+
+
+        // Discover + create a server buttons
+        .circleButtonMask-1_597P {
+            .circleIconButton-1QV--U { 
+                border-radius: var(--border-radius); 
+                transition: border-radius 0.15s;
+                color: var(--background-accent);
+                background-color: var(--background-secondary-alt) !important;
+            }
+
+            &:hover { .circleIconButton-1QV--U { border-radius: calc(var(--border-radius) - 5px);}}
+
+            foreignObject { mask: none;}
+        }
+    }
 }
 
 .theme-light { 
@@ -11,3 +32,9 @@
     .wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9, 
     .wrapper-1BJsBx:hover .childWrapper-anI2G9 { background-color: var(--background-primary);}
 } 
+
+// Server radius
+.folderIconWrapper-226oVY, .folderIconWrapper-1_bOZe,
+.expandedFolderBackground-2sPsd-, .flexChild-faoVW3 .avatarUploaderInner-3UNxY3 {
+  border-radius: var(--border-radius);
+}

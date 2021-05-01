@@ -1,7 +1,21 @@
 :root { 
 
+// Right friend list
+.container-2Pjhx-, .layout-2DM8Md, .searchBarComponent-32dTOx { border-radius: var(--border-radius);}
+
 // Friend list
-.container-1D34oG { background-color: var(--background-primary);}
+.container-1D34oG { 
+    background-color: var(--background-primary);
+
+    .peopleListItem-2nzedh { 
+        border-radius: var(--border-radius); border-top: none;
+        background: var(--background-modifier-hover);
+        margin: 8px 10px 8px 20px;
+        padding: 16px 10px;
+
+        &:hover { .actionButton-uPB8Fs { background-color: var(--background-secondary-alt);}}
+    }
+}
 
 // Friend call
 .controlButton-2MhVEL foreignObject { mask: none;}
@@ -12,7 +26,7 @@
 .inset-3sAvek { background-color: var(--background-primary);}
 .separator-XqIyoz { display: none;}
 .voiceSectionIconWrapper-FO7UEY { background-color: var(--background-tertiary);}
-.outer-1AjyKL.active-1xchHY, .outer-1AjyKL.interactive-3B9GmY:hover { background-color: var(--background-tertiary);}
+.outer-1AjyKL.active-1xchHY, .outer-1AjyKL.interactive-3B9GmY:hover { background-color: var(--activity-card-background);}
 .itemCard-v9viV7 { 
     border-radius: var(--border-radius);
 

@@ -2,12 +2,12 @@
 @import url("https://discord-custom-covers.github.io/usrbg/dist/usrbg.css");
 @import url("https://monstrousdev.github.io/themes/addons/user-tags.css");
 :root {
+  --background-tertiary-alt: #FFC7D4;
+  --border-radius: 20px;
   --playing: #8ea6fc;
   --spotify: #5fce86;
   --streaming: #9b77da;
   --xbox: #53a853;
-  --background-tertiary-alt: #FFC7D4;
-  --border-radius: 20px;
 }
 
 .theme-dark {
@@ -26,6 +26,7 @@
   --background-tertiary: #220f14;
   --background-floating: #221115;
   --background-accent: #c5536c;
+  --activity-card-background: var(--background-secondary-alt);
   --channeltextarea-background: var(--background-secondary);
   --background-modifier-hover: rgba(56, 31, 31, 0.32);
   --background-modifier-active: rgba(19, 12, 12, 0.32);
@@ -109,18 +110,18 @@
 :root .embedFull-2tM8-- {
   border: none;
   margin-left: 10px;
-  border-radius: 0 var(--border-radius) var(--border-radius) 0;
+  border-radius: 5px var(--border-radius) var(--border-radius) 5px;
 }
 :root .embedFull-2tM8--:after {
   content: "";
   position: absolute;
-  top: 0;
-  bottom: 0;
+  top: 1px;
+  bottom: 1px;
   left: -10px;
   width: 0;
   border: 3px solid;
   border-color: inherit;
-  border-radius: 5px 0 0 5px;
+  border-radius: 5px;
 }
 :root .hljs {
   border: none;
@@ -195,9 +196,50 @@
 :root .popoutContainer-1MXdqN {
   border-radius: var(--border-radius);
 }
+:root .newMessagesBar-265mhP {
+  top: 5px;
+  border-radius: var(--border-radius);
+  background-color: var(--background-accent);
+  padding-top: 0;
+}
+:root .jumpToPresentBar-G1R9s6 {
+  bottom: 12px;
+  padding-bottom: 0;
+  border-radius: var(--border-radius);
+}
+:root .wrapper-39oAo3 {
+  border-radius: var(--border-radius);
+}
+:root .reaction-1hd86g {
+  border-radius: var(--border-radius);
+}
+:root .wrapper-2aW0bm {
+  border-radius: var(--border-radius);
+}
 
 :root .guilds-1SWlCJ .scroller-1Bvpku {
   padding-top: 8px;
+}
+:root .guilds-1SWlCJ .scroller-1Bvpku .wrapper-25eVIn foreignObject {
+  -webkit-mask: none;
+          mask: none;
+  border-radius: var(--border-radius);
+}
+:root .guilds-1SWlCJ .scroller-1Bvpku .folder-1hbNCn {
+  background-color: transparent;
+}
+:root .guilds-1SWlCJ .scroller-1Bvpku .circleButtonMask-1_597P .circleIconButton-1QV--U {
+  border-radius: var(--border-radius);
+  transition: border-radius 0.15s;
+  color: var(--background-accent);
+  background-color: var(--background-secondary-alt) !important;
+}
+:root .guilds-1SWlCJ .scroller-1Bvpku .circleButtonMask-1_597P:hover .circleIconButton-1QV--U {
+  border-radius: calc(var(--border-radius) - 5px);
+}
+:root .guilds-1SWlCJ .scroller-1Bvpku .circleButtonMask-1_597P foreignObject {
+  -webkit-mask: none;
+          mask: none;
 }
 
 .theme-light .wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9,
@@ -208,6 +250,11 @@
 .theme-dark .wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9,
 .theme-dark .wrapper-1BJsBx:hover .childWrapper-anI2G9 {
   background-color: var(--background-primary);
+}
+
+.folderIconWrapper-226oVY, .folderIconWrapper-1_bOZe,
+.expandedFolderBackground-2sPsd-, .flexChild-faoVW3 .avatarUploaderInner-3UNxY3 {
+  border-radius: var(--border-radius);
 }
 
 :root .content-98HsJk .sidebar-2K8pFh {
@@ -222,6 +269,23 @@
 :root .colorPremium-p4p7qO.focused-3afm-j .icon-LYJorE,
 :root .colorPremium-p4p7qO:active:not(.hideInteraction-1iHO1O) .icon-LYJorE {
   color: #ff73fa;
+}
+:root .content-1x5b-n {
+  border-radius: var(--border-radius);
+}
+:root .content-1Wq3SX {
+  border-radius: var(--border-radius);
+}
+:root .panels-j1Uci_ {
+  margin: 0 5px 8px 5px;
+  border-radius: calc(var(--border-radius) - 5px);
+  background-color: var(--background-secondary-alt);
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(56, 31, 31, 0.11);
+  overflow: hidden;
+}
+:root .panels-j1Uci_ .container-1giJp5 {
+  border-bottom: none;
+  background-color: var(--background-secondary-alt);
 }
 :root .container-2x5lvQ .header-2C89wJ {
   background-color: var(--background-tertiary);
@@ -239,6 +303,7 @@
 }
 :root .search-36MZv- .focused-31_ccS .searchBar-3dMhjb, :root .search-36MZv- .open-6_Y_aH .searchBar-3dMhjb {
   width: 320px;
+  border-radius: var(--border-radius);
 }
 :root .search-36MZv- .search-2oPWTC:not(.open-6_Y_aH) .searchBar-3dMhjb {
   width: 27px;
@@ -248,6 +313,7 @@
 :root .search-36MZv- .search-2oPWTC:not(.open-6_Y_aH):hover .searchBar-3dMhjb {
   width: 240px;
   background-color: var(--background-tertiary);
+  border-radius: var(--border-radius);
 }
 :root .search-36MZv- .search-2oPWTC:not(.open-6_Y_aH) .iconContainer-O4O2CN {
   transform: scale(1.2);
@@ -276,6 +342,9 @@
 }
 :root .container-3ayLPN .resultsGroup-r_nuzN .header-2N-gMV {
   text-align: center;
+}
+:root .container-3ayLPN .option-96V44q {
+  border-radius: var(--border-radius);
 }
 :root .container-3ayLPN .option-96V44q:after {
   background: linear-gradient(90deg, rgba(54, 57, 63, 0), var(--background-secondary-alt) 80%);
@@ -458,8 +527,8 @@
   min-width: 200px;
   display: flex;
   flex-direction: column;
+  background-color: var(--background-secondary-alt);
   z-index: 1;
-  background-color: var(--background-primary);
 }
 :root .userPopout-3XzG_A .header-2BwW8b .wrapper-3t9DeA::after {
   content: "";
@@ -474,6 +543,7 @@
   background-repeat: no-repeat;
   background-position: var(--user-popout-position) center;
   background-image: var(--user-background);
+  -webkit-mask: linear-gradient(rgba(0, 0, 0, 0.8) 100%, transparent);
 }
 :root .userPopout-3XzG_A .header-2BwW8b .activityUserPopout-2yItg2 {
   margin: 8px;
@@ -592,9 +662,9 @@
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.5;
   pointer-events: none;
   background: var(--user-background) center/cover no-repeat;
+  -webkit-mask: linear-gradient(rgba(0, 0, 0, 0.8) 100%, transparent);
 }
 :root .modal-3c3bKg .root-SR8cQa .header-QKLPzZ .headerInfo-30uryT {
   grid-column: 2/4;
@@ -834,7 +904,7 @@
 :root .connectionHeader-2MDqhu {
   border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
-:root .feature-2w65J5 {
+:root .feature-2w65J5, :root .hero-EvfTTA {
   border-radius: var(--border-radius);
 }
 :root .gemIndicatorContainer-2jdECl {
@@ -965,6 +1035,9 @@
   border: none;
   border-radius: var(--border-radius);
 }
+:root .addRoleButton-3Y-nzm ~ .draggable-1EOU8o {
+  margin: 2px 0;
+}
 :root .roleDot-ZwSovK {
   border: none;
 }
@@ -1058,8 +1131,21 @@
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(56, 31, 31, 0.11);
 }
 
+:root .container-2Pjhx-, :root .layout-2DM8Md, :root .searchBarComponent-32dTOx {
+  border-radius: var(--border-radius);
+}
 :root .container-1D34oG {
   background-color: var(--background-primary);
+}
+:root .container-1D34oG .peopleListItem-2nzedh {
+  border-radius: var(--border-radius);
+  border-top: none;
+  background: var(--background-modifier-hover);
+  margin: 8px 10px 8px 20px;
+  padding: 16px 10px;
+}
+:root .container-1D34oG .peopleListItem-2nzedh:hover .actionButton-uPB8Fs {
+  background-color: var(--background-secondary-alt);
 }
 :root .controlButton-2MhVEL foreignObject {
   -webkit-mask: none;
@@ -1081,7 +1167,7 @@
   background-color: var(--background-tertiary);
 }
 :root .outer-1AjyKL.active-1xchHY, :root .outer-1AjyKL.interactive-3B9GmY:hover {
-  background-color: var(--background-tertiary);
+  background-color: var(--activity-card-background);
 }
 :root .itemCard-v9viV7 {
   border-radius: var(--border-radius);
@@ -1211,7 +1297,9 @@
   font-weight: bold !important;
 }
 :root .bg-h5JY_x {
-  background-color: var(--background-tertiary-alt);
+  background: var(--background-tertiary-alt);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 :root .winButton-iRh8-Z {
   background-color: var(--background-primary);
@@ -1297,11 +1385,11 @@
   text-align: center;
   margin-left: 0;
 }
+:root .categoryItem-1QIroW .itemInner-gPkiWb {
+  background-color: transparent;
+}
 :root .pageWrapper-1PgVDX {
   background-color: var(--background-primary);
-}
-:root .categoryItem-1QIroW.selectedCategoryItem-FHKU_o .itemInner-gPkiWb {
-  background-color: var(--background-secondary);
 }
 :root .notice-2X5hT5 {
   border-top-left-radius: 0;
@@ -1310,8 +1398,12 @@
 :root .button-2PWmas:hover {
   background-color: transparent;
 }
+:root .headerImage-3X1tyY, :root .card-3DjzTQ {
+  border-radius: var(--border-radius);
+}
 :root .tile-2naSqK {
   background-color: var(--background-secondary-alt);
+  border-radius: var(--border-radius);
 }
 :root .tile-2naSqK .button-3HqqDX {
   background-color: var(--background-accent);

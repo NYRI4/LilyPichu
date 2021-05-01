@@ -3,16 +3,16 @@
 // Embed
 .embedFull-2tM8-- { 
     border: none; margin-left: 10px;
-    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    border-radius: 5px var(--border-radius) var(--border-radius) 5px;
 
     &:after {
         content: "";
         position: absolute;
-        top: 0; bottom: 0; left: -10px;
+        top: 1px; bottom: 1px; left: -10px;
         width: 0;
         border: 3px solid;
         border-color: inherit;
-        border-radius: 5px 0 0 5px;
+        border-radius: 5px;
     }
 }
 
@@ -65,5 +65,27 @@
 
 // Emoji popout
 .popoutContainer-1MXdqN { border-radius: var(--border-radius);}
+
+// New message bar
+.newMessagesBar-265mhP {  
+    top: 5px; border-radius: var(--border-radius);
+    background-color: var(--background-accent);
+    padding-top: 0;
+}
+
+// Jump to present bar
+.jumpToPresentBar-G1R9s6 { 
+    bottom: 12px; padding-bottom: 0; 
+    border-radius: var(--border-radius);
+}
+
+// News chat bar
+.wrapper-39oAo3 { border-radius: var(--border-radius);}
+
+// Reactions
+.reaction-1hd86g { border-radius: var(--border-radius);}
+
+// Buttons on messages
+.wrapper-2aW0bm { border-radius: var(--border-radius);}
 
 }
