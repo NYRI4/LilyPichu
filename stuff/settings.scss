@@ -179,19 +179,19 @@
     border: none; transition: 0.15s;
     border-radius: var(--border-radius);
 
-    .menu-open { border-radius: var(--border-radius) var(--border-radius) 0 0;}
+    .menu-open { border-radius: var(--border-radius) var(--border-radius) 0 0 !important;}
 
     .bd-select-options { 
         border: none;
         border-radius: var(--border-radius);
 
-        &:last-child { border-radius: 0 0 var(--border-radius) var(--border-radius);}
+        &:last-child { border-radius: 0 0 var(--border-radius) var(--border-radius) !important;}
     }
 }
 
 .bd-controls>.bd-addon-button {
-    &:first-of-type { border-radius: var(--border-radius) 0 0 var(--border-radius);}
-    &:last-of-type { border-radius: 0 var(--border-radius) var(--border-radius) 0;}
+    &:first-of-type { border-radius: var(--border-radius) 0 0 var(--border-radius) !important;}
+    &:last-of-type { border-radius: 0 var(--border-radius) var(--border-radius) 0 !important;}
 }
 
 // Experiments

@@ -140,3 +140,38 @@ button, input, textarea, .item-PXvHYJ:not([class^=tabBarItem-]), .menu-3sdvDG { 
 #MemberCount { background-color: var(--background-secondary) !important;}
 
 }
+
+/* -- Donators -- */
+
+/* PANIC#6666 */
+
+/* Messages */
+[data-author-id="193188089756123136"] .username-1A8OIy,
+[vz-user-id="193188089756123136"] .username-1A8OIy,
+[data-user-id="193188089756123136"] .username-1A8OIy,
+
+/* Modal */
+[data-user-id="193188089756123136"] + .headerInfo-30uryT .username-2b1r56,
+[vz-user-id="193188089756123136"] .username-2b1r56,
+[data-user-id="193188089756123136"] .username-2b1r56,
+
+/* Popout */
+[aria-label="PANIC"] .username-2b1r56,
+
+/* Friend list */
+[vz-user-id="193188089756123136"] .overflow-WK9Ogt,
+[data-user-id="193188089756123136"] .overflow-WK9Ogt,
+[aria-label^="PANIC"] .overflow-WK9Ogt { 
+  animation: flow 10s ease-in-out infinite;
+  background: linear-gradient(-60deg, #1a8ce9 40%, #03111b 80%, #1a8ce9 100%);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes flow {
+  0% { background-position: 0 50%;}
+  50% { background-position: 300% 50%;}
+  100% { background-position: 0 50%;}
+}
