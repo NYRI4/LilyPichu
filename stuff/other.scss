@@ -120,6 +120,16 @@ button, input, textarea, .item-PXvHYJ:not([class^=tabBarItem-]), .menu-3sdvDG { 
 .scroller-1JpcIc { background: var(--background-primary);}
 .whyYouMightLikeIt-2zZIIj, .content-35aVm0, .bodySection-jqkkIP, .row-1bU71H { background: var(--background-secondary);}
 
+// Tooltips
+.toolbar-2bjZV7 { 
+  display: flex !important;
+  background-color: var(--background-secondary-alt);
+
+  &::before { border-top: 8px solid var(--background-secondary-alt);}
+
+  .button-qqmJ7w { background-color: transparent !important;}
+}
+
 // -- ✔️ Plugin support --
 
 // PermisssionViewer support

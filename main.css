@@ -1021,20 +1021,20 @@
   border-radius: var(--border-radius);
 }
 :root .bd-select .menu-open {
-  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  border-radius: var(--border-radius) var(--border-radius) 0 0 !important;
 }
 :root .bd-select .bd-select-options {
   border: none;
   border-radius: var(--border-radius);
 }
 :root .bd-select .bd-select-options:last-child {
-  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  border-radius: 0 0 var(--border-radius) var(--border-radius) !important;
 }
 :root .bd-controls > .bd-addon-button:first-of-type {
-  border-radius: var(--border-radius) 0 0 var(--border-radius);
+  border-radius: var(--border-radius) 0 0 var(--border-radius) !important;
 }
 :root .bd-controls > .bd-addon-button:last-of-type {
-  border-radius: 0 var(--border-radius) var(--border-radius) 0;
+  border-radius: 0 var(--border-radius) var(--border-radius) 0 !important;
 }
 :root .container-cMG81i {
   border-radius: var(--border-radius);
@@ -1447,6 +1447,16 @@
 :root .whyYouMightLikeIt-2zZIIj, :root .content-35aVm0, :root .bodySection-jqkkIP, :root .row-1bU71H {
   background: var(--background-secondary);
 }
+:root .toolbar-2bjZV7 {
+  display: flex !important;
+  background-color: var(--background-secondary-alt);
+}
+:root .toolbar-2bjZV7::before {
+  border-top: 8px solid var(--background-secondary-alt);
+}
+:root .toolbar-2bjZV7 .button-qqmJ7w {
+  background-color: transparent !important;
+}
 :root #permissions-modal-wrapper #permissions-modal {
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(56, 31, 31, 0.11) !important;
   border-color: var(--background-tertiary) !important;
@@ -1463,6 +1473,38 @@
   background-color: var(--background-secondary) !important;
 }
 
+/* -- Donators -- */
+/* PANIC#6666 */
+/* Messages */
+[data-author-id="193188089756123136"] .username-1A8OIy,
+[vz-user-id="193188089756123136"] .username-1A8OIy,
+[data-user-id="193188089756123136"] .username-1A8OIy,
+[data-user-id="193188089756123136"] + .headerInfo-30uryT .username-2b1r56,
+[vz-user-id="193188089756123136"] .username-2b1r56,
+[data-user-id="193188089756123136"] .username-2b1r56,
+[aria-label=PANIC] .username-2b1r56,
+[vz-user-id="193188089756123136"] .overflow-WK9Ogt,
+[data-user-id="193188089756123136"] .overflow-WK9Ogt,
+[aria-label^=PANIC] .overflow-WK9Ogt {
+  animation: flow 10s ease-in-out infinite;
+  background: linear-gradient(-60deg, #1a8ce9 40%, #03111b 80%, #1a8ce9 100%);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes flow {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 300% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
 @media (min-width: 1200px) {
   .chatContent-a9vAAp + :last-child {
     position: fixed;
