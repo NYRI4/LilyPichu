@@ -516,7 +516,7 @@
   background-repeat: repeat-x;
 }
 :root .userPopout-3XzG_A {
-  width: unset;
+  width: unset !important;
   max-width: 800px;
   flex-direction: row;
   border-radius: var(--border-radius);
