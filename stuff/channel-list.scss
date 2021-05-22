@@ -1,5 +1,11 @@
 :root { 
-.content-98HsJk .sidebar-2K8pFh { border-radius: 0;}
+.content-98HsJk .sidebar-2K8pFh { 
+  border-radius: 0;
+  width: auto;
+
+  & > .scrollerBase-289Jih,
+  & > .container-3w7J-x { width: 240px;}
+}
 
 // Server scroller
 #guild-header-popout .item-1tOPte {
@@ -15,16 +21,6 @@
 
 // Voice call
 .content-1Wq3SX { border-radius: var(--border-radius);}
-
-// User area
-.panels-j1Uci_ { 
-  margin: 0 5px 8px 5px; border-radius: calc(var(--border-radius) - 5px); 
-  background-color: var(--background-secondary-alt);
-  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(56, 31, 31, 0.11);
-  overflow: hidden;
-
-  .container-1giJp5 { border-bottom: none; background-color: var(--background-secondary-alt);}
-}
 
 // SCTR connection
 .container-2x5lvQ .header-2C89wJ { background-color: var(--background-tertiary);}

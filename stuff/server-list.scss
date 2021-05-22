@@ -1,6 +1,6 @@
 :root { 
     .guilds-1SWlCJ .scroller-1Bvpku { 
-        padding-top: 8px;
+        padding: 8px 0 130px 0;
 
         .wrapper-25eVIn foreignObject { mask: none; border-radius: var(--border-radius);}
         
@@ -38,4 +38,97 @@
 .folderIconWrapper-226oVY, .folderIconWrapper-1_bOZe,
 .expandedFolderBackground-2sPsd-, .flexChild-faoVW3 .avatarUploaderInner-3UNxY3 {
   border-radius: var(--border-radius);
+}
+
+.panels-j1Uci_ { z-index: unset;}
+
+// Game panel
+.panel-24C3ux { 
+    position: fixed;
+    left: 0; bottom: 0;
+    width: 56px;
+    border-bottom: none;
+    background-color: var(--background-tertiary);
+    transition: width 0.35s;
+
+    .gameWrapper-1jIQAX { margin-left: 12px;}
+
+    .info-WdNIDE, .actions-aUdUfC { opacity: 0;}
+
+    &:hover { 
+        width: 274px; margin: 8px;
+        z-index: 1; border-radius: 5px var(--border-radius) var(--border-radius) 5px;
+        border-left: 5px solid var(--background-accent);
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(56, 31, 31, 0.11);
+
+        .gameWrapper-1jIQAX { margin-left: 0;}
+        .info-WdNIDE, .actions-aUdUfC { opacity: 1;}
+    }
+}
+
+// Powercord Spotify
+.activityPanel-28dQGo ~ .powercord-spotify { bottom: 50px; transition: 0.35s;}
+.activityPanel-28dQGo:hover ~ .powercord-spotify { bottom: 60px;}
+
+.powercord-spotify {
+    position: fixed;
+    left: 0; bottom: 0; width: 72px;
+    background-color: var(--background-tertiary);
+    
+    transition: width 0.35s, margin 0.35s;
+    
+    .container-3baos1 {
+        margin-top: 5px;
+
+        // Song cover
+        .avatarWrapper-2yR4wp { 
+            margin-left: 4px;
+            
+            .spotify-cover { 
+                width: 48px !important; height: auto !important;
+            } 
+        }
+
+        // Song name and buttons
+        .nameTag-3uD-yy, .spotify-buttons { opacity: 0;}
+    }
+
+    .spotify-seek .spotify-seek-bar { 
+        height: 5px; margin: 5px 8px 8px 8px; 
+        border-radius: var(--border-radius); 
+        overflow: hidden; background-color: var(--background-primary);
+
+        .spotify-seek-bar-progress { border-radius: var(--border-radius);}
+    }
+
+    &.hover {
+        width: 290px; margin: 8px;
+        z-index: 3; border-radius: 5px var(--border-radius) var(--border-radius) 5px;
+        border-left: 5px solid var(--background-accent);
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(56, 31, 31, 0.11);
+
+        .container-3baos1 { 
+            flex-direction: column;
+            height: unset; 
+            
+            // Song cover
+            .avatarWrapper-2yR4wp { 
+                margin: -30px 0 0 0;
+
+                .spotify-cover { width: 100px !important; height: auto !important;}
+            }
+
+            // Song name and buttons
+            .nameTag-3uD-yy { 
+                text-align: center; margin: 15px 0; 
+                opacity: 1; max-width: 260px;
+            }
+            .spotify-buttons { text-align: center; margin-bottom: 15px; opacity: 1; }
+        }
+
+        .spotify-seek {
+            .spotify-seek-elements { margin: 0 8px;}
+            .spotify-seek-bar { height: 15px;}
+        }
+    }
 }
