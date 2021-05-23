@@ -31,10 +31,11 @@
     text-align: center; display: flex; align-items: center;
     justify-content: center; font-size: 30px; color: var(--text-normal);
     border-radius: var(--border-radius);
+    overflow: hidden;
   }
   .container-2lgZY8::before { 
     content: ""; position: fixed;
-    top: 440px; bottom: 85px; right: 70px; z-index: -1;
+    top: 220px; bottom: 85px; right: 70px; z-index: -1;
     width: 300px; border-radius: var(--border-radius);
     background: url('https://i.imgur.com/dCd49s0.gif') bottom/40% no-repeat;
   }
