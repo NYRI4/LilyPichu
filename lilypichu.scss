@@ -22,6 +22,22 @@
       width: 320px;
   }
   .tabBody-3YRQ8W { transform: none;}
+
+  // Basic right popout when there's nothing
+  .container-2lgZY8::after {
+    content: "Stay comfy ❤"; position: fixed;
+    top: 220px; bottom: 85px; right: 60px; z-index: -2;
+    width: 320px; background-color: var(--background-primary);
+    text-align: center; display: flex; align-items: center;
+    justify-content: center; font-size: 30px; color: var(--text-normal);
+    border-radius: var(--border-radius);
+  }
+  .container-2lgZY8::before { 
+    content: ""; position: fixed;
+    top: 440px; bottom: 85px; right: 70px; z-index: -1;
+    width: 300px; border-radius: var(--border-radius);
+    background: url('https://i.imgur.com/dCd49s0.gif') bottom/40% no-repeat;
+  }
   
   // Adding space for right popout
   .guilds-1SWlCJ + :nth-child(2) { margin-right: 450px; border-radius: 0 var(--border-radius) var(--border-radius) 0;}

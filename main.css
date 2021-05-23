@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap");
 @import url("https://discord-custom-covers.github.io/usrbg/dist/usrbg.css");
 @import url("https://monstrousdev.github.io/themes/addons/user-tags.css");
@@ -379,10 +380,6 @@
 
 :root .content-98HsJk .sidebar-2K8pFh {
   border-radius: 0;
-  width: auto;
-}
-:root .content-98HsJk .sidebar-2K8pFh > .scrollerBase-289Jih, :root .content-98HsJk .sidebar-2K8pFh > .container-3w7J-x {
-  width: 240px;
 }
 :root #guild-header-popout .item-1tOPte {
   flex-direction: row-reverse;
@@ -1272,55 +1269,44 @@
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(56, 31, 31, 0.11);
 }
 
-@media (min-width: 1200px) {
-  :root .privateChannels-1nO12o {
-    position: fixed;
-    top: 280px;
-    bottom: 120px;
-    right: 60px;
-    width: 320px;
-    overflow: visible;
-    background-color: var(--background-primary);
-  }
-  :root .privateChannels-1nO12o .scroller-1JbKMe {
-    background-color: var(--background-primary);
-  }
-  :root .privateChannels-1nO12o .scroller-1JbKMe .container-2Pjhx-, :root .privateChannels-1nO12o .scroller-1JbKMe .layout-2DM8Md, :root .privateChannels-1nO12o .scroller-1JbKMe .searchBarComponent-32dTOx {
-    border-radius: var(--border-radius);
-  }
-  :root .privateChannels-1nO12o .scroller-1JbKMe .channel-2QD9_O {
-    max-width: unset;
-  }
-  :root .privateChannels-1nO12o::before {
-    content: "Friends";
-    position: absolute;
-    top: -60px;
-    z-index: 1;
-    width: 100%;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-    font-weight: bolder;
-    color: var(--header-primary);
-    background-color: var(--background-secondary);
-    border-radius: var(--border-radius) var(--border-radius) 0 0;
-  }
-  :root .privateChannels-1nO12o::after {
-    content: "";
-    position: absolute;
-    bottom: -35px;
-    z-index: 1;
-    width: 100%;
-    height: 35px;
-    background-color: var(--background-secondary);
-    border-radius: 0 0 var(--border-radius) var(--border-radius);
-    background-image: linear-gradient(to right, var(--header-primary) 33%, rgba(255, 255, 255, 0) 0%);
-    background-position: top;
-    background-size: 21px 2px;
-    background-repeat: repeat-x;
-  }
+:root .nowPlayingColumn-2sl4cE {
+  position: fixed;
+  top: 280px;
+  bottom: 120px;
+  right: 60px;
+  width: 320px;
+  min-width: unset;
+  background-color: var(--background-primary);
+}
+:root .nowPlayingColumn-2sl4cE::before {
+  content: "Friends activity";
+  position: absolute;
+  top: -60px;
+  z-index: 1;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bolder;
+  color: var(--header-primary);
+  background-color: var(--background-secondary);
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+:root .nowPlayingColumn-2sl4cE::after {
+  content: "";
+  position: absolute;
+  bottom: -35px;
+  z-index: 1;
+  width: 100%;
+  height: 35px;
+  background-color: var(--background-secondary);
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  background-image: linear-gradient(to right, var(--header-primary) 33%, rgba(255, 255, 255, 0) 0%);
+  background-position: top;
+  background-size: 21px 2px;
+  background-repeat: repeat-x;
 }
 :root .container-1D34oG {
   background-color: var(--background-primary);
@@ -1685,6 +1671,38 @@
 
   .tabBody-3YRQ8W {
     transform: none;
+  }
+
+  .container-2lgZY8::after {
+    content: "Stay comfy ❤";
+    position: fixed;
+    top: 220px;
+    bottom: 85px;
+    right: 60px;
+    z-index: -1;
+    width: 320px;
+    background-color: var(--background-primary);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: var(--text-normal);
+    border-radius: var(--border-radius);
+  }
+
+  .container-2lgZY8::before {
+    content: "";
+    position: fixed;
+    top: 220px;
+    bottom: 85px;
+    right: 60px;
+    z-index: -1;
+    width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("https://media1.tenor.com/images/ef1776443fd6c0b862868ea29d4fbac8/tenor.gif?itemid=20847144") no-repeat;
   }
 
   .guilds-1SWlCJ + :nth-child(2) {
