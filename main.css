@@ -96,6 +96,7 @@
 }
 .theme-light .lookFilled-1Gx00P {
   background-color: #c5536c !important;
+  color: var(--background-primary) !important;
 }
 .theme-light .lookFilled-1Gx00P:active, .theme-light .lookFilled-1Gx00P:hover {
   background-color: #b64a61 !important;
@@ -254,6 +255,7 @@
 .theme-light .wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9,
 .theme-light .wrapper-1BJsBx:hover .childWrapper-anI2G9 {
   background-color: var(--text-normal);
+  color: var(--background-secondary);
 }
 
 .theme-dark .wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9,
@@ -1626,6 +1628,9 @@
 }
 :root #MemberCount {
   background-color: var(--background-secondary) !important;
+}
+.bd-controls>.bd-addon-button {
+  border-radius: 0 !important;
 }
 
 /* -- Donators -- */
