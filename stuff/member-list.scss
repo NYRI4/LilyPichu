@@ -25,8 +25,6 @@
             max-width: 300px; 
             border-radius: var(--border-radius);
             background-color: var(--background-primary);
-            
-            .layout-2DM8Md { border-radius: var(--border-radius);}
         }
     }
     
@@ -44,6 +42,8 @@
     }
 }
 
+.layout-2DM8Md { border-radius: var(--border-radius);}
+
 // -- User popout --
 .userPopout-3XzG_A {
     width: unset !important; max-width: 800px;
@@ -53,42 +53,33 @@
     transform:translateZ(0);
 
     // Header
-    .header-2BwW8b { 
+    .headerNormal-1l1Znk { 
         max-width: 280px; min-width: 200px;
         display: flex; flex-direction: column;
-        background-color: var(--background-secondary-alt);
-        z-index: 1;
+        background-color: var(--background-tertiary);
+        border-bottom: none;
 
-        // USRBG
-        .wrapper-3t9DeA::after {
-            content: '';
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 70%;
-            height: 100%;
-            z-index: -1;
-            pointer-events: none;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: var(--user-popout-position) center;
-            background-image: var(--user-background);
-            -webkit-mask: linear-gradient(rgba(0, 0, 0, 0.8) 100%, transparent);
+        // Profile banner
+        .profileBanner-33-uE1 { width: 200%;}
+
+        // User informations header
+        .headerTop-2y3V6H { 
+            border-bottom: none;
         }
 
-        .activityUserPopout-2yItg2 { margin: 8px; border-radius: var(--border-radius);}
+        .activityUserPopout-2yItg2 { 
+            background-color: var(--background-secondary-alt);
+            margin: 0px 12px 12px 0; padding: 16px; 
+            border-radius: 0 var(--border-radius) var(--border-radius) 0;
+        }
+
+        // Spotify icon
+        .spotifyIcon-2J9kSv { display: none;}
     }
-
-    .body-3iLsc4, .footer-1fjuF6 { z-index: 1;}
-
-    // Activities
-    .headerPlaying-j0WQBV .activityUserPopout-2yItg2 { background-color: var(--playing);}
-    .headerSpotify-zpWxgT .activityUserPopout-2yItg2 { background-color: var(--spotify);}
-    .headerStreaming-2FjmGz .activityUserPopout-2yItg2 { background-color: var(--streaming);}
-    .headerXbox-3G-4PF .activityUserPopout-2yItg2 { background-color: var(--xbox);}
 
     // Body
     .body-3iLsc4 {
+        margin-top: 60px;
         background-color: var(--background-secondary);
         
         // Roles
@@ -117,6 +108,43 @@
 
     // Footer
     .footer-1fjuF6 { display: none;}
+}
+
+// USRBG
+.userPopout-3XzG_A {
+	overflow: hidden;
+	transform: translateZ(0) !important;
+	--USRBG-banner-height: 60px;
+
+    &[style*="-user-"] {
+        --USRBG-banner-height: 120px;
+        --USRBG-avatar-offset: 76px;
+
+        .profileBanner-33-uE1 {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: var(--user-popout-position, center) center;
+            background-image: var(--user-background);
+            height: var(--USRBG-banner-height, 120px);
+
+        }
+
+        .avatarWrapperNormal-2tu8Ts { top: var(--USRBG-avatar-offset, 76px);}
+    }
+
+    &:not([style*="-user-"]) .avatar-22FtUu::after {
+        content: '';
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%; z-index: -1;
+        height: var(--USRBG-banner-height, 60px);
+        pointer-events: none;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: var(--user-popout-position, center) center;
+        background-image: var(--user-background);
+    }
+    &:not([style*="-user-"]) .avatar-22FtUu, &:not([style*="-user-"]) .avatarHint-1E3LMl { z-index: 1;}
 }
 
 // Add role menu
