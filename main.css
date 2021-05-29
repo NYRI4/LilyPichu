@@ -225,6 +225,9 @@
 :root .wrapper-2aW0bm {
   border-radius: var(--border-radius);
 }
+:root .botTagRegular-2HEhHi {
+  background-color: var(--background-accent);
+}
 
 :root .guilds-1SWlCJ .scroller-1Bvpku {
   padding: 8px 0 130px 0;
@@ -1033,6 +1036,14 @@
 :root .connectionHeader-2MDqhu {
   border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
+:root .premiumTabItem-1QTfBr .flex-1xMQg5 {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+:root .premiumTabItemLink-3IZzin .icon-Zc-uZZ {
+  fill: var(--background-accent) !important;
+  margin-right: 5px;
+}
 :root .feature-2w65J5, :root .hero-EvfTTA {
   border-radius: var(--border-radius);
 }
@@ -1263,8 +1274,6 @@
 }
 :root [aria-controls=GUILD_PREMIUM-tab], :root [aria-controls="Discord Nitro-tab"] {
   color: var(--background-accent) !important;
-}
-:root [aria-controls=GUILD_PREMIUM-tab][style="color: rgb(114, 137, 218); background-color: rgba(114, 137, 218, 0.1);"], :root [aria-controls=GUILD_PREMIUM-tab][style="color: rgb(255, 255, 255); background-color: rgb(114, 137, 218);"], :root [aria-controls="Discord Nitro-tab"][style="color: rgb(114, 137, 218); background-color: rgba(114, 137, 218, 0.1);"], :root [aria-controls="Discord Nitro-tab"][style="color: rgb(255, 255, 255); background-color: rgb(114, 137, 218);"] {
   background-color: var(--background-modifier-selected) !important;
 }
 :root .tierBody-x9kBBp {

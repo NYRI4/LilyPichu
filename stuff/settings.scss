@@ -113,6 +113,8 @@
 .connectionHeader-2MDqhu { border-radius: var(--border-radius) var(--border-radius) 0 0;}
 
 // Nitro
+.premiumTabItem-1QTfBr .flex-1xMQg5 { flex-direction: row-reverse; justify-content: flex-end;}
+.premiumTabItemLink-3IZzin .icon-Zc-uZZ { fill: var(--background-accent) !important; margin-right: 5px;}
 .feature-2w65J5, .hero-EvfTTA { border-radius: var(--border-radius);}
 
 // Boost
@@ -266,11 +268,7 @@
 // Boost status + Nitro tab from user setting
 [aria-controls="GUILD_PREMIUM-tab"], [aria-controls="Discord Nitro-tab"] { 
     color: var(--background-accent) !important;
-
-    &[style="color: rgb(114, 137, 218); background-color: rgba(114, 137, 218, 0.1);"],
-    &[style="color: rgb(255, 255, 255); background-color: rgb(114, 137, 218);"] {
-        background-color: var(--background-modifier-selected) !important;
-    }
+    background-color: var(--background-modifier-selected) !important; 
 }
 .tierBody-x9kBBp { background-color: var(--background-secondary);}
 .tierHeaderContent-2-YfvN, .tierInProgress-3mBoXq { background: var(--background-tertiary);}
