@@ -636,6 +636,9 @@
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(56, 31, 31, 0.11);
   transform: translateZ(0);
 }
+:root .userPopout-3XzG_A[style*=-user-] .body-3iLsc4 {
+  margin-top: 120px;
+}
 :root .userPopout-3XzG_A .headerNormal-1l1Znk {
   max-width: 280px;
   min-width: 200px;

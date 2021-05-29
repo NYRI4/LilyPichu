@@ -52,6 +52,8 @@
     box-shadow: 0 2px 10px 0 rgba(0,0,0,.2), 0 0 0 1px rgba(56, 31, 31, 0.11);
     transform:translateZ(0);
 
+    &[style*="-user-"] { .body-3iLsc4 { margin-top: 120px;}}
+
     // Header
     .headerNormal-1l1Znk { 
         max-width: 280px; min-width: 200px;
@@ -126,7 +128,6 @@
             background-position: var(--user-popout-position, center) center;
             background-image: var(--user-background);
             height: var(--USRBG-banner-height, 120px);
-
         }
 
         .avatarWrapperNormal-2tu8Ts { top: var(--USRBG-avatar-offset, 76px);}
