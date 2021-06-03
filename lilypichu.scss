@@ -37,7 +37,7 @@
     content: ""; position: fixed;
     top: 220px; bottom: 85px; right: 70px; z-index: -1;
     width: 300px; border-radius: var(--border-radius);
-    background: url('https://i.imgur.com/dCd49s0.gif') bottom/40% no-repeat;
+    background: var(--jumping-gif) bottom/40% no-repeat;
   }
   
   // Adding space for right popout

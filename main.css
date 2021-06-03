@@ -3,6 +3,7 @@
 @import url("https://discord-custom-covers.github.io/usrbg/dist/usrbg.css");
 @import url("https://monstrousdev.github.io/themes/addons/user-tags.css");
 :root {
+  --jumping-gif: url("https://i.imgur.com/dCd49s0.gif");
   --background-tertiary-alt: #FFC7D4;
   --border-radius: 20px;
   --playing: #8ea6fc;
@@ -233,8 +234,7 @@
   padding: 8px 0 130px 0;
 }
 :root .guilds-1SWlCJ .scroller-1Bvpku .wrapper-25eVIn foreignObject {
-  -webkit-mask: none;
-          mask: none;
+  mask: none;
   border-radius: var(--border-radius);
 }
 :root .guilds-1SWlCJ .scroller-1Bvpku .folder-1hbNCn {
@@ -250,8 +250,7 @@
   border-radius: calc(var(--border-radius) - 5px);
 }
 :root .guilds-1SWlCJ .scroller-1Bvpku .circleButtonMask-1_597P foreignObject {
-  -webkit-mask: none;
-          mask: none;
+  mask: none;
 }
 
 .theme-light .wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9,
@@ -784,8 +783,7 @@
   border-radius: var(--border-radius);
 }
 :root .modal-3c3bKg .root-SR8cQa .header-QKLPzZ .avatar-3EQepX foreignObject {
-  -webkit-mask: none;
-          mask: none;
+  mask: none;
 }
 :root .modal-3c3bKg .root-SR8cQa .header-QKLPzZ .avatar-3EQepX rect {
   display: none;
@@ -1355,8 +1353,7 @@
   border: none;
 }
 :root .controlButton-2MhVEL foreignObject {
-  -webkit-mask: none;
-          mask: none;
+  mask: none;
 }
 :root .colorable-1bkp8v.primaryDark-3mSFDl {
   background-color: var(--background-primary);
@@ -1659,7 +1656,53 @@
 }
 
 /* -- Donators -- */
-/* PANIC#6666 */
+/* - Badge - */
+[aria-label^=Qvas] .profileBadges-1dm1_q > :last-child,
+[aria-label^=PANIC] .profileBadges-1dm1_q > :last-child {
+  margin-right: 30px;
+}
+
+[aria-label^=Qvas] .profileBadges-1dm1_q::before,
+[aria-label^=PANIC] .profileBadges-1dm1_q::before {
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  right: 0;
+  pointer-events: none;
+  background: url("https://cdn.discordapp.com/emojis/813060332704366642.png?v=1") no-repeat;
+  background-size: 24%;
+  background-position: right top;
+}
+
+[aria-label^=Qvas] .profileBadges-1dm1_q:hover::before,
+[aria-label^=PANIC] .profileBadges-1dm1_q:hover::before {
+  content: "Donator";
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.members-1998pB .wrapper-3t9DeA[data-user-id="596812194906374167"]::before,
+.members-1998pB .wrapper-3t9DeA[vz-user-id="596812194906374167"]::before,
+.members-1998pB .wrapper-3t9DeA[data-user-id="193188089756123136"]::before,
+.members-1998pB .wrapper-3t9DeA[vz-user-id="193188089756123136"]::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 14px;
+  bottom: -3px;
+  left: -5px;
+  z-index: 2;
+  background: url("https://cdn.discordapp.com/emojis/813060332704366642.png?v=1") no-repeat;
+  background-size: 80%;
+  background-position: center left;
+  background-color: var(--background-secondary);
+  border-radius: 0 5px 0 0;
+  pointer-events: none;
+}
+
+/* - PANIC#6666 - Animated gradient blue username */
 /* Messages */
 [data-author-id="193188089756123136"] .username-1A8OIy,
 [vz-user-id="193188089756123136"] .username-1A8OIy,
@@ -1668,11 +1711,31 @@
 [vz-user-id="193188089756123136"] .username-2b1r56,
 [data-user-id="193188089756123136"] .username-2b1r56,
 [aria-label=PANIC] .username-2b1r56,
-[vz-user-id="193188089756123136"] .overflow-WK9Ogt,
-[data-user-id="193188089756123136"] .overflow-WK9Ogt,
-[aria-label^=PANIC] .overflow-WK9Ogt {
+.privateChannels-1nO12o [vz-user-id="193188089756123136"] .overflow-WK9Ogt,
+.privateChannels-1nO12o [data-user-id="193188089756123136"] .overflow-WK9Ogt,
+.privateChannels-1nO12o [aria-label^=PANIC] .overflow-WK9Ogt {
   animation: flow 10s ease-in-out infinite;
   background: linear-gradient(-60deg, #1a8ce9 40%, #03111b 80%, #1a8ce9 100%);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* - Qvas#7777 - Animated gradient gold username */
+/* Messages */
+[data-author-id="596812194906374167"] .username-1A8OIy,
+[vz-user-id="596812194906374167"] .username-1A8OIy,
+[data-user-id="596812194906374167"] .username-1A8OIy,
+[data-user-id="596812194906374167"] + .headerInfo-30uryT .username-2b1r56,
+[vz-user-id="596812194906374167"] .username-2b1r56,
+[data-user-id="596812194906374167"] .username-2b1r56,
+[aria-label=Qvas] .username-2b1r56,
+.privateChannels-1nO12o [vz-user-id="596812194906374167"] .overflow-WK9Ogt,
+.privateChannels-1nO12o [data-user-id="596812194906374167"] .overflow-WK9Ogt,
+.privateChannels-1nO12o [aria-label^=Qvas] .overflow-WK9Ogt {
+  animation: flow 15s ease-in-out infinite;
+  background: linear-gradient(-60deg, #ffe23b, #a18400, #ffe23b);
   background-size: 300%;
   -webkit-background-clip: text;
   background-clip: text;
@@ -1731,7 +1794,7 @@
     z-index: -1;
     width: 300px;
     border-radius: var(--border-radius);
-    background: url("https://i.imgur.com/dCd49s0.gif") bottom/40% no-repeat;
+    background: var(--jumping-gif) bottom/40% no-repeat;
   }
 
   .guilds-1SWlCJ + :nth-child(2) {

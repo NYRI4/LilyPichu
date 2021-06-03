@@ -11,6 +11,9 @@
 
 /* --- User variables --- */
 
+/* Jumping GIF */
+--jumping-gif: url('https://i.imgur.com/dCd49s0.gif');
+
 /* Background (if you want an image replace it by : 
 
 --background-tertiary-alt: url("image-link"); */
