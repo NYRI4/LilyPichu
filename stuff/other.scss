@@ -191,11 +191,11 @@ button, input, textarea, .item-PXvHYJ:not([class^=tabBarItem-]), .menu-3sdvDG { 
 /* -- Donators -- */
 
 /* - Badge - */
-[aria-label^="Qvas"] .profileBadges-1dm1_q > :last-child,
-[aria-label^="PANIC"] .profileBadges-1dm1_q > :last-child { margin-right: 30px;}
+[aria-label^="Qvas"] .profileBadges-3cJaE1 > :last-child,
+[aria-label^="PANIC"] .profileBadges-3cJaE1 > :last-child { margin-right: 30px;}
 
-[aria-label^="Qvas"] .profileBadges-1dm1_q::before,
-[aria-label^="PANIC"] .profileBadges-1dm1_q::before { 
+[aria-label^="Qvas"] .profileBadges-3cJaE1::before,
+[aria-label^="PANIC"] .profileBadges-3cJaE1::before { 
   content: ""; position: absolute;
   width: 90px; height: 90px;
   right: 0; pointer-events: none;
@@ -203,8 +203,8 @@ button, input, textarea, .item-PXvHYJ:not([class^=tabBarItem-]), .menu-3sdvDG { 
   background-size: 24%;
   background-position: right top;
 }
-[aria-label^="Qvas"] .profileBadges-1dm1_q:hover::before,
-[aria-label^="PANIC"] .profileBadges-1dm1_q:hover::before {
+[aria-label^="Qvas"] .profileBadges-3cJaE1:hover::before,
+[aria-label^="PANIC"] .profileBadges-3cJaE1:hover::before {
   content: "Donator";
   display: flex;
   justify-content: flex-end;
@@ -222,7 +222,7 @@ button, input, textarea, .item-PXvHYJ:not([class^=tabBarItem-]), .menu-3sdvDG { 
   background: url("https://cdn.discordapp.com/emojis/813060332704366642.png?v=1") no-repeat;
   background-size: 80%;
   background-position: center left;
-  background-color: var(--background-secondary);
+  background-color: var(--background-primary);
   border-radius: 0 5px 0 0;
   pointer-events: none;
 }

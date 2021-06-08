@@ -9,10 +9,11 @@
         content: "";
         position: absolute;
         top: 1px; bottom: 1px; left: -10px;
-        width: 0;
-        border: 3px solid;
+        width: 0px;
+        border: solid;
+        border-width: 0 0 0 6px;
         border-color: inherit;
-        border-radius: 5px;
+        border-radius: var(--border-radius);
     }
 }
 

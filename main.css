@@ -125,10 +125,11 @@
   top: 1px;
   bottom: 1px;
   left: -10px;
-  width: 0;
-  border: 3px solid;
+  width: 0px;
+  border: solid;
+  border-width: 0 0 0 6px;
   border-color: inherit;
-  border-radius: 5px;
+  border-radius: var(--border-radius);
 }
 :root .hljs {
   border: none;
@@ -1646,13 +1647,13 @@
 
 /* -- Donators -- */
 /* - Badge - */
-[aria-label^=Qvas] .profileBadges-1dm1_q > :last-child,
-[aria-label^=PANIC] .profileBadges-1dm1_q > :last-child {
+[aria-label^=Qvas] .profileBadges-3cJaE1 > :last-child,
+[aria-label^=PANIC] .profileBadges-3cJaE1 > :last-child {
   margin-right: 30px;
 }
 
-[aria-label^=Qvas] .profileBadges-1dm1_q::before,
-[aria-label^=PANIC] .profileBadges-1dm1_q::before {
+[aria-label^=Qvas] .profileBadges-3cJaE1::before,
+[aria-label^=PANIC] .profileBadges-3cJaE1::before {
   content: "";
   position: absolute;
   width: 90px;
@@ -1664,8 +1665,8 @@
   background-position: right top;
 }
 
-[aria-label^=Qvas] .profileBadges-1dm1_q:hover::before,
-[aria-label^=PANIC] .profileBadges-1dm1_q:hover::before {
+[aria-label^=Qvas] .profileBadges-3cJaE1:hover::before,
+[aria-label^=PANIC] .profileBadges-3cJaE1:hover::before {
   content: "Donator";
   display: flex;
   justify-content: flex-end;
@@ -1686,7 +1687,7 @@
   background: url("https://cdn.discordapp.com/emojis/813060332704366642.png?v=1") no-repeat;
   background-size: 80%;
   background-position: center left;
-  background-color: var(--background-secondary);
+  background-color: var(--background-primary);
   border-radius: 0 5px 0 0;
   pointer-events: none;
 }
