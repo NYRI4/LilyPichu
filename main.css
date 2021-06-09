@@ -663,7 +663,7 @@
   display: none;
 }
 :root .userPopout-xaxa6l .body-3HBlXn {
-  margin-top: 120px;
+  margin-top: 60px;
   background-color: var(--background-secondary);
 }
 :root .userPopout-xaxa6l .body-3HBlXn .rolesList-TyGJiZ {
@@ -712,6 +712,9 @@
   background-position: var(--user-popout-position, center) center;
   background-image: var(--user-background);
   height: var(--USRBG-banner-height, 120px);
+}
+:root .userPopout-xaxa6l[style*=-user-] .body-3HBlXn {
+  margin-top: 120px;
 }
 :root .userPopout-xaxa6l[style*=-user-] .avatarWrapperNormal-26WQIb {
   top: var(--USRBG-avatar-offset, 76px);

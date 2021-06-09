@@ -1,13 +1,13 @@
-@import 'stuff/variables.scss';
-@import 'stuff/chat.scss';
-@import 'stuff/server-list.scss';
-@import 'stuff/channel-list.scss';
-@import 'stuff/channel-bar.scss';
-@import 'stuff/member-list.scss';
-@import 'stuff/settings.scss';
-@import 'stuff/friends.scss';
-@import 'stuff/overlay.scss';
-@import 'stuff/other.scss';
+@forward 'stuff/variables';
+@forward 'stuff/chat';
+@forward 'stuff/server-list';
+@forward 'stuff/channel-list';
+@forward 'stuff/channel-bar';
+@forward 'stuff/member-list';
+@forward 'stuff/settings';
+@forward 'stuff/friends';
+@forward 'stuff/overlay';
+@forward 'stuff/other';
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
 
 // Black box imports
