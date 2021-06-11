@@ -58,15 +58,29 @@
     .headerNormal-1mX3KY { 
         max-width: 280px; min-width: 200px;
         display: flex; flex-direction: column;
+        margin-top: 100px;
         background-color: var(--background-tertiary);
         border-bottom: none;
 
         // Profile banner
-        .profileBanner-33-uE1 { width: 200%;}
+        .banner-2QYc2d { 
+            position: absolute;
+            top: 0; width: 100%;
+            height: 100px;
+        }
 
         // User informations header
         .headerTop-2cWpdB { 
+            position: static;
             border-bottom: none;
+            overflow: visible;
+
+            .profileBadges-3cJaE1 { top: 70px; right: 15px;}
+        }
+
+        // Avatar
+        .avatarWrapperNormal-26WQIb { 
+            top: 52px; left: 10px;
         }
 
         .activityUserPopout-2yItg2 { 
@@ -81,7 +95,7 @@
 
     // Body
     .body-3HBlXn {
-        margin-top: 60px;
+        margin-top: 100px;
         background-color: var(--background-secondary);
         
         // Roles
@@ -166,8 +180,52 @@
     border-radius: var(--border-radius);
     transform: translateZ(0);
 
-    & > *:first-child { background-color: var(--background-secondary-alt);}
+    .topSection-y3p-_D { 
+        background-color: var(--background-secondary-alt);
 
+        .header-4zuFdR {
+            margin-bottom: 30px;
+
+            // Avatar 
+            .avatar-AvHqJA { 
+                border-color: var(--background-secondary-alt);
+                border-radius: var(--border-radius); overflow: hidden;
+                
+                foreignObject { mask: none;}
+                rect { display: none;}
+
+                // USRBG
+                &.wrapper-3t9DeA::before {
+                    content: '';
+                    position: fixed;
+                    top: 0; left: 0;
+                    width: 100%; height: 100%;
+                    pointer-events: none;
+                    background: var(--user-background) center/cover no-repeat;
+                    -webkit-mask: linear-gradient(rgba(0, 0, 0, 0.8) 100%, transparent);
+                }
+            }
+            .badgeList-1R1WgZ > * { margin: -10px 6px 0 6px;}
+        }
+
+        // Username
+        .nameTag-ECvD8P { 
+            position: absolute;
+            top: 50px; left: 145px;
+        }
+    }
+
+    // Mutual bar
+    .tabBarContainer-37hZsr { 
+        padding: 0; border-bottom: none;
+    
+        .tabBar-3nvOPa { 
+            justify-content: space-around;
+
+            .tabBarItem-3dfX8P { margin-right: 0; z-index: 1; position: relative;}
+        }
+    }
+    
     // Activities
     .activity-2M3PRB { position: relative; z-index: 1;}
     .activityProfile-2bJRaP { 
@@ -175,47 +233,7 @@
         margin: 10px; border-radius: var(--border-radius);
     }
 
-    .header-4zuFdR {
-        display: grid;
-        grid-template-columns: 130px auto 40px;
-        padding: 15px 5px 15px 15px;
-
-        // Avatar 
-        .avatar-AvHqJA { 
-            grid-row: 1/3;
-            width: 110px !important; height: 110px !important;
-
-            .avatar-VxgULZ { border-radius: var(--border-radius);}
-            foreignObject { mask: none;}
-            rect { display: none;}
-
-            // USRBG
-            &.wrapper-3t9DeA::before {
-                content: '';
-                position: fixed;
-                top: 0; left: 0;
-                width: 100%; height: 100%;
-                pointer-events: none;
-                background: var(--user-background) center/cover no-repeat;
-                -webkit-mask: linear-gradient(rgba(0, 0, 0, 0.8) 100%, transparent);
-            }
-        }
-
-        // User infos
-        .headerInfo-1Y1Vge { 
-            grid-column: 2/4; 
-            display: flex; position: relative;
-            flex-direction: column;
-            align-items: center;
-            z-index: 1;
-        }
-    }
-
-    // Mutual bar
-    .tabBarContainer-37hZsr { padding: 0; border-top: none;}
-    .tabBar-3nvOPa { justify-content: space-around;}
-    .tabBarItem-3dfX8P { margin-right: 0; z-index: 1; position: relative;}
-    
+    // Body
     .body-r6_QPy {
         z-index: 1;
         

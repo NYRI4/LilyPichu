@@ -644,14 +644,28 @@
   min-width: 200px;
   display: flex;
   flex-direction: column;
+  margin-top: 100px;
   background-color: var(--background-tertiary);
   border-bottom: none;
 }
-:root .userPopout-xaxa6l .headerNormal-1mX3KY .profileBanner-33-uE1 {
-  width: 200%;
+:root .userPopout-xaxa6l .headerNormal-1mX3KY .banner-2QYc2d {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100px;
 }
 :root .userPopout-xaxa6l .headerNormal-1mX3KY .headerTop-2cWpdB {
+  position: static;
   border-bottom: none;
+  overflow: visible;
+}
+:root .userPopout-xaxa6l .headerNormal-1mX3KY .headerTop-2cWpdB .profileBadges-3cJaE1 {
+  top: 70px;
+  right: 15px;
+}
+:root .userPopout-xaxa6l .headerNormal-1mX3KY .avatarWrapperNormal-26WQIb {
+  top: 52px;
+  left: 10px;
 }
 :root .userPopout-xaxa6l .headerNormal-1mX3KY .activityUserPopout-2yItg2 {
   background-color: var(--background-secondary-alt);
@@ -663,7 +677,7 @@
   display: none;
 }
 :root .userPopout-xaxa6l .body-3HBlXn {
-  margin-top: 60px;
+  margin-top: 100px;
   background-color: var(--background-secondary);
 }
 :root .userPopout-xaxa6l .body-3HBlXn .rolesList-TyGJiZ {
@@ -750,38 +764,24 @@
   border-radius: var(--border-radius);
   transform: translateZ(0);
 }
-:root .root-3QyAh1 > *:first-child {
+:root .root-3QyAh1 .topSection-y3p-_D {
   background-color: var(--background-secondary-alt);
 }
-:root .root-3QyAh1 .activity-2M3PRB {
-  position: relative;
-  z-index: 1;
+:root .root-3QyAh1 .topSection-y3p-_D .header-4zuFdR {
+  margin-bottom: 30px;
 }
-:root .root-3QyAh1 .activityProfile-2bJRaP {
-  background-color: var(--background-primary);
-  margin: 10px;
+:root .root-3QyAh1 .topSection-y3p-_D .header-4zuFdR .avatar-AvHqJA {
+  border-color: var(--background-secondary-alt);
   border-radius: var(--border-radius);
+  overflow: hidden;
 }
-:root .root-3QyAh1 .header-4zuFdR {
-  display: grid;
-  grid-template-columns: 130px auto 40px;
-  padding: 15px 5px 15px 15px;
-}
-:root .root-3QyAh1 .header-4zuFdR .avatar-AvHqJA {
-  grid-row: 1/3;
-  width: 110px !important;
-  height: 110px !important;
-}
-:root .root-3QyAh1 .header-4zuFdR .avatar-AvHqJA .avatar-VxgULZ {
-  border-radius: var(--border-radius);
-}
-:root .root-3QyAh1 .header-4zuFdR .avatar-AvHqJA foreignObject {
+:root .root-3QyAh1 .topSection-y3p-_D .header-4zuFdR .avatar-AvHqJA foreignObject {
   mask: none;
 }
-:root .root-3QyAh1 .header-4zuFdR .avatar-AvHqJA rect {
+:root .root-3QyAh1 .topSection-y3p-_D .header-4zuFdR .avatar-AvHqJA rect {
   display: none;
 }
-:root .root-3QyAh1 .header-4zuFdR .avatar-AvHqJA.wrapper-3t9DeA::before {
+:root .root-3QyAh1 .topSection-y3p-_D .header-4zuFdR .avatar-AvHqJA.wrapper-3t9DeA::before {
   content: "";
   position: fixed;
   top: 0;
@@ -792,25 +792,34 @@
   background: var(--user-background) center/cover no-repeat;
   -webkit-mask: linear-gradient(rgba(0, 0, 0, 0.8) 100%, transparent);
 }
-:root .root-3QyAh1 .header-4zuFdR .headerInfo-1Y1Vge {
-  grid-column: 2/4;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: center;
-  z-index: 1;
+:root .root-3QyAh1 .topSection-y3p-_D .header-4zuFdR .badgeList-1R1WgZ > * {
+  margin: -10px 6px 0 6px;
+}
+:root .root-3QyAh1 .topSection-y3p-_D .nameTag-ECvD8P {
+  position: absolute;
+  top: 50px;
+  left: 145px;
 }
 :root .root-3QyAh1 .tabBarContainer-37hZsr {
   padding: 0;
-  border-top: none;
+  border-bottom: none;
 }
-:root .root-3QyAh1 .tabBar-3nvOPa {
+:root .root-3QyAh1 .tabBarContainer-37hZsr .tabBar-3nvOPa {
   justify-content: space-around;
 }
-:root .root-3QyAh1 .tabBarItem-3dfX8P {
+:root .root-3QyAh1 .tabBarContainer-37hZsr .tabBar-3nvOPa .tabBarItem-3dfX8P {
   margin-right: 0;
   z-index: 1;
   position: relative;
+}
+:root .root-3QyAh1 .activity-2M3PRB {
+  position: relative;
+  z-index: 1;
+}
+:root .root-3QyAh1 .activityProfile-2bJRaP {
+  background-color: var(--background-primary);
+  margin: 10px;
+  border-radius: var(--border-radius);
 }
 :root .root-3QyAh1 .body-r6_QPy {
   z-index: 1;
@@ -988,7 +997,8 @@
 :root .background-1QDuV2 .profile-1eT9hT .avatarUploader-3XDtmn {
   position: absolute;
   top: 55px;
-  left: 45.5%;
+  left: 50%;
+  margin-left: -50px;
 }
 :root .background-1QDuV2 .profile-1eT9hT .avatarUploader-3XDtmn .avatarUploaderInner-2EvNMg {
   width: 100px;
