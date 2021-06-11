@@ -727,9 +727,6 @@
   background-image: var(--user-background);
   height: var(--USRBG-banner-height, 120px);
 }
-:root .userPopout-xaxa6l[style*=-user-] .body-3HBlXn {
-  margin-top: 120px;
-}
 :root .userPopout-xaxa6l[style*=-user-] .avatarWrapperNormal-26WQIb {
   top: var(--USRBG-avatar-offset, 76px);
 }
