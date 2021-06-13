@@ -17,3 +17,8 @@ git clone https://github.com/NYRI4/LilyPichu
 
 1. Go [here](https://betterdiscord.app/Download?id=177)
 2. Save the file into your theme folder
+
+## 🖌️ Customization
+Go into your theme folder
+- For BetterDiscord : `lilypichu.theme.css`
+- For Powercord/Vizality : `LilyPichu > stuff > _variables.scss`
