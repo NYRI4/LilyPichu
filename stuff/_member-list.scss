@@ -126,42 +126,6 @@
     .footer-1N3bR3 { display: none;}
 }
 
-// USRBG
-.userPopout-xaxa6l {
-	overflow: hidden;
-	transform: translateZ(0) !important;
-	--USRBG-banner-height: 60px;
-
-    &[style*="-user-"] {
-        --USRBG-banner-height: 120px;
-        --USRBG-avatar-offset: 76px;
-
-        .profileBanner-33-uE1 {
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: var(--user-popout-position, center) center;
-            background-image: var(--user-background);
-            height: var(--USRBG-banner-height, 120px);
-        }
-
-        .avatarWrapperNormal-26WQIb { top: var(--USRBG-avatar-offset, 76px);}
-    }
-
-    &:not([style*="-user-"]) .avatar-37jOim::after {
-        content: '';
-        position: fixed;
-        top: 0; left: 0;
-        width: 100%; z-index: -1;
-        height: var(--USRBG-banner-height, 60px);
-        pointer-events: none;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: var(--user-popout-position, center) center;
-        background-image: var(--user-background);
-    }
-    &:not([style*="-user-"]) .avatar-37jOim, &:not([style*="-user-"]) .avatarHint-1E3LMl { z-index: 1;}
-}
-
 // Add role menu
 .container-3XJ8ns {
     border-radius: var(--border-radius);
@@ -303,6 +267,29 @@
                 }
             }
         } 
+    }
+}
+
+// USRBG
+.userPopout-xaxa6l, .root-3QyAh1 {
+	overflow: hidden;
+	transform: translateZ(0) !important;
+	--USRBG-banner-height: 60px;
+
+    &[style*="-user-"] {
+        --USRBG-banner-height: 120px;
+        --USRBG-avatar-offset: 76px;
+
+        .banner-2QYc2d {
+            z-index: -1;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: var(--user-popout-position, center) center;
+            background-image: var(--user-background);
+            height: var(--USRBG-banner-height, 120px);
+        }
+
+        .avatarWrapperNormal-26WQIb { top: var(--USRBG-avatar-offset, 76px);}
     }
 }
 

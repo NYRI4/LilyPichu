@@ -712,42 +712,6 @@
 :root .userPopout-xaxa6l .footer-1N3bR3 {
   display: none;
 }
-:root .userPopout-xaxa6l {
-  overflow: hidden;
-  transform: translateZ(0) !important;
-  --USRBG-banner-height: 60px;
-}
-:root .userPopout-xaxa6l[style*=-user-] {
-  --USRBG-banner-height: 120px;
-  --USRBG-avatar-offset: 76px;
-}
-:root .userPopout-xaxa6l[style*=-user-] .profileBanner-33-uE1 {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: var(--user-popout-position, center) center;
-  background-image: var(--user-background);
-  height: var(--USRBG-banner-height, 120px);
-}
-:root .userPopout-xaxa6l[style*=-user-] .avatarWrapperNormal-26WQIb {
-  top: var(--USRBG-avatar-offset, 76px);
-}
-:root .userPopout-xaxa6l:not([style*=-user-]) .avatar-37jOim::after {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: -1;
-  height: var(--USRBG-banner-height, 60px);
-  pointer-events: none;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: var(--user-popout-position, center) center;
-  background-image: var(--user-background);
-}
-:root .userPopout-xaxa6l:not([style*=-user-]) .avatar-37jOim, :root .userPopout-xaxa6l:not([style*=-user-]) .avatarHint-1E3LMl {
-  z-index: 1;
-}
 :root .container-3XJ8ns {
   border-radius: var(--border-radius);
   border: none;
@@ -912,6 +876,26 @@
 }
 :root .root-3QyAh1 .body-r6_QPy .userInfoSection-q_35fn .connectedAccounts-QlRa4m .connectedAccount-2Jb-Z0 .connectedAccountIcon-3_EQqg[src="/assets/806953fe1cc616477175cbcdf90d5cd3.png"] + .connectedAccountNameInner-2q3MVf::before {
   background-color: #CEA146;
+}
+:root .userPopout-xaxa6l, :root .root-3QyAh1 {
+  overflow: hidden;
+  transform: translateZ(0) !important;
+  --USRBG-banner-height: 60px;
+}
+:root .userPopout-xaxa6l[style*=-user-], :root .root-3QyAh1[style*=-user-] {
+  --USRBG-banner-height: 120px;
+  --USRBG-avatar-offset: 76px;
+}
+:root .userPopout-xaxa6l[style*=-user-] .banner-2QYc2d, :root .root-3QyAh1[style*=-user-] .banner-2QYc2d {
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: var(--user-popout-position, center) center;
+  background-image: var(--user-background);
+  height: var(--USRBG-banner-height, 120px);
+}
+:root .userPopout-xaxa6l[style*=-user-] .avatarWrapperNormal-26WQIb, :root .root-3QyAh1[style*=-user-] .avatarWrapperNormal-26WQIb {
+  top: var(--USRBG-avatar-offset, 76px);
 }
 
 :root .layers-3iHuyZ {
