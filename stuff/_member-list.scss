@@ -46,84 +46,185 @@
 
 // -- User popout --
 .userPopout-xaxa6l {
-    width: unset !important; max-width: 800px;
-    flex-direction: row;
+    display: grid; 
+    grid-template-areas: "banner body" 
+                         "avatar body"
+                         "user-infos body";
+    width: unset !important; max-width: 600px;
     border-radius: var(--border-radius);
     box-shadow: 0 2px 10px 0 rgba(0,0,0,.2), 0 0 0 1px rgba(56, 31, 31, 0.11);
-    transform:translateZ(0);
 
-    &[style*="-user-"] { .body-3iLsc4 { margin-top: 120px;}}
+    // Banner
+    .headerNormal-3KXFBt {
+        grid-area: banner;
+        grid-row: 1/4;
+        opacity: 0.5;
 
-    // Header
-    .headerNormal-1mX3KY { 
-        max-width: 280px; min-width: 200px;
-        display: flex; flex-direction: column;
-        margin-top: 100px;
-        background-color: var(--background-tertiary);
-        border-bottom: none;
-
-        // Profile banner
         .banner-2QYc2d { 
-            position: absolute;
-            top: 0; width: 100%;
-            height: 100px;
+            width: 240px; height: calc(100% - 16px);
+            margin: 8px 0 8px 8px; border-radius: var(--border-radius);
         }
+    }
 
-        // User informations header
-        .headerTop-2cWpdB { 
+    // User informations header
+    .headerTop-3vNv-a {
+        grid-area: user-infos;
+        left: 8px; bottom: 10%;
+        width: 240px; height: 100%; padding: 0;
+
+        // Badges
+        .profileBadges-ohc0Vu {
             position: static;
-            border-bottom: none;
-            overflow: visible;
+            max-width: 100%;
+            justify-content: center;
 
-            .profileBadges-3cJaE1 { top: 70px; right: 15px;}
+            .profileBadge22-LJmn9o { width: 30px; height: 30px;}
         }
 
-        // Avatar
-        .avatarWrapperNormal-26WQIb { 
-            top: 52px; left: 10px;
+        // Username
+        .headerText-1vVs-U {
+            text-align: center;
+            padding: 10px;
+
+            .base-1x0h_U { 
+                font-size: 25px;
+                line-height: 34px;
+            }
+
+            .headerTagWithNickname-3l_x6x { 
+                font-size: 20px;
+                line-height: 24px;
+            }
         }
 
-        .activityUserPopout-2yItg2 { 
-            background-color: var(--background-secondary-alt);
-            margin: 0px 12px 12px 0; padding: 16px; 
-            border-radius: 0 var(--border-radius) var(--border-radius) 0;
-        }
-
-        // Spotify icon
-        .spotifyIcon-2J9kSv { display: none;}
+        .setIdentityLink-1t8Ahd { display: none;}
     }
 
     // Body
     .body-3HBlXn {
-        margin-top: 100px;
-        background-color: var(--background-secondary);
+        grid-area: body;
         
-        // Roles
-        .rolesList-TyGJiZ {
-            flex-direction: column;
-            
-            .role-2irmRk {
-                position: relative;
-                overflow: hidden;
-                border: none;
+        // Custom status
+        .customStatus-oN4ZZY {
+            position: relative; overflow: hidden;
+            width: calc(100% - 16px);
+            margin: 8px 8px 0 8px; padding: 36px 8px 8px 8px;
+            background-color: var(--background-secondary-alt);
+            border-radius: var(--border-radius);
+
+            &::before {
+                content: "CUSTOM STATUS"; position: absolute;
+                top: 0; left: 0;
+                width: calc(100% - 10px);
+                font-size: 12px; text-align: center; color: var(--header-secondary);
+                background-color: var(--background-primary);
+                padding: 5px;
+            }
+        }
+
+        // Divider
+        .divider-ewBQKj { display: none;}
+
+        // About Me
+        .aboutMeSection-1Fw5Ia {
+            margin: 8px 8px 0 8px; padding: 0 0 8px 0;
+            background-color: var(--background-secondary-alt);
+            border-radius: var(--border-radius);
+
+            .aboutMeTitle-1IYtPE {
+                justify-content: center;
+                background-color: var(--background-primary);
+                padding: 5px; border-radius: var(--border-radius) var(--border-radius) 0 0;
             }
 
-            .roleCircle-3xAZ1j::before {
-                content: '';
-                position: absolute;
-                top: 0; left: 0;
-                width: 100%; height: 100%;
-                background: inherit;
-                opacity: .2;
-                pointer-events: none;
-            }
-            .roleCircle-3xAZ1j { width: 14.29px;}
-            .roleName-32vpEy { text-align: center; width: 100%; overflow: visible; font-weight: bold;}
+            .aboutMeBody-3GuvKk { padding: 0 12px;}
         }
+
+        .bodyInnerWrapper-26fQXj {
+            padding: 8px;
+
+            // Activity
+            .activity-2INFPu { 
+                background-color: var(--background-secondary-alt);
+                padding-bottom: 8px; margin-bottom: 8px;
+                border-radius: var(--border-radius);
+
+                .headerTextNormal-2mGWX3 {
+                    justify-content: center;
+                    background-color: var(--background-primary);
+                    padding: 5px; border-radius: var(--border-radius) var(--border-radius) 0 0;
+
+                    & ~ * { padding: 0 8px;}
+                }
+
+                // Spotify icon
+                .spotifyIcon-2J9kSv { display: none;}
+            }
+    
+            // Roles
+            .bodyTitle-1ySSKn {
+                text-align: center;
+                background-color: var(--background-primary);
+                padding: 5px; margin-bottom: 0;
+                border-radius: var(--border-radius) var(--border-radius) 0 0;
+            }
+
+            .rolesList-1geHY1 {
+                flex-direction: column;
+                margin: 0 0 8px 0; border-radius: 0 0 var(--border-radius) var(--border-radius);
+                background-color: var(--background-secondary-alt);
+                
+                .role-2irmRk {
+                    position: relative;
+                    overflow: hidden;
+                    border: none;
+                    margin: 4px 4px 0 4px;
+
+                    &:last-child { margin-bottom: 8px;}
+                }
+
+                .roleCircle-3xAZ1j::before {
+                    content: '';
+                    position: absolute;
+                    top: 0; left: 0;
+                    width: 100%; height: 100%;
+                    background: inherit;
+                    opacity: .2;
+                    pointer-events: none;
+                }
+                .roleCircle-3xAZ1j { width: 14.29px;}
+
+                .roleName-32vpEy { 
+                    text-align: center; 
+                    width: 100%; max-width: unset;
+                    overflow: visible; font-weight: bold;
+                }
+            }
+
+            // Notes
+            .note-1oo11U {
+                margin: 0; border-radius: 0 0 var(--border-radius) var(--border-radius);
+                background-color: var(--background-secondary-alt);
+
+                textarea:focus { background-color: transparent;}
+            }
+        }
+
+        &::-webkit-scrollbar { display: none;}
     }
 
-    // Footer
-    .footer-1N3bR3 { display: none;}
+    // Avatar
+    .avatarWrapperNormal-26WQIb {
+        grid-area: avatar;
+        position: absolute;
+        top: 10%; left: 128px; margin-left: -40px;
+
+        .avatar-37jOim { border: none; background: none;}
+
+        .avatarHint-2A3RNb { top: 0; left: 0;}
+    }
+
+    .footer-3UKYOU { display: none;}
 }
 
 // Add role menu
@@ -141,7 +242,6 @@
 // -- User modal --
 .root-3QyAh1 {
     border-radius: var(--border-radius);
-    transform: translateZ(0);
 
     .topSection-y3p-_D { 
         background-color: var(--background-secondary-alt);
@@ -156,25 +256,12 @@
                 
                 foreignObject { mask: none;}
                 rect { display: none;}
-
-                // USRBG
-                &.wrapper-3t9DeA::before {
-                    content: '';
-                    position: fixed;
-                    top: 0; left: 0;
-                    width: 100%; height: 100%;
-                    pointer-events: none;
-                    background: var(--user-background) center/cover no-repeat;
-                    -webkit-mask: linear-gradient(rgba(0, 0, 0, 0.8) 100%, transparent);
-                }
             }
-            .badgeList-1R1WgZ > * { margin: -10px 6px 0 6px;}
-        }
+            .badgeList-1R1WgZ > * { 
+                margin: -10px 6px 0 6px;
 
-        // Username
-        .nameTag-ECvD8P { 
-            position: absolute;
-            top: 50px; left: 145px;
+                img { width: 30px; height: 30px;}
+            }
         }
     }
 
@@ -267,29 +354,6 @@
                 }
             }
         } 
-    }
-}
-
-// USRBG
-.userPopout-xaxa6l, .root-3QyAh1 {
-	overflow: hidden;
-	transform: translateZ(0) !important;
-	--USRBG-banner-height: 60px;
-
-    &[style*="-user-"] {
-        --USRBG-banner-height: 120px;
-        --USRBG-avatar-offset: 76px;
-
-        .banner-2QYc2d {
-            z-index: -1;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: var(--user-popout-position, center) center;
-            background-image: var(--user-background);
-            height: var(--USRBG-banner-height, 120px);
-        }
-
-        .avatarWrapperNormal-26WQIb { top: var(--USRBG-avatar-offset, 76px);}
     }
 }
 
