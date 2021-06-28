@@ -971,7 +971,7 @@
   background-color: #CEA146;
 }
 :root .userPopout-xaxa6l[style*=-user-], :root .root-3QyAh1[style*=-user-] {
-  --USRBG-banner-height: 120px;
+  --USRBG-banner-height: calc(100% - 16px);
   --USRBG-avatar-offset: 76px;
 }
 :root .userPopout-xaxa6l[style*=-user-] .banner-2QYc2d,

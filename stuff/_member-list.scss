@@ -361,7 +361,7 @@
 
 // USRBG for BetterDiscord only
 .userPopout-xaxa6l[style*="-user-"], .root-3QyAh1[style*="-user-"] {
-    --USRBG-banner-height: 120px;
+    --USRBG-banner-height: calc(100% - 16px);
     --USRBG-avatar-offset: 76px;
 }
   
