@@ -765,6 +765,9 @@
 :root .userPopout-xaxa6l .body-3HBlXn .bodyInnerWrapper-26fQXj .rolesList-1geHY1 .role-2irmRk:last-child {
   margin-bottom: 8px;
 }
+:root .userPopout-xaxa6l .body-3HBlXn .bodyInnerWrapper-26fQXj .rolesList-1geHY1 .role-2irmRk:empty {
+  padding: 50px 0;
+}
 :root .userPopout-xaxa6l .body-3HBlXn .bodyInnerWrapper-26fQXj .rolesList-1geHY1 .roleCircle-3xAZ1j::before {
   content: "";
   position: absolute;
@@ -848,8 +851,9 @@
 :root .root-3QyAh1 .topSection-y3p-_D .header-4zuFdR .badgeList-1R1WgZ > * {
   margin: -10px 6px 0 6px;
 }
-:root .root-3QyAh1 .topSection-y3p-_D .nameTag-ECvD8P {
-  margin-left: 26px;
+:root .root-3QyAh1 .topSection-y3p-_D .header-4zuFdR .badgeList-1R1WgZ > * img {
+  width: 30px;
+  height: 30px;
 }
 :root .root-3QyAh1 .tabBarContainer-37hZsr {
   padding: 0;
@@ -965,6 +969,21 @@
 }
 :root .root-3QyAh1 .body-r6_QPy .userInfoSection-q_35fn .connectedAccounts-QlRa4m .connectedAccount-2Jb-Z0 .connectedAccountIcon-3_EQqg[src="/assets/806953fe1cc616477175cbcdf90d5cd3.png"] + .connectedAccountNameInner-2q3MVf::before {
   background-color: #CEA146;
+}
+:root .userPopout-xaxa6l[style*=-user-], :root .root-3QyAh1[style*=-user-] {
+  --USRBG-banner-height: 120px;
+  --USRBG-avatar-offset: 76px;
+}
+:root .userPopout-xaxa6l[style*=-user-] .banner-2QYc2d,
+:root .root-3QyAh1[style*=-user-] .banner-2QYc2d {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: var(--user-popout-position, center) center;
+  background-image: var(--user-background);
+}
+:root .userPopout-xaxa6l[style*=-user-] .banner-2QYc2d,
+:root .root-3QyAh1[style*=-user-] .banner-2QYc2d {
+  height: var(--USRBG-banner-height, 120px);
 }
 
 :root .layers-3iHuyZ {
