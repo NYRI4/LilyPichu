@@ -682,6 +682,7 @@
 }
 :root .userPopout-xaxa6l .body-3HBlXn {
   grid-area: body;
+  padding: 0 !important;
 }
 :root .userPopout-xaxa6l .body-3HBlXn .customStatus-oN4ZZY {
   position: relative;
