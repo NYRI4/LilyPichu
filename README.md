@@ -3,7 +3,7 @@
 ---
 
 # LilyPichu
-![Preview](https://nyri4.github.io/LilyPichu/assets/capture.png)
+![Preview](https://nyri4.github.io/LilyPichu/assets/preview.png)
 
 ## 📥 Installation
 
@@ -15,7 +15,7 @@ git clone https://github.com/NYRI4/LilyPichu
 
 ### BetterDiscord
 
-1. Go [here](https://betterdiscord.app/Download?id=177)
+1. Go [here](https://betterdiscord.app/theme/LilyPichu)
 2. Save the file into your theme folder
 
 ## 🖌️ Customization
