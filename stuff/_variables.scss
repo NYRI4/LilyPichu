@@ -1,24 +1,18 @@
 :root {
-
-// --- User variables ---
-
-// Jumping GIF
---jumping-gif: url('https://i.imgur.com/dCd49s0.gif');
-
-// Background (if you want an image replace it by : 
-
-// --background-tertiary-alt: url("image-link");
---background-tertiary-alt: #FFC7D4;
-
-// Border-radius for the whole theme 
---border-radius: 20px;
-
-// Background color of activity cards
---playing: #8ea6fc;
---spotify: #5fce86;
---streaming: #9b77da;
---xbox: #53a853;
-
+    // --- User variables ---
+    // Jumping GIF
+    --jumping-gif: url('https://i.imgur.com/dCd49s0.gif');
+    //ADD Twitch channel logo
+    // Background (if you want an image replace it by :
+    --background-tertiary-alt: url("..\assets\Back.jpg");
+    //--background-tertiary-alt: #FFC7D4;
+    // Border-radius for the whole theme
+    --border-radius: 20px;
+    // Background color of activity cards
+    --playing: #8ea6fc;
+    --spotify: #5fce86;
+    --streaming: #9b77da;
+    --xbox: #53a853;
 }
 
 .theme-dark {
