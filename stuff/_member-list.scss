@@ -51,6 +51,7 @@
                          "avatar body"
                          "user-infos body";
     width: unset !important; max-width: 600px;
+    min-height: 300px;
     border-radius: var(--border-radius);
     box-shadow: 0 2px 10px 0 rgba(0,0,0,.2), 0 0 0 1px rgba(56, 31, 31, 0.11);
 
@@ -69,8 +70,9 @@
     // User informations header
     .headerTop-3vNv-a {
         grid-area: user-infos;
-        left: 8px; bottom: 10%;
-        width: 240px; height: 100%; padding: 0;
+        position: absolute;
+        left: 8px; bottom: 20px;
+        width: 240px; padding: 0;
 
         // Badges
         .profileBadges-ohc0Vu {
@@ -196,6 +198,7 @@
                 .roleCircle-3xAZ1j { width: 14.29px;}
 
                 .roleName-32vpEy { 
+                    z-index: 1;
                     text-align: center; 
                     width: 100%; max-width: unset;
                     overflow: visible; font-weight: bold;
@@ -218,7 +221,7 @@
     .avatarWrapperNormal-26WQIb {
         grid-area: avatar;
         position: absolute;
-        top: 10%; left: 128px; margin-left: -40px;
+        top: 50px; left: 128px; margin-left: -40px;
 
         .avatar-37jOim { border: none; background: none;}
 

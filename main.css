@@ -639,6 +639,7 @@
   grid-template-areas: "banner body" "avatar body" "user-infos body";
   width: unset !important;
   max-width: 600px;
+  min-height: 300px;
   border-radius: var(--border-radius);
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(56, 31, 31, 0.11);
 }
@@ -655,10 +656,10 @@
 }
 :root .userPopout-xaxa6l .headerTop-3vNv-a {
   grid-area: user-infos;
+  position: absolute;
   left: 8px;
-  bottom: 10%;
+  bottom: 20px;
   width: 240px;
-  height: 100%;
   padding: 0;
 }
 :root .userPopout-xaxa6l .headerTop-3vNv-a .profileBadges-ohc0Vu {
@@ -789,6 +790,7 @@
   width: 14.29px;
 }
 :root .userPopout-xaxa6l .body-3HBlXn .bodyInnerWrapper-26fQXj .rolesList-1geHY1 .roleName-32vpEy {
+  z-index: 1;
   text-align: center;
   width: 100%;
   max-width: unset;
@@ -809,7 +811,7 @@
 :root .userPopout-xaxa6l .avatarWrapperNormal-26WQIb {
   grid-area: avatar;
   position: absolute;
-  top: 10%;
+  top: 50px;
   left: 128px;
   margin-left: -40px;
 }
