@@ -53,6 +53,12 @@
 .emojiItem-14v6tW.emojiItemSelected-1aLkfV { background-color: var(--background-modifier-selected);}
 .searchBar-5di9mG { border-radius: var(--border-radius);}
 
+.imageLoading-bpSr0M { 
+    background-image: none !important;
+    background-color: var(--background-primary);
+    border-radius: 8px;
+}
+
 // Reactions modal
 .scroller-1-nKid { background: var(--background-tertiary);}
 .container-1If-HZ, .reactors-Blmlhw { background: var(--background-secondary);}
