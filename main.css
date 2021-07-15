@@ -1653,6 +1653,20 @@
   background-size: 100%;
 }
 
+/*
+ * Vbriese here, I did this real quick but I noticed you wrap your other SCSS styles in a :root selector.
+ * For some reason, the styles below just didn't work in a :root selector. (IDK I might be doing something dum.)
+ *
+ * On an unrelated note, it would help contributors if you let them know to compile using a command like this:
+ * sass -w lilypichu.scss main.css --no-source-map
+ */
+.platform-osx .wrapper-3NnKdC {
+  margin-top: 0;
+}
+.platform-osx .layers-3iHuyZ {
+  margin-top: 32px;
+}
+
 :root ::-webkit-input-placeholder, :root body, :root button, :root input, :root select, :root textarea {
   font-family: "Nunito" !important;
 }
