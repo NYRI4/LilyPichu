@@ -92,7 +92,7 @@
 
         // Username
         .headerText-1vVs-U {
-            display: flex;
+            display: flex; flex-direction: column;
             width: calc(100% - 12px); height: calc(100% - 12px);
             align-items: center; justify-content: center;
             padding: 6px;

@@ -686,6 +686,7 @@
 }
 :root .userPopout-xaxa6l .headerTop-3vNv-a .headerText-1vVs-U {
   display: flex;
+  flex-direction: column;
   width: calc(100% - 12px);
   height: calc(100% - 12px);
   align-items: center;
