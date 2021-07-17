@@ -636,52 +636,65 @@
 }
 :root .userPopout-xaxa6l {
   display: grid;
-  grid-template-areas: "banner body" "avatar body" "user-infos body";
+  grid-template-areas: "avatar user-infos body" "banner banner body";
+  grid-template-columns: 120px 1fr 1fr;
+  grid-template-rows: 120px 1fr;
   width: unset !important;
   max-width: 600px;
   min-height: 300px;
+  padding: 8px;
   border-radius: var(--border-radius);
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(56, 31, 31, 0.11);
 }
 :root .userPopout-xaxa6l .headerNormal-3KXFBt {
   grid-area: banner;
-  grid-row: 1/4;
-  opacity: 0.5;
+  position: static;
+  width: 100%;
+  height: calc(100% - 8px);
+  margin: 8px 0 0;
 }
 :root .userPopout-xaxa6l .headerNormal-3KXFBt .banner-2QYc2d {
-  width: 240px;
-  height: calc(100% - 16px);
-  margin: 8px 0 8px 8px;
+  width: 100%;
+  height: 100%;
   border-radius: var(--border-radius);
 }
 :root .userPopout-xaxa6l .headerTop-3vNv-a {
   grid-area: user-infos;
-  position: absolute;
-  left: 8px;
-  bottom: 20px;
-  width: 240px;
+  position: static;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: flex-end;
   padding: 0;
+  margin-left: 8px;
+  background-color: var(--background-secondary-alt);
+  border-radius: var(--border-radius);
 }
 :root .userPopout-xaxa6l .headerTop-3vNv-a .profileBadges-ohc0Vu {
   position: static;
-  max-width: 100%;
+  width: calc(100% - 16px);
+  height: 100%;
+  max-width: unset;
+  align-items: center;
   justify-content: center;
+  padding: 10px;
+  margin: 0;
 }
 :root .userPopout-xaxa6l .headerTop-3vNv-a .profileBadges-ohc0Vu .profileBadge22-LJmn9o {
   width: 30px;
   height: 30px;
 }
 :root .userPopout-xaxa6l .headerTop-3vNv-a .headerText-1vVs-U {
-  text-align: center;
-  padding: 10px;
+  display: flex;
+  width: calc(100% - 12px);
+  height: calc(100% - 12px);
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  background-color: var(--background-primary);
 }
-:root .userPopout-xaxa6l .headerTop-3vNv-a .headerText-1vVs-U .base-1x0h_U {
-  font-size: 25px;
-  line-height: 34px;
-}
-:root .userPopout-xaxa6l .headerTop-3vNv-a .headerText-1vVs-U .headerTagWithNickname-3l_x6x {
-  font-size: 20px;
-  line-height: 24px;
+:root .userPopout-xaxa6l .headerTop-3vNv-a .headerText-1vVs-U .headerTag-3GFl76, :root .userPopout-xaxa6l .headerTop-3vNv-a .headerText-1vVs-U .nickname-3M3Jfa {
+  font-size: 16px;
 }
 :root .userPopout-xaxa6l .headerTop-3vNv-a .setIdentityLink-1t8Ahd {
   display: none;
@@ -693,8 +706,8 @@
 :root .userPopout-xaxa6l .body-3HBlXn .customStatus-oN4ZZY {
   position: relative;
   overflow: hidden;
-  width: calc(100% - 16px);
-  margin: 8px 8px 0 8px;
+  width: calc(100% - 8px);
+  margin: 0 0 8px 8px;
   padding: 36px 8px 8px 8px;
   background-color: var(--background-secondary-alt);
   border-radius: var(--border-radius);
@@ -706,6 +719,7 @@
   left: 0;
   width: calc(100% - 10px);
   font-size: 12px;
+  font-weight: 600;
   text-align: center;
   color: var(--header-secondary);
   background-color: var(--background-primary);
@@ -715,7 +729,7 @@
   display: none;
 }
 :root .userPopout-xaxa6l .body-3HBlXn .aboutMeSection-1Fw5Ia {
-  margin: 8px 8px 0 8px;
+  margin: 0 0 8px 8px;
   padding: 0 0 8px 0;
   background-color: var(--background-secondary-alt);
   border-radius: var(--border-radius);
@@ -730,7 +744,7 @@
   padding: 0 12px;
 }
 :root .userPopout-xaxa6l .body-3HBlXn .bodyInnerWrapper-26fQXj {
-  padding: 8px;
+  padding-left: 8px;
 }
 :root .userPopout-xaxa6l .body-3HBlXn .bodyInnerWrapper-26fQXj .activity-2INFPu {
   background-color: var(--background-secondary-alt);
@@ -787,7 +801,7 @@
   pointer-events: none;
 }
 :root .userPopout-xaxa6l .body-3HBlXn .bodyInnerWrapper-26fQXj .rolesList-1geHY1 .roleCircle-3xAZ1j {
-  width: 14.29px;
+  margin-right: 0;
 }
 :root .userPopout-xaxa6l .body-3HBlXn .bodyInnerWrapper-26fQXj .rolesList-1geHY1 .roleName-32vpEy {
   z-index: 1;
@@ -810,18 +824,34 @@
 }
 :root .userPopout-xaxa6l .avatarWrapperNormal-26WQIb {
   grid-area: avatar;
-  position: absolute;
-  top: 50px;
-  left: 128px;
-  margin-left: -40px;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 :root .userPopout-xaxa6l .avatarWrapperNormal-26WQIb .avatar-37jOim {
   border: none;
   background: none;
+  width: 100% !important;
+  height: 100% !important;
+}
+:root .userPopout-xaxa6l .avatarWrapperNormal-26WQIb .avatar-37jOim foreignObject {
+  mask: none;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+:root .userPopout-xaxa6l .avatarWrapperNormal-26WQIb .avatar-37jOim .pointerEvents-2zdfdO {
+  display: none;
 }
 :root .userPopout-xaxa6l .avatarWrapperNormal-26WQIb .avatarHint-2A3RNb {
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
+}
+:root .userPopout-xaxa6l .avatarWrapperNormal-26WQIb .avatarHint-2A3RNb foreignObject {
+  mask: none;
+  border-radius: var(--border-radius);
+  overflow: hidden;
 }
 :root .userPopout-xaxa6l .footer-3UKYOU {
   display: none;
