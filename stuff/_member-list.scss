@@ -263,21 +263,26 @@
     .topSection-y3p-_D { 
         background-color: var(--background-secondary-alt);
 
-        .header-4zuFdR {
-            margin-bottom: 30px;
+        & > header {
+            margin-left: 8px;
 
-            // Avatar 
-            .avatar-AvHqJA { 
-                border-color: var(--background-secondary-alt);
-                border-radius: var(--border-radius); overflow: hidden;
-                
-                foreignObject { mask: none;}
-                rect { display: none;}
-            }
-            .badgeList-1R1WgZ > * { 
-                margin: -10px 6px 0 6px;
+            .banner-2QYc2d { margin-left: -8px;}
 
-                img { width: 30px; height: 30px;}
+            .header-4zuFdR {
+                margin-bottom: 30px;
+
+                // Avatar 
+                .avatar-AvHqJA { 
+                    border-width: 8px 0;
+                    border-color: transparent;
+                    background-color: transparent;
+                    border-radius: var(--border-radius); overflow: hidden;
+                    
+                }
+                .badgeList-1R1WgZ > * { 
+
+                    img { width: 30px; height: 30px;}
+                }
             }
         }
     }
@@ -376,22 +381,12 @@
 
 
 // USRBG for BetterDiscord only
-.userPopout-xaxa6l[style*="-user-"], .root-3QyAh1[style*="-user-"] {
-    --USRBG-banner-height: calc(100% - 16px);
-    --USRBG-avatar-offset: 76px;
-}
-  
 .userPopout-xaxa6l[style*="-user-"] .banner-2QYc2d,
 .root-3QyAh1[style*="-user-"] .banner-2QYc2d {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: var(--user-popout-position, center) center;
     background-image: var(--user-background);
-}
-  
-.userPopout-xaxa6l[style*="-user-"] .banner-2QYc2d,
-.root-3QyAh1[style*="-user-"] .banner-2QYc2d {
-    height: var(--USRBG-banner-height, 120px);
 }
   
 }
