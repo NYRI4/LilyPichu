@@ -3,7 +3,7 @@
     "description": "A theme based on @Melonturtle_ stream design",
     "version": "1.0",
     "author": "Nyria#3863",
-    "theme": "lilypichu.scss",
+    "theme": "variables.scss",
     "consent": "false",
     "license": "MIT"
 }

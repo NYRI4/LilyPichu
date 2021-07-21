@@ -1,3 +1,5 @@
+@use "lilypichu.scss";
+
 :root {
 
 // --- User variables ---
@@ -13,15 +15,7 @@
 // Border-radius for the whole theme 
 --border-radius: 20px;
 
-// Background color of activity cards
---playing: #8ea6fc;
---spotify: #5fce86;
---streaming: #9b77da;
---xbox: #53a853;
-
-}
-
-.theme-dark {
+&.theme-dark {
 
     // Text
     --text-normal: #f8e1e5;
@@ -74,7 +68,7 @@
     .colorDefault-2K3EoJ.focused-3afm-j, .colorDefault-2K3EoJ:active:not(.hideInteraction-1iHO1O) { color: var(--interactive-normal);}
 }
 
-.theme-light {
+&.theme-light {
 
     // Text
     --text-normal: #a86373;
@@ -122,10 +116,12 @@
     .colorDefault-2K3EoJ.focused-3afm-j, .colorDefault-2K3EoJ:active:not(.hideInteraction-1iHO1O) { color: var(--interactive-normal);}
 }
 
-:root #app-mount {
+#app-mount {
 
 // Fonts
 --font-primary: 'Nunito';
 --font-display: 'Nunito';
+
+}
 
 }

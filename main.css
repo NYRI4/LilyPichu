@@ -3,118 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito");
 @import url("https://discord-custom-covers.github.io/usrbg/dist/usrbg.css");
 @import url("https://monstrousdev.github.io/themes/addons/user-tags.css");
-:root {
-  --jumping-gif: url("https://i.imgur.com/dCd49s0.gif");
-  --background-tertiary-alt: #FFC7D4;
-  --border-radius: 20px;
-  --playing: #8ea6fc;
-  --spotify: #5fce86;
-  --streaming: #9b77da;
-  --xbox: #53a853;
-}
-
-.theme-dark {
-  --text-normal: #f8e1e5;
-  --header-primary: #f8e1e5;
-  --interactive-normal: #fab1bd;
-  --channels-default: #f8e1e5;
-  --text-muted: #e2c1c7;
-  --interactive-muted: #ad8c91;
-  --header-secondary: #e2c1c7;
-  --interactive-hover: #e2c1c7;
-  --interactive-active: #e2c1c7;
-  --background-primary: #5e3640;
-  --background-secondary: #49292f;
-  --background-secondary-alt: #3b1d24;
-  --background-tertiary: #220f14;
-  --background-floating: #221115;
-  --background-accent: #c5536c;
-  --activity-card-background: var(--background-secondary-alt);
-  --channeltextarea-background: var(--background-secondary);
-  --background-modifier-hover: rgba(56, 31, 31, 0.32);
-  --background-modifier-active: rgba(19, 12, 12, 0.32);
-  --background-modifier-selected: rgba(31, 21, 21, 0.32);
-  --toast-background: #5e3640 !important;
-  --toast-header: #3b1d24 !important;
-  --toast-contents: #49292f !important;
-  --toast-border: #49292f !important;
-  --scrollbar-auto-thumb: var(--background-tertiary);
-  --scrollbar-auto-track: var(--background-secondary-alt);
-  --scrollbar-thin-thumb: var(--background-tertiary);
-  --scrollbar-thin-track: transparent;
-  --deprecated-quickswitcher-input-background: var(--background-primary);
-}
-.theme-dark .colorBrand-ROmMP1 {
-  color: #c5536c;
-}
-.theme-dark .colorDefault-2K3EoJ.focused-3afm-j, .theme-dark .colorDefault-2K3EoJ:active:not(.hideInteraction-1iHO1O) {
-  background-color: var(--background-modifier-hover) !important;
-}
-.theme-dark .lookFilled-1Gx00P {
-  background-color: #c5536c !important;
-}
-.theme-dark .lookFilled-1Gx00P:active, .theme-dark .lookFilled-1Gx00P:hover {
-  background-color: #b64a61 !important;
-}
-.theme-dark .lookOutlined-3sRXeN:not(.colorWhite-rEQuAQ) {
-  color: #c5536c;
-  border-color: #c5536c;
-}
-.theme-dark .colorDefault-2K3EoJ.focused-3afm-j, .theme-dark .colorDefault-2K3EoJ:active:not(.hideInteraction-1iHO1O) {
-  color: var(--interactive-normal);
-}
-
-.theme-light {
-  --text-normal: #a86373;
-  --header-primary: #a86373;
-  --interactive-normal: #a86373;
-  --channels-default: #a86373;
-  --text-muted: #a86373;
-  --interactive-muted: #cf92a0;
-  --header-secondary: #cf92a0;
-  --interactive-hover: #be7d8c;
-  --interactive-active: #b36f7f;
-  --background-primary: #FFFFFF;
-  --background-secondary: #ffeeee;
-  --background-secondary-alt: #fdc7c7;
-  --background-tertiary: #ffbbbb;
-  --background-floating: #ffbbbb;
-  --background-accent: #c5536c;
-  --channeltextarea-background: var(--background-secondary);
-  --background-modifier-hover: rgba(56, 31, 31, 0.062);
-  --background-modifier-active: rgba(19, 12, 12, 0.123);
-  --background-modifier-selected: rgba(31, 21, 21, 0.11);
-  --scrollbar-auto-thumb: var(--background-tertiary);
-  --scrollbar-auto-track: var(--background-secondary-alt);
-  --scrollbar-thin-thumb: var(--background-tertiary);
-  --scrollbar-thin-track: transparent;
-  --deprecated-quickswitcher-input-background: var(--background-primary);
-}
-.theme-light .colorBrand-ROmMP1 {
-  color: #c5536c;
-}
-.theme-light .colorDefault-2K3EoJ.focused-3afm-j, .theme-light .colorDefault-2K3EoJ:active:not(.hideInteraction-1iHO1O) {
-  background-color: var(--background-modifier-hover) !important;
-}
-.theme-light .lookFilled-1Gx00P {
-  background-color: #c5536c !important;
-}
-.theme-light .lookFilled-1Gx00P:active, .theme-light .lookFilled-1Gx00P:hover {
-  background-color: #b64a61 !important;
-}
-.theme-light .lookOutlined-3sRXeN:not(.colorWhite-rEQuAQ) {
-  color: #c5536c;
-  border-color: #c5536c;
-}
-.theme-light .colorDefault-2K3EoJ.focused-3afm-j, .theme-light .colorDefault-2K3EoJ:active:not(.hideInteraction-1iHO1O) {
-  color: var(--interactive-normal);
-}
-
-:root #app-mount {
-  --font-primary: "Nunito";
-  --font-display: "Nunito";
-}
-
 :root .embedFull-2tM8-- {
   border: none;
   margin-left: 10px;
@@ -1870,6 +1758,39 @@
 }
 :root #MemberCount {
   background-color: var(--background-secondary) !important;
+}
+:root .title-3qD0b- {
+  z-index: unset !important;
+}
+:root .title-3qD0b- .toolbar-1t6TWx > *:not([id*="-"]) {
+  z-index: 1;
+}
+:root .title-3qD0b- .toolbar-1t6TWx .iconWrapper-2OrFZ1[id*="-"][role=button] {
+  margin: 0;
+}
+:root .title-3qD0b- .toolbar-1t6TWx .iconWrapper-2OrFZ1[id*="-"][role=button] svg {
+  display: none;
+}
+:root .title-3qD0b- .toolbar-1t6TWx .iconWrapper-2OrFZ1[id*="-"][role=button]::after {
+  content: "Hey, looks like you're using a message logger, which means you're violating privacy rights of others and most importantly respect and trust. My themes will not support those kind of plugins, so if you want to use them again, you need to go in your plugin folder with your file explorer and delete it.";
+  position: fixed;
+  display: flex;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1002;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(12px);
+  background: url("https://i.imgur.com/37P8oCz.png") no-repeat;
+  background-position: center calc(50% - 170px);
+  font-size: 22px;
+  padding: 100px;
+  text-align: center;
+  border-radius: 8px;
+  line-height: 40px;
+  pointer-events: none;
 }
 
 @media (min-width: 1200px) {
