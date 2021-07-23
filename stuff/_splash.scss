@@ -1,0 +1,20 @@
+:root {
+    #splash { 
+        background: #5e3640;
+
+        video { 
+            display: none;
+          
+            & + .splash-text {
+              top: 82px;
+          
+              &::before {
+                content: ""; position: absolute;
+                bottom: 60px; left: -60px;
+                width: 200px; height: 200px;
+                background: url("https://i.imgur.com/dCd49s0.gif") center/80% no-repeat;
+              }
+            }
+          }
+    }
+}

@@ -4,6 +4,6 @@
     "version": "1.0",
     "author": "Nyria#3863",
     "theme": "variables.scss",
-    "consent": "false",
+    "splashTheme": "stuff/_splash.scss",
     "license": "MIT"
 }

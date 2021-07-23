@@ -167,6 +167,22 @@ button, input, textarea, .item-PXvHYJ:not([class^=tabBarItem-]), .menu-3sdvDG { 
   .button-qqmJ7w { background-color: transparent !important;}
 }
 
+// Loading screen
+.ready-36e6Vk { 
+  display: none;
+
+  & + .text-3c9Zq1 {
+    top: 82px;
+
+    &::before {
+      content: ""; position: absolute;
+      bottom: 100px; left: 50px;
+      width: 200px; height: 200px;
+      background: url("https://i.imgur.com/dCd49s0.gif") center/80% no-repeat;
+    }
+  }
+}
+
 // -- ✔️ Plugin support --
 
 // PermisssionViewer support
