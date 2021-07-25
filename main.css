@@ -1489,7 +1489,7 @@
   background-color: var(--background-secondary-alt);
 }
 
-:root .app-1q1i1E::before, :root .app-1q1i1E::after, :root .app-2rEoOp::after, :root .app-2rEoOp::before, :root .layers-3iHuyZ::before, :root .layers-3iHuyZ::after, :root .app-1q1i1E::before, :root .bg-h5JY_x::after {
+:root .app-1q1i1E::before, :root .app-1q1i1E::after, :root .app-2rEoOp::after, :root .app-2rEoOp::before, :root .layers-3iHuyZ::before, :root .layers-3iHuyZ::after, :root .app-1q1i1E::before, :root .bg-h5JY_x::after, :root .bg-h5JY_x::before {
   content: "";
   position: fixed;
   z-index: 1;
@@ -1743,6 +1743,21 @@
 }
 :root .toolbar-2bjZV7 .button-qqmJ7w {
   background-color: transparent !important;
+}
+:root .ready-36e6Vk {
+  display: none;
+}
+:root .ready-36e6Vk + .text-3c9Zq1 {
+  top: 82px;
+}
+:root .ready-36e6Vk + .text-3c9Zq1::before {
+  content: "";
+  position: absolute;
+  bottom: 100px;
+  left: 50px;
+  width: 200px;
+  height: 200px;
+  background: url("https://i.imgur.com/dCd49s0.gif") center/80% no-repeat;
 }
 :root #permissions-modal-wrapper #permissions-modal {
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(56, 31, 31, 0.11) !important;

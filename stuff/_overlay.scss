@@ -1,6 +1,6 @@
 :root { 
 
-.app-1q1i1E::before, .app-1q1i1E::after, .app-2rEoOp::after, .app-2rEoOp::before, .layers-3iHuyZ::before, .layers-3iHuyZ::after, .app-1q1i1E::before, .bg-h5JY_x::after { content: ""; position: fixed; z-index: 1; pointer-events: none;}
+.app-1q1i1E::before, .app-1q1i1E::after, .app-2rEoOp::after, .app-2rEoOp::before, .layers-3iHuyZ::before, .layers-3iHuyZ::after, .app-1q1i1E::before, .bg-h5JY_x::after, .bg-h5JY_x::before { content: ""; position: fixed; z-index: 1; pointer-events: none;}
 
 .app-1q1i1E { // Yellow stripes
     &::before { left: 0; top: 0; width: 250px; height: 250px; background: url('https://i.imgur.com/jTpFJuI.png') no-repeat; background-size: 100%;}
