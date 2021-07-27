@@ -1562,6 +1562,11 @@
   background: url("https://i.imgur.com/JMoXBIs.png") no-repeat;
   background-size: 100%;
 }
+@media (max-width: 1200px) {
+  :root .bg-h5JY_x::before {
+    display: none;
+  }
+}
 
 :root ::-webkit-input-placeholder, :root body, :root button, :root input, :root select, :root textarea {
   font-family: "Nunito" !important;
