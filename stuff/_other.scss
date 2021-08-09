@@ -94,6 +94,8 @@ button, input, textarea, .item-PXvHYJ:not([class^=tabBarItem-]), .menu-3sdvDG { 
 // Discover
 @media (min-width: 1200px) {
 
+  .sidebar-2K8pFh { width: unset; max-width: 240px;}
+
 .sidebar-2K8pFh > .thin-1ybCId.scrollerBase-289Jih {
   position: fixed;
   top: 220px; bottom: 85px; right: 60px;

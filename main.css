@@ -1702,6 +1702,10 @@
   overflow-x: visible;
 }
 @media (min-width: 1200px) {
+  :root .sidebar-2K8pFh {
+    width: unset;
+    max-width: 240px;
+  }
   :root .sidebar-2K8pFh > .thin-1ybCId.scrollerBase-289Jih {
     position: fixed;
     top: 220px;
