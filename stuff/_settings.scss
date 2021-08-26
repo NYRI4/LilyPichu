@@ -1,5 +1,12 @@
 :root { 
 
+
+// Support for macOS
+&.typeMacOS-3EmCyP {
+    margin-top: 20px;
+    background-color: var(--background-tertiary);
+}
+
 .layers-3iHuyZ { margin: 20px 0 40px 0; z-index: 1;}
 .layers-3iHuyZ > .layer-3QrUeG:first-child {
     opacity: 1 !important;
@@ -293,7 +300,11 @@
 // -- Powercord --
 
 // Theme toggler
-.cardPrimary-1Hv-to { border: none; border-radius: var(--border-radius);}
+.cardPrimary-1Hv-to {
+    border: none; border-radius: var(--border-radius);
+
+    .previewMessage-1ZN7YG { border-radius: var(--border-radius);}
+}
 
 // Themes tab
 .powercord-entities-manage-tabs, .developerPortalCtaWrapper-2XNafh { border-radius: var(--border-radius);}

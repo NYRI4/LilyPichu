@@ -949,6 +949,10 @@
   background-image: var(--user-background);
 }
 
+:root.typeMacOS-3EmCyP {
+  margin-top: 20px;
+  background-color: var(--background-tertiary);
+}
 :root .layers-3iHuyZ {
   margin: 20px 0 40px 0;
   z-index: 1;
@@ -1304,6 +1308,9 @@
   border: none;
   border-radius: var(--border-radius);
 }
+:root .cardPrimary-1Hv-to .previewMessage-1ZN7YG {
+  border-radius: var(--border-radius);
+}
 :root .powercord-entities-manage-tabs, :root .developerPortalCtaWrapper-2XNafh {
   border-radius: var(--border-radius);
 }
@@ -1607,7 +1614,7 @@
   background: url("https://i.imgur.com/JMoXBIs.png") no-repeat;
   background-size: 100%;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1350px) {
   :root .bg-h5JY_x::before {
     display: none;
   }
@@ -1701,55 +1708,6 @@
 :root .header-3msK0M {
   overflow-x: visible;
 }
-@media (min-width: 1200px) {
-  :root .sidebar-2K8pFh {
-    width: unset;
-    max-width: 240px;
-  }
-  :root .sidebar-2K8pFh > .thin-1ybCId.scrollerBase-289Jih {
-    position: fixed;
-    top: 220px;
-    bottom: 85px;
-    right: 60px;
-    width: 320px;
-    border-radius: var(--border-radius);
-    background-color: var(--background-primary);
-    padding-bottom: 60px;
-  }
-  :root .sidebar-2K8pFh > .thin-1ybCId.scrollerBase-289Jih::before {
-    content: "Discover";
-    position: absolute;
-    top: 0;
-    z-index: 1;
-    width: 100%;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-    font-weight: bolder;
-    color: var(--header-primary);
-    background-color: var(--background-secondary);
-    border-radius: var(--border-radius) var(--border-radius) 0 0;
-  }
-  :root .sidebar-2K8pFh > .thin-1ybCId.scrollerBase-289Jih::after {
-    content: "";
-    position: fixed;
-    bottom: 85px;
-    z-index: 1;
-    width: 320px;
-    height: 35px;
-    background-color: var(--background-secondary);
-    border-radius: 0 0 var(--border-radius) var(--border-radius);
-    background-image: linear-gradient(to right, var(--header-primary) 33%, rgba(255, 255, 255, 0) 0%);
-    background-position: top;
-    background-size: 21px 2px;
-    background-repeat: repeat-x;
-  }
-  :root .sidebar-2K8pFh > .thin-1ybCId.scrollerBase-289Jih::-webkit-scrollbar {
-    display: none;
-  }
-}
 :root .categoryItem-1QIroW .itemInner-gPkiWb {
   background-color: transparent;
 }
@@ -1829,7 +1787,7 @@
   background-color: var(--background-secondary) !important;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1350px) {
   .chatContent-a9vAAp + :last-child {
     position: fixed;
     top: 280px;
