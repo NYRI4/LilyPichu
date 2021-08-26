@@ -949,7 +949,7 @@
   background-image: var(--user-background);
 }
 
-:root.typeMacOS-3EmCyP {
+:root .typeMacOS-3EmCyP {
   margin-top: 20px;
   background-color: var(--background-tertiary);
 }
@@ -1786,10 +1786,12 @@
 :root #MemberCount {
   width: 320px;
 }
-@media (min-width: 1350px) {
+@media (max-width: 1350px) {
   :root #MemberCount {
-    background-color: var(--background-secondary);
+    background-color: var(--background-primary);
   }
+}
+@media (min-width: 1350px) {
   :root #MemberCount .membersGroup-v9BXpm {
     padding-top: 12px;
   }

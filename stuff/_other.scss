@@ -163,12 +163,8 @@ button, input, textarea, .item-PXvHYJ:not([class^=tabBarItem-]), .menu-3sdvDG { 
 // Member Count support
 #MemberCount { width: 320px;}
 
-@media (min-width: 1350px) { 
-  #MemberCount { 
-    background-color: var(--background-secondary);
+@media (max-width: 1350px) { #MemberCount { background-color: var(--background-primary);}}
 
-    .membersGroup-v9BXpm { padding-top: 12px;}
-  }
-}
+@media (min-width: 1350px) { #MemberCount .membersGroup-v9BXpm { padding-top: 12px;}}
 
 }
