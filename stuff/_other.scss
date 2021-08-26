@@ -161,6 +161,14 @@ button, input, textarea, .item-PXvHYJ:not([class^=tabBarItem-]), .menu-3sdvDG { 
 }
 
 // Member Count support
-#MemberCount { background-color: var(--background-secondary) !important;}
+#MemberCount { width: 320px;}
+
+@media (min-width: 1350px) { 
+  #MemberCount { 
+    background-color: var(--background-secondary);
+
+    .membersGroup-v9BXpm { padding-top: 12px;}
+  }
+}
 
 }

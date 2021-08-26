@@ -1784,7 +1784,15 @@
   background: var(--background-secondary) !important;
 }
 :root #MemberCount {
-  background-color: var(--background-secondary) !important;
+  width: 320px;
+}
+@media (min-width: 1350px) {
+  :root #MemberCount {
+    background-color: var(--background-secondary);
+  }
+  :root #MemberCount .membersGroup-v9BXpm {
+    padding-top: 12px;
+  }
 }
 
 @media (min-width: 1350px) {
