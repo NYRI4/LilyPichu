@@ -1332,11 +1332,12 @@
 :root .bd-select .bd-select-options:last-child {
   border-radius: 0 0 var(--border-radius) var(--border-radius) !important;
 }
-:root .bd-controls > .bd-addon-button:first-of-type {
-  border-radius: var(--border-radius) 0 0 var(--border-radius) !important;
+:root .bd-controls {
+  border-radius: var(--border-radius);
+  overflow: hidden;
 }
-:root .bd-controls > .bd-addon-button:last-of-type {
-  border-radius: 0 var(--border-radius) var(--border-radius) 0 !important;
+:root .bd-controls > button {
+  border-radius: unset !important;
 }
 :root .container-cMG81i {
   border-radius: var(--border-radius);

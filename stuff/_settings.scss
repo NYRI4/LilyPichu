@@ -326,9 +326,10 @@
     }
 }
 
-.bd-controls>.bd-addon-button {
-    &:first-of-type { border-radius: var(--border-radius) 0 0 var(--border-radius) !important;}
-    &:last-of-type { border-radius: 0 var(--border-radius) var(--border-radius) 0 !important;}
+.bd-controls { 
+    border-radius: var(--border-radius); overflow: hidden;
+
+    & > button { border-radius: unset !important;}
 }
 
 // Experiments
