@@ -1339,6 +1339,13 @@
 :root .bd-controls > button {
   border-radius: unset !important;
 }
+:root .notice-3bPHh- {
+  margin: 0 450px -20px 0px;
+  border-radius: 0 8px 0 0 !important;
+}
+:root .notice-3bPHh- + .layers-3iHuyZ .guilds-1SWlCJ + :nth-child(2) {
+  border-radius: 0;
+}
 :root .container-cMG81i {
   border-radius: var(--border-radius);
 }
