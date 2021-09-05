@@ -26,10 +26,14 @@
 }
 
 // Menu scroller
-.standardSidebarView-3F1I7i {
-    border-radius: 0 var(--border-radius) var(--border-radius) 0; 
-    overflow: hidden;
+@media (min-width: 1350px) {
+    .standardSidebarView-3F1I7i {
+        border-radius: 0 var(--border-radius) var(--border-radius) 0; 
+        overflow: hidden;
+    }
+}
 
+.standardSidebarView-3F1I7i {
     .sidebarRegion-VFTUkN { 
         flex: unset; 
 
@@ -77,6 +81,7 @@
 // My account
 .accountProfileCard-1XCH88 { 
     margin-top: 160px;
+    background-color: var(--background-secondary-alt);
     border-radius: var(--border-radius); overflow: visible;
 
     .banner-2QYc2d {
@@ -97,27 +102,36 @@
 // User profile
 .userProfileCustomizationSection-8Vpo48 {
   .baseLayout-2GkbfB { 
+      flex-direction: column;
+
     & > :first-child { flex: 1 auto;}
+
+    & > .preview-yzOwK1 { margin: 0;}
 
     .profileBannerPreview-3_l0Wd {
         display: grid;
         grid-template-areas:
-        "banner body";
-        width: unset !important; height: 435px;
-        max-width: 600px;
+            "avatar user-infos body"
+            "banner banner body";
+        grid-template-columns: 120px 1fr 1fr;
+        grid-template-rows: 120px 1fr;
+        width: unset !important;
+        padding: 8px;
         border-radius: var(--border-radius);
         box-shadow: 0 2px 10px 0 rgb(0 0 0 / 20%), 0 0 0 1px rgb(56 31 31 / 11%);
 
         // Banner
         & > div:first-child {
             grid-area: banner;
-            grid-row: 1/3;
-            height: 100%;
-            opacity: 0.5;
+            position: static;
+            width: 100%;
+            height: calc(100% - 8px);
+            margin: 8px 0 0;
 
             .bannerUploader-3AZuN1 { 
-                width: 240px; height: calc(100% - 16px);
-                margin: 8px 0 8px 8px;
+                width: 100%;
+                height: 100%;
+                border-radius: var(--border-radius);
 
                 .bannerUploaderInnerSquare-1ddxpx { height: 100%; border-radius: var(--border-radius);}
             }
@@ -125,48 +139,54 @@
 
         // Avatar
         .avatarUploader-2UF9NL {
-            position: absolute;
-            top: 30px;
-            left: 128px;
-            margin-left: -40px;
+            grid-area: avatar;
+            position: relative;
+            top: 0; left: 0;
 
-            .avatarUploaderInner-Oiob_P { border: none; background: none;}
+            .avatarUploaderInner-Oiob_P { 
+                border: none; background: none;
+                border-radius: var(--border-radius);
+                width: 100% !important; height: 100% !important;
+            }
         }
 
         // User informations header
         .headerTop-3vNv-a {
-            position: absolute;
-            left: 8px; bottom: 10px;
-            width: 240px; padding: 0;
-
+            grid-area: user-infos;
+            position: static; display: flex;
+            flex-direction: column-reverse;
+            align-items: center; justify-content: flex-end;
+            padding: 0; margin-left: 8px;
+            background-color: var(--background-secondary-alt);
+            border-radius: var(--border-radius);
+    
             // Badges
             .profileBadges-ohc0Vu {
                 position: static;
-                max-width: 100%;
-                justify-content: center;
-
+                width: 100%; height: 100%; 
+                max-width: unset;
+                align-items: center; justify-content: center;
+                padding: 10px; margin: 0;
+    
                 .profileBadge22-LJmn9o { width: 30px; height: 30px;}
             }
-
+    
             // Username
             .headerText-1vVs-U {
-                text-align: center;
-                padding: 10px;
-
-                .base-1x0h_U { 
-                    font-size: 25px;
-                    line-height: 34px;
-                }
-
-                .headerTagWithNickname-3l_x6x { 
-                    font-size: 20px;
-                    line-height: 24px;
-                }
+                display: flex; flex-direction: column;
+                width: 100%; height: 100%;
+                align-items: center; justify-content: center;
+                padding: 6px;
+                background-color: var(--background-primary);
+    
+                .headerTag-3GFl76, .nickname-3M3Jfa { font-size: 16px;}
             }
+    
+            .setIdentityLink-1t8Ahd { display: none;}
         }
     
         .popoutInfo-pKbpvG {
-            padding: 8px;
+            grid-area: body; padding: 0 0 0 8px !important;
 
             // Custom status
             .customStatus-oN4ZZY {
@@ -179,7 +199,8 @@
                     content: "CUSTOM STATUS"; position: absolute;
                     top: 0; left: 0;
                     width: calc(100% - 10px);
-                    font-size: 12px; text-align: center; color: var(--header-secondary);
+                    font-size: 12px; text-align: center; 
+                    color: var(--header-secondary); font-weight: bold;
                     background-color: var(--background-primary);
                     padding: 5px;
                 }
@@ -206,8 +227,7 @@
             // Activity
             & > :last-child { 
                 background-color: var(--background-secondary-alt);
-                padding-bottom: 8px; margin-bottom: 8px;
-                border-radius: var(--border-radius);
+                padding-bottom: 8px; border-radius: var(--border-radius);
 
                 .fakeActivityTitle-3Yf28p {
                     text-align: center;
@@ -332,11 +352,15 @@
     & > button { border-radius: unset !important;}
 }
 
-.notice-3bPHh-[id] { 
-    margin: 0 450px -20px 0px; 
-    border-radius: 0 8px 0 0 !important;
-  
-    & + .layers-3iHuyZ .guilds-1SWlCJ + :nth-child(2) { border-radius: 0;}
+.notice-3bPHh- {
+    &[id] {
+        margin: 0 450px -20px 0px;
+        border-radius: 0 8px 0 0 !important;
+    
+        & + .layers-3iHuyZ .guilds-1SWlCJ + :nth-child(2) { border-radius: 0;}
+    }
+
+    &:not([id]) { border-top-left-radius: 0;}
   }
 
 // Experiments
