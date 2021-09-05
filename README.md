@@ -24,4 +24,4 @@ Go into your theme folder and open :
 ## 🖼️ More preview
 | Status picker | User modal | Aliucord |
 | :---------: | :---------: | :---------: |
-| ![Preview](https://nyri4.github.io/LilyPichu/assets/status_picker.png)  | ![Preview](https://nyri4.github.io/LilyPichu/assets/modal.png)  | <img width=300 src="https://nyri4.github.io/LilyPichu/assets/preview-aliucord.png"></img> |
+| ![Preview](https://nyri4.github.io/LilyPichu/assets/status_picker.png)  | <img width=300 src="https://nyri4.github.io/LilyPichu/assets/modal.png"></img> | <img width=300 src="https://nyri4.github.io/LilyPichu/assets/preview-aliucord.png"></img> |
