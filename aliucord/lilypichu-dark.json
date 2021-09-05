@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "updater": "https://raw.githubusercontent.com/NYRI4/LilyPichu/master/aliucord/lilypichu.json",
   "font": "https://raw.githubusercontent.com/NYRI4/LilyPichu/master/aliucord/nunito.ttf",
-  "license": "GNU GPL",
+  "license": "CC BY-NC-ND 4.0",
   "drawablecolor_drawable_overlay_channels_selected_dark": 385875968,
   "statusbar_color": -14545132,
   "color_primary_630": -11982545,
