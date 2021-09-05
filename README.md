@@ -1,8 +1,5 @@
 ![Banner](https://nyri4.github.io/LilyPichu/assets/banner.png)
-
 ---
-
-# LilyPichu
 ![Preview](https://nyri4.github.io/LilyPichu/assets/preview.png)
 
 ## 📥 Installation
@@ -15,10 +12,16 @@ git clone https://github.com/NYRI4/LilyPichu
 
 ### BetterDiscord
 
-1. Go [here](https://betterdiscord.app/theme/LilyPichu)
-2. Save the file into your theme folder
+Go [here](https://betterdiscord.app/theme/LilyPichu) and save the file into your theme folder
 
 ## 🖌️ Customization
-Go into your theme folder
-- For BetterDiscord : `lilypichu.theme.css`
-- For Powercord/Vizality : `LilyPichu > stuff > _variables.scss`
+Go into your theme folder and open :
+
+`lilypichu.theme.css` for BetterDiscord
+
+`variables.scss` for Powercord/Vizality
+
+## 🖼️ More preview
+| Status picker | User modal | Aliucord |
+| :---------: | :---------: | :---------: |
+| ![Preview](https://nyri4.github.io/LilyPichu/assets/status_picker.png)  | ![Preview](https://nyri4.github.io/LilyPichu/assets/modal.png)  | <img width=300 src="https://nyri4.github.io/LilyPichu/assets/preview-aliucord.png"></img> |
