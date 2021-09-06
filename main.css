@@ -735,15 +735,14 @@
   pointer-events: none;
 }
 :root .userPopout-xaxa6l .body-3HBlXn .bodyInnerWrapper-26fQXj .rolesList-1geHY1 .roleCircle-3xAZ1j {
-  margin-right: 0;
+  margin: 0;
 }
 :root .userPopout-xaxa6l .body-3HBlXn .bodyInnerWrapper-26fQXj .rolesList-1geHY1 .roleName-32vpEy {
   z-index: 1;
   text-align: center;
   width: 100%;
-  max-width: unset;
-  overflow: visible;
   font-weight: bold;
+  margin: 0 0 0 4px;
 }
 :root .userPopout-xaxa6l .body-3HBlXn .bodyInnerWrapper-26fQXj .note-1oo11U {
   margin: 0;
