@@ -684,13 +684,22 @@
   border-radius: var(--border-radius);
 }
 :root .userPopout-xaxa6l .body-3HBlXn .bodyInnerWrapper-26fQXj .activity-2INFPu .headerTextNormal-2mGWX3 {
+  width: 100%;
+  text-align: center;
   justify-content: center;
   background-color: var(--background-primary);
   padding: 5px;
   border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
-:root .userPopout-xaxa6l .body-3HBlXn .bodyInnerWrapper-26fQXj .activity-2INFPu .headerTextNormal-2mGWX3 ~ * {
+:root .userPopout-xaxa6l .body-3HBlXn .bodyInnerWrapper-26fQXj .activity-2INFPu .bodyNormal-2D39hT {
+  padding: 8px;
+}
+:root .userPopout-xaxa6l .body-3HBlXn .bodyInnerWrapper-26fQXj .activity-2INFPu .bodyNormal-2D39hT + div {
+  margin-top: 0;
   padding: 0 8px;
+}
+:root .userPopout-xaxa6l .body-3HBlXn .bodyInnerWrapper-26fQXj .activity-2INFPu .bodyNormal-2D39hT + div button {
+  padding: 2px 8px;
 }
 :root .userPopout-xaxa6l .body-3HBlXn .bodyInnerWrapper-26fQXj .activity-2INFPu .spotifyIcon-2J9kSv {
   display: none;
@@ -713,6 +722,7 @@
   overflow: hidden;
   border: none;
   margin: 4px 4px 0 4px;
+  border-radius: var(--border-radius);
 }
 :root .userPopout-xaxa6l .body-3HBlXn .bodyInnerWrapper-26fQXj .rolesList-1geHY1 .role-2irmRk:last-child {
   margin-bottom: 8px;

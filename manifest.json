@@ -4,7 +4,7 @@
     "description": "A theme based on @Melonturtle_ stream design",
     "version": "1.1",
     "author": "Nyria#3863",
-    "theme": "variables.scss",
+    "theme": "_variables.scss",
     "consent": "false",
     "license": "CC BY-NC-ND 4.0"
 }

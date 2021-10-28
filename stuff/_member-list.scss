@@ -155,14 +155,25 @@
                 border-radius: var(--border-radius);
 
                 .headerTextNormal-2mGWX3 {
+                    width: 100%;
+                    text-align: center;
                     justify-content: center;
                     background-color: var(--background-primary);
                     padding: 5px; border-radius: var(--border-radius) var(--border-radius) 0 0;
-
-                    & ~ * { padding: 0 8px;}
                 }
 
-                // Spotify icon
+                .bodyNormal-2D39hT {
+                    padding: 8px;
+
+                    & + div {
+                        margin-top: 0;
+                        padding: 0 8px;
+
+                        button { padding: 2px 8px;}
+                    }
+                }
+
+                    // Spotify icon
                 .spotifyIcon-2J9kSv { display: none;}
             }
     
@@ -184,6 +195,7 @@
                     overflow: hidden;
                     border: none;
                     margin: 4px 4px 0 4px;
+                    border-radius: var(--border-radius);
 
                     &:last-child { margin-bottom: 8px;}
                     &:empty { padding: 50px 0;}
