@@ -1841,6 +1841,9 @@
     padding-top: 12px;
   }
 }
+:root .total-members.counts {
+  background-color: var(--background-primary);
+}
 
 @media (min-width: 1350px) {
   .chatContent-a9vAAp + :last-child {
@@ -1849,6 +1852,7 @@
     bottom: 120px;
     right: 60px;
     width: 320px;
+    height: unset;
   }
 
   .tabBody-3YRQ8W {
