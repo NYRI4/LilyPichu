@@ -100,15 +100,15 @@
 }
 
 // User profile
-.userProfileCustomizationSection-8Vpo48 {
-  .baseLayout-2GkbfB { 
+.profileCustomizationSection-1-Issy {
+  .baseLayout-NX_bpH { 
       flex-direction: column;
 
     & > :first-child { flex: 1 auto;}
 
     & > .preview-yzOwK1 { margin: 0;}
 
-    .profileBannerPreview-3_l0Wd {
+    .profileBannerPreview-gaX5MP {
         display: grid;
         grid-template-areas:
             "avatar user-infos body"
@@ -127,27 +127,23 @@
             width: 100%;
             height: calc(100% - 8px);
             margin: 8px 0 0;
-
-            .bannerUploader-3AZuN1 { 
-                width: 100%;
-                height: 100%;
-                border-radius: var(--border-radius);
-
-                .bannerUploaderInnerSquare-1ddxpx { height: 100%; border-radius: var(--border-radius);}
-            }
+            border-radius: var(--border-radius);
         }
 
         // Avatar
-        .avatarUploader-2UF9NL {
+        .avatarUploader-3h7Odh {
             grid-area: avatar;
             position: relative;
             top: 0; left: 0;
 
-            .avatarUploaderInner-Oiob_P { 
+            .avatarUploaderInner-mAGe3e { 
                 border: none; background: none;
                 border-radius: var(--border-radius);
                 width: 100% !important; height: 100% !important;
+                background-repeat: no-repeat; background-size: cover;
             }
+
+            .avatarUploaderIcon-3UIzEQ { display: none;}
         }
 
         // User informations header
@@ -185,7 +181,7 @@
             .setIdentityLink-1t8Ahd { display: none;}
         }
     
-        .popoutInfo-pKbpvG {
+        .popoutInfo-1A9dyK {
             grid-area: body; padding: 0 0 0 8px !important;
 
             // Custom status
@@ -229,7 +225,7 @@
                 background-color: var(--background-secondary-alt);
                 padding-bottom: 8px; border-radius: var(--border-radius);
 
-                .fakeActivityTitle-3Yf28p {
+                .fakeActivityTitle-ka26mT {
                     text-align: center;
                     background-color: var(--background-primary);
                     padding: 5px; border-radius: var(--border-radius) var(--border-radius) 0 0;

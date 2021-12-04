@@ -1054,16 +1054,16 @@
 :root .accountProfileCard-1XCH88 .background-1QDuV2 {
   border-radius: var(--border-radius);
 }
-:root .userProfileCustomizationSection-8Vpo48 .baseLayout-2GkbfB {
+:root .profileCustomizationSection-1-Issy .baseLayout-NX_bpH {
   flex-direction: column;
 }
-:root .userProfileCustomizationSection-8Vpo48 .baseLayout-2GkbfB > :first-child {
+:root .profileCustomizationSection-1-Issy .baseLayout-NX_bpH > :first-child {
   flex: 1 auto;
 }
-:root .userProfileCustomizationSection-8Vpo48 .baseLayout-2GkbfB > .preview-yzOwK1 {
+:root .profileCustomizationSection-1-Issy .baseLayout-NX_bpH > .preview-yzOwK1 {
   margin: 0;
 }
-:root .userProfileCustomizationSection-8Vpo48 .baseLayout-2GkbfB .profileBannerPreview-3_l0Wd {
+:root .profileCustomizationSection-1-Issy .baseLayout-NX_bpH .profileBannerPreview-gaX5MP {
   display: grid;
   grid-template-areas: "avatar user-infos body" "banner banner body";
   grid-template-columns: 120px 1fr 1fr;
@@ -1073,36 +1073,33 @@
   border-radius: var(--border-radius);
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(56, 31, 31, 0.11);
 }
-:root .userProfileCustomizationSection-8Vpo48 .baseLayout-2GkbfB .profileBannerPreview-3_l0Wd > div:first-child {
+:root .profileCustomizationSection-1-Issy .baseLayout-NX_bpH .profileBannerPreview-gaX5MP > div:first-child {
   grid-area: banner;
   position: static;
   width: 100%;
   height: calc(100% - 8px);
   margin: 8px 0 0;
-}
-:root .userProfileCustomizationSection-8Vpo48 .baseLayout-2GkbfB .profileBannerPreview-3_l0Wd > div:first-child .bannerUploader-3AZuN1 {
-  width: 100%;
-  height: 100%;
   border-radius: var(--border-radius);
 }
-:root .userProfileCustomizationSection-8Vpo48 .baseLayout-2GkbfB .profileBannerPreview-3_l0Wd > div:first-child .bannerUploader-3AZuN1 .bannerUploaderInnerSquare-1ddxpx {
-  height: 100%;
-  border-radius: var(--border-radius);
-}
-:root .userProfileCustomizationSection-8Vpo48 .baseLayout-2GkbfB .profileBannerPreview-3_l0Wd .avatarUploader-2UF9NL {
+:root .profileCustomizationSection-1-Issy .baseLayout-NX_bpH .profileBannerPreview-gaX5MP .avatarUploader-3h7Odh {
   grid-area: avatar;
   position: relative;
   top: 0;
   left: 0;
 }
-:root .userProfileCustomizationSection-8Vpo48 .baseLayout-2GkbfB .profileBannerPreview-3_l0Wd .avatarUploader-2UF9NL .avatarUploaderInner-Oiob_P {
+:root .profileCustomizationSection-1-Issy .baseLayout-NX_bpH .profileBannerPreview-gaX5MP .avatarUploader-3h7Odh .avatarUploaderInner-mAGe3e {
   border: none;
   background: none;
   border-radius: var(--border-radius);
   width: 100% !important;
   height: 100% !important;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-:root .userProfileCustomizationSection-8Vpo48 .baseLayout-2GkbfB .profileBannerPreview-3_l0Wd .headerTop-3vNv-a {
+:root .profileCustomizationSection-1-Issy .baseLayout-NX_bpH .profileBannerPreview-gaX5MP .avatarUploader-3h7Odh .avatarUploaderIcon-3UIzEQ {
+  display: none;
+}
+:root .profileCustomizationSection-1-Issy .baseLayout-NX_bpH .profileBannerPreview-gaX5MP .headerTop-3vNv-a {
   grid-area: user-infos;
   position: static;
   display: flex;
@@ -1114,7 +1111,7 @@
   background-color: var(--background-secondary-alt);
   border-radius: var(--border-radius);
 }
-:root .userProfileCustomizationSection-8Vpo48 .baseLayout-2GkbfB .profileBannerPreview-3_l0Wd .headerTop-3vNv-a .profileBadges-ohc0Vu {
+:root .profileCustomizationSection-1-Issy .baseLayout-NX_bpH .profileBannerPreview-gaX5MP .headerTop-3vNv-a .profileBadges-ohc0Vu {
   position: static;
   width: 100%;
   height: 100%;
@@ -1124,11 +1121,11 @@
   padding: 10px;
   margin: 0;
 }
-:root .userProfileCustomizationSection-8Vpo48 .baseLayout-2GkbfB .profileBannerPreview-3_l0Wd .headerTop-3vNv-a .profileBadges-ohc0Vu .profileBadge22-LJmn9o {
+:root .profileCustomizationSection-1-Issy .baseLayout-NX_bpH .profileBannerPreview-gaX5MP .headerTop-3vNv-a .profileBadges-ohc0Vu .profileBadge22-LJmn9o {
   width: 30px;
   height: 30px;
 }
-:root .userProfileCustomizationSection-8Vpo48 .baseLayout-2GkbfB .profileBannerPreview-3_l0Wd .headerTop-3vNv-a .headerText-1vVs-U {
+:root .profileCustomizationSection-1-Issy .baseLayout-NX_bpH .profileBannerPreview-gaX5MP .headerTop-3vNv-a .headerText-1vVs-U {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -1138,17 +1135,17 @@
   padding: 6px;
   background-color: var(--background-primary);
 }
-:root .userProfileCustomizationSection-8Vpo48 .baseLayout-2GkbfB .profileBannerPreview-3_l0Wd .headerTop-3vNv-a .headerText-1vVs-U .headerTag-3GFl76, :root .userProfileCustomizationSection-8Vpo48 .baseLayout-2GkbfB .profileBannerPreview-3_l0Wd .headerTop-3vNv-a .headerText-1vVs-U .nickname-3M3Jfa {
+:root .profileCustomizationSection-1-Issy .baseLayout-NX_bpH .profileBannerPreview-gaX5MP .headerTop-3vNv-a .headerText-1vVs-U .headerTag-3GFl76, :root .profileCustomizationSection-1-Issy .baseLayout-NX_bpH .profileBannerPreview-gaX5MP .headerTop-3vNv-a .headerText-1vVs-U .nickname-3M3Jfa {
   font-size: 16px;
 }
-:root .userProfileCustomizationSection-8Vpo48 .baseLayout-2GkbfB .profileBannerPreview-3_l0Wd .headerTop-3vNv-a .setIdentityLink-1t8Ahd {
+:root .profileCustomizationSection-1-Issy .baseLayout-NX_bpH .profileBannerPreview-gaX5MP .headerTop-3vNv-a .setIdentityLink-1t8Ahd {
   display: none;
 }
-:root .userProfileCustomizationSection-8Vpo48 .baseLayout-2GkbfB .profileBannerPreview-3_l0Wd .popoutInfo-pKbpvG {
+:root .profileCustomizationSection-1-Issy .baseLayout-NX_bpH .profileBannerPreview-gaX5MP .popoutInfo-1A9dyK {
   grid-area: body;
   padding: 0 0 0 8px !important;
 }
-:root .userProfileCustomizationSection-8Vpo48 .baseLayout-2GkbfB .profileBannerPreview-3_l0Wd .popoutInfo-pKbpvG .customStatus-oN4ZZY {
+:root .profileCustomizationSection-1-Issy .baseLayout-NX_bpH .profileBannerPreview-gaX5MP .popoutInfo-1A9dyK .customStatus-oN4ZZY {
   position: relative;
   overflow: hidden;
   margin-bottom: 8px;
@@ -1156,7 +1153,7 @@
   background-color: var(--background-secondary-alt);
   border-radius: var(--border-radius);
 }
-:root .userProfileCustomizationSection-8Vpo48 .baseLayout-2GkbfB .profileBannerPreview-3_l0Wd .popoutInfo-pKbpvG .customStatus-oN4ZZY::before {
+:root .profileCustomizationSection-1-Issy .baseLayout-NX_bpH .profileBannerPreview-gaX5MP .popoutInfo-1A9dyK .customStatus-oN4ZZY::before {
   content: "CUSTOM STATUS";
   position: absolute;
   top: 0;
@@ -1169,36 +1166,36 @@
   background-color: var(--background-primary);
   padding: 5px;
 }
-:root .userProfileCustomizationSection-8Vpo48 .baseLayout-2GkbfB .profileBannerPreview-3_l0Wd .popoutInfo-pKbpvG .divider-ewBQKj {
+:root .profileCustomizationSection-1-Issy .baseLayout-NX_bpH .profileBannerPreview-gaX5MP .popoutInfo-1A9dyK .divider-ewBQKj {
   display: none;
 }
-:root .userProfileCustomizationSection-8Vpo48 .baseLayout-2GkbfB .profileBannerPreview-3_l0Wd .popoutInfo-pKbpvG .aboutMeSection-1Fw5Ia {
+:root .profileCustomizationSection-1-Issy .baseLayout-NX_bpH .profileBannerPreview-gaX5MP .popoutInfo-1A9dyK .aboutMeSection-1Fw5Ia {
   margin-bottom: 8px;
   padding: 0 0 8px 0;
   background-color: var(--background-secondary-alt);
   border-radius: var(--border-radius);
 }
-:root .userProfileCustomizationSection-8Vpo48 .baseLayout-2GkbfB .profileBannerPreview-3_l0Wd .popoutInfo-pKbpvG .aboutMeSection-1Fw5Ia .aboutMeTitle-1IYtPE {
+:root .profileCustomizationSection-1-Issy .baseLayout-NX_bpH .profileBannerPreview-gaX5MP .popoutInfo-1A9dyK .aboutMeSection-1Fw5Ia .aboutMeTitle-1IYtPE {
   justify-content: center;
   background-color: var(--background-primary);
   padding: 5px;
   border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
-:root .userProfileCustomizationSection-8Vpo48 .baseLayout-2GkbfB .profileBannerPreview-3_l0Wd .popoutInfo-pKbpvG .aboutMeSection-1Fw5Ia .aboutMeBody-3GuvKk {
+:root .profileCustomizationSection-1-Issy .baseLayout-NX_bpH .profileBannerPreview-gaX5MP .popoutInfo-1A9dyK .aboutMeSection-1Fw5Ia .aboutMeBody-3GuvKk {
   padding: 0 12px;
 }
-:root .userProfileCustomizationSection-8Vpo48 .baseLayout-2GkbfB .profileBannerPreview-3_l0Wd .popoutInfo-pKbpvG > :last-child {
+:root .profileCustomizationSection-1-Issy .baseLayout-NX_bpH .profileBannerPreview-gaX5MP .popoutInfo-1A9dyK > :last-child {
   background-color: var(--background-secondary-alt);
   padding-bottom: 8px;
   border-radius: var(--border-radius);
 }
-:root .userProfileCustomizationSection-8Vpo48 .baseLayout-2GkbfB .profileBannerPreview-3_l0Wd .popoutInfo-pKbpvG > :last-child .fakeActivityTitle-3Yf28p {
+:root .profileCustomizationSection-1-Issy .baseLayout-NX_bpH .profileBannerPreview-gaX5MP .popoutInfo-1A9dyK > :last-child .fakeActivityTitle-ka26mT {
   text-align: center;
   background-color: var(--background-primary);
   padding: 5px;
   border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
-:root .userProfileCustomizationSection-8Vpo48 .baseLayout-2GkbfB .profileBannerPreview-3_l0Wd .popoutInfo-pKbpvG > :last-child .fakeActivityTitle-3Yf28p ~ * {
+:root .profileCustomizationSection-1-Issy .baseLayout-NX_bpH .profileBannerPreview-gaX5MP .popoutInfo-1A9dyK > :last-child .fakeActivityTitle-ka26mT ~ * {
   padding: 0 8px;
 }
 :root .item-26Dhrx {
