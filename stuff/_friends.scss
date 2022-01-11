@@ -1,7 +1,7 @@
 :root { 
 
 // Friends activity
-.nowPlayingColumn-2sl4cE {
+.nowPlayingColumn-1eCBCN {
     position: fixed;
     top: 280px; bottom: 120px; right: 60px;
     width: 320px; min-width: unset;
@@ -35,37 +35,37 @@
 }
 
 // Friend list
-.container-1D34oG { 
+.container-2cd8Mz { 
     background-color: var(--background-primary);
 
-    .peopleListItem-2nzedh { 
+    .peopleListItem-u6dGxF { 
         border-radius: var(--border-radius); border-top: none;
         background: var(--background-modifier-hover);
         margin: 8px 10px 8px 20px;
         padding: 16px 10px;
 
-        &:hover { .actionButton-uPB8Fs { background-color: var(--background-secondary-alt);}}
+        &:hover { .actionButton-3-B2x- { background-color: var(--background-secondary-alt);}}
     }
 }
 
 // Friend call
-.nowPlayingColumn-2sl4cE .scroller-2ZPeAD { border: none;}
-.controlButton-2MhVEL foreignObject { mask: none;}
-.colorable-1bkp8v.primaryDark-3mSFDl { background-color: var(--background-primary);}
-.wrapper-2qzCYF { background-color: var(--background-tertiary);}
+.nowPlayingColumn-1eCBCN .scroller-hE2gWq { border: none;}
+.controlButton-2PMNom foreignObject { mask: none;}
+.colorable-3rVGna.primaryDark-2UJt1G { background-color: var(--background-primary);}
+.wrapper-1gVUIN { background-color: var(--background-tertiary);}
 
 // Friend activity
-.inset-3sAvek { background-color: var(--background-primary);}
-.separator-XqIyoz { display: none;}
-.voiceSectionIconWrapper-FO7UEY { background-color: var(--background-tertiary);}
-.outer-1AjyKL.active-1xchHY, .outer-1AjyKL.interactive-3B9GmY:hover { background-color: var(--activity-card-background);}
-.itemCard-v9viV7 { 
+.inset-SbsSFp { background-color: var(--background-primary);}
+.separator-2OaeRP { display: none;}
+.voiceSectionIconWrapper-4yoj76 { background-color: var(--background-tertiary);}
+.outer-2JOHae.active-1W_Gl9, .outer-2JOHae.interactive-2zD88a:hover { background-color: var(--activity-card-background);}
+.itemCard-3Etziu { 
     border-radius: var(--border-radius);
 
-    .body-1ld4H7 { border-radius: calc(var(--border-radius) - 10px);}
+    .body-16rSsp { border-radius: calc(var(--border-radius) - 10px);}
 }
 
 // Regionnal selector friend call
-.quickSelectPopout-X1hvgV.regionSelectPopout-p9-0_W { background-color: var(--background-secondary-alt);}
+.quickSelectPopout-2F0PXw.regionSelectPopout-3sEzVB { background-color: var(--background-secondary-alt);}
 
 }

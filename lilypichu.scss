@@ -18,15 +18,15 @@
 
 // Right popout
 @media (min-width: 1350px) {
-  .chatContent-a9vAAp + :last-child {
+  .chatContent-3KubbW + :last-child {
       position: fixed;
       top: 280px; bottom: 120px; right: 60px;
       width: 320px; height: unset;
   }
-  .tabBody-3YRQ8W { transform: none;}
+  .tabBody-2dgbAs { transform: none;}
 
   // Basic right popout when there's nothing
-  .container-2lgZY8::after {
+  .container-1eFtFS::after {
     content: "Stay comfy ❤"; position: fixed;
     top: 220px; bottom: 85px; right: 60px; z-index: -2;
     width: 320px; background-color: var(--background-primary);
@@ -35,7 +35,7 @@
     border-radius: var(--border-radius);
     overflow: hidden;
   }
-  .container-2lgZY8::before {
+  .container-1eFtFS::before {
     content: ""; position: fixed;
     top: 220px; bottom: 85px; right: 70px; z-index: -1;
     width: 300px; border-radius: var(--border-radius);
@@ -43,17 +43,17 @@
   }
 
   // Adding space for right popout
-  .guilds-1SWlCJ + :nth-child(2) { margin-right: 450px; border-radius: 0 var(--border-radius) var(--border-radius) 0;}
+  .guilds-2JjMmN + :nth-child(2) { margin-right: 450px; border-radius: 0 var(--border-radius) var(--border-radius) 0;}
 
   // User area
-  .panels-j1Uci_ > .container-3baos1 {
+  .panels-3wFtMD > .container-YkUktl {
     position: fixed;
     width: 305px; height: 50px;
     bottom: 28px; right: 60px;
     background-color: var(--background-primary);
     border-radius: var(--border-radius);
   }
-  .container-2lgZY8 { overflow: visible;}
+  .container-1eFtFS { overflow: visible;}
 
-  .layers-3iHuyZ > :nth-child(2) { margin-right: 450px;}
+  .layers-OrUESM > :nth-child(2) { margin-right: 450px;}
 }
