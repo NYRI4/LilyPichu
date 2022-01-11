@@ -1,7 +1,7 @@
 :root { 
 
 // -- Member list --
-.membersWrap-2h-GB4 {
+.membersWrap-3NUR2t {
         
     // Header
     &::before {
@@ -16,12 +16,12 @@
         border-radius: var(--border-radius) var(--border-radius) 0 0;
     }
 
-    .members-1998pB { 
+    .members-3WRCEx { 
         width: 100%; 
         background-color: var(--background-primary);
         
-        .content-3YMskv { min-height: 1000px; background-color: transparent;}
-        .member-3-YXUe { 
+        .content-2a4AW9 { min-height: 1000px; background-color: transparent;}
+        .member-2gU6Ar { 
             max-width: 300px; 
             border-radius: var(--border-radius);
             background-color: var(--background-primary);
@@ -42,10 +42,10 @@
     }
 }
 
-.layout-2DM8Md { border-radius: var(--border-radius);}
+.layout-1qmrhw { border-radius: var(--border-radius);}
 
 // -- User popout --
-.userPopout-xaxa6l {
+.userPopout-2j1gM4 {
     display: grid; 
     grid-template-areas: "avatar user-infos body" 
                          "banner banner body";
@@ -57,20 +57,20 @@
     box-shadow: 0 2px 10px 0 rgba(0,0,0,.2), 0 0 0 1px rgba(56, 31, 31, 0.11);
 
     // Banner
-    .headerNormal-3KXFBt {
+    .headerNormal-3Zn_yu {
         grid-area: banner;
         position: static;
         width: 100%; height: calc(100% - 8px);
         margin: 8px 0 0;
 
-        .banner-2QYc2d { 
+        .banner-1YaD3N { 
             width: 100%; height: 100%;
             border-radius: var(--border-radius);
         }
     }
 
     // User informations header
-    .headerTop-3vNv-a {
+    .headerTop-3GPUSF {
         grid-area: user-infos;
         position: static; display: flex;
         flex-direction: column-reverse;
@@ -80,36 +80,36 @@
         border-radius: var(--border-radius);
 
         // Badges
-        .profileBadges-ohc0Vu {
+        .profileBadges-2pItdR {
             position: static;
             width: calc(100% - 16px); height: 100%; 
             max-width: unset;
             align-items: center; justify-content: center;
             padding: 10px; margin: 0;
 
-            .profileBadge22-LJmn9o { width: 30px; height: 30px;}
+            .profileBadge22-3GAYRy { width: 30px; height: 30px;}
         }
 
         // Username
-        .headerText-1vVs-U {
+        .headerText-1-WmDq {
             display: flex; flex-direction: column;
             width: calc(100% - 12px); height: calc(100% - 12px);
             align-items: center; justify-content: center;
             padding: 6px;
             background-color: var(--background-primary);
 
-            .headerTag-3GFl76, .nickname-3M3Jfa { font-size: 16px;}
+            .headerTag-3GXZkV, .nickname-t08Mck { font-size: 16px;}
         }
 
-        .setIdentityLink-1t8Ahd { display: none;}
+        .setIdentityLink-hOFsMl { display: none;}
     }
 
     // Body
-    .body-3HBlXn {
+    .body-2wLx-E {
         grid-area: body; padding: 0 !important;
         
         // Custom status
-        .customStatus-oN4ZZY {
+        .customStatus-3XAoF9 {
             position: relative; overflow: hidden;
             width: calc(100% - 8px);
             margin: 0 0 8px 8px; padding: 36px 8px 8px 8px;
@@ -128,33 +128,33 @@
         }
 
         // Divider
-        .divider-ewBQKj { display: none;}
+        .divider-1wtgZ3 { display: none;}
 
         // About Me
-        .aboutMeSection-1Fw5Ia {
+        .aboutMeSection-PUghFQ {
             margin: 0 0 8px 8px; padding: 0 0 8px 0;
             background-color: var(--background-secondary-alt);
             border-radius: var(--border-radius);
 
-            .aboutMeTitle-1IYtPE {
+            .aboutMeTitle-3pjiS7 {
                 justify-content: center;
                 background-color: var(--background-primary);
                 padding: 5px; border-radius: var(--border-radius) var(--border-radius) 0 0;
             }
 
-            .aboutMeBody-3GuvKk { padding: 0 12px;}
+            .aboutMeBody-1J8rhz { padding: 0 12px;}
         }
 
-        .bodyInnerWrapper-26fQXj {
+        .bodyInnerWrapper-2bQs1k {
             padding-left: 8px;
 
             // Activity
-            .activity-2INFPu { 
+            .activity-1gTu-L { 
                 background-color: var(--background-secondary-alt);
                 padding-bottom: 8px; margin-bottom: 8px;
                 border-radius: var(--border-radius);
 
-                .headerTextNormal-2mGWX3 {
+                .headerTextNormal-Z8we9g {
                     width: 100%;
                     text-align: center;
                     justify-content: center;
@@ -162,7 +162,7 @@
                     padding: 5px; border-radius: var(--border-radius) var(--border-radius) 0 0;
                 }
 
-                .bodyNormal-2D39hT {
+                .bodyNormal-250CQK {
                     padding: 8px;
 
                     & + div {
@@ -178,19 +178,19 @@
             }
     
             // Roles
-            .bodyTitle-1ySSKn {
+            .bodyTitle-2Az3VQ {
                 text-align: center;
                 background-color: var(--background-primary);
                 padding: 5px; margin-bottom: 0;
                 border-radius: var(--border-radius) var(--border-radius) 0 0;
             }
 
-            .rolesList-1geHY1 {
+            .rolesList-3uZoaa {
                 flex-direction: column;
                 margin: 0 0 8px 0; border-radius: 0 0 var(--border-radius) var(--border-radius);
                 background-color: var(--background-secondary-alt);
                 
-                .role-2irmRk {
+                .role-2TIOKu {
                     position: relative;
                     overflow: hidden;
                     border: none;
@@ -201,7 +201,7 @@
                     &:empty { padding: 50px 0;}
                 }
 
-                .roleCircle-3xAZ1j::before {
+                .roleCircle-1EgnFN::before {
                     content: '';
                     position: absolute;
                     top: 0; left: 0;
@@ -210,9 +210,9 @@
                     opacity: .2;
                     pointer-events: none;
                 }
-                .roleCircle-3xAZ1j { margin: 0;}
+                .roleCircle-1EgnFN { margin: 0;}
 
-                .roleName-32vpEy { 
+                .roleName-2ZJJYR { 
                     z-index: 1;
                     text-align: center; 
                     width: 100%; font-weight: bold;
@@ -221,7 +221,7 @@
             }
 
             // Notes
-            .note-1oo11U {
+            .note-Go5ZP2 {
                 margin: 0; border-radius: 0 0 var(--border-radius) var(--border-radius);
                 background-color: var(--background-secondary-alt);
 
@@ -233,19 +233,19 @@
     }
 
     // Avatar
-    .avatarWrapperNormal-26WQIb {
+    .avatarWrapperNormal-ahVUaC {
         grid-area: avatar;
         position: relative;
         top: 0; left: 0;
 
-        .avatar-37jOim { 
+        .avatar-2Vndt_ { 
             border: none; background: none;
             width: 100% !important; height: 100% !important;
             
             foreignObject { mask: none; border-radius: var(--border-radius); overflow: hidden;}
-            .pointerEvents-2zdfdO { display: none;}
+            .pointerEvents-9SZWKj { display: none;}
         }
-        .avatarHint-2A3RNb { 
+        .avatarHint-k7pYop { 
             top: 0; left: 0;
             width: 100%; height: 100%;
 
@@ -253,45 +253,45 @@
         }
     }
 
-    .footer-3UKYOU { display: none;}
+    .footer-1Dc_h6 { display: none;}
 }
 
 // Add role menu
-.container-3XJ8ns {
+.container-2O1UgZ {
     border-radius: var(--border-radius);
     border: none;
     
-    .item-2J2GlB {
-        .popoutRoleDot-1XPcoA { border: none;}
+    .item-1BCeuB {
+        .popoutRoleDot-2_Nt5g { border: none;}
         
         &:hover { border-radius: var(--border-radius);} 
     }
 }
 
 // -- User modal --
-.root-3QyAh1 {
+.root-8LYsGj {
     border-radius: var(--border-radius);
 
-    .topSection-y3p-_D { 
+    .topSection-13QKHs { 
         background-color: var(--background-secondary-alt);
 
         & > header {
             margin-left: 8px;
 
-            .banner-2QYc2d { margin-left: -8px;}
+            .banner-1YaD3N { margin-left: -8px;}
 
-            .header-4zuFdR {
+            .header-S26rhB {
                 margin-bottom: 30px;
 
                 // Avatar 
-                .avatar-AvHqJA { 
+                .avatar-3QF_VA { 
                     border-width: 8px 0;
                     border-color: transparent;
                     background-color: transparent;
                     border-radius: var(--border-radius); overflow: hidden;
                     
                 }
-                .badgeList-1R1WgZ > * { 
+                .badgeList-2aoHPw > * { 
 
                     img { width: 30px; height: 30px;}
                 }
@@ -300,35 +300,35 @@
     }
 
     // Mutual bar
-    .tabBarContainer-37hZsr { 
+    .tabBarContainer-sCZC4w { 
         padding: 0; border-bottom: none;
     
-        .tabBar-3nvOPa { 
+        .tabBar-2hXqzU { 
             justify-content: space-around;
 
-            .tabBarItem-3dfX8P { margin-right: 0; z-index: 1; position: relative;}
+            .tabBarItem-30Te4- { margin-right: 0; z-index: 1; position: relative;}
         }
     }
     
     // Activities
     .activity-2M3PRB { position: relative; z-index: 1;}
-    .activityProfile-2bJRaP { 
+    .activityProfile-1712BN { 
         background-color: var(--background-primary);
         margin: 10px; border-radius: var(--border-radius);
     }
 
     // Body
-    .body-r6_QPy {
+    .body-1Ukv50 {
         z-index: 1;
         
         // Connections
-        .userInfoSection-q_35fn {
+        .userInfoSection-2u2hir {
             border-top: none;
 
-            .connectedAccounts-QlRa4m {
+            .connectedAccounts-1YaT2t {
                 justify-content: flex-start;
 
-                .connectedAccount-2Jb-Z0 { 
+                .connectedAccount-1xKpli { 
                     position: relative;
                     width: 110px;
                     flex-direction: column;
@@ -336,7 +336,7 @@
                     margin: 5px; padding: 10px;
 
                     // Icon
-                    .connectedAccountIcon-3_EQqg {
+                    .connectedAccountIcon-2vls0t {
                         position: relative;
                         margin-bottom: 10px;
                         width: 45px; height: 45px;
@@ -344,17 +344,17 @@
                     }
 
                     // Username
-                    .connectedAccountNameInner-2q3MVf {
+                    .connectedAccountNameInner-t24B11 {
                         position: relative; z-index: 1; 
                         width: 100%; justify-content: center;
                         overflow: visible;
 
-                        .connectedAccountName-E1KzaT { text-align: center; margin: 0;}
+                        .connectedAccountName-j0meX4 { text-align: center; margin: 0;}
                         span { display: none;}
                     }
 
                     // Link
-                    .anchor-3Z-8Bb {
+                    .anchor-1MIwyf {
                         position: absolute;
                         top: 0; left: 0;
                         width: 100%; height: 100%;
@@ -364,7 +364,7 @@
                     }
 
                     // Background color
-                    .connectedAccountIcon-3_EQqg + .connectedAccountNameInner-2q3MVf::before {
+                    .connectedAccountIcon-2vls0t + .connectedAccountNameInner-t24B11::before {
                         content: ""; position: absolute; 
                         top: -65px; left: -10px; z-index: -1;
                         width: 130px; height: 91px;
@@ -372,18 +372,18 @@
                         opacity: 0.25;
                     }
 
-                    .connectedAccountIcon-3_EQqg { 
-                        &[src="/assets/5d69e29f0d71aaa04ed9725100199b4e.png"] + .connectedAccountNameInner-2q3MVf::before { background-color: #191717; } // GitHub
-                        &[src="/assets/f0655521c19c08c4ea4e508044ec7d8c.png"] + .connectedAccountNameInner-2q3MVf::before { background-color: #1ED760; } // Spotify
-                        &[src="/assets/f09c1c70a67ceaaeb455d163f3f9cbb8.png"] + .connectedAccountNameInner-2q3MVf::before { background-color: #000000; } // Steam
-                        &[src="/assets/0d44ba28e39303de3832db580a252456.png"] + .connectedAccountNameInner-2q3MVf::before { background-color: #5DC21E; } // Xbox
-                        &[src="/assets/3abe9ce5a00cc24bd8aae04bf5968f4c.png"] + .connectedAccountNameInner-2q3MVf::before { background-color: #FF4500; } // Reddit
-                        &[src="/assets/edbbf6107b2cd4334d582b26e1ac786d.png"] + .connectedAccountNameInner-2q3MVf::before { background-color: #553092; } // Twitch
-                        &[src="/assets/4662875160dc4c56954003ebda995414.png"] + .connectedAccountNameInner-2q3MVf::before { background-color: #1DA1F2; } // Twitter
-                        &[src="/assets/449cca50c1452b4ace3cbe9bc5ae0fd6.png"] + .connectedAccountNameInner-2q3MVf::before { background-color: #D9252A; } // YouTube
-                        &[src="/assets/8c289d499232cd8e9582b4a5639d9d1d.png"] + .connectedAccountNameInner-2q3MVf::before { background-color: #009AE5; } // Battle.net
-                        &[src="/assets/8d8f815f3d81a33b1e70ec7c22e1b6fe.png"] + .connectedAccountNameInner-2q3MVf::before { background-color: #2D3283; } // Facebook
-                        &[src="/assets/806953fe1cc616477175cbcdf90d5cd3.png"] + .connectedAccountNameInner-2q3MVf::before { background-color: #CEA146; } // league of Legends  
+                    .connectedAccountIcon-2vls0t { 
+                        &[src="/assets/5d69e29f0d71aaa04ed9725100199b4e.png"] + .connectedAccountNameInner-t24B11::before { background-color: #191717; } // GitHub
+                        &[src="/assets/f0655521c19c08c4ea4e508044ec7d8c.png"] + .connectedAccountNameInner-t24B11::before { background-color: #1ED760; } // Spotify
+                        &[src="/assets/f09c1c70a67ceaaeb455d163f3f9cbb8.png"] + .connectedAccountNameInner-t24B11::before { background-color: #000000; } // Steam
+                        &[src="/assets/0d44ba28e39303de3832db580a252456.png"] + .connectedAccountNameInner-t24B11::before { background-color: #5DC21E; } // Xbox
+                        &[src="/assets/3abe9ce5a00cc24bd8aae04bf5968f4c.png"] + .connectedAccountNameInner-t24B11::before { background-color: #FF4500; } // Reddit
+                        &[src="/assets/edbbf6107b2cd4334d582b26e1ac786d.png"] + .connectedAccountNameInner-t24B11::before { background-color: #553092; } // Twitch
+                        &[src="/assets/4662875160dc4c56954003ebda995414.png"] + .connectedAccountNameInner-t24B11::before { background-color: #1DA1F2; } // Twitter
+                        &[src="/assets/449cca50c1452b4ace3cbe9bc5ae0fd6.png"] + .connectedAccountNameInner-t24B11::before { background-color: #D9252A; } // YouTube
+                        &[src="/assets/8c289d499232cd8e9582b4a5639d9d1d.png"] + .connectedAccountNameInner-t24B11::before { background-color: #009AE5; } // Battle.net
+                        &[src="/assets/8d8f815f3d81a33b1e70ec7c22e1b6fe.png"] + .connectedAccountNameInner-t24B11::before { background-color: #2D3283; } // Facebook
+                        &[src="/assets/806953fe1cc616477175cbcdf90d5cd3.png"] + .connectedAccountNameInner-t24B11::before { background-color: #CEA146; } // league of Legends  
                     }
                 }
             }
@@ -393,8 +393,8 @@
 
 
 // USRBG for BetterDiscord only
-.userPopout-xaxa6l .banner-2QYc2d,
-.root-3QyAh1 .banner-2QYc2d {
+.userPopout-2j1gM4 .banner-1YaD3N,
+.root-8LYsGj .banner-1YaD3N {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: var(--user-popout-position, center) center;

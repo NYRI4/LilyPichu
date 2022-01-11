@@ -1,19 +1,19 @@
 :root { 
-    .guilds-1SWlCJ .scroller-1Bvpku { 
+    .guilds-2JjMmN .scroller-3X7KbA { 
         padding: 8px 0 130px 0;
 
-        .wrapper-25eVIn foreignObject { 
+        .wrapper-28eC3z foreignObject { 
             mask: none; border-radius: var(--border-radius);
             transition: border-radius 0.15s;
 
             &:hover { border-radius: calc(var(--border-radius) - 5px);}
         }
         
-        .folder-2w6LX1 { background-color: transparent;}
+        .folder-241Joy { background-color: transparent;}
 
 
         // Discover + create a server buttons
-        .circleIconButton-hZmpE8 {
+        .circleIconButton-1VxDrg {
             color: var(--background-accent);
             background-color: var(--background-secondary-alt) !important;
         }
@@ -21,26 +21,26 @@
 }
 
 .theme-light { 
-    .wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9, 
-    .wrapper-1BJsBx:hover .childWrapper-anI2G9 { background-color: var(--text-normal);}
+    .wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub, 
+    .wrapper-3kah-n:hover .childWrapper-1j_1ub { background-color: var(--text-normal);}
 } 
 
 .theme-dark { 
-    .wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9, 
-    .wrapper-1BJsBx:hover .childWrapper-anI2G9 { background-color: var(--background-primary);}
+    .wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub, 
+    .wrapper-3kah-n:hover .childWrapper-1j_1ub { background-color: var(--background-primary);}
 } 
 
 // Server radius
-.wrapperSimple-19ogV2,
+.wrapperSimple-Js2rIO,
 .folderIconWrapper-226oVY, .folderIconWrapper-1_bOZe,
-.expandedFolderBackground-2sPsd-, .flexChild-faoVW3 .avatarUploaderInner-3UNxY3 {
+.expandedFolderBackground-2sPsd-, .flexChild-3PzYmX .avatarUploaderInner-yEhTv5 {
   border-radius: var(--border-radius);
 }
 
-.panels-j1Uci_ { z-index: unset;}
+.panels-3wFtMD { z-index: unset;}
 
 // Game panel
-.panel-24C3ux { 
+.panel-2ZFCRb { 
     position: fixed;
     left: 0; bottom: 0;
     width: 56px;
@@ -48,9 +48,9 @@
     background-color: var(--background-tertiary);
     transition: width 0.35s;
 
-    .gameWrapper-1jIQAX { margin-left: 12px;}
+    .gameWrapper-2TFy7F { margin-left: 12px;}
 
-    .info-WdNIDE, .actions-aUdUfC { opacity: 0;}
+    .info-88fTUI, .actions-zk2vB_ { opacity: 0;}
 
     &:hover { 
         width: 274px; margin: 8px;
@@ -58,14 +58,14 @@
         border-left: 5px solid var(--background-accent);
         box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(56, 31, 31, 0.11);
 
-        .gameWrapper-1jIQAX { margin-left: 0;}
-        .info-WdNIDE, .actions-aUdUfC { opacity: 1;}
+        .gameWrapper-2TFy7F { margin-left: 0;}
+        .info-88fTUI, .actions-zk2vB_ { opacity: 1;}
     }
 }
 
 // Powercord Spotify
-.activityPanel-28dQGo ~ .powercord-spotify { bottom: 50px; transition: 0.35s;}
-.activityPanel-28dQGo:hover ~ .powercord-spotify { bottom: 60px;}
+.activityPanel-9icbyU ~ .powercord-spotify { bottom: 50px; transition: 0.35s;}
+.activityPanel-9icbyU:hover ~ .powercord-spotify { bottom: 60px;}
 
 .powercord-spotify {
     position: fixed;
@@ -74,11 +74,11 @@
     
     transition: width 0.25s, margin 0.25s;
     
-    .container-3baos1 {
+    .container-YkUktl {
         margin-top: 5px;
 
         // Song cover
-        .avatarWrapper-2yR4wp { 
+        .avatarWrapper-1B9FTW { 
             margin-left: 4px;
             
             .spotify-cover { 
@@ -87,7 +87,7 @@
         }
 
         // Song name and buttons
-        .nameTag-3uD-yy, .spotify-buttons { opacity: 0;}
+        .nameTag-sc-gpq, .spotify-buttons { opacity: 0;}
     }
 
     .spotify-seek .spotify-seek-bar { 
@@ -104,19 +104,19 @@
         border-left: 5px solid var(--background-accent);
         box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(56, 31, 31, 0.11);
 
-        .container-3baos1 { 
+        .container-YkUktl { 
             flex-direction: column;
             height: unset; 
             
             // Song cover
-            .avatarWrapper-2yR4wp { 
+            .avatarWrapper-1B9FTW { 
                 margin: -30px 0 0 0;
 
                 .spotify-cover { width: 100px !important; height: auto !important;}
             }
 
             // Song name and buttons
-            .nameTag-3uD-yy { 
+            .nameTag-sc-gpq { 
                 text-align: center; margin: 15px 0; 
                 opacity: 1; max-width: 260px;
             }
