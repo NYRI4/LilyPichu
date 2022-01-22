@@ -673,6 +673,22 @@
 }
 :root .userPopout-2j1gM4 .body-2wLx-E .aboutMeSection-PUghFQ .aboutMeBody-1J8rhz {
   padding: 0 12px;
+  -webkit-line-clamp: 190;
+  max-height: 112px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+:root .userPopout-2j1gM4 .body-2wLx-E .aboutMeSection-PUghFQ .aboutMeBody-1J8rhz::-webkit-scrollbar {
+  width: 10px;
+  height: 15px;
+}
+:root .userPopout-2j1gM4 .body-2wLx-E .aboutMeSection-PUghFQ .aboutMeBody-1J8rhz::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: var(--background-secondary-alt);
+}
+:root .userPopout-2j1gM4 .body-2wLx-E .aboutMeSection-PUghFQ .aboutMeBody-1J8rhz::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: var(--background-tertiary);
 }
 :root .userPopout-2j1gM4 .body-2wLx-E .bodyInnerWrapper-2bQs1k {
   padding-left: 8px;
