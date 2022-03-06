@@ -1755,10 +1755,10 @@
 :root .powercord-toast .header {
   border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
-:root .powercord-toast .buttons > .button-38aScr:first-child {
+:root .powercord-toast .buttons > .button-f2h6uQ:first-child {
   border-bottom-left-radius: var(--border-radius);
 }
-:root .powercord-toast .buttons > .button-38aScr:last-child {
+:root .powercord-toast .buttons > .button-f2h6uQ:last-child {
   border-bottom-right-radius: var(--border-radius);
 }
 :root .sprite-2lxwfc {
@@ -1799,10 +1799,10 @@
 :root .keyboardShortcutsModal-2CRmCm {
   background: var(--background-secondary);
 }
-:root .scroller-1JpcIc {
+:root .scroller-s-wehS {
   background: var(--background-primary);
 }
-:root .whyYouMightLikeIt-2zZIIj, :root .content-1W9-9i, :root .bodySection-3iDdop, :root .row-2qQ--F {
+:root .whyYouMightLikeIt-2N2Df7, :root .content-1W9-9i, :root .bodySection-3iDdop, :root .row-2qQ--F {
   background: var(--background-secondary);
 }
 :root .toolbar-37BrJ5 {
