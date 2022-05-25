@@ -47,10 +47,11 @@
 // -- User popout --
 .userPopout-2j1gM4 {
     display: grid; 
-    grid-template-areas: "avatar user-infos body" 
-                         "banner banner body";
-    grid-template-columns: 120px 1fr 1fr;
-    grid-template-rows: 120px 1fr;
+    grid-template-areas: "banner body" 
+                         "user-infos body"
+                         "footer body";
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 180px 120px 1fr;
     width: unset !important; max-width: 600px;
     min-height: 300px; padding: 8px;
     border-radius: var(--border-radius);
@@ -59,33 +60,30 @@
     // Banner
     .headerNormal-3Zn_yu {
         grid-area: banner;
-        position: static;
-        width: 100%; height: calc(100% - 8px);
-        margin: 8px 0 0;
+        width: 100%; height: 100%;
 
         .banner-1YaD3N { 
-            width: 100%; height: 100%;
-            border-radius: var(--border-radius);
+            width: 100%; height: 100%; max-width: unset;
+            border-radius: var(--border-radius) var(--border-radius) 0 0;
         }
     }
 
     // User informations header
     .headerTop-3GPUSF {
         grid-area: user-infos;
-        position: static; display: flex;
-        flex-direction: column-reverse;
+        display: flex; flex-direction: column-reverse;
         align-items: center; justify-content: flex-end;
-        padding: 0; margin-left: 8px;
+        padding: 0;
         background-color: var(--background-secondary-alt);
-        border-radius: var(--border-radius);
+        border-radius: 0 0 var(--border-radius) var(--border-radius);
 
         // Badges
         .profileBadges-2pItdR {
             position: static;
-            width: calc(100% - 16px); height: 100%; 
+            width: calc(100% - 24px); height: 100%; 
             max-width: unset;
-            align-items: center; justify-content: center;
-            padding: 10px; margin: 0;
+            align-items: center; justify-content: flex-end;
+            margin: 0;
 
             .profileBadge22-3GAYRy { width: 30px; height: 30px;}
         }
@@ -94,8 +92,8 @@
         .headerText-1-WmDq {
             display: flex; flex-direction: column;
             width: calc(100% - 12px); height: calc(100% - 12px);
-            align-items: center; justify-content: center;
-            padding: 6px;
+            align-items: flex-start; justify-content: center;
+            padding: 6px 6px 6px 24px;
             background-color: var(--background-primary);
 
             .headerTag-3GXZkV, .nickname-t08Mck { font-size: 16px;}
@@ -131,18 +129,18 @@
         .divider-1wtgZ3 { display: none;}
 
         // About Me
-        .aboutMeSection-PUghFQ {
+        .userInfoSection-3her-v {
             margin: 0 0 8px 8px; padding: 0 0 8px 0;
             background-color: var(--background-secondary-alt);
-            border-radius: var(--border-radius);
+            border-radius: var(--border-radius); overflow: hidden;
 
-            .aboutMeTitle-3pjiS7 {
+            .userInfoTitle-39qq0Y {
                 justify-content: center;
                 background-color: var(--background-primary);
                 padding: 5px; border-radius: var(--border-radius) var(--border-radius) 0 0;
             }
 
-            .aboutMeBody-1J8rhz { 
+            .userInfoBody-1zgAd0 { 
                 padding: 0 12px;
 
                 // Sarahhh#6076's code
@@ -168,6 +166,7 @@
 
         .bodyInnerWrapper-2bQs1k {
             padding-left: 8px;
+            background-color: unset;
 
             // Activity
             .activity-1gTu-L { 
@@ -183,7 +182,7 @@
                     padding: 5px; border-radius: var(--border-radius) var(--border-radius) 0 0;
                 }
 
-                .bodyNormal-250CQK {
+                .body-u1Y8uL {
                     padding: 8px;
 
                     & + div {
@@ -194,8 +193,10 @@
                     }
                 }
 
+                & > .buttonsWrapper-2ARRp1 { padding: 0 5px; width: calc(100% - 10px);}
+
                     // Spotify icon
-                .spotifyIcon-2J9kSv { display: none;}
+                .platformIcon-k3yytQ { display: none;}
             }
     
             // Roles
@@ -255,26 +256,28 @@
 
     // Avatar
     .avatarWrapperNormal-ahVUaC {
-        grid-area: avatar;
-        position: relative;
-        top: 0; left: 0;
+        position: absolute;
+        top: 165px; left: 20px;
 
         .avatar-2Vndt_ { 
             border: none; background: none;
-            width: 120px !important; height: 120px !important;
             
-            foreignObject { mask: none; border-radius: var(--border-radius); overflow: hidden;}
+            foreignObject { mask: none; border-radius: var(--border-radius) var(--border-radius) 0 0; overflow: hidden;}
             .pointerEvents-9SZWKj { display: none;}
         }
         .avatarHint-k7pYop { 
             top: 0; left: 0;
             width: 100%; height: 100%;
 
-            foreignObject { mask: none; border-radius: var(--border-radius); overflow: hidden;}
+            foreignObject { mask: none; border-radius: var(--border-radius) var(--border-radius) 0 0; overflow: hidden;}
         }
     }
 
-    .footer-3naVBw { display: none;}
+    .footer-3naVBw { 
+        grid-area: footer;
+        margin-top: 8px;
+        padding: 0;
+    }
 }
 
 // Add role menu
@@ -294,28 +297,39 @@
     border-radius: var(--border-radius);
 
     .topSection-13QKHs { 
-        background-color: var(--background-secondary-alt);
+        background-color: var(--background-primary);
 
         & > header {
-            margin-left: 8px;
-
-            .banner-1YaD3N { margin-left: -8px;}
+            display: flex; flex-direction: column;
 
             .header-S26rhB {
-                margin-bottom: 30px;
+                padding: 15px 8px;
+                background-color: var(--background-secondary-alt);
 
                 // Avatar 
                 .avatar-3QF_VA { 
+                    top: -66px;
                     border-width: 8px 0;
                     border-color: transparent;
                     background-color: transparent;
-                    border-radius: var(--border-radius); overflow: hidden;
+                    border-radius: var(--border-radius) var(--border-radius) 0 0; overflow: hidden;
                     
+                    foreignObject { mask: none;}
                 }
-                .badgeList-2aoHPw > * { 
 
-                    img { width: 30px; height: 30px;}
+                .headerTop-1PNKck {
+                    position: static;
+                    justify-content: flex-end;
+
+                    .badgeList-2aoHPw > * { 
+
+                        img { width: 30px; height: 30px;}
+                    }
                 }
+            }
+
+            .nameTag-2Nlmsy {
+                margin: 0; padding: 20px;
             }
         }
     }
@@ -394,17 +408,18 @@
                     }
 
                     .connectedAccountIcon-2vls0t { 
-                        &[src="/assets/5d69e29f0d71aaa04ed9725100199b4e.png"] + .connectedAccountNameInner-t24B11::before { background-color: #191717; } // GitHub
-                        &[src="/assets/f0655521c19c08c4ea4e508044ec7d8c.png"] + .connectedAccountNameInner-t24B11::before { background-color: #1ED760; } // Spotify
-                        &[src="/assets/f09c1c70a67ceaaeb455d163f3f9cbb8.png"] + .connectedAccountNameInner-t24B11::before { background-color: #000000; } // Steam
-                        &[src="/assets/0d44ba28e39303de3832db580a252456.png"] + .connectedAccountNameInner-t24B11::before { background-color: #5DC21E; } // Xbox
-                        &[src="/assets/3abe9ce5a00cc24bd8aae04bf5968f4c.png"] + .connectedAccountNameInner-t24B11::before { background-color: #FF4500; } // Reddit
-                        &[src="/assets/edbbf6107b2cd4334d582b26e1ac786d.png"] + .connectedAccountNameInner-t24B11::before { background-color: #553092; } // Twitch
-                        &[src="/assets/4662875160dc4c56954003ebda995414.png"] + .connectedAccountNameInner-t24B11::before { background-color: #1DA1F2; } // Twitter
-                        &[src="/assets/449cca50c1452b4ace3cbe9bc5ae0fd6.png"] + .connectedAccountNameInner-t24B11::before { background-color: #D9252A; } // YouTube
-                        &[src="/assets/8c289d499232cd8e9582b4a5639d9d1d.png"] + .connectedAccountNameInner-t24B11::before { background-color: #009AE5; } // Battle.net
-                        &[src="/assets/8d8f815f3d81a33b1e70ec7c22e1b6fe.png"] + .connectedAccountNameInner-t24B11::before { background-color: #2D3283; } // Facebook
-                        &[src="/assets/806953fe1cc616477175cbcdf90d5cd3.png"] + .connectedAccountNameInner-t24B11::before { background-color: #CEA146; } // league of Legends  
+                        &[src="/assets/6a853b4c87fce386cbfef4a2efbacb09.svg"] + .connectedAccountNameInner-t24B11::before { background-color: #191717; } // GitHub
+                        &[src="/assets/eaeac24163b35f7526704a3d9b3c7722.svg"] + .connectedAccountNameInner-t24B11::before { background-color: #1ED760; } // Spotify
+                        &[src="/assets/d897626dfa2016ea3ad0af935acb6070.svg"] + .connectedAccountNameInner-t24B11::before { background-color: #000000; } // Steam
+                        &[src="/assets/1fa6585cbb8c0fe21188e26d19fc6609.svg"] + .connectedAccountNameInner-t24B11::before { background-color: #5DC21E; } // Xbox
+                        &[src="/assets/f3224f560c8f5974355596a4f7e9ce19.svg"] + .connectedAccountNameInner-t24B11::before { background-color: #FF4500; } // Reddit
+                        &[src="/assets/ca71e0b8818221eea1deebbaf8dc6518.svg"] + .connectedAccountNameInner-t24B11::before { background-color: #553092; } // Twitch
+                        &[src="/assets/85cf2b49d2a185c98ec8e383ad5a05d6.svg"] + .connectedAccountNameInner-t24B11::before { background-color: #1DA1F2; } // Twitter
+                        &[src="/assets/57ee9535485efae7eb923ed4893abb57.svg"] + .connectedAccountNameInner-t24B11::before { background-color: #D9252A; } // YouTube
+                        &[src="/assets/37f15a06d062bdd0fc252d2b35d0b0bb.svg"] + .connectedAccountNameInner-t24B11::before { background-color: #009AE5; } // Battle.net
+                        &[src="/assets/32045743cb7670855ae726743c949e0c.svg"] + .connectedAccountNameInner-t24B11::before { background-color: #2D3283; } // Facebook
+                        &[src="/assets/94dc6f30a819026fa295d85f1f72b4ab.svg"] + .connectedAccountNameInner-t24B11::before { background-color: #CEA146; } // League of Legends  
+                        &[src="/assets/7bab4490382024b0c8c29b5378eeaf8f.svg"] + .connectedAccountNameInner-t24B11::before { background-color: #004197; } // Playstation 
                     }
                 }
             }

@@ -55,6 +55,7 @@
     --toast-header: #3b1d24 !important;
     --toast-contents: #49292f !important;
     --toast-border: #49292f !important;
+    --input-background: var(--background-secondary);
 
     /* Scrollbar */
     --scrollbar-auto-thumb: var(--background-tertiary);
@@ -63,6 +64,7 @@
     --scrollbar-thin-track: transparent;
 
     /* Other */
+    --channel-text-area-placeholder: var(--interactive-normal);
     --deprecated-quickswitcher-input-background: var(--background-primary);
 }
     .colorBrand-3cPPsm { color: #c5536c;}
