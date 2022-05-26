@@ -51,7 +51,7 @@
                          "user-infos body"
                          "footer body";
     grid-template-columns: 300px 1fr;
-    grid-template-rows: 180px 120px 1fr;
+    grid-template-rows: 180px auto 1fr;
     width: unset !important; max-width: 600px;
     min-height: 300px; padding: 8px;
     border-radius: var(--border-radius);
@@ -72,15 +72,15 @@
     .headerTop-3GPUSF {
         grid-area: user-infos;
         display: flex; flex-direction: column-reverse;
-        align-items: center; justify-content: flex-end;
+        align-items: center; flex: 1 1 50%;
         padding: 0;
         background-color: var(--background-secondary-alt);
         border-radius: 0 0 var(--border-radius) var(--border-radius);
 
         // Badges
         .profileBadges-2pItdR {
-            position: static;
-            width: calc(100% - 24px); height: 100%; 
+            position: static; flex: 1;
+            width: calc(100% - 24px); padding: 12px; 
             max-width: unset;
             align-items: center; justify-content: flex-end;
             margin: 0;
@@ -91,9 +91,9 @@
         // Username
         .headerText-1-WmDq {
             display: flex; flex-direction: column;
-            width: calc(100% - 12px); height: calc(100% - 12px);
+            width: calc(100% - 24px); height: calc(100% - 24px); 
             align-items: flex-start; justify-content: center;
-            padding: 6px 6px 6px 24px;
+            padding: 12px 12px 12px 24px;
             background-color: var(--background-primary);
 
             .headerTag-3GXZkV, .nickname-t08Mck { font-size: 16px;}
@@ -257,7 +257,7 @@
     // Avatar
     .avatarWrapperNormal-ahVUaC {
         position: absolute;
-        top: 165px; left: 20px;
+        top: 164px; left: 20px;
 
         .avatar-2Vndt_ { 
             border: none; background: none;
