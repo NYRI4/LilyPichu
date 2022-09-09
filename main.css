@@ -131,7 +131,7 @@
   background: var(--background-secondary);
 }
 :root .reactionSelected-1aMb2K {
-  background-color: #6e85d321;
+  background-color: rgba(110, 133, 211, 0.1294117647);
 }
 :root .reactorDefault-3GSyaV {
   box-shadow: inset 0 -1px 0 var(--background-primary);
@@ -604,6 +604,7 @@
   position: static;
   flex: 1;
   width: calc(100% - 24px);
+  min-height: 32px;
   padding: 12px;
   max-width: unset;
   align-items: center;
@@ -786,7 +787,7 @@
 }
 :root .userPopout-2j1gM4 .avatarWrapperNormal-ahVUaC {
   position: absolute;
-  top: 164px;
+  top: 156px;
   left: 20px;
 }
 :root .userPopout-2j1gM4 .avatarWrapperNormal-ahVUaC .avatar-2Vndt_ {
@@ -1749,11 +1750,25 @@
 :root .scroller-1bVxF5 .submenuContainer-3EVTeH .layer-2aCOJ3 {
   margin: 0 -8px;
 }
-:root #status-picker {
+:root #account {
   left: -6px;
-  width: 319px;
+  bottom: -2px;
+  width: 321px;
 }
-:root #status-picker .description-3Cwkxk {
+:root #account .scroller-1bVxF5 {
+  overflow-y: auto !important;
+  padding: 0 !important;
+}
+:root #account .scroller-1bVxF5 .profileGroup-1yKk23 {
+  margin: 0;
+}
+:root #account .scroller-1bVxF5 #account-avatar {
+  padding: 0;
+}
+:root #account .scroller-1bVxF5 .popoutBanner-3cqRD9 {
+  width: 100%;
+}
+:root #account .description-3Cwkxk {
   display: none;
 }
 :root .select-1Ia3hD,
@@ -1893,11 +1908,9 @@
     width: 320px;
     height: unset;
   }
-
   .tabBody-2dgbAs {
     transform: none;
   }
-
   .container-1eFtFS::after {
     content: "Stay comfy ❤";
     position: fixed;
@@ -1916,7 +1929,6 @@
     border-radius: var(--border-radius);
     overflow: hidden;
   }
-
   .container-1eFtFS::before {
     content: "";
     position: fixed;
@@ -1928,26 +1940,27 @@
     border-radius: var(--border-radius);
     background: var(--jumping-gif) bottom/40% no-repeat;
   }
-
   .guilds-2JjMmN + :nth-child(2) {
     margin-right: 450px;
     border-radius: 0 var(--border-radius) var(--border-radius) 0;
   }
-
   .panels-3wFtMD > .container-YkUktl {
     position: fixed;
+    display: flex;
     width: 305px;
     height: 50px;
     bottom: 28px;
     right: 60px;
+    justify-content: space-between;
     background-color: var(--background-primary);
     border-radius: var(--border-radius);
   }
-
+  .panels-3wFtMD > .container-YkUktl .avatarWrapper-1B9FTW {
+    border-radius: var(--border-radius);
+  }
   .container-1eFtFS {
     overflow: visible;
   }
-
   .layers-OrUESM > :nth-child(2) {
     margin-right: 450px;
   }

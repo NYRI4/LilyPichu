@@ -46,11 +46,16 @@
 
   // User area
   .panels-3wFtMD > .container-YkUktl {
-    position: fixed;
+    position: fixed; display: flex;
     width: 305px; height: 50px;
     bottom: 28px; right: 60px;
+    justify-content: space-between;
     background-color: var(--background-primary);
     border-radius: var(--border-radius);
+
+    .avatarWrapper-1B9FTW {
+      border-radius: var(--border-radius);
+    }
   }
   .container-1eFtFS { overflow: visible;}
 

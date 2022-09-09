@@ -15,7 +15,9 @@
 // Border-radius for the whole theme 
 --border-radius: 20px;
 
-&.theme-dark {
+}
+
+.theme-dark {
 
     // Text
     --text-normal: #f8e1e5;
@@ -31,7 +33,7 @@
     --interactive-active: #e2c1c7;
 
     // Background color
-    --background-primary: #5e3640;
+    --background-primary: #5e3640 !important;
     --background-secondary: #49292f;
     --background-secondary-alt: #3b1d24;
     --background-tertiary: #220f14;
@@ -70,7 +72,7 @@
     .colorDefault-CDqZdO.focused-3qFvc8, .colorDefault-CDqZdO:active:not(.hideInteraction-2jPGL_) { color: var(--interactive-normal);}
 }
 
-&.theme-light {
+.theme-light {
 
     // Text
     --text-normal: #a86373;
@@ -123,7 +125,5 @@
 // Fonts
 --font-primary: 'Nunito';
 --font-display: 'Nunito';
-
-}
 
 }

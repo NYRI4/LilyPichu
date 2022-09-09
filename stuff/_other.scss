@@ -46,9 +46,20 @@ button, input, textarea, .item-3XjbnG:not([class^=tabBarItem-]), .menu-1QACrS { 
   .submenuContainer-3EVTeH .layer-2aCOJ3 { margin: 0 -8px;}
 }
 
-// Status picker
-#status-picker { 
-  left: -6px; width: 319px;
+// Account
+#account { 
+  left: -6px; bottom: -2px;
+  width: 321px;
+
+  .scroller-1bVxF5 {
+    overflow-y: auto !important; 
+    padding: 0 !important;
+    
+    .profileGroup-1yKk23 { margin: 0;}
+
+      #account-avatar {padding: 0;}
+      .popoutBanner-3cqRD9 { width: 100%;}
+  }
 
   .description-3Cwkxk { display: none;}
 }
