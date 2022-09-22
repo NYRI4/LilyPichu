@@ -17,7 +17,7 @@
 
 // Right popout
 @media (min-width: 1350px) {
-  .chatContent-3KubbW + :last-child {
+  .chatContent-3KubbW + :last-child, .container-2o3qEW {
       position: fixed;
       top: 280px; bottom: 120px; right: 60px;
       width: 320px; height: unset;
