@@ -172,6 +172,12 @@
 :root .cooldownWrapper-2k1jHK {
   color: var(--text-muted) !important;
 }
+:root .container-3wLKDe {
+  background-color: var(--background-primary);
+}
+:root .container-3wLKDe .mainCard-3KBsBI {
+  background-color: var(--background-secondary-alt);
+}
 
 :root .guilds-2JjMmN .scroller-3X7KbA {
   padding: 8px 0 130px 0;
