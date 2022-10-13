@@ -62,6 +62,9 @@
         grid-area: banner;
         width: 100%; height: 100%;
 
+        mask { display: none;}
+        .bannerSVGWrapper-qc0szY { overflow: visible;}
+
         .banner-1YaD3N { 
             width: 100%; height: 100%; max-width: unset;
             border-radius: var(--border-radius) var(--border-radius) 0 0;
@@ -130,14 +133,14 @@
 
         // About Me
         .userInfoSection-3her-v {
-            margin: 0 0 8px 8px; padding: 0 0 8px 0;
+            margin: 0 0 8px 0; padding: 0 0 8px 0;
             background-color: var(--background-secondary-alt);
             border-radius: var(--border-radius); overflow: hidden;
 
-            .userInfoTitle-39qq0Y {
+            .userInfoTitle-39qq0Y:first-child {
                 justify-content: center;
                 background-color: var(--background-primary);
-                padding: 5px; border-radius: var(--border-radius) var(--border-radius) 0 0;
+                padding: 5px 5px 5px 0; border-radius: var(--border-radius) var(--border-radius) 0 0;
             }
 
             .userInfoBody-1zgAd0 { 
@@ -267,7 +270,7 @@
         position: absolute;
         top: 156px; left: 20px;
 
-        .avatar-2Vndt_ { 
+        .wrapper-1VLyxH { 
             border: none; background: none;
             
             foreignObject { mask: none; border-radius: var(--border-radius) var(--border-radius) 0 0; overflow: hidden;}
