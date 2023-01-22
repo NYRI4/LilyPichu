@@ -26,7 +26,7 @@
 
   // Basic right popout when there's nothing
   .container-1eFtFS::after {
-    content: "Stay comfy ❤"; position: fixed;
+    content: "Stay comfy"; position: fixed;
     top: 220px; bottom: 85px; right: 60px; z-index: -2;
     width: 320px; background-color: var(--background-primary);
     text-align: center; display: flex; align-items: center;
@@ -60,4 +60,16 @@
   .container-1eFtFS { overflow: visible;}
 
   .layers-OrUESM > :nth-child(2) { margin-right: 450px;}
+
+  .membersWrap-3NUR2t .members-3WRCEx { 
+    width: 100%;
+    background-color: var(--background-primary);
+    
+    .content-2a4AW9 { min-height: 1000px; background-color: transparent;}
+    .member-2gU6Ar { 
+        max-width: 300px; 
+        border-radius: var(--border-radius);
+        background-color: var(--background-primary);
+    }
+  }
 }

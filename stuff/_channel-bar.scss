@@ -26,7 +26,12 @@
         .icon-18rqoe { color: var(--interactive-normal) !important;}
     }
     .search-2Mwzzq:not(.open-1F8u2c):hover .iconContainer-1RqWJj { transform: scale(1);}
-    .searchAnswer-23w-CH, .searchFilter-2UfsDk { background-color: var(--background-primary);}
+    
+    .searchAnswer-23w-CH, .searchFilter-2UfsDk { 
+        background-color: var(--background-primary); 
+        border-radius: var(--border-radius) 0 0 var(--border-radius);
+
+    }
 }
 
 // Search popout
@@ -166,5 +171,9 @@
 }
 
 .messagesPopoutWrap-3zryHW { border-radius: var(--border-radius);}
+
+.header-3OsQeK, .content-1jQy2l::before {
+    box-shadow: none;
+}
 
 }
