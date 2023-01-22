@@ -4,7 +4,7 @@
 
 ## 📥 Installation
 
-### Powercord & Vizality
+### Replugged
 
 ```sh
 git clone https://github.com/NYRI4/LilyPichu

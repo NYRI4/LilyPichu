@@ -33,86 +33,13 @@ button, input, textarea, .item-3XjbnG:not([class^=tabBarItem-]), .menu-1QACrS { 
   box-shadow: 0 2px 10px 0 rgba(0,0,0,.2), 0 0 0 1px rgba(56, 31, 31, 0.11);
 }
 
-// -- Better menus --
-.menu-1QACrS { overflow: hidden;}
+// User profile
+.accountProfilePopoutWrapper-3GskID {
+  left: -24px;
 
-.scroller-1bVxF5 {
-  padding: 0;
-
-  &::-webkit-scrollbar, .separator-1So4YB { display: none;}
-  .item-1OdjEX { padding: 10px 10px 10px 13px; margin: 0; transition: 0.15s; border-radius: 0;}
-  
-  // Submenu
-  .submenuContainer-3EVTeH .layer-2aCOJ3 { margin: 0 -8px;}
-}
-
-// Account
-#account { 
-  left: -6px; bottom: -2px;
-  width: 321px; background-color: var(--background-secondary);
-
-  .scroller-1bVxF5 {
-    overflow-y: auto !important; 
-    padding: 0 !important;
-    
-    .profileGroup-1yKk23 { margin: 0;}
-
-      .banner-1YaD3N { height: 120px;}
-
-      #account-avatar {
-        padding: 0;
-
-        .avatarWrapperNormal-ahVUaC {
-          top: 92px; left: 20px;
-  
-          .avatar-2Vndt_ { 
-              border: none; background: none;
-              
-              foreignObject { mask: none; border-radius: var(--border-radius) var(--border-radius) 0 0; overflow: hidden;}
-              .pointerEvents-9SZWKj { display: none;}
-          }
-          .avatarHint-k7pYop { 
-              top: 0; left: 0;
-              width: 100%; height: 100%;
-  
-              foreignObject { mask: none; border-radius: var(--border-radius) var(--border-radius) 0 0; overflow: hidden;}
-          }
-        }
-      }
-
-      #account-info {
-        padding: 0;
-        background-color: var(--background-primary);
-
-        .headerTop-3GPUSF {
-          display: flex;
-          flex-direction: column-reverse;
-          padding: 0;
-
-          // Badges
-          .profileBadges-2pItdR {
-            position: static;
-            width: calc(100% - 20px); height: 100%; 
-            max-width: unset;
-            align-items: center; justify-content: flex-end;
-            background-color: var(--background-secondary-alt);
-            padding: 10px; margin: 0;
-
-            .profileBadge22-3GAYRy { width: 30px; height: 30px;}
-          }
-
-          .headerText-1-WmDq { 
-            padding: 12px 12px 12px 24px;
-          }
-        }
-
-        
-      }
-
-      .popoutBanner-3cqRD9 { width: 100%;}
+  .userPopoutOverlayBackground-dKOOda {
+    backdrop-filter: unset;
   }
-
-  .description-3Cwkxk { display: none;}
 }
 
 // Custom status modal
