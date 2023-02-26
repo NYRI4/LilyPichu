@@ -1,9 +1,0 @@
-{
-    "name": "LilyPichu",
-    "description": "A theme based on @Melonturtle_ stream design",
-    "version": "1.3",
-    "author": "Nyria#3863",
-    "theme": "_variables.scss",
-    "splashTheme": "stuff/_splash.scss",
-    "license": "WTFPL"
-}
