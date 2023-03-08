@@ -1,54 +1,75 @@
-@forward 'stuff/chat';
-@forward 'stuff/server-list';
-@forward 'stuff/channel-list';
-@forward 'stuff/channel-bar';
-@forward 'stuff/member-list';
-@forward 'stuff/settings';
-@forward 'stuff/friends';
-@forward 'stuff/overlay';
-@forward 'stuff/other';
+@forward "stuff/chat";
+@forward "stuff/server-list";
+@forward "stuff/channel-list";
+@forward "stuff/channel-bar";
+@forward "stuff/member-list";
+@forward "stuff/settings";
+@forward "stuff/friends";
+@forward "stuff/other";
 
-@import url('https://nyri4.github.io/donators/donators.css');
-@import url('https://fonts.googleapis.com/css2?family=Nunito');
-
-// Black box imports
-@import url('https://discord-custom-covers.github.io/usrbg/dist/usrbg.css');
-@import url("https://monstrousdev.github.io/themes/addons/user-tags.css");
+@import url("https://nyri4.github.io/donators/donators.css");
+@import url("https://fonts.googleapis.com/css2?family=Nunito");
 
 // Right popout
 @media (min-width: 1350px) {
-  .chatContent-3KubbW + :last-child, .container-2o3qEW {
-      position: fixed;
-      top: 280px; bottom: 120px; right: 60px;
-      width: 320px; height: unset;
+  .chatContent-3KubbW + :last-child,
+  .container-2o3qEW {
+    position: fixed;
+    top: 280px;
+    bottom: 120px;
+    right: 60px;
+    width: 320px;
+    height: unset;
   }
-  .tabBody-2dgbAs { transform: none;}
+  .tabBody-2dgbAs {
+    transform: none;
+  }
 
   // Basic right popout when there's nothing
   .container-1eFtFS::after {
-    content: "Stay comfy"; position: fixed;
-    top: 220px; bottom: 85px; right: 60px; z-index: -2;
-    width: 320px; background-color: var(--background-primary);
-    text-align: center; display: flex; align-items: center;
-    justify-content: center; font-size: 30px; color: var(--text-normal);
+    content: "Stay comfy";
+    position: fixed;
+    top: 220px;
+    bottom: 85px;
+    right: 60px;
+    z-index: -2;
+    width: 320px;
+    background-color: var(--background-primary);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: var(--text-normal);
     border-radius: var(--border-radius);
     overflow: hidden;
   }
   .container-1eFtFS::before {
-    content: ""; position: fixed;
-    top: 220px; bottom: 85px; right: 70px; z-index: -1;
-    width: 300px; border-radius: var(--border-radius);
+    content: "";
+    position: fixed;
+    top: 220px;
+    bottom: 85px;
+    right: 70px;
+    z-index: -1;
+    width: 300px;
+    border-radius: var(--border-radius);
     background: var(--jumping-gif) bottom/40% no-repeat;
   }
 
   // Adding space for right popout
-  .guilds-2JjMmN + :nth-child(2) { margin-right: 450px; border-radius: 0 var(--border-radius) var(--border-radius) 0;}
+  .guilds-2JjMmN + :nth-child(2) {
+    margin-right: 450px;
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+  }
 
   // User area
   .panels-3wFtMD > .container-YkUktl {
-    position: fixed; display: flex;
-    width: 305px; height: 50px;
-    bottom: 28px; right: 60px;
+    position: fixed;
+    display: flex;
+    width: 305px;
+    height: 50px;
+    bottom: 28px;
+    right: 60px;
     justify-content: space-between;
     background-color: var(--background-primary);
     border-radius: var(--border-radius);
@@ -57,19 +78,26 @@
       border-radius: var(--border-radius);
     }
   }
-  .container-1eFtFS { overflow: visible;}
+  .container-1eFtFS {
+    overflow: visible;
+  }
 
-  .layers-OrUESM > :nth-child(2) { margin-right: 450px;}
+  .layers-OrUESM > :nth-child(2) {
+    margin-right: 450px;
+  }
 
-  .membersWrap-3NUR2t .members-3WRCEx { 
+  .membersWrap-3NUR2t .members-3WRCEx {
     width: 100%;
     background-color: var(--background-primary);
-    
-    .content-2a4AW9 { min-height: 1000px; background-color: transparent;}
-    .member-2gU6Ar { 
-        max-width: 300px; 
-        border-radius: var(--border-radius);
-        background-color: var(--background-primary);
+
+    .content-yjf30S {
+      min-height: 1000px;
+      background-color: transparent;
+    }
+    .member-2gU6Ar {
+      max-width: 300px;
+      border-radius: var(--border-radius);
+      background-color: var(--background-primary);
     }
   }
 }

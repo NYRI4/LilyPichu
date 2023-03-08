@@ -1,316 +1,426 @@
-:root { 
+:root {
+  // -- Member list --
+  .container-2o3qEW {
+    background: none;
+  }
 
-// -- Member list --
-.container-2o3qEW { background: none;}
-
-@media (max-width: 1350px) {
+  @media (max-width: 1350px) {
     .members-3WRCEx {
-       border-radius: var(--border-radius) 0 0;
+      border-radius: var(--border-radius) 0 0;
     }
-}
+  }
 
-.membersWrap-3NUR2t {
-
+  .membersWrap-3NUR2t {
     // Header
     &::before {
-        content: "Member list"; position: absolute;
-        top: -60px; z-index: 1;
-        width: 100%; height: 60px;
-        display: flex;
-        align-items: center; justify-content: center;
-        font-size: 20px; font-weight: bolder;
-        color: var(--header-primary);
-        background-color: var(--background-secondary);
-        border-radius: var(--border-radius) var(--border-radius) 0 0;
+      content: "Member list";
+      position: absolute;
+      top: -60px;
+      z-index: 1;
+      width: 100%;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      font-weight: bolder;
+      color: var(--header-primary);
+      background-color: var(--background-secondary);
+      border-radius: var(--border-radius) var(--border-radius) 0 0;
     }
-    
+
     // Footer
     &::after {
-        content: ""; position: absolute;
-        bottom: -35px; z-index: 1;
-        width: 100%; height: 35px;
-        background-color: var(--background-secondary);
-        border-radius: 0 0 var(--border-radius) var(--border-radius);
-        background-image: linear-gradient(to right, var(--header-primary) 33%, rgba(255,255,255,0) 0%);
-        background-position: top;
-        background-size: 21px 2px;
-        background-repeat: repeat-x;
+      content: "";
+      position: absolute;
+      bottom: -35px;
+      z-index: 1;
+      width: 100%;
+      height: 35px;
+      background-color: var(--background-secondary);
+      border-radius: 0 0 var(--border-radius) var(--border-radius);
+      background-image: linear-gradient(
+        to right,
+        var(--header-primary) 33%,
+        rgba(255, 255, 255, 0) 0%
+      );
+      background-position: top;
+      background-size: 21px 2px;
+      background-repeat: repeat-x;
     }
-}
+  }
 
-.layout-1qmrhw { border-radius: var(--border-radius);}
+  .layout-1qmrhw {
+    border-radius: var(--border-radius);
+  }
 
-// -- User popout --
-.userPopoutOuter-3AVBmJ { 
+  // -- User popout --
+  .userPopoutOuter-3AVBmJ {
     max-height: unset !important;
-}
+  }
 
-.userProfileInner-3F03PX {
+  .userProfileInner-3F03PX {
     position: relative;
     max-height: unset !important;
     overflow: hidden;
     z-index: 2;
 
     &::before {
-        z-index: -1;
-        width: 100%; height: 100%;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
     }
 
     // Banner
     .bannerSVGWrapper-qc0szY {
-        position: absolute;
-        mask-image: linear-gradient(to bottom, #000000, #00000000);
-        height: 300px;
+      position: absolute;
+      -webkit-mask-image: linear-gradient(to bottom, #000000, #00000000);
+      mask-image: linear-gradient(to bottom, #000000, #00000000);
+      background-color: #000000;
+      height: 300px;
 
-        mask { display: none;}
-        foreignObject { mask: none;}
+      mask {
+        display: none;
+      }
+      foreignObject {
+        mask: none;
+      }
 
-        .banner-2boKnS {
-        
-            &::before {
-                content: "";
-                position: absolute;
-                width: 100%; height: 100%;
-            }
+      .banner-2boKnS {
+        &::before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background-color: #0000001e;
         }
+      }
 
-        &[viewBox="0 0 340 120"] {
-            transform: translateX(-200px);
+      &[viewBox="0 0 340 120"] {
+        transform: translateX(-200px);
 
-            .banner-2boKnS > *  { display: none;}
-        } 
+        .banner-2boKnS > * {
+          display: none;
+        }
+      }
 
-        .pencilContainer-11Kuga { display: none;}
+      .pencilContainer-11Kuga {
+        display: none;
+      }
     }
 
     // Badges
     .profileBadges-31rDHI {
-        position: absolute;
-        top: 50px; left: 115px;
-        background-color: transparent;
+      position: absolute;
+      top: 50px;
+      left: 115px;
+      background-color: transparent;
     }
 
     // Avatar
     .avatarWrapperNormal-1tQ3Je {
-        position: relative;
-        width: 80px;
-        z-index: 1;
+      position: relative;
+      width: 80px;
+      z-index: 1;
 
-        foreignObject {
-            mask: none;
-            border-radius: var(--border-radius);
-        }
+      foreignObject {
+        mask: none;
+        border-radius: var(--border-radius);
+      }
 
-        .avatarHint-2g3Mcd {
-            border-radius: var(--border-radius);
-        }
+      .avatarHint-2g3Mcd {
+        border-radius: var(--border-radius);
+      }
 
-        circle { display: none;}
+      circle {
+        display: none;
+      }
     }
-    
-    .bannerSVGWrapper-qc0szY[viewBox="0 0 340 90"] + .avatarWrapperNormal-1tQ3Je,
-    .bannerSVGWrapper-qc0szY[viewBox="0 0 340 120"] + .avatarWrapperNormal-1tQ3Je {
-       top: 16px;
+
+    .bannerSVGWrapper-qc0szY[viewBox="0 0 340 90"]
+      + .avatarWrapperNormal-1tQ3Je,
+    .bannerSVGWrapper-qc0szY[viewBox="0 0 340 120"]
+      + .avatarWrapperNormal-1tQ3Je {
+      top: 16px;
     }
 
     .userPopoutOverlayBackground-dKOOda {
-        overflow: visible;
-        background-color: #00000011;
-        backdrop-filter: blur(20px);
+      overflow: visible;
+      background-color: #00000011;
+      backdrop-filter: blur(20px);
 
-        // Username
-        .usernameSection-2d814A { padding: 0;}
+      // Username
+      .usernameSection-2d814A {
+        padding: 0;
+      }
 
-        .copiableNameTag-1BpMX8, 
-        .usernameSection-2d814A .userText-148fun > h1,
-        .usernameSection-2d814A .userText-148fun > .userTagNoNickname-2MJ9HD {
-            position: absolute;
-            top: -85px; left: 105px;
-            box-sizing: border-box;
-            max-width: 200px;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            overflow: hidden;
-            display: block;
-            color: var(--header-secondary);
+      .copiableNameTag-1BpMX8,
+      .usernameSection-2d814A .userText-148fun > h1,
+      .usernameSection-2d814A .userText-148fun > .userTagNoNickname-2MJ9HD {
+        position: absolute;
+        top: -85px;
+        left: 105px;
+        box-sizing: border-box;
+        max-width: 200px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        display: block;
+        color: var(--header-secondary);
 
-            & > span {
-                word-break: unset;
-                white-space: unset;
-            }
-    
-            .discrimBase-KriZSj { color: white;}
+        & > span {
+          word-break: unset;
+          white-space: unset;
         }
 
-        .divider-1tWBgZ { display: none;}
-    }
-}
+        .discrimBase-KriZSj {
+          color: white;
+        }
+      }
+      .userTagWithNickname-3-znkC {
+        padding: 10px 0 0 10px;
+      }
 
-// -- User modal --
-.root-2uUafN.root-g14mjS.small-23Atuv {
+      .divider-1tWBgZ {
+        display: none;
+      }
+    }
+  }
+
+  // -- User modal --
+  .root-2uUafN.root-1CAIjD.small-2xUY-3 {
     border-radius: var(--border-radius);
 
     // Banner part
-    .topSection-1Khgkv { 
-        position: relative;
-        margin-bottom: 30px;
+    .topSection-1Khgkv {
+      position: relative;
+      margin-bottom: 30px;
 
-        .bannerSVGWrapper-qc0szY {
-            height: 300px;
+      .bannerSVGWrapper-qc0szY {
+        height: 300px;
 
-            &[viewBox="0 0 600 212"] {
-                transform: translateX(-100px);
+        &[viewBox="0 0 600 212"] {
+          transform: translateX(-100px);
 
-                .banner-2boKnS > *  { display: none;}
-            } 
+          .banner-2boKnS > * {
+            display: none;
+          }
         }
-        
-        .header-1_vWwx {
+      }
 
-            .avatar-1YsFQ1 {
-                position: relative;
-                top: 22px; 
-            
-                foreignObject { 
-                    mask: none;
-                    border-radius: var(--border-radius);
-                }
+      .header-1_vWwx {
+        .avatar-1YsFQ1 {
+          position: relative;
+          top: 22px;
 
-                circle { display: none;}
-            }
+          foreignObject {
+            mask: none;
+            border-radius: var(--border-radius);
+          }
 
-            // Badges
-            .headerTop-212g15 {
-                position: absolute;
-                top: 65px; row-gap: 13px;
-                flex-direction: column;
-
-                .badgeList-2pMvZX {
-                    background-color: transparent;
-                }
-            }
+          circle {
+            display: none;
+          }
         }
+
+        // Badges
+        .headerTop-212g15 {
+          position: absolute;
+          top: 65px;
+          row-gap: 13px;
+          flex-direction: column;
+
+          .badgeList-2pMvZX {
+            background-color: transparent;
+          }
+        }
+      }
     }
 
     // User info part
     .userProfileModalOverlayBackground-8p3-eU {
-        z-index: 1;
-        overflow: visible;
-        background-color: #00000011;
-        backdrop-filter: blur(20px);
+      z-index: 1;
+      overflow: visible;
+      background-color: #00000011;
+      backdrop-filter: blur(20px);
 
-        // Username
-        .nameTag-2ysfG3 {
-            position: absolute;
-            top: -135px; left: 150px;
-            padding: 0;
-            z-index: 3;
-        }
+      // Username
+      .nameTag-2ysfG3 {
+        position: absolute;
+        top: -135px;
+        left: 150px;
+        padding: 0;
+        z-index: 3;
+      }
 
-        .container-1U-qVy { padding: 0 14px 0;}
+      .container-1U-qVy {
+        padding: 0 14px 0;
+      }
     }
-    
+
     // Mutual bar
-    .tabBarContainer-2UG0vy { 
-        padding: 0; border-bottom: none;
-    
-        .tabBar-2StdUa { 
-            justify-content: space-around;
-        }
+    .tabBarContainer-2UG0vy {
+      padding: 0;
+      border-bottom: none;
+
+      .tabBar-2StdUa {
+        justify-content: space-around;
+      }
     }
-    
+
     // Activities
-    .activity-2M3PRB { position: relative; z-index: 1;}
-    .activityProfile-1712BN { 
-        background-color: var(--background-primary);
-        margin: 10px; border-radius: var(--border-radius);
+    .activity-2M3PRB {
+      position: relative;
+      z-index: 1;
+    }
+    .activityProfile-1712BN {
+      background-color: var(--background-primary);
+      margin: 10px;
+      border-radius: var(--border-radius);
     }
 
     // Body
     .body-_QAKrE {
+      // Connections
+      .userInfoSection-1gptv0.connectedAccounts-1HaiEx {
+        border-top: none;
 
-        // Connections
-        .userInfoSection-1gptv0.connectedAccounts-1HaiEx {
-            border-top: none;
+        .connectedAccountContainer-2TWiXT {
+          position: relative;
+          border: none;
 
-            .connectedAccountContainer-2TWiXT {
-                position: relative;
-                border: none;
+          .connectedAccount-2NOwd0 {
+            flex-direction: column;
+          }
 
-                .connectedAccount-2NOwd0 {
-                    flex-direction: column;
-                }
+          // Icon
+          .connectedAccountIcon-2szOw- {
+            position: relative;
+            margin-bottom: 10px;
+            width: 45px;
+            height: 45px;
+            z-index: 2;
 
-                // Icon
-                .connectedAccountIcon-2szOw- {
-                    position: relative;
-                    margin-bottom: 10px;
-                    width: 45px; height: 45px;
-                    z-index: 2;
-
-                    & + .connectedAccountNameContainer-3v4pIj::before {
-                        content: ""; position: absolute; 
-                        top: 0; left: 0; z-index: -1;
-                        width: 100%; height: 100%;
-                        border-radius: var(--border-radius);
-                    }
-                }
-
-                // Username
-                .connectedAccountNameContainer-3v4pIj {
-                    width: 100%; justify-content: center;
-                    overflow: visible;
-
-                    .connectedAccountNameTextContainer-lNExEJ { justify-content: center; margin: 0;}
-                    .text-xs-normal-3O7EaX { text-align: center;}
-                }
-
-                .connectedAccountChildren-2jEgw3 { 
-                    justify-content: center;
-                    margin: 0;
-                }
-
-                // Link
-                .anchor-1MIwyf {
-                    position: absolute;
-                    top: 0; left: 0;
-                    width: 100%; height: 100%;
-                    z-index: 2;
-
-                    & > svg { display: none;}
-                }
-
-                .connectedAccountIcon-2szOw-[aria-label="Battle.net"] + .connectedAccountNameContainer-3v4pIj::before { background-color: #1da0f248;}
-                .connectedAccountIcon-2szOw-[aria-label="Twitch"] + .connectedAccountNameContainer-3v4pIj::before { background-color: #601bd852;}
-                .connectedAccountIcon-2szOw-[aria-label="YouTube"] + .connectedAccountNameContainer-3v4pIj::before { background-color: #d9252b49;}
-                .connectedAccountIcon-2szOw-[aria-label="Twitter"] + .connectedAccountNameContainer-3v4pIj::before { background-color: #0098e43f;}
-                .connectedAccountIcon-2szOw-[aria-label="Steam"] + .connectedAccountNameContainer-3v4pIj::before { background-color: #00000034;}
-                .connectedAccountIcon-2szOw-[aria-label="Reddit"] + .connectedAccountNameContainer-3v4pIj::before { background-color: #fe44013d;}
-                .connectedAccountIcon-2szOw-[aria-label="Facebook"] + .connectedAccountNameContainer-3v4pIj::before { background-color: #2e328485;}
-                .connectedAccountIcon-2szOw-[aria-label="Spotify"] + .connectedAccountNameContainer-3v4pIj::before { background-color: #1ed75f34;}
-                .connectedAccountIcon-2szOw-[aria-label="Xbox"] + .connectedAccountNameContainer-3v4pIj::before { background-color: #5dc21e36;}
-                .connectedAccountIcon-2szOw-[aria-label="League of Legends"] + .connectedAccountNameContainer-3v4pIj::before { background-color: #cea14638;}
-                .connectedAccountIcon-2szOw-[aria-label="GitHub"] + .connectedAccountNameContainer-3v4pIj::before { background-color: #24292e62;}
-                .connectedAccountIcon-2szOw-[aria-label="Skype"] + .connectedAccountNameContainer-3v4pIj::before { background-color: #0076d74b;}
-                .connectedAccountIcon-2szOw-[aria-label="Epic Games"] + .connectedAccountNameContainer-3v4pIj::before { background-color: #2f2f2f59;}
-                .connectedAccountIcon-2szOw-[aria-label="Riot Games"] + .connectedAccountNameContainer-3v4pIj::before { background-color: #eb1c2d38;}
-                .connectedAccountIcon-2szOw-[aria-label="PayPal"] + .connectedAccountNameContainer-3v4pIj::before { background-color: #009fe33b;}
-                .connectedAccountIcon-2szOw-[aria-label="TikTok"] + .connectedAccountNameContainer-3v4pIj::before { background-color: #64bfc546;}
-                .connectedAccountIcon-2szOw-[aria-label="eBay"] + .connectedAccountNameContainer-3v4pIj::before { background-color: #c500003b;}
-                .connectedAccountIcon-2szOw-[aria-label="PlayStation Network"] + .connectedAccountNameContainer-3v4pIj::before { background-color: #0051ae53;}
+            & + .connectedAccountNameContainer-3v4pIj::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              z-index: -1;
+              width: 100%;
+              height: 100%;
+              border-radius: var(--border-radius);
             }
-        } 
+          }
+
+          // Username
+          .connectedAccountNameContainer-3v4pIj {
+            width: 100%;
+            justify-content: center;
+            overflow: visible;
+
+            .connectedAccountNameTextContainer-lNExEJ {
+              justify-content: center;
+              margin: 0;
+            }
+            .text-xs-normal-3O7EaX {
+              text-align: center;
+            }
+          }
+
+          .connectedAccountChildren-2jEgw3 {
+            justify-content: center;
+            margin: 0;
+          }
+
+          // Link
+          .anchor-1MIwyf {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+
+            & > svg {
+              display: none;
+            }
+          }
+
+          .connectedAccountIcon-2szOw-[aria-label="Battle.net"]
+            + .connectedAccountNameContainer-3v4pIj::before {
+            background-color: #1da0f248;
+          }
+          .connectedAccountIcon-2szOw-[aria-label="Twitch"]
+            + .connectedAccountNameContainer-3v4pIj::before {
+            background-color: #601bd852;
+          }
+          .connectedAccountIcon-2szOw-[aria-label="YouTube"]
+            + .connectedAccountNameContainer-3v4pIj::before {
+            background-color: #d9252b49;
+          }
+          .connectedAccountIcon-2szOw-[aria-label="Twitter"]
+            + .connectedAccountNameContainer-3v4pIj::before {
+            background-color: #0098e43f;
+          }
+          .connectedAccountIcon-2szOw-[aria-label="Steam"]
+            + .connectedAccountNameContainer-3v4pIj::before {
+            background-color: #00000034;
+          }
+          .connectedAccountIcon-2szOw-[aria-label="Reddit"]
+            + .connectedAccountNameContainer-3v4pIj::before {
+            background-color: #fe44013d;
+          }
+          .connectedAccountIcon-2szOw-[aria-label="Facebook"]
+            + .connectedAccountNameContainer-3v4pIj::before {
+            background-color: #2e328485;
+          }
+          .connectedAccountIcon-2szOw-[aria-label="Spotify"]
+            + .connectedAccountNameContainer-3v4pIj::before {
+            background-color: #1ed75f34;
+          }
+          .connectedAccountIcon-2szOw-[aria-label="Xbox"]
+            + .connectedAccountNameContainer-3v4pIj::before {
+            background-color: #5dc21e36;
+          }
+          .connectedAccountIcon-2szOw-[aria-label="League of Legends"]
+            + .connectedAccountNameContainer-3v4pIj::before {
+            background-color: #cea14638;
+          }
+          .connectedAccountIcon-2szOw-[aria-label="GitHub"]
+            + .connectedAccountNameContainer-3v4pIj::before {
+            background-color: #24292e62;
+          }
+          .connectedAccountIcon-2szOw-[aria-label="Skype"]
+            + .connectedAccountNameContainer-3v4pIj::before {
+            background-color: #0076d74b;
+          }
+          .connectedAccountIcon-2szOw-[aria-label="Epic Games"]
+            + .connectedAccountNameContainer-3v4pIj::before {
+            background-color: #2f2f2f59;
+          }
+          .connectedAccountIcon-2szOw-[aria-label="Riot Games"]
+            + .connectedAccountNameContainer-3v4pIj::before {
+            background-color: #eb1c2d38;
+          }
+          .connectedAccountIcon-2szOw-[aria-label="PayPal"]
+            + .connectedAccountNameContainer-3v4pIj::before {
+            background-color: #009fe33b;
+          }
+          .connectedAccountIcon-2szOw-[aria-label="TikTok"]
+            + .connectedAccountNameContainer-3v4pIj::before {
+            background-color: #64bfc546;
+          }
+          .connectedAccountIcon-2szOw-[aria-label="eBay"]
+            + .connectedAccountNameContainer-3v4pIj::before {
+            background-color: #c500003b;
+          }
+          .connectedAccountIcon-2szOw-[aria-label="PlayStation Network"]
+            + .connectedAccountNameContainer-3v4pIj::before {
+            background-color: #0051ae53;
+          }
+        }
+      }
     }
-}
-
-
-// USRBG for BetterDiscord only
-.userPopout-2j1gM4 .banner-1YaD3N,
-.root-8LYsGj .banner-1YaD3N {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: var(--user-popout-position, center) center;
-    background-image: var(--user-background);
-}
-  
+  }
 }
