@@ -34,7 +34,7 @@
 <div align="left">
     <img align="left" src="https://i.imgur.com/fXYKU5q.png" alt="Vencord" width="45" height="45">
     <b><p align="left">Vencord</b>
-    <br/>Copy <code>https://nyri4.github.io/Couve/betterdiscord/lilypichu.theme.css</code> into the box in Settings > Themes > Themes tab </p>
+    <br/>Copy <code>https://nyri4.github.io/LilyPichu</betterdiscord/lilypichu.theme.css</code> into the box in Settings > Themes > Themes tab </p>
 </div><br/>
 
 ## 🖌️ Customization
@@ -55,5 +55,5 @@
 <div align="left">
     <img align="left" src="https://i.imgur.com/fXYKU5q.png" alt="Vencord" width="45" height="45">
     <b><p align="left">Vencord</b>
-    <br/>Navigate to <code>discolored.theme.css</code> on Github, copy the content and paste it in Custom CSS, then modify variables</p>
+    <br/>Navigate to <code>lilypichu.theme.css</code> on Github, copy the content and paste it in Custom CSS, then modify variables</p>
 </div><br/>
