@@ -85,10 +85,15 @@
 
   // User profile
   .accountProfilePopoutWrapper-3GskID {
-    left: -24px;
+    left: -15px;
+    bottom: -5px;
 
     .userPopoutOverlayBackground-dKOOda {
       backdrop-filter: unset;
+    }
+
+    .nameTag-H6kSJ0 {
+      position: static !important;
     }
   }
 
@@ -200,7 +205,7 @@
         left: 50px;
         width: 200px;
         height: 200px;
-        background: url("https://i.imgur.com/dCd49s0.gif") center/80% no-repeat;
+        background: var(--jumping-gif) center/80% no-repeat;
       }
     }
   }

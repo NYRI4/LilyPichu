@@ -112,7 +112,8 @@
     // Banner
     .bannerSVGWrapper-qc0szY {
       position: absolute;
-      mask-image: linear-gradient(to bottom, #000000, #00000000);
+      -webkit-mask-image: linear-gradient(to bottom, #000000, #00000000);
+      min-width: 900px !important;
       height: 100px;
 
       mask {
@@ -120,14 +121,19 @@
       }
       foreignObject {
         mask: none;
+        transform: translate(-130px);
       }
 
       .banner-2boKnS {
+        background-position: left;
+        min-width: 900px;
+
         &::before {
           content: "";
           position: absolute;
           width: 100%;
           height: 100%;
+          background-color: #00000030;
         }
       }
 

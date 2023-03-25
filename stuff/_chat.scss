@@ -1,5 +1,13 @@
 :root {
-  // Thread container
+  // Thread
+  .container-3wLKDe {
+    background: var(--background-primary);
+
+    .mainCard-3KBsBI {
+      background-color: var(--background-secondary);
+    }
+  }
+
   .threadSidebar-1o3BTy {
     position: fixed;
     top: 220px;

@@ -1,5 +1,11 @@
 @import url("https://nyri4.github.io/donators/donators.css");
 @import url("https://fonts.googleapis.com/css2?family=Nunito");
+:root .container-3wLKDe {
+  background: var(--background-primary);
+}
+:root .container-3wLKDe .mainCard-3KBsBI {
+  background-color: var(--background-secondary);
+}
 :root .threadSidebar-1o3BTy {
   position: fixed;
   top: 220px;
@@ -265,6 +271,12 @@
   background-color: var(--background-secondary);
 }
 
+:root .title-31SJ6t {
+  background-color: var(--background-primary);
+}
+:root .title-31SJ6t .children-3xh0VB::after {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(54, 57, 63, 0)), to(var(--background-primary)));
+}
 :root .toolbar-3_r2xA > [href="https://support.discord.com"]:last-child, :root .searchLearnMore-1gNL3A {
   display: none;
 }
@@ -526,7 +538,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.1176470588);
+  background-color: rgba(0, 0, 0, 0.1882352941);
 }
 :root .userProfileInner-3F03PX .bannerSVGWrapper-qc0szY[viewBox="0 0 340 120"] {
   transform: translateX(-200px);
@@ -866,7 +878,8 @@
 }
 :root .accountProfileCard-lbN7n- .bannerSVGWrapper-qc0szY {
   position: absolute;
-  mask-image: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0));
+  -webkit-mask-image: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0));
+  min-width: 900px !important;
   height: 100px;
 }
 :root .accountProfileCard-lbN7n- .bannerSVGWrapper-qc0szY mask {
@@ -874,12 +887,18 @@
 }
 :root .accountProfileCard-lbN7n- .bannerSVGWrapper-qc0szY foreignObject {
   mask: none;
+  transform: translate(-130px);
+}
+:root .accountProfileCard-lbN7n- .bannerSVGWrapper-qc0szY .banner-2boKnS {
+  background-position: left;
+  min-width: 900px;
 }
 :root .accountProfileCard-lbN7n- .bannerSVGWrapper-qc0szY .banner-2boKnS::before {
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
+  background-color: rgba(0, 0, 0, 0.1882352941);
 }
 :root .accountProfileCard-lbN7n- .bannerSVGWrapper-qc0szY[viewBox="0 0 340 120"] {
   transform: translateX(-200px);
@@ -1365,6 +1384,7 @@
   background-color: var(--activity-card-background);
 }
 :root .itemCard-3Etziu {
+  border: none;
   border-radius: var(--border-radius);
 }
 :root .itemCard-3Etziu .body-16rSsp {
@@ -1438,10 +1458,14 @@
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(56, 31, 31, 0.11);
 }
 :root .accountProfilePopoutWrapper-3GskID {
-  left: -24px;
+  left: -15px;
+  bottom: -5px;
 }
 :root .accountProfilePopoutWrapper-3GskID .userPopoutOverlayBackground-dKOOda {
   backdrop-filter: unset;
+}
+:root .accountProfilePopoutWrapper-3GskID .nameTag-H6kSJ0 {
+  position: static !important;
 }
 :root .select-Zz0IcO,
 :root .popout-15UxD6 {
@@ -1526,7 +1550,7 @@
   left: 50px;
   width: 200px;
   height: 200px;
-  background: url("https://i.imgur.com/dCd49s0.gif") center/80% no-repeat;
+  background: var(--jumping-gif) center/80% no-repeat;
 }
 :root #permissions-modal-wrapper #permissions-modal {
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(56, 31, 31, 0.11) !important;
