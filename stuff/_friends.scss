@@ -122,4 +122,18 @@
   .quickSelectPopout-2F0PXw.regionSelectPopout-3sEzVB {
     background-color: var(--background-secondary-alt);
   }
+
+  // Right popout profile
+  @media (min-width: 1350px) {
+    .content-1jQy2l > .profilePanel-2VBkh8 {
+      top: 220px;
+      bottom: 80px;
+      border-radius: var(--border-radius);
+      overflow: hidden;
+    }
+  }
+
+  .profilePanelConnections-1tVK8j {
+    background-color: transparent;
+  }
 }

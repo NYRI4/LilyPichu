@@ -509,82 +509,82 @@
 :root .userPopoutOuter-1OHwPL {
   max-height: unset !important;
 }
-:root .userProfileInner-1ngKnf {
+:root .userPopoutInner-nv9Y92 {
   position: relative;
   max-height: unset !important;
   overflow: hidden;
   z-index: 2;
 }
-:root .userProfileInner-1ngKnf::before {
+:root .userPopoutInner-nv9Y92::before {
   z-index: -1;
   width: 100%;
   height: 100%;
 }
-:root .userProfileInner-1ngKnf .bannerSVGWrapper-2CLfzN {
+:root .userPopoutInner-nv9Y92 .bannerSVGWrapper-2CLfzN {
   position: absolute;
   -webkit-mask-image: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0));
   mask-image: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0));
   background-color: #000000;
   height: 300px;
 }
-:root .userProfileInner-1ngKnf .bannerSVGWrapper-2CLfzN mask {
+:root .userPopoutInner-nv9Y92 .bannerSVGWrapper-2CLfzN mask {
   display: none;
 }
-:root .userProfileInner-1ngKnf .bannerSVGWrapper-2CLfzN foreignObject {
+:root .userPopoutInner-nv9Y92 .bannerSVGWrapper-2CLfzN foreignObject {
   mask: none;
 }
-:root .userProfileInner-1ngKnf .bannerSVGWrapper-2CLfzN .banner-1YaD3N::before {
+:root .userPopoutInner-nv9Y92 .bannerSVGWrapper-2CLfzN .banner-1YaD3N::before {
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.1882352941);
 }
-:root .userProfileInner-1ngKnf .bannerSVGWrapper-2CLfzN[viewBox="0 0 340 120"] {
+:root .userPopoutInner-nv9Y92 .bannerSVGWrapper-2CLfzN[viewBox="0 0 340 120"] {
   transform: translateX(-200px);
 }
-:root .userProfileInner-1ngKnf .bannerSVGWrapper-2CLfzN[viewBox="0 0 340 120"] .banner-1YaD3N > * {
+:root .userPopoutInner-nv9Y92 .bannerSVGWrapper-2CLfzN[viewBox="0 0 340 120"] .banner-1YaD3N > * {
   display: none;
 }
-:root .userProfileInner-1ngKnf .bannerSVGWrapper-2CLfzN .pencilContainer-11Kuga {
+:root .userPopoutInner-nv9Y92 .bannerSVGWrapper-2CLfzN .pencilContainer-11Kuga {
   display: none;
 }
-:root .userProfileInner-1ngKnf .profileBadges-2pItdR {
+:root .userPopoutInner-nv9Y92 .profileBadges-2pItdR {
   position: absolute;
   top: 50px;
   left: 115px;
   background-color: transparent;
 }
-:root .userProfileInner-1ngKnf .avatarWrapperNormal-ahVUaC {
+:root .userPopoutInner-nv9Y92 .avatarWrapperNormal-ahVUaC {
   position: relative;
   width: 80px;
   z-index: 1;
 }
-:root .userProfileInner-1ngKnf .avatarWrapperNormal-ahVUaC foreignObject {
+:root .userPopoutInner-nv9Y92 .avatarWrapperNormal-ahVUaC foreignObject {
   mask: none;
   border-radius: var(--border-radius);
 }
-:root .userProfileInner-1ngKnf .avatarWrapperNormal-ahVUaC .avatarHint-k7pYop {
+:root .userPopoutInner-nv9Y92 .avatarWrapperNormal-ahVUaC .avatarHint-k7pYop {
   border-radius: var(--border-radius);
 }
-:root .userProfileInner-1ngKnf .avatarWrapperNormal-ahVUaC circle {
+:root .userPopoutInner-nv9Y92 .avatarWrapperNormal-ahVUaC circle {
   display: none;
 }
-:root .userProfileInner-1ngKnf .bannerSVGWrapper-2CLfzN[viewBox="0 0 340 90"] + .avatarWrapperNormal-ahVUaC,
-:root .userProfileInner-1ngKnf .bannerSVGWrapper-2CLfzN[viewBox="0 0 340 120"] + .avatarWrapperNormal-ahVUaC {
+:root .userPopoutInner-nv9Y92 .bannerSVGWrapper-2CLfzN[viewBox="0 0 340 90"] + .avatarWrapperNormal-ahVUaC,
+:root .userPopoutInner-nv9Y92 .bannerSVGWrapper-2CLfzN[viewBox="0 0 340 120"] + .avatarWrapperNormal-ahVUaC {
   top: 16px;
 }
-:root .userProfileInner-1ngKnf .userPopoutOverlayBackground-3A0Pcz {
+:root .userPopoutInner-nv9Y92 .userPopoutOverlayBackground-3A0Pcz {
   overflow: visible;
   background-color: rgba(0, 0, 0, 0.0666666667);
   backdrop-filter: blur(20px);
 }
-:root .userProfileInner-1ngKnf .userPopoutOverlayBackground-3A0Pcz .usernameSection-3FppkT {
+:root .userPopoutInner-nv9Y92 .userPopoutOverlayBackground-3A0Pcz .usernameSection-3FppkT {
   padding: 0;
 }
-:root .userProfileInner-1ngKnf .userPopoutOverlayBackground-3A0Pcz .copiableNameTag-3tf-II,
-:root .userProfileInner-1ngKnf .userPopoutOverlayBackground-3A0Pcz .usernameSection-3FppkT .userText-1_v2Cq > h1,
-:root .userProfileInner-1ngKnf .userPopoutOverlayBackground-3A0Pcz .usernameSection-3FppkT .userText-1_v2Cq > .userTagNoNickname-h9Bh88 {
+:root .userPopoutInner-nv9Y92 .userPopoutOverlayBackground-3A0Pcz .copiableNameTag-3tf-II,
+:root .userPopoutInner-nv9Y92 .userPopoutOverlayBackground-3A0Pcz .usernameSection-3FppkT .userText-1_v2Cq > h1,
+:root .userPopoutInner-nv9Y92 .userPopoutOverlayBackground-3A0Pcz .usernameSection-3FppkT .userText-1_v2Cq > .userTagNoNickname-h9Bh88 {
   position: absolute;
   top: -85px;
   left: 105px;
@@ -596,21 +596,21 @@
   display: block;
   color: var(--header-secondary);
 }
-:root .userProfileInner-1ngKnf .userPopoutOverlayBackground-3A0Pcz .copiableNameTag-3tf-II > span,
-:root .userProfileInner-1ngKnf .userPopoutOverlayBackground-3A0Pcz .usernameSection-3FppkT .userText-1_v2Cq > h1 > span,
-:root .userProfileInner-1ngKnf .userPopoutOverlayBackground-3A0Pcz .usernameSection-3FppkT .userText-1_v2Cq > .userTagNoNickname-h9Bh88 > span {
+:root .userPopoutInner-nv9Y92 .userPopoutOverlayBackground-3A0Pcz .copiableNameTag-3tf-II > span,
+:root .userPopoutInner-nv9Y92 .userPopoutOverlayBackground-3A0Pcz .usernameSection-3FppkT .userText-1_v2Cq > h1 > span,
+:root .userPopoutInner-nv9Y92 .userPopoutOverlayBackground-3A0Pcz .usernameSection-3FppkT .userText-1_v2Cq > .userTagNoNickname-h9Bh88 > span {
   word-break: unset;
   white-space: unset;
 }
-:root .userProfileInner-1ngKnf .userPopoutOverlayBackground-3A0Pcz .copiableNameTag-3tf-II .discrimBase-v65kTs,
-:root .userProfileInner-1ngKnf .userPopoutOverlayBackground-3A0Pcz .usernameSection-3FppkT .userText-1_v2Cq > h1 .discrimBase-v65kTs,
-:root .userProfileInner-1ngKnf .userPopoutOverlayBackground-3A0Pcz .usernameSection-3FppkT .userText-1_v2Cq > .userTagNoNickname-h9Bh88 .discrimBase-v65kTs {
+:root .userPopoutInner-nv9Y92 .userPopoutOverlayBackground-3A0Pcz .copiableNameTag-3tf-II .discrimBase-v65kTs,
+:root .userPopoutInner-nv9Y92 .userPopoutOverlayBackground-3A0Pcz .usernameSection-3FppkT .userText-1_v2Cq > h1 .discrimBase-v65kTs,
+:root .userPopoutInner-nv9Y92 .userPopoutOverlayBackground-3A0Pcz .usernameSection-3FppkT .userText-1_v2Cq > .userTagNoNickname-h9Bh88 .discrimBase-v65kTs {
   color: white;
 }
-:root .userProfileInner-1ngKnf .userPopoutOverlayBackground-3A0Pcz .userTagWithNickname-13lfvd {
+:root .userPopoutInner-nv9Y92 .userPopoutOverlayBackground-3A0Pcz .userTagWithNickname-13lfvd {
   padding: 10px 0 0 10px;
 }
-:root .userProfileInner-1ngKnf .userPopoutOverlayBackground-3A0Pcz .divider-2dDziJ {
+:root .userPopoutInner-nv9Y92 .userPopoutOverlayBackground-3A0Pcz .divider-2dDziJ {
   display: none;
 }
 :root .root-8LYsGj.root-1CAIjD.small-2xUY-3 {
@@ -621,12 +621,32 @@
   margin-bottom: 30px;
 }
 :root .root-8LYsGj.root-1CAIjD.small-2xUY-3 .topSection-13QKHs .bannerSVGWrapper-2CLfzN {
-  height: 300px;
+  position: absolute;
+  -webkit-mask-image: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0));
+  mask-image: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0));
+  background-color: #000000;
+  width: 600px;
 }
-:root .root-8LYsGj.root-1CAIjD.small-2xUY-3 .topSection-13QKHs .bannerSVGWrapper-2CLfzN[viewBox="0 0 600 212"] {
-  transform: translateX(-100px);
+:root .root-8LYsGj.root-1CAIjD.small-2xUY-3 .topSection-13QKHs .bannerSVGWrapper-2CLfzN mask {
+  display: none;
 }
-:root .root-8LYsGj.root-1CAIjD.small-2xUY-3 .topSection-13QKHs .bannerSVGWrapper-2CLfzN[viewBox="0 0 600 212"] .banner-1YaD3N > * {
+:root .root-8LYsGj.root-1CAIjD.small-2xUY-3 .topSection-13QKHs .bannerSVGWrapper-2CLfzN foreignObject {
+  mask: none;
+}
+:root .root-8LYsGj.root-1CAIjD.small-2xUY-3 .topSection-13QKHs .bannerSVGWrapper-2CLfzN .banner-1YaD3N::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1882352941);
+}
+:root .root-8LYsGj.root-1CAIjD.small-2xUY-3 .topSection-13QKHs .bannerSVGWrapper-2CLfzN[viewBox="0 0 340 120"] {
+  transform: translateX(-200px);
+}
+:root .root-8LYsGj.root-1CAIjD.small-2xUY-3 .topSection-13QKHs .bannerSVGWrapper-2CLfzN[viewBox="0 0 340 120"] .banner-1YaD3N > * {
+  display: none;
+}
+:root .root-8LYsGj.root-1CAIjD.small-2xUY-3 .topSection-13QKHs .bannerSVGWrapper-2CLfzN .pencilContainer-11Kuga {
   display: none;
 }
 :root .root-8LYsGj.root-1CAIjD.small-2xUY-3 .topSection-13QKHs .header-S26rhB .avatar-3QF_VA {
@@ -1390,6 +1410,17 @@
 }
 :root .quickSelectPopout-2F0PXw.regionSelectPopout-3sEzVB {
   background-color: var(--background-secondary-alt);
+}
+@media (min-width: 1350px) {
+  :root .content-1jQy2l > .profilePanel-2VBkh8 {
+    top: 220px;
+    bottom: 80px;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+  }
+}
+:root .profilePanelConnections-1tVK8j {
+  background-color: transparent;
 }
 
 :root ::-webkit-input-placeholder,
