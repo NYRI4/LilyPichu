@@ -1,0 +1,54 @@
+{
+  "name": "LilyPichu",
+  "description": "A theme based on @Melonturtle_ stream design",
+  "authors": [
+    {
+      "name": "Nyria",
+      "id": "265924886461939712"
+    }
+  ],
+  "semanticColors": {
+    "HEADER_PRIMARY": ["#f8E1E5"],
+    "HEADER_SECONDARY": ["#E2C1C7"],
+    "TEXT_NORMAL": ["#F8E1E5"],
+    "TEXT_MUTED": ["#E2C1C7"],
+    "INTERACTIVE_NORMAL ": ["#FAB1BD"],
+    "INTERACTIVE_HOVER": ["#E2C1C7"],
+    "INTERACTIVE_ACTIVE": ["#E2C1C7"],
+    "INTERACTIVE_MUTED": ["#AD8C91"],
+
+    "BACKGROUND_PRIMARY": ["#5E3640"],
+    "BACKGROUND_SECONDARY": ["#49292F"],
+    "BACKGROUND_SECONDARY_ALT": ["#3B1D24"],
+    "BACKGROUND_TERTIARY": ["#220F14"],
+    "BACKGROUND_ACCENT": ["#C5536C"],
+    "BACKGROUND_FLOATING": ["#49292F"],
+    "BACKGROUND_MOBILE_PRIMARY": ["#5E3640"],
+    "BACKGROUND_MOBILE_SECONDARY": ["#49292F"],
+    "BACKGROUND_MODIFIER_SELECTED": ["#1A1E2D"],
+    "BACKGROUND_MODIFIER_ACTIVE": ["#C5536C3D"],
+    "BACKGROUND_MODIFIER_ACCENT": ["49292F"],
+    "BACKGROUND_MENTIONED": ["#C662621F"],
+    "BACKGROUND_MENTIONED_HOVER": ["#C6626226"],
+
+    "SCROLLBAR_THIN_THUMB": ["#49292F"],
+    "SCROLLBAR_THIN_TRACK": ["transparent"],
+    "SCROLLBAR_AUTO_THUMB": ["#49292F"],
+    "SCROLLBAR_AUTO_TRACK": ["#49292F"],
+    "CHANNELTEXTAREA_BACKGROUND": ["#5E3640"],
+    "CHAT_BACKGROUND": ["#5E3640"]
+  },
+  "rawColors": {
+    "PRIMARY_600": "#5E3640",
+    "PRIMARY_630": "#49292F",
+    "PRIMARY_660": "#220F14",
+    "PRIMARY_700": "#5E3640",
+    "PRIMARY_800": "#220F14",
+    "BRAND_260": "#C5536C",
+    "BRAND_360": "#C5536C",
+    "BRAND_500": "#C5536C",
+    "BRAND_560": "#5365a0",
+    "YELLOW_300": "#C66262"
+  },
+  "spec": 2
+}
