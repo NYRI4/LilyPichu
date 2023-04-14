@@ -16,6 +16,7 @@
     "INTERACTIVE_HOVER": ["#E2C1C7"],
     "INTERACTIVE_ACTIVE": ["#E2C1C7"],
     "INTERACTIVE_MUTED": ["#AD8C91"],
+    "CHANNELS_DEFAULT": ["#FAB1BD"],
     "CHANNEL_ICON": ["#FAB1BD"],
 
     "BACKGROUND_PRIMARY": ["#5E3640"],
@@ -41,7 +42,6 @@
     "CHAT_BACKGROUND": ["#5E3640"]
   },
   "rawColors": {
-    "PRIMARY_200": "#E2C1C7",
     "PRIMARY_600": "#5E3640",
     "PRIMARY_630": "#49292F",
     "PRIMARY_660": "#220F14",
