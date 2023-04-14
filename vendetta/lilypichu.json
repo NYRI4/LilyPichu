@@ -42,7 +42,10 @@
     "CHAT_BACKGROUND": ["#5E3640"]
   },
   "rawColors": {
+    "PRIMARY_100": "#E2C1C7",
     "PRIMARY_200": "#E2C1C7",
+    "PRIMARY_300": "#F8E1E5",
+    "PRIMARY_400": "#F8E1E5",
     "PRIMARY_600": "#5E3640",
     "PRIMARY_630": "#49292F",
     "PRIMARY_660": "#220F14",
