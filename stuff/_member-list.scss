@@ -87,6 +87,8 @@
       }
 
       .banner-1YaD3N {
+        height: 100%;
+
         &::before {
           content: "";
           position: absolute;
@@ -112,8 +114,8 @@
     // Badges
     .profileBadges-2pItdR {
       position: absolute;
-      top: 50px;
-      left: 115px;
+      top: 65px;
+      left: 110px;
       background-color: transparent;
     }
 
@@ -121,6 +123,7 @@
     .avatarWrapperNormal-ahVUaC {
       position: relative;
       width: 80px;
+      top: 16px;
       z-index: 1;
 
       foreignObject {
@@ -137,13 +140,6 @@
       }
     }
 
-    .bannerSVGWrapper-2CLfzN[viewBox="0 0 340 90"]
-      + .avatarWrapperNormal-ahVUaC,
-    .bannerSVGWrapper-2CLfzN[viewBox="0 0 340 120"]
-      + .avatarWrapperNormal-ahVUaC {
-      top: 16px;
-    }
-
     .userPopoutOverlayBackground-3A0Pcz {
       overflow: visible;
       background-color: #00000011;
@@ -155,11 +151,10 @@
       }
 
       .copiableNameTag-3tf-II,
-      .usernameSection-3FppkT .userText-1_v2Cq > h1,
-      .usernameSection-3FppkT .userText-1_v2Cq > .userTagNoNickname-h9Bh88 {
+      .usernameSection-3FppkT .userText-1_v2Cq {
         position: absolute;
-        top: -85px;
-        left: 105px;
+        top: -87px;
+        left: 100px;
         box-sizing: border-box;
         max-width: 200px;
         text-overflow: ellipsis;
@@ -176,9 +171,6 @@
         .discrimBase-v65kTs {
           color: white;
         }
-      }
-      .userTagWithNickname-13lfvd {
-        padding: 10px 0 0 10px;
       }
 
       .divider-2dDziJ {
@@ -252,8 +244,8 @@
         // Badges
         .headerTop-1PNKck {
           position: absolute;
-          top: 65px;
-          row-gap: 13px;
+          top: 70px;
+          row-gap: 10px;
           flex-direction: column;
 
           .badgeList-2aoHPw {
@@ -271,16 +263,11 @@
       backdrop-filter: blur(20px);
 
       // Username
-      .nameTag-35jqbZ {
+      .container-3g15px > div:first-child {
         position: absolute;
-        top: -135px;
+        top: -145px;
         left: 150px;
         padding: 0;
-        z-index: 3;
-      }
-
-      .container-3g15px {
-        padding: 0 14px 0;
       }
     }
 

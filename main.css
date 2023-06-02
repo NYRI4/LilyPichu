@@ -533,6 +533,9 @@
 :root .userPopoutInner-nv9Y92 .bannerSVGWrapper-2CLfzN foreignObject {
   mask: none;
 }
+:root .userPopoutInner-nv9Y92 .bannerSVGWrapper-2CLfzN .banner-1YaD3N {
+  height: 100%;
+}
 :root .userPopoutInner-nv9Y92 .bannerSVGWrapper-2CLfzN .banner-1YaD3N::before {
   content: "";
   position: absolute;
@@ -551,13 +554,14 @@
 }
 :root .userPopoutInner-nv9Y92 .profileBadges-2pItdR {
   position: absolute;
-  top: 50px;
-  left: 115px;
+  top: 65px;
+  left: 110px;
   background-color: transparent;
 }
 :root .userPopoutInner-nv9Y92 .avatarWrapperNormal-ahVUaC {
   position: relative;
   width: 80px;
+  top: 16px;
   z-index: 1;
 }
 :root .userPopoutInner-nv9Y92 .avatarWrapperNormal-ahVUaC foreignObject {
@@ -570,10 +574,6 @@
 :root .userPopoutInner-nv9Y92 .avatarWrapperNormal-ahVUaC circle {
   display: none;
 }
-:root .userPopoutInner-nv9Y92 .bannerSVGWrapper-2CLfzN[viewBox="0 0 340 90"] + .avatarWrapperNormal-ahVUaC,
-:root .userPopoutInner-nv9Y92 .bannerSVGWrapper-2CLfzN[viewBox="0 0 340 120"] + .avatarWrapperNormal-ahVUaC {
-  top: 16px;
-}
 :root .userPopoutInner-nv9Y92 .userPopoutOverlayBackground-3A0Pcz {
   overflow: visible;
   background-color: rgba(0, 0, 0, 0.0666666667);
@@ -583,11 +583,10 @@
   padding: 0;
 }
 :root .userPopoutInner-nv9Y92 .userPopoutOverlayBackground-3A0Pcz .copiableNameTag-3tf-II,
-:root .userPopoutInner-nv9Y92 .userPopoutOverlayBackground-3A0Pcz .usernameSection-3FppkT .userText-1_v2Cq > h1,
-:root .userPopoutInner-nv9Y92 .userPopoutOverlayBackground-3A0Pcz .usernameSection-3FppkT .userText-1_v2Cq > .userTagNoNickname-h9Bh88 {
+:root .userPopoutInner-nv9Y92 .userPopoutOverlayBackground-3A0Pcz .usernameSection-3FppkT .userText-1_v2Cq {
   position: absolute;
-  top: -85px;
-  left: 105px;
+  top: -87px;
+  left: 100px;
   box-sizing: border-box;
   max-width: 200px;
   text-overflow: ellipsis;
@@ -597,18 +596,13 @@
   color: var(--header-secondary);
 }
 :root .userPopoutInner-nv9Y92 .userPopoutOverlayBackground-3A0Pcz .copiableNameTag-3tf-II > span,
-:root .userPopoutInner-nv9Y92 .userPopoutOverlayBackground-3A0Pcz .usernameSection-3FppkT .userText-1_v2Cq > h1 > span,
-:root .userPopoutInner-nv9Y92 .userPopoutOverlayBackground-3A0Pcz .usernameSection-3FppkT .userText-1_v2Cq > .userTagNoNickname-h9Bh88 > span {
+:root .userPopoutInner-nv9Y92 .userPopoutOverlayBackground-3A0Pcz .usernameSection-3FppkT .userText-1_v2Cq > span {
   word-break: unset;
   white-space: unset;
 }
 :root .userPopoutInner-nv9Y92 .userPopoutOverlayBackground-3A0Pcz .copiableNameTag-3tf-II .discrimBase-v65kTs,
-:root .userPopoutInner-nv9Y92 .userPopoutOverlayBackground-3A0Pcz .usernameSection-3FppkT .userText-1_v2Cq > h1 .discrimBase-v65kTs,
-:root .userPopoutInner-nv9Y92 .userPopoutOverlayBackground-3A0Pcz .usernameSection-3FppkT .userText-1_v2Cq > .userTagNoNickname-h9Bh88 .discrimBase-v65kTs {
+:root .userPopoutInner-nv9Y92 .userPopoutOverlayBackground-3A0Pcz .usernameSection-3FppkT .userText-1_v2Cq .discrimBase-v65kTs {
   color: white;
-}
-:root .userPopoutInner-nv9Y92 .userPopoutOverlayBackground-3A0Pcz .userTagWithNickname-13lfvd {
-  padding: 10px 0 0 10px;
 }
 :root .userPopoutInner-nv9Y92 .userPopoutOverlayBackground-3A0Pcz .divider-2dDziJ {
   display: none;
@@ -662,8 +656,8 @@
 }
 :root .root-8LYsGj.root-1CAIjD.small-2xUY-3 .topSection-13QKHs .header-S26rhB .headerTop-1PNKck {
   position: absolute;
-  top: 65px;
-  row-gap: 13px;
+  top: 70px;
+  row-gap: 10px;
   flex-direction: column;
 }
 :root .root-8LYsGj.root-1CAIjD.small-2xUY-3 .topSection-13QKHs .header-S26rhB .headerTop-1PNKck .badgeList-2aoHPw {
@@ -675,15 +669,11 @@
   background-color: rgba(0, 0, 0, 0.0666666667);
   backdrop-filter: blur(20px);
 }
-:root .root-8LYsGj.root-1CAIjD.small-2xUY-3 .userProfileModalOverlayBackground-2dAaBg .nameTag-35jqbZ {
+:root .root-8LYsGj.root-1CAIjD.small-2xUY-3 .userProfileModalOverlayBackground-2dAaBg .container-3g15px > div:first-child {
   position: absolute;
-  top: -135px;
+  top: -145px;
   left: 150px;
   padding: 0;
-  z-index: 3;
-}
-:root .root-8LYsGj.root-1CAIjD.small-2xUY-3 .userProfileModalOverlayBackground-2dAaBg .container-3g15px {
-  padding: 0 14px 0;
 }
 :root .root-8LYsGj.root-1CAIjD.small-2xUY-3 .tabBarContainer-sCZC4w {
   padding: 0;
@@ -1565,6 +1555,35 @@
 }
 :root .toolbar-37BrJ5 .button-lA2rvH {
   background-color: transparent !important;
+}
+:root .header-3xB4vB,
+:root .container-2IKOsH,
+:root .emptyPage-2TGR7j,
+:root .pageBody-23bo4p,
+:root .background-12kWdX {
+  background-color: var(--background-primary);
+}
+:root .row--LCpto,
+:root .channelRow-4X_3fi {
+  background-color: var(--background-secondary);
+}
+:root .emptyContainer-8KVAv2 > .emptyIcon-IW8ndV > circle {
+  fill: var(--interactive-normal);
+}
+:root .emptyContainer-8KVAv2 > .emptyIcon-IW8ndV > path {
+  fill: var(--background-accent);
+  stroke: var(--background-accent);
+}
+:root .brand-2EKq3J.item-2GWPIy:active,
+:root .brand-2EKq3J.selected-1sf9UK.item-2GWPIy {
+  border-bottom-color: var(--background-accent);
+}
+:root .checkbox-1LuCGM {
+  background-color: var(--interactive-normal) !important;
+  border-color: var(--background-accent) !important;
+}
+:root .checkbox-1LuCGM > svg > path {
+  fill: var(--background-accent);
 }
 :root .ready-3BZNWT {
   display: none;
