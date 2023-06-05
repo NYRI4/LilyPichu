@@ -1,9 +1,10 @@
 {
   "name": "lilypichu",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "A theme based on @Melonturtle_ stream design",
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
   },
   "scripts": {
     "build": "replugged build theme",
@@ -17,8 +18,8 @@
   "devDependencies": {
     "@parcel/config-default": "^2.8.3",
     "@parcel/core": "^2.8.3",
-    "@types/node": "^18.13.0",
-    "prettier": "^2.8.4",
-    "replugged": "4.0.0-beta0.27"
+    "@types/node": "^18.15.11",
+    "prettier": "^2.8.7",
+    "replugged": "^4.2.3"
   }
 }
