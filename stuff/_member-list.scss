@@ -145,32 +145,38 @@
       background-color: #00000011;
       backdrop-filter: blur(20px);
 
-      // Username
       .usernameSection-3FppkT {
-        padding: 0;
+        & > .copiableNameTag-3tf-II > .clickTarget-2uXro4,
+        & > div > .userText-1_v2Cq {
+          position: absolute;
+          top: -87px;
+          left: 100px;
+          box-sizing: border-box;
+          max-width: 200px;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+          display: block;
+          color: var(--header-secondary);
+
+          & > span {
+            word-break: unset;
+            white-space: unset;
+          }
+
+          .discrimBase-v65kTs {
+            color: white;
+          }
+        }
+
+        .pronouns-17_QV6 {
+          padding-top: 12px;
+        }
       }
 
-      .copiableNameTag-3tf-II,
-      .usernameSection-3FppkT .userText-1_v2Cq {
-        position: absolute;
-        top: -87px;
-        left: 100px;
-        box-sizing: border-box;
-        max-width: 200px;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
-        display: block;
-        color: var(--header-secondary);
-
-        & > span {
-          word-break: unset;
-          white-space: unset;
-        }
-
-        .discrimBase-v65kTs {
-          color: white;
-        }
+      .section-28YDOf {
+        padding-top: 0;
+        padding-bottom: 12px;
       }
 
       .divider-2dDziJ {

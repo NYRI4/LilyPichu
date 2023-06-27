@@ -579,11 +579,7 @@
   background-color: rgba(0, 0, 0, 0.0666666667);
   backdrop-filter: blur(20px);
 }
-:root .userPopoutInner-nv9Y92 .userPopoutOverlayBackground-3A0Pcz .usernameSection-3FppkT {
-  padding: 0;
-}
-:root .userPopoutInner-nv9Y92 .userPopoutOverlayBackground-3A0Pcz .copiableNameTag-3tf-II,
-:root .userPopoutInner-nv9Y92 .userPopoutOverlayBackground-3A0Pcz .usernameSection-3FppkT .userText-1_v2Cq {
+:root .userPopoutInner-nv9Y92 .userPopoutOverlayBackground-3A0Pcz .usernameSection-3FppkT > .copiableNameTag-3tf-II > .clickTarget-2uXro4, :root .userPopoutInner-nv9Y92 .userPopoutOverlayBackground-3A0Pcz .usernameSection-3FppkT > div > .userText-1_v2Cq {
   position: absolute;
   top: -87px;
   left: 100px;
@@ -595,14 +591,19 @@
   display: block;
   color: var(--header-secondary);
 }
-:root .userPopoutInner-nv9Y92 .userPopoutOverlayBackground-3A0Pcz .copiableNameTag-3tf-II > span,
-:root .userPopoutInner-nv9Y92 .userPopoutOverlayBackground-3A0Pcz .usernameSection-3FppkT .userText-1_v2Cq > span {
+:root .userPopoutInner-nv9Y92 .userPopoutOverlayBackground-3A0Pcz .usernameSection-3FppkT > .copiableNameTag-3tf-II > .clickTarget-2uXro4 > span, :root .userPopoutInner-nv9Y92 .userPopoutOverlayBackground-3A0Pcz .usernameSection-3FppkT > div > .userText-1_v2Cq > span {
   word-break: unset;
   white-space: unset;
 }
-:root .userPopoutInner-nv9Y92 .userPopoutOverlayBackground-3A0Pcz .copiableNameTag-3tf-II .discrimBase-v65kTs,
-:root .userPopoutInner-nv9Y92 .userPopoutOverlayBackground-3A0Pcz .usernameSection-3FppkT .userText-1_v2Cq .discrimBase-v65kTs {
+:root .userPopoutInner-nv9Y92 .userPopoutOverlayBackground-3A0Pcz .usernameSection-3FppkT > .copiableNameTag-3tf-II > .clickTarget-2uXro4 .discrimBase-v65kTs, :root .userPopoutInner-nv9Y92 .userPopoutOverlayBackground-3A0Pcz .usernameSection-3FppkT > div > .userText-1_v2Cq .discrimBase-v65kTs {
   color: white;
+}
+:root .userPopoutInner-nv9Y92 .userPopoutOverlayBackground-3A0Pcz .usernameSection-3FppkT .pronouns-17_QV6 {
+  padding-top: 12px;
+}
+:root .userPopoutInner-nv9Y92 .userPopoutOverlayBackground-3A0Pcz .section-28YDOf {
+  padding-top: 0;
+  padding-bottom: 12px;
 }
 :root .userPopoutInner-nv9Y92 .userPopoutOverlayBackground-3A0Pcz .divider-2dDziJ {
   display: none;
@@ -1467,7 +1468,6 @@
 :root .root-1CAIjD,
 :root .uploadModal-2ie9O_ {
   border-radius: var(--border-radius);
-  background-color: var(--background-secondary);
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(56, 31, 31, 0.11);
 }
 :root .footer-1KGV6y,
@@ -1531,9 +1531,6 @@
 :root .contentWrapper-3oy4Xo {
   background: var(--background-secondary);
 }
-:root .root-1CAIjD:not(.modal-3Crloo) {
-  background: var(--background-secondary);
-}
 :root .keyboardShortcutsModal-2CRmCm {
   background: var(--background-secondary);
 }
@@ -1560,7 +1557,8 @@
 :root .container-2IKOsH,
 :root .emptyPage-2TGR7j,
 :root .pageBody-23bo4p,
-:root .background-12kWdX {
+:root .background-12kWdX,
+:root .scrollerContainer-y16Rs9 {
   background-color: var(--background-primary);
 }
 :root .row--LCpto,
