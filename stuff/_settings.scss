@@ -332,6 +332,14 @@
   .barFill-2Bh7CX {
     background: var(--background-accent);
   }
+  .bar-2H7Q9u {
+    background-color: var(--background-secondary);
+  }
+
+  // Accessibility
+  .markDash-1ATsxA {
+    background-color: var(--background-secondary);
+  }
 
   // Voice & video
   .userSettingsVoice-1fEtsL .cameraWrapper-3a7Ngv {
@@ -414,6 +422,10 @@
   }
 
   // BetterDiscord
+  .bd-sidebar-header h2 {
+    color: var(--channels-default);
+  }
+
   .bd-addon-list .bd-addon-card,
   .bd-search-wrapper,
   #floating-editor-window {

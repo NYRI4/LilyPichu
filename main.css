@@ -1064,6 +1064,12 @@
 :root .barFill-2Bh7CX {
   background: var(--background-accent);
 }
+:root .bar-2H7Q9u {
+  background-color: var(--background-secondary);
+}
+:root .markDash-1ATsxA {
+  background-color: var(--background-secondary);
+}
 :root .userSettingsVoice-1fEtsL .cameraWrapper-3a7Ngv {
   background-color: var(--background-secondary-alt);
   border: none;
@@ -1131,6 +1137,9 @@
 }
 :root .membershipDialog-2wAdpQ {
   border-radius: var(--border-radius);
+}
+:root .bd-sidebar-header h2 {
+  color: var(--channels-default);
 }
 :root .bd-addon-list .bd-addon-card,
 :root .bd-search-wrapper,
@@ -1309,47 +1318,52 @@
 :root .privateChannels-oVe7HL .interactive-1vLZ_I {
   border-radius: var(--border-radius);
 }
-:root .nowPlayingColumn-1eCBCN {
-  position: fixed;
-  top: 280px;
-  bottom: 120px;
-  right: 60px;
-  width: 320px;
-  min-width: unset;
-  background-color: var(--background-primary);
-}
-:root .nowPlayingColumn-1eCBCN::before {
-  content: "Friends activity";
-  position: absolute;
-  top: -60px;
-  z-index: 1;
-  width: 100%;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-  font-weight: bolder;
-  color: var(--header-primary);
-  background-color: var(--background-secondary);
-  border-radius: var(--border-radius) var(--border-radius) 0 0;
-}
-:root .nowPlayingColumn-1eCBCN::after {
-  content: "";
-  position: absolute;
-  bottom: -35px;
-  z-index: 1;
-  width: 100%;
-  height: 35px;
-  background-color: var(--background-secondary);
-  border-radius: 0 0 var(--border-radius) var(--border-radius);
-  background-image: linear-gradient(to right, var(--header-primary) 33%, rgba(255, 255, 255, 0) 0%);
-  background-position: top;
-  background-size: 21px 2px;
-  background-repeat: repeat-x;
+@media (min-width: 1350px) {
+  :root .nowPlayingColumn-1eCBCN {
+    position: fixed;
+    top: 280px;
+    bottom: 120px;
+    right: 60px;
+    width: 320px;
+    min-width: unset;
+    background-color: var(--background-primary);
+  }
+  :root .nowPlayingColumn-1eCBCN::before {
+    content: "Friends activity";
+    position: absolute;
+    top: -60px;
+    z-index: 1;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bolder;
+    color: var(--header-primary);
+    background-color: var(--background-secondary);
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+  }
+  :root .nowPlayingColumn-1eCBCN::after {
+    content: "";
+    position: absolute;
+    bottom: -35px;
+    z-index: 1;
+    width: 100%;
+    height: 35px;
+    background-color: var(--background-secondary);
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+    background-image: linear-gradient(to right, var(--header-primary) 33%, rgba(255, 255, 255, 0) 0%);
+    background-position: top;
+    background-size: 21px 2px;
+    background-repeat: repeat-x;
+  }
 }
 :root .container-2cd8Mz {
   background-color: var(--background-primary);
+}
+:root .container-2cd8Mz .searchBar-2aylmZ {
+  background-color: var(--background-secondary);
 }
 :root .container-2cd8Mz .children-3xh0VB:after {
   content: none;
