@@ -16,6 +16,30 @@
 
   // Border-radius for the whole theme
   --border-radius: 20px;
+
+  .colorDefault-2_rLdz.focused-3LIdPu,
+  .colorDefault-2_rLdz:active:not(.hideInteraction-1vQrZJ) {
+    background-color: var(--background-modifier-hover) !important;
+  }
+
+  // Buttons
+  .lookFilled-1H2Jvj {
+    background-color: #c5536c !important;
+  }
+  .lookFilled-1H2Jvj:active,
+  .lookFilled-1H2Jvj:hover {
+    background-color: #b64a61 !important;
+  }
+  .lookOutlined-3yKVGo:not(.colorWhite-1H92hK) {
+    color: #c5536c;
+    border-color: #c5536c;
+  }
+
+  // Hover background
+  .colorDefault-2_rLdz.focused-3LIdPu,
+  .colorDefault-2_rLdz:active:not(.hideInteraction-1vQrZJ) {
+    color: var(--interactive-normal);
+  }
 }
 
 .theme-dark {
@@ -62,37 +86,6 @@
   --deprecated-quickswitcher-input-background: var(--background-primary);
   --brand-experiment: var(--background-accent);
   --channel-icon: var(--interactive-normal);
-
-  .colorBrand-3cPPsm {
-    color: #c5536c;
-  }
-  .colorDefault-2_rLdz.focused-3LIdPu,
-  .colorDefault-2_rLdz:active:not(.hideInteraction-1vQrZJ) {
-    background-color: var(--background-modifier-hover) !important;
-  }
-
-  // Buttons
-  .lookFilled-1H2Jvj {
-    background-color: #c5536c !important;
-  }
-  .lookFilled-1H2Jvj:active,
-  .lookFilled-1H2Jvj:hover {
-    background-color: #b64a61 !important;
-  }
-  .lookOutlined-3RTC7c:not(.colorWhite-1H92hK) {
-    color: #c5536c;
-    border-color: #c5536c;
-
-    &:hover {
-      background-color: var(--background-modifier-hover);
-    }
-  }
-
-  // Hover background
-  .colorDefault-2_rLdz.focused-3LIdPu,
-  .colorDefault-2_rLdz:active:not(.hideInteraction-1vQrZJ) {
-    color: var(--interactive-normal);
-  }
 }
 
 .theme-light {
@@ -129,33 +122,6 @@
 
   // Other
   --deprecated-quickswitcher-input-background: var(--background-primary);
-
-  .colorBrand-3cPPsm {
-    color: #c5536c;
-  }
-  .colorDefault-2_rLdz.focused-3LIdPu,
-  .colorDefault-2_rLdz:active:not(.hideInteraction-1vQrZJ) {
-    background-color: var(--background-modifier-hover) !important;
-  }
-
-  // Buttons
-  .lookFilled-yCfaCM {
-    background-color: #c5536c !important;
-  }
-  .lookFilled-yCfaCM:active,
-  .lookFilled-yCfaCM:hover {
-    background-color: #b64a61 !important;
-  }
-  .lookOutlined-3yKVGo:not(.colorWhite-1H92hK) {
-    color: #c5536c;
-    border-color: #c5536c;
-  }
-
-  // Hover background
-  .colorDefault-2_rLdz.focused-3LIdPu,
-  .colorDefault-2_rLdz:active:not(.hideInteraction-1vQrZJ) {
-    color: var(--interactive-normal);
-  }
 }
 
 #app-mount {
