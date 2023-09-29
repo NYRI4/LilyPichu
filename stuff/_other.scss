@@ -29,7 +29,7 @@
   button,
   input,
   textarea,
-  .item-2GWPIy:not([class^="tabBarItem-"]),
+  .item-2GWPIy:not([class*="tabBarItem-"]),
   .menu-2TXYjN {
     border-radius: var(--border-radius) !important;
   }
@@ -239,6 +239,14 @@
     }
   }
 
+  .container-1QtPKm[style*="background-color: var(--green-360)"] {
+    background-color: var(--background-accent) !important;
+
+    & path {
+      fill: var(--background-accent) !important;
+    }
+  }
+
   // -- ✔️ Plugin support --
 
   // PermisssionViewer support
@@ -271,5 +279,27 @@
     #MemberCount .membersGroup-2eiWxl {
       padding-top: 12px;
     }
+  }
+
+  // Vencord
+  .vc-settings-tab-bar {
+    border-color: var(--background-secondary);
+  }
+
+  .vc-settings-card, .vc-settings-quick-actions-card {
+    border: none;
+  }
+
+  .vc-settings-tab-bar-item.item-2GWPIy {
+    border-radius: 0 !important;
+  }
+
+  .vc-settings-theme-links {
+    background-color: var(--background-secondary);
+    border: none;
+  }
+
+  .vc-addon-card {
+    border-radius: var(--border-radius);
   }
 }

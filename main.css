@@ -1098,6 +1098,7 @@
 }
 :root .cardPrimary-pAe8Ed {
   background-color: var(--background-secondary-alt);
+  border-radius: var(--border-radius);
 }
 :root .game-2f2vPC {
   box-shadow: none;
@@ -1450,7 +1451,7 @@
 :root button,
 :root input,
 :root textarea,
-:root .item-2GWPIy:not([class^=tabBarItem-]),
+:root .item-2GWPIy:not([class*=tabBarItem-]),
 :root .menu-2TXYjN {
   border-radius: var(--border-radius) !important;
 }
@@ -1612,6 +1613,12 @@
   height: 200px;
   background: var(--jumping-gif) center/80% no-repeat;
 }
+:root .container-1QtPKm[style*="background-color: var(--green-360)"] {
+  background-color: var(--background-accent) !important;
+}
+:root .container-1QtPKm[style*="background-color: var(--green-360)"] path {
+  fill: var(--background-accent) !important;
+}
 :root #permissions-modal-wrapper #permissions-modal {
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(56, 31, 31, 0.11) !important;
   border-color: var(--background-tertiary) !important;
@@ -1636,6 +1643,22 @@
   :root #MemberCount .membersGroup-2eiWxl {
     padding-top: 12px;
   }
+}
+:root .vc-settings-tab-bar {
+  border-color: var(--background-secondary);
+}
+:root .vc-settings-card, :root .vc-settings-quick-actions-card {
+  border: none;
+}
+:root .vc-settings-tab-bar-item.item-2GWPIy {
+  border-radius: 0 !important;
+}
+:root .vc-settings-theme-links {
+  background-color: var(--background-secondary);
+  border: none;
+}
+:root .vc-addon-card {
+  border-radius: var(--border-radius);
 }
 
 @media (min-width: 1350px) {
