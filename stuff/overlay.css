@@ -1,10 +1,10 @@
-:root .app-3xd6d0::before, :root .app-3xd6d0::after, :root .app-2CXKsg::after, :root .app-2CXKsg::before, :root .layers-OrUESM::before, :root .layers-OrUESM::after, :root .app-3xd6d0::before, :root .bg-1QIAus::after, :root .bg-1QIAus::before {
+:root .app-1BipOi::before, :root .app-1BipOi::after, :root .app-2CXKsg::after, :root .app-2CXKsg::before, :root .layers-OrUESM::before, :root .layers-OrUESM::after, :root .app-1BipOi::before, :root .bg-1QIAus::after, :root .bg-1QIAus::before {
   content: "";
   position: fixed;
   z-index: 1;
   pointer-events: none;
 }
-:root .app-3xd6d0::before {
+:root .app-1BipOi::before {
   left: 0;
   top: 0;
   width: 250px;
@@ -12,7 +12,7 @@
   background: url("https://i.imgur.com/jTpFJuI.png") no-repeat;
   background-size: 100%;
 }
-:root .app-3xd6d0::after {
+:root .app-1BipOi::after {
   z-index: 0;
   left: 50px;
   bottom: 0;
