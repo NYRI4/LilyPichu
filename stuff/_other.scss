@@ -17,7 +17,7 @@
   }
 
   // Windows button
-  .winButton-3UMjdg {
+  :is(.winButton-3UMjdg, .winButton-3SigSb) {
     background-color: var(--background-primary);
 
     &:last-child {
@@ -83,7 +83,7 @@
   }
 
   // User profile
-  .accountProfilePopoutWrapper-3GskID {
+  :is(.accountProfilePopoutWrapper-3GskID, .accountProfilePopoutWrapper-Ag_Fip) {
     left: -15px;
     bottom: -5px;
 
@@ -108,7 +108,7 @@
   }
 
   // Delete Discord wordmark
-  .titleBar-1it3bQ .wordmark-2u86JB {
+  :is(.titleBar-1it3bQ, .titleBar-3AIemB) :is(.wordmark-2u86JB, .wordmark-3wYFg6) {
     display: none;
   }
 
@@ -125,7 +125,7 @@
   .categoryItem-1QIroW .itemInner-gPkiWb {
     background-color: transparent;
   }
-  .pageWrapper-2PwDoS {
+  :is(.pageWrapper-2PwDoS, .pageWrapper-eg3-6i) {
     background-color: var(--background-primary);
   }
   .notice-12Koq- {
@@ -221,10 +221,10 @@
   }
 
   // Loading screen
-  .ready-3BZNWT {
+  :is(.ready-3BZNWT, .ready-3GlCTH) {
     display: none;
 
-    & + .text-2bYgPB {
+    & + :is(.text-2bYgPB, .text-2oT_0D) {
       top: 82px;
 
       &::before {
@@ -276,7 +276,7 @@
   }
 
   @media (min-width: 1350px) {
-    #MemberCount .membersGroup-2eiWxl {
+    #MemberCount :is(.membersGroup-2eiWxl, .membersGroup-2YoqY-) {
       padding-top: 12px;
     }
   }

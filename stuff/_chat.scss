@@ -216,7 +216,7 @@
   }
 
   // News chat bar
-  .wrapper-2SplAX {
+  :is(.wrapper-2SplAX, .wrapper-IjGAlW) {
     border-radius: var(--border-radius);
   }
 

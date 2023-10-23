@@ -131,9 +131,12 @@
 
   // Right popout profile
   @media (min-width: 1350px) {
-    .content-1jQy2l > .profilePanel-2VBkh8 {
+    :is(.content-1jQy2l, .content-18rAwf) > .profilePanel-2VBkh8 {
+      position: fixed;
       top: 220px;
       bottom: 80px;
+      right: 60px;
+      width: 320px;
       border-radius: var(--border-radius);
       overflow: hidden;
     }

@@ -1,5 +1,5 @@
 :root {
-  .title-31SJ6t {
+  :is(.title-31SJ6t, .title-5wgnIa) {
     background-color: var(--background-primary);
 
     .children-3xh0VB::after { 
@@ -264,7 +264,7 @@
   }
 
   .header-3OsQeK,
-  .content-1jQy2l::before {
+  :is(.content-1jQy2l, .content-18rAwf)::before {
     box-shadow: none;
   }
 }

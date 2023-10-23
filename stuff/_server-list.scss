@@ -52,7 +52,7 @@
 }
 
 // Game panel
-.panel-2ZFCRb {
+:is(.panel-2ZFCRb, .panel-ufc1-o) {
   position: fixed;
   left: 0;
   bottom: 0;
@@ -61,12 +61,12 @@
   background-color: var(--background-tertiary);
   transition: width 0.35s;
 
-  .gameWrapper-2TFy7F {
+  :is(.gameWrapper-2TFy7F, .gameWrapper-1gvhsy) {
     margin-left: 12px;
   }
 
-  .info-88fTUI,
-  .actions-zk2vB_ {
+  :is(.info-88fTUI, .info-2PZl4A),
+  :is(.actions-zk2vB_, .actions-_dBVGH) {
     opacity: 0;
   }
 
@@ -79,11 +79,11 @@
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2),
       0 0 0 1px rgba(56, 31, 31, 0.11);
 
-    .gameWrapper-2TFy7F {
+    :is(.gameWrapper-2TFy7F, .gameWrapper-1gvhsy) {
       margin-left: 0;
     }
-    .info-88fTUI,
-    .actions-zk2vB_ {
+    :is(.info-88fTUI, .info-2PZl4A),
+    :is(.actions-zk2vB_, .actions-_dBVGH) {
       opacity: 1;
     }
   }

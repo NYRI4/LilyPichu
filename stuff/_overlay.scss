@@ -1,8 +1,8 @@
 :root { 
 
-.app-3xd6d0::before, .app-3xd6d0::after, .app-2CXKsg::after, .app-2CXKsg::before, .layers-OrUESM::before, .layers-OrUESM::after, .app-3xd6d0::before, .bg-1QIAus::after, .bg-1QIAus::before { content: ""; position: fixed; z-index: 1; pointer-events: none;}
+:is(.app-3xd6d0, .app-1BipOi)::before, :is(.app-3xd6d0, .app-1BipOi)::after, .app-2CXKsg::after, .app-2CXKsg::before, .layers-OrUESM::before, .layers-OrUESM::after, :is(.app-3xd6d0, .app-1BipOi)::before, .bg-1QIAus::after, .bg-1QIAus::before { content: ""; position: fixed; z-index: 1; pointer-events: none;}
 
-.app-3xd6d0 { // Yellow stripes
+:is(.app-3xd6d0, .app-1BipOi) { // Yellow stripes
     &::before { left: 0; top: 0; width: 250px; height: 250px; background: url('https://i.imgur.com/jTpFJuI.png') no-repeat; background-size: 100%;}
     &::after { z-index: 0; left: 50px; bottom: 0; width: 490px; height: 40px; background: url('https://i.imgur.com/KQQWcTY.png') no-repeat; background-size: 100%;}
 }
