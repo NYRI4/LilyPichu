@@ -10,14 +10,14 @@
   }
 
   // Background
-  .bg-1QIAus {
+  .bg__7adbf {
     background: var(--background-tertiary-alt);
     background-size: cover;
     background-repeat: no-repeat;
   }
 
   // Windows button
-  .winButton-3UMjdg {
+  .winButton__88672 {
     background-color: var(--background-primary);
 
     &:last-child {
@@ -29,53 +29,53 @@
   button,
   input,
   textarea,
-  .item-2GWPIy:not([class*="tabBarItem-"]),
-  .menu-2TXYjN {
+  .item__48dda:not([class*="tabBarItem-"]),
+  .menu_dc52c6 {
     border-radius: var(--border-radius) !important;
   }
 
   // -- Better menus --
-  .menu-2TXYjN {
+  .menu_dc52c6 {
     overflow: hidden;
   }
 
-  .scroller-nxCRu_ {
+  .scroller__750f5 {
     padding: 0;
 
     &::-webkit-scrollbar,
-    .separator-12G2Op {
+    .separator__18122 {
       display: none;
     }
-    .item-5ApiZt {
+    .item__183e8 {
       flex-direction: row-reverse;
       padding: 10px 10px 10px 13px;
       margin: 0;
       transition: 0.15s;
       border-radius: 0;
 
-      .iconContainer-Ksy8Oj,
-      .imageContainer-3UDrmv {
+      .iconContainer__829e7,
+      .imageContainer_ea60f4 {
         margin: 0 8px 0 0;
       }
     }
 
     // Submenu
-    .submenuPaddingContainer-QgnL1r {
+    .submenuPaddingContainer__12a9d {
       margin: 0 -8px;
     }
   }
 
   // Modals
-  .modal-2RrUKJ,
-  .root-1CAIjD,
-  .uploadModal-2ie9O_ {
+  .modal__060da,
+  .root_a28985,
+  .uploadModal_eae2a0 {
     border-radius: var(--border-radius);
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2),
       0 0 0 1px rgba(56, 31, 31, 0.11);
   }
 
-  .footer-1KGV6y,
-  .footer-IubaaS {
+  .footer_c793da,
+  .footer__89240 {
     border-radius: 0 0 var(--border-radius) var(--border-radius);
     background-color: var(--background-tertiary);
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2),
@@ -83,37 +83,37 @@
   }
 
   // User profile
-  .accountProfilePopoutWrapper-3GskID {
+  .accountProfilePopoutWrapper_af829a {
     left: -15px;
     bottom: -5px;
 
-    .userPopoutOverlayBackground-3A0Pcz {
+    .userPopoutOverlayBackground_d8afa4 {
       backdrop-filter: unset;
     }
 
-    .nameTag-H6kSJ0 {
+    .nameTag__693ff {
       position: static !important;
     }
   }
 
   // Custom status modal
-  .select-Zz0IcO,
-  .popout-15UxD6 {
+  .select__0eb48,
+  .popout_a6e77f {
     border: none;
   }
-  .select-Zz0IcO,
-  .popout-15UxD6,
+  .select__0eb48,
+  .popout_a6e77f,
   .input-3AAlUz {
     background-color: var(--background-secondary-alt);
   }
 
   // Delete Discord wordmark
-  .titleBar-1it3bQ .wordmark-2u86JB {
+  .titleBar__01af6 .wordmark__0d178 {
     display: none;
   }
 
   // Colored emoji
-  .sprite-2lxwfc {
+  .sprite__294b3 {
     filter: none !important;
   }
 
@@ -125,54 +125,54 @@
   .categoryItem-1QIroW .itemInner-gPkiWb {
     background-color: transparent;
   }
-  .pageWrapper-2PwDoS {
+  .pageWrapper_fef757 {
     background-color: var(--background-primary);
   }
-  .notice-12Koq- {
+  .notice__99c03 {
     border-top-left-radius: 0;
     background-color: var(--background-tertiary);
   }
-  .button-3_1yil:hover {
+  .button__671cf:hover {
     background-color: transparent;
   }
   .headerImage-2D5D-v,
-  .card-2TuZPZ {
+  .card__86773 {
     border-radius: var(--border-radius);
   }
 
   // Call tile
-  .tile-2TcwiO {
+  .tile_a411a4 {
     background-color: var(--background-secondary-alt);
     border-radius: var(--border-radius);
 
-    .button-3Vyz67 {
+    .button__13ec4 {
       background-color: var(--background-accent);
     }
   }
 
   // Joining message
-  .contentWrapper-3oy4Xo {
+  .contentWrapper__85d37 {
     background: var(--background-secondary);
   }
 
   // Keyboard shortcuts
-  .keyboardShortcutsModal-2CRmCm {
+  .keyboardShortcutsModal__74c71 {
     background: var(--background-secondary);
   }
 
   // Discord game
-  .scroller-s-wehS {
+  .scroller__46bcc {
     background: var(--background-primary);
   }
-  .whyYouMightLikeIt-2N2Df7,
-  .content-1W9-9i,
-  .bodySection-3iDdop,
-  .row-2qQ--F {
+  .whyYouMightLikeIt_ad60b9,
+  .content__8af7f,
+  .bodySection_ae0d90,
+  .row__80d34 {
     background: var(--background-secondary);
   }
 
   // Tooltips
-  .toolbar-37BrJ5 {
+  .toolbar_c7b525 {
     display: flex !important;
     background-color: var(--background-secondary-alt);
 
@@ -180,25 +180,25 @@
       border-top: 8px solid var(--background-secondary-alt);
     }
 
-    .button-lA2rvH {
+    .button__07531 {
       background-color: transparent !important;
     }
   }
 
   // New community home
-  .header-3xB4vB,
-  .container-2IKOsH,
-  .emptyPage-2TGR7j,
-  .pageBody-23bo4p,
-  .background-12kWdX,
-  .scrollerContainer-y16Rs9 {
+  .header__60bef,
+  .container__10dc7,
+  .emptyPage__3e15d,
+  .pageBody_db54f5,
+  .background_cb0a80,
+  .scrollerContainer_bf5dbd {
     background-color: var(--background-primary);
   }
-  .row--LCpto,
-  .channelRow-4X_3fi {
+  .row__70f4c,
+  .channelRow__96673 {
     background-color: var(--background-secondary);
   }
-  .emptyContainer-8KVAv2 > .emptyIcon-IW8ndV {
+  .emptyContainer__0cde5 > .emptyIcon__3ebb5 {
     & > circle {
       fill: var(--interactive-normal);
     }
@@ -207,11 +207,11 @@
       stroke: var(--background-accent);
     }
   }
-  .brand-2EKq3J.item-2GWPIy:active,
-  .brand-2EKq3J.selected-1sf9UK.item-2GWPIy {
+  .brand_ce3ecf.item__48dda:active,
+  .brand_ce3ecf.selected__5711d.item__48dda {
     border-bottom-color: var(--background-accent);
   }
-  .checkbox-1LuCGM {
+  .checkbox_c7f690 {
     background-color: var(--interactive-normal) !important;
     border-color: var(--background-accent) !important;
 
@@ -221,10 +221,10 @@
   }
 
   // Loading screen
-  .ready-3BZNWT {
+  .ready__61f2f {
     display: none;
 
-    & + .text-2bYgPB {
+    & + .text__32559 {
       top: 82px;
 
       &::before {
@@ -239,7 +239,7 @@
     }
   }
 
-  .container-1QtPKm[style*="background-color: var(--green-360)"] {
+  .container__871ba[style*="background-color: var(--green-360)"] {
     background-color: var(--background-accent) !important;
 
     & path {
@@ -276,7 +276,7 @@
   }
 
   @media (min-width: 1350px) {
-    #MemberCount .membersGroup-2eiWxl {
+    #MemberCount .membersGroup__85843 {
       padding-top: 12px;
     }
   }
@@ -290,7 +290,7 @@
     border: none;
   }
 
-  .vc-settings-tab-bar-item.item-2GWPIy {
+  .vc-settings-tab-bar-item.item__48dda {
     border-radius: 0 !important;
   }
 

@@ -1,8 +1,8 @@
 :root {
-  .guilds-2JjMmN .scroller-3X7KbA {
+  .guilds__2b93a .scroller__3d071 {
     padding: 8px 0 130px 0;
 
-    .wrapper-2PSQCG foreignObject {
+    .wrapper__3af0b foreignObject {
       mask: none;
       border-radius: var(--border-radius);
       transition: border-radius 0.15s;
@@ -12,12 +12,12 @@
       }
     }
 
-    .folder-241Joy {
+    .folder__17546 {
       background-color: transparent;
     }
 
     // Discover + create a server buttons
-    .circleIconButton-1VxDrg {
+    .circleIconButton_d8df29 {
       color: var(--background-accent);
       background-color: var(--background-secondary-alt) !important;
     }
@@ -25,34 +25,34 @@
 }
 
 .theme-light {
-  .wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub,
-  .wrapper-3kah-n:hover .childWrapper-1j_1ub {
+  .wrapper_d281dd.selected_f5ec8e .childWrapper__01b9c,
+  .wrapper_d281dd:hover .childWrapper__01b9c {
     background-color: var(--text-normal);
   }
 }
 
 .theme-dark {
-  .wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub,
-  .wrapper-3kah-n:hover .childWrapper-1j_1ub {
+  .wrapper_d281dd.selected_f5ec8e .childWrapper__01b9c,
+  .wrapper_d281dd:hover .childWrapper__01b9c {
     background-color: var(--background-primary);
   }
 }
 
 // Server radius
-.wrapperSimple-2SFl9K,
+.wrapperSimple_a34580,
 .folderIconWrapper-226oVY,
 .folderIconWrapper-1_bOZe,
 .expandedFolderBackground-2sPsd-,
-.flexChild-3PzYmX .avatarUploaderInner-yEhTv5 {
+.flexChild__6e093 .avatarUploaderInner-yEhTv5 {
   border-radius: var(--border-radius);
 }
 
-.panels-3wFtMD {
+.panels__58331 {
   z-index: unset;
 }
 
 // Game panel
-.panel-2ZFCRb {
+.panel_bd8c76 {
   position: fixed;
   left: 0;
   bottom: 0;
@@ -61,12 +61,12 @@
   background-color: var(--background-tertiary);
   transition: width 0.35s;
 
-  .gameWrapper-2TFy7F {
+  .gameWrapper__5b041 {
     margin-left: 12px;
   }
 
-  .info-88fTUI,
-  .actions-zk2vB_ {
+  .info_c28002,
+  .actions__9256d {
     opacity: 0;
   }
 
@@ -79,11 +79,11 @@
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2),
       0 0 0 1px rgba(56, 31, 31, 0.11);
 
-    .gameWrapper-2TFy7F {
+    .gameWrapper__5b041 {
       margin-left: 0;
     }
-    .info-88fTUI,
-    .actions-zk2vB_ {
+    .info_c28002,
+    .actions__9256d {
       opacity: 1;
     }
   }

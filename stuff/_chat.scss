@@ -64,7 +64,7 @@
   }
 
   // Embed
-  .embedFull-1HGV2S {
+  .embedFull__8dc21 {
     border: none;
     margin-left: 10px;
     border-radius: 5px var(--border-radius) var(--border-radius) 5px;
@@ -90,14 +90,14 @@
   }
 
   // Audio player
-  .wrapperAudio-1Bzv_Z {
+  .wrapperAudio__555ce {
     padding: 10px 0 0 0;
     border-radius: var(--border-radius);
   }
-  .audioMetadata-1Hrt8T {
+  .audioMetadata_e546a8 {
     padding: 5px 10px;
   }
-  .audioControls-3fmemK {
+  .audioControls__9fbe9 {
     border-radius: 0 0 var(--border-radius) var(--border-radius);
   }
 
@@ -108,40 +108,40 @@
   }
 
   // Discord invite
-  .wrapper-1HIH0j {
+  .wrapper_efe67f {
     border-radius: var(--border-radius);
   }
 
   // Spotify session
-  .invite-3uuHYQ {
+  .invite__2a93b {
     background-color: var(--background-secondary);
     border: none;
     border-radius: var(--border-radius);
   }
 
   // Spotify embed
-  .embedSpotify-1rDvOE {
+  .embedSpotify_d58077 {
     border-radius: var(--border-radius);
   }
 
   // Discord Gift
-  .tile-2mmK5T {
+  .tile_ebc93b {
     background-color: var(--background-secondary);
     border-radius: var(--border-radius);
   }
-  .tileHorizontal-1DBMDZ.tile-2mmK5T:hover {
+  .tileHorizontal_f83028.tile_ebc93b:hover {
     background-color: var(--background-secondary-alt);
   }
-  .invalidPoop--w1123 {
+  .invalidPoop__03aa3 {
     background-color: rgba(0, 0, 0, 0.103);
   }
 
   // # @ / autocomplete menu
-  .autocomplete-3NRXG8,
-  .option-Tt7anD {
+  .autocomplete_df266d,
+  .option__32fd1 {
     background-color: var(--background-secondary-alt);
   }
-  .categoryHeader-OpJ1Ly,
+  .categoryHeader_f97a5f,
   .selected-3H3-RC {
     background-color: var(--background-tertiary);
   }
@@ -154,54 +154,54 @@
   }
 
   // Emoji picker
-  .emojiItem-277VFM.emojiItemSelected-2Lg50V {
+  .emojiItem_b15dee.emojiItemSelected__1a09a {
     background-color: var(--background-modifier-selected);
   }
-  .searchBar-2M9mRP {
+  .searchBar__8f956 {
     border-radius: var(--border-radius);
   }
 
-  .imageLoading-2uloYN {
+  .imageLoading__37d01 {
     background-image: none !important;
     background-color: var(--background-primary);
     border-radius: 8px;
   }
 
   // Reactions modal
-  .scroller-2GkvCq {
+  .scroller__5fda0 {
     background: var(--background-tertiary);
   }
-  .container-KM8BU6,
-  .reactors-1VXca7 {
+  .container_dc03c3,
+  .reactors__20ab0 {
     background: var(--background-secondary);
   }
-  .reactionSelected-1aMb2K {
+  .reactionSelected__249a7 {
     background-color: #6e85d321;
   }
-  .reactorDefault-3GSyaV {
+  .reactorDefault__5b249 {
     box-shadow: inset 0 -1px 0 var(--background-primary);
   }
 
   // Deleting message modal
-  .message-G6O-Wv {
+  .message__04d9f {
     background: var(--background-primary);
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2),
       0 0 0 1px rgba(56, 31, 31, 0.11);
   }
 
   // Attachements
-  .textContainer-36wgKK,
-  .footer-GXWBBp {
+  .textContainer__709ff,
+  .footer__06f4b {
     border: none;
   }
 
   // Emoji popout
-  .popoutContainer-2wbmiM {
+  .popoutContainer__7b9a3 {
     border-radius: var(--border-radius);
   }
 
   // New message bar
-  .newMessagesBar-1hF-9G {
+  .newMessagesBar__8b6d7 {
     top: 5px;
     border-radius: var(--border-radius);
     background-color: var(--background-accent);
@@ -209,14 +209,14 @@
   }
 
   // Jump to present bar
-  .jumpToPresentBar-1cEnH0 {
+  .jumpToPresentBar__0ff7f {
     bottom: 12px;
     padding-bottom: 0;
     border-radius: var(--border-radius);
   }
 
   // News chat bar
-  .wrapper-2SplAX {
+  .wrapper_fbbb73 {
     border-radius: var(--border-radius);
   }
 
@@ -226,17 +226,17 @@
   }
 
   // Buttons on messages
-  .wrapper-2vIMkT {
+  .wrapper_c727b6 {
     border-radius: var(--border-radius);
   }
 
   // Bot tag
-  .botTagRegular-kpctgU {
+  .botTagRegular_c89c9a {
     background-color: var(--background-accent);
   }
 
   // Slow mode
-  .cooldownWrapper-2k1jHK {
+  .cooldownWrapper_de448f {
     color: var(--text-muted) !important;
   }
 }

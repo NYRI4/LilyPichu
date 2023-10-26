@@ -1,16 +1,16 @@
 :root {
   // -- Member list --
-  .container-2o3qEW {
+  .container_b2ce9c {
     background: none;
   }
 
   @media (max-width: 1350px) {
-    .members-3WRCEx {
+    .members__9f47b {
       border-radius: var(--border-radius) 0 0;
     }
   }
 
-  .membersWrap-3NUR2t {
+  .membersWrap__90226 {
     // Header
     &::before {
       content: "Member list";
@@ -50,16 +50,16 @@
     }
   }
 
-  .layout-1qmrhw {
+  .layout_bb8e67 {
     border-radius: var(--border-radius);
   }
 
   // -- User popout --
-  .userPopoutOuter-1OHwPL {
+  .userPopoutOuter_d739b2 {
     max-height: unset !important;
   }
 
-  .userPopoutInner-nv9Y92 {
+  .userPopoutInner_f545a3 {
     position: relative;
     max-height: unset !important;
     overflow: hidden;
@@ -72,7 +72,7 @@
     }
 
     // Banner
-    .bannerSVGWrapper-2CLfzN {
+    .bannerSVGWrapper__3e7b0 {
       position: absolute;
       -webkit-mask-image: linear-gradient(to bottom, #000000, #00000000);
       mask-image: linear-gradient(to bottom, #000000, #00000000);
@@ -86,7 +86,7 @@
         mask: none;
       }
 
-      .banner-1YaD3N {
+      .banner__6d414 {
         height: 100%;
 
         &::before {
@@ -101,7 +101,7 @@
       &[viewBox="0 0 340 120"] {
         transform: translateX(-200px);
 
-        .banner-1YaD3N > * {
+        .banner__6d414 > * {
           display: none;
         }
       }
@@ -112,7 +112,7 @@
     }
 
     // Badges
-    .profileBadges-2pItdR {
+    .profileBadges__7a7cb {
       position: absolute;
       top: 65px;
       left: 110px;
@@ -120,7 +120,7 @@
     }
 
     // Avatar
-    .avatarWrapperNormal-ahVUaC {
+    .avatarWrapperNormal__0bddb {
       position: relative;
       width: 80px;
       top: 16px;
@@ -131,7 +131,7 @@
         border-radius: var(--border-radius);
       }
 
-      .avatarHint-k7pYop {
+      .avatarHint__8e5b9 {
         border-radius: var(--border-radius);
       }
 
@@ -140,14 +140,14 @@
       }
     }
 
-    .userPopoutOverlayBackground-3A0Pcz {
+    .userPopoutOverlayBackground_d8afa4 {
       overflow: visible;
       background-color: #00000011;
       backdrop-filter: blur(20px);
 
-      .usernameSection-3FppkT {
-        & > .copiableNameTag-3tf-II > .clickTarget-2uXro4,
-        & > div > .userText-1_v2Cq {
+      .usernameSection__53868 {
+        & > .copiableNameTag__6b220 > .clickTarget__440f0,
+        & > div > .userText__3e8b7 {
           position: absolute;
           top: -87px;
           left: 100px;
@@ -164,29 +164,29 @@
             white-space: unset;
           }
 
-          .discrimBase-v65kTs {
+          .discrimBase_e0c4c5 {
             color: white;
           }
         }
 
-        .pronouns-17_QV6 {
+        .pronouns__8bcdb {
           padding-top: 12px;
         }
       }
 
-      .section-28YDOf {
+      .section__6f61e {
         padding-top: 0;
         padding-bottom: 12px;
       }
 
-      .divider-2dDziJ {
+      .divider_ed0c1d {
         display: none;
       }
     }
   }
 
   // -- User modal --
-  .root-8LYsGj.root-1CAIjD.small-2xUY-3 {
+  .root-8LYsGj.root_a28985.small__05f7b {
     border-radius: var(--border-radius);
 
     // Banner part
@@ -195,7 +195,7 @@
       margin-bottom: 30px;
 
       // Banner
-      .bannerSVGWrapper-2CLfzN {
+      .bannerSVGWrapper__3e7b0 {
         position: absolute;
         -webkit-mask-image: linear-gradient(to bottom, #000000, #00000000);
         mask-image: linear-gradient(to bottom, #000000, #00000000);
@@ -209,7 +209,7 @@
           mask: none;
         }
 
-        .banner-1YaD3N {
+        .banner__6d414 {
           &::before {
             content: "";
             position: absolute;
@@ -222,7 +222,7 @@
         &[viewBox="0 0 340 120"] {
           transform: translateX(-200px);
 
-          .banner-1YaD3N > * {
+          .banner__6d414 > * {
             display: none;
           }
         }
@@ -262,7 +262,7 @@
     }
 
     // User info part
-    .userProfileModalOverlayBackground-2dAaBg {
+    .userProfileModalOverlayBackground__52d65 {
       z-index: 1;
       overflow: visible;
       background-color: #00000011;
@@ -292,7 +292,7 @@
       position: relative;
       z-index: 1;
     }
-    .activityProfile-1712BN {
+    .activityProfile__61b44 {
       background-color: var(--background-primary);
       margin: 10px;
       border-radius: var(--border-radius);
@@ -301,10 +301,10 @@
     // Body
     .body-1Ukv50 {
       // Connections
-      .userInfoSection-1gptv0.connectedAccounts-2R5M4w {
+      .userInfoSection-1gptv0.connectedAccounts_dc0a56 {
         border-top: none;
 
-        .connectedAccountContainer-3aLMHJ {
+        .connectedAccountContainer__23f00 {
           position: relative;
           border: none;
 
@@ -342,7 +342,7 @@
               justify-content: center;
               margin: 0;
             }
-            .text-xs-normal-3O7EaX {
+            .text-xs-normal_ccc5fb {
               text-align: center;
             }
           }

@@ -1,6 +1,6 @@
 :root {
   // Right friend list
-  .privateChannels-oVe7HL {
+  .privateChannels__93473 {
     .interactive-1vLZ_I {
       border-radius: var(--border-radius);
     }
@@ -8,7 +8,7 @@
 
   // Friends activity
   @media (min-width: 1350px) {
-    .nowPlayingColumn-1eCBCN {
+    .nowPlayingColumn_f5023f {
       position: fixed;
       top: 280px;
       bottom: 120px;
@@ -58,21 +58,21 @@
   }
 
   // Friend list
-  .container-2cd8Mz {
+  .container__5c7e7 {
     background-color: var(--background-primary);
 
-    .searchBar-2aylmZ {
+    .searchBar_ff8800 {
       background-color: var(--background-secondary);
     }
 
-    .children-3xh0VB:after {
+    .children__32014:after {
       content: none;
     }
-    .container-ZMc96U {
+    .container__11d72 {
       background: unset;
     }
 
-    .peopleListItem-u6dGxF {
+    .peopleListItem_d14722 {
       border-radius: var(--border-radius);
       border-top: none;
       background: var(--background-modifier-hover);
@@ -80,7 +80,7 @@
       padding: 16px 10px;
 
       &:hover {
-        .actionButton-3-B2x- {
+        .actionButton__23182 {
           background-color: var(--background-secondary-alt);
         }
       }
@@ -88,50 +88,50 @@
   }
 
   // Friend call
-  .nowPlayingColumn-1eCBCN .scroller-hE2gWq {
+  .nowPlayingColumn_f5023f .scroller__00e7e {
     border: none;
   }
-  .controlButton-2PMNom foreignObject {
+  .controlButton_ab2899 foreignObject {
     mask: none;
   }
-  .colorable-3rVGna.primaryDark-2UJt1G {
+  .colorable_c84c4c.primaryDark__6b700 {
     background-color: var(--background-primary);
   }
-  .wrapper-1gVUIN {
+  .wrapper_bd2abe {
     background-color: var(--background-tertiary);
   }
 
   // Friend activity
-  .inset-SbsSFp {
+  .inset__0bfb3 {
     background-color: var(--background-primary);
   }
-  .separator-2OaeRP {
+  .separator_c2ecc6 {
     display: none;
   }
-  .voiceSectionIconWrapper-4yoj76 {
+  .voiceSectionIconWrapper_c50254 {
     background-color: var(--background-tertiary);
   }
-  .outer-2JOHae.active-1W_Gl9,
-  .outer-2JOHae.interactive-2zD88a:hover {
+  .outer_a41cf3.active__76f42,
+  .outer_a41cf3.interactive__01cfa:hover {
     background-color: var(--activity-card-background);
   }
-  .itemCard-3Etziu {
+  .itemCard__1f162 {
     border: none;
     border-radius: var(--border-radius);
 
-    .body-16rSsp {
+    .body__83069 {
       border-radius: calc(var(--border-radius) - 10px);
     }
   }
 
   // Regionnal selector friend call
-  .quickSelectPopout-2F0PXw.regionSelectPopout-3sEzVB {
+  .quickSelectPopout_c0cf80.regionSelectPopout__0127b {
     background-color: var(--background-secondary-alt);
   }
 
   // Right popout profile
   @media (min-width: 1350px) {
-    .content-1jQy2l > .profilePanel-2VBkh8 {
+    .content__1a4fe > .profilePanel__12596 {
       top: 220px;
       bottom: 80px;
       border-radius: var(--border-radius);
@@ -139,7 +139,7 @@
     }
   }
 
-  .profilePanelConnections-1tVK8j {
+  .profilePanelConnections__3c232 {
     background-color: transparent;
   }
 }
