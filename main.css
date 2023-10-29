@@ -1680,7 +1680,7 @@
     top: 220px;
     bottom: 85px;
     right: 60px;
-    z-index: -2;
+    z-index: 0;
     width: 320px;
     background-color: var(--background-primary);
     text-align: center;
@@ -1698,7 +1698,7 @@
     top: 220px;
     bottom: 85px;
     right: 70px;
-    z-index: -1;
+    z-index: 1;
     width: 300px;
     border-radius: var(--border-radius);
     background: var(--jumping-gif) bottom/40% no-repeat;
