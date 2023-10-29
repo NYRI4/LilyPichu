@@ -12,8 +12,8 @@
 
 // Right popout
 @media (min-width: 1350px) {
-  .chatContent-3KubbW + :last-child,
-  .container-2o3qEW {
+  .chatContent__5dca8 + :last-child,
+  .container_b2ce9c {
     position: fixed;
     top: 280px;
     bottom: 120px;
@@ -21,18 +21,18 @@
     width: 320px;
     height: unset;
   }
-  .tabBody-2dgbAs {
+  .tabBody_b3d268 {
     transform: none;
   }
 
   // Basic right popout when there's nothing
-  .container-1eFtFS::after {
+  .container__037ed::after {
     content: "Stay comfy";
     position: fixed;
     top: 220px;
     bottom: 85px;
     right: 60px;
-    z-index: -2;
+    z-index: 0;
     width: 320px;
     background-color: var(--background-primary);
     text-align: center;
@@ -44,26 +44,26 @@
     border-radius: var(--border-radius);
     overflow: hidden;
   }
-  .container-1eFtFS::before {
+  .container__037ed::before {
     content: "";
     position: fixed;
     top: 220px;
     bottom: 85px;
     right: 70px;
-    z-index: -1;
+    z-index: 1;
     width: 300px;
     border-radius: var(--border-radius);
     background: var(--jumping-gif) bottom/40% no-repeat;
   }
 
   // Adding space for right popout
-  .guilds-2JjMmN + :nth-child(2) {
+  .guilds__2b93a + :nth-child(2) {
     margin-right: 450px;
     border-radius: 0 var(--border-radius) var(--border-radius) 0;
   }
 
   // User area
-  .panels-3wFtMD > .container-YkUktl {
+  .panels__58331 > .container_ca50b9 {
     position: fixed;
     display: flex;
     width: 305px;
@@ -74,27 +74,27 @@
     background-color: var(--background-primary);
     border-radius: var(--border-radius);
 
-    .avatarWrapper-1B9FTW {
+    .avatarWrapper_ba5175 {
       border-radius: var(--border-radius);
     }
   }
-  .container-1eFtFS {
+  .container__037ed {
     overflow: visible;
   }
 
-  .layers-OrUESM > :nth-child(2) {
+  .layers_a40797 > :nth-child(2) {
     margin-right: 450px;
   }
 
-  .membersWrap-3NUR2t .members-3WRCEx {
+  .membersWrap__90226 .members__9f47b {
     width: 100%;
     background-color: var(--background-primary);
 
-    .content-yjf30S {
+    .content__23cab {
       min-height: 1000px;
       background-color: transparent;
     }
-    .member-2gU6Ar {
+    .member_aa4760 {
       max-width: 300px;
       border-radius: var(--border-radius);
       background-color: var(--background-primary);
