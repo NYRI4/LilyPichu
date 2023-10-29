@@ -10,7 +10,7 @@
   }
 
   // Background
-  .bg__7adbf {
+  .bg__12180 {
     background: var(--background-tertiary-alt);
     background-size: cover;
     background-repeat: no-repeat;
@@ -29,7 +29,6 @@
   button,
   input,
   textarea,
-  .item__48dda:not([class*="tabBarItem-"]),
   .menu_dc52c6 {
     border-radius: var(--border-radius) !important;
   }
@@ -212,11 +211,27 @@
     border-bottom-color: var(--background-accent);
   }
   .checkbox_c7f690 {
-    background-color: var(--interactive-normal) !important;
+    background-color: var(--background-secondary) !important;
     border-color: var(--background-accent) !important;
 
+    &.checked__24ad6 {
+      background-color: var(--background-accent) !important;
+      
+      & > svg > path {
+        fill: #FFF;
+      }
+    }
+
     & > svg > path {
-      fill: var(--background-accent);
+      fill: transparent;
+    }
+  }
+
+  .container__871ba.checked__6bdb0 {
+    background-color: var(--background-accent) !important;
+
+    & path {
+      fill: var(--background-accent) !important;
     }
   }
 

@@ -179,18 +179,18 @@
         padding-bottom: 12px;
       }
 
-      .divider_ed0c1d {
+      .divider__2bbbc {
         display: none;
       }
     }
   }
 
   // -- User modal --
-  .root-8LYsGj.root_a28985.small__05f7b {
+  .root_ba16f0.root_a28985.small__05f7b {
     border-radius: var(--border-radius);
 
     // Banner part
-    .topSection-13QKHs {
+    .topSection_dfb73b {
       position: relative;
       margin-bottom: 30px;
 
@@ -227,13 +227,13 @@
           }
         }
 
-        .pencilContainer-11Kuga {
+        .pencilContainer_d4ce8d {
           display: none;
         }
       }
 
-      .header-S26rhB {
-        .avatar-3QF_VA {
+      .header__7da4f {
+        .avatar__445f3 {
           position: relative;
           top: 22px;
 
@@ -248,13 +248,13 @@
         }
 
         // Badges
-        .headerTop-1PNKck {
+        .headerTop__6628b {
           position: absolute;
           top: 70px;
           row-gap: 10px;
           flex-direction: column;
 
-          .badgeList-2aoHPw {
+          .badgeList_c193e3 {
             background-color: transparent;
           }
         }
@@ -269,7 +269,7 @@
       backdrop-filter: blur(20px);
 
       // Username
-      .container-3g15px > div:first-child {
+      .container_b6b15b > div:first-child {
         position: absolute;
         top: -145px;
         left: 150px;
@@ -278,11 +278,11 @@
     }
 
     // Mutual bar
-    .tabBarContainer-sCZC4w {
+    .tabBarContainer__63f55 {
       padding: 0;
       border-bottom: none;
 
-      .tabBar-2hXqzU {
+      .tabBar__35f81 {
         justify-content: space-around;
       }
     }
@@ -292,35 +292,35 @@
       position: relative;
       z-index: 1;
     }
-    .activityProfile__61b44 {
+    .activityProfileV2__4de28 {
       background-color: var(--background-primary);
       margin: 10px;
       border-radius: var(--border-radius);
     }
 
     // Body
-    .body-1Ukv50 {
+    .body_ea740e {
       // Connections
-      .userInfoSection-1gptv0.connectedAccounts_dc0a56 {
+      .userInfoSection__1daf8.connectedAccounts_dc0a56 {
         border-top: none;
 
         .connectedAccountContainer__23f00 {
           position: relative;
           border: none;
 
-          .connectedAccount-2NOwd0 {
+          .connectedAccount__28fb0 {
             flex-direction: column;
           }
 
           // Icon
-          .connectedAccountIcon-2szOw- {
+          .connectedAccountIcon__6bc30 {
             position: relative;
             margin-bottom: 10px;
             width: 45px;
             height: 45px;
             z-index: 2;
 
-            & + .connectedAccountNameContainer-3v4pIj::before {
+            & + .connectedAccountNameContainer__48b99::before {
               content: "";
               position: absolute;
               top: 0;
@@ -333,12 +333,12 @@
           }
 
           // Username
-          .connectedAccountNameContainer-3v4pIj {
+          .connectedAccountNameContainer__48b99 {
             width: 100%;
             justify-content: center;
             overflow: visible;
 
-            .connectedAccountNameTextContainer-lNExEJ {
+            .connectedAccountNameTextContainer__0b003 {
               justify-content: center;
               margin: 0;
             }
@@ -353,7 +353,7 @@
           }
 
           // Link
-          .anchor-1MIwyf {
+          .anchor_c8ddc0 {
             position: absolute;
             top: 0;
             left: 0;
@@ -366,76 +366,76 @@
             }
           }
 
-          .connectedAccountIcon-2szOw-[aria-label="Battle.net"]
-            + .connectedAccountNameContainer-3v4pIj::before {
+          .connectedAccountIcon__6bc30[aria-label="Battle.net"]
+            + .connectedAccountNameContainer__48b99::before {
             background-color: #1da0f248;
           }
-          .connectedAccountIcon-2szOw-[aria-label="Twitch"]
-            + .connectedAccountNameContainer-3v4pIj::before {
+          .connectedAccountIcon__6bc30[aria-label="Twitch"]
+            + .connectedAccountNameContainer__48b99::before {
             background-color: #601bd852;
           }
-          .connectedAccountIcon-2szOw-[aria-label="YouTube"]
-            + .connectedAccountNameContainer-3v4pIj::before {
+          .connectedAccountIcon__6bc30[aria-label="YouTube"]
+            + .connectedAccountNameContainer__48b99::before {
             background-color: #d9252b49;
           }
-          .connectedAccountIcon-2szOw-[aria-label="Twitter"]
-            + .connectedAccountNameContainer-3v4pIj::before {
+          .connectedAccountIcon__6bc30[aria-label="Twitter"]
+            + .connectedAccountNameContainer__48b99::before {
             background-color: #0098e43f;
           }
-          .connectedAccountIcon-2szOw-[aria-label="Steam"]
-            + .connectedAccountNameContainer-3v4pIj::before {
+          .connectedAccountIcon__6bc30[aria-label="Steam"]
+            + .connectedAccountNameContainer__48b99::before {
             background-color: #00000034;
           }
-          .connectedAccountIcon-2szOw-[aria-label="Reddit"]
-            + .connectedAccountNameContainer-3v4pIj::before {
+          .connectedAccountIcon__6bc30[aria-label="Reddit"]
+            + .connectedAccountNameContainer__48b99::before {
             background-color: #fe44013d;
           }
-          .connectedAccountIcon-2szOw-[aria-label="Facebook"]
-            + .connectedAccountNameContainer-3v4pIj::before {
+          .connectedAccountIcon__6bc30[aria-label="Facebook"]
+            + .connectedAccountNameContainer__48b99::before {
             background-color: #2e328485;
           }
-          .connectedAccountIcon-2szOw-[aria-label="Spotify"]
-            + .connectedAccountNameContainer-3v4pIj::before {
+          .connectedAccountIcon__6bc30[aria-label="Spotify"]
+            + .connectedAccountNameContainer__48b99::before {
             background-color: #1ed75f34;
           }
-          .connectedAccountIcon-2szOw-[aria-label="Xbox"]
-            + .connectedAccountNameContainer-3v4pIj::before {
+          .connectedAccountIcon__6bc30[aria-label="Xbox"]
+            + .connectedAccountNameContainer__48b99::before {
             background-color: #5dc21e36;
           }
-          .connectedAccountIcon-2szOw-[aria-label="League of Legends"]
-            + .connectedAccountNameContainer-3v4pIj::before {
+          .connectedAccountIcon__6bc30[aria-label="League of Legends"]
+            + .connectedAccountNameContainer__48b99::before {
             background-color: #cea14638;
           }
-          .connectedAccountIcon-2szOw-[aria-label="GitHub"]
-            + .connectedAccountNameContainer-3v4pIj::before {
+          .connectedAccountIcon__6bc30[aria-label="GitHub"]
+            + .connectedAccountNameContainer__48b99::before {
             background-color: #24292e62;
           }
-          .connectedAccountIcon-2szOw-[aria-label="Skype"]
-            + .connectedAccountNameContainer-3v4pIj::before {
+          .connectedAccountIcon__6bc30[aria-label="Skype"]
+            + .connectedAccountNameContainer__48b99::before {
             background-color: #0076d74b;
           }
-          .connectedAccountIcon-2szOw-[aria-label="Epic Games"]
-            + .connectedAccountNameContainer-3v4pIj::before {
+          .connectedAccountIcon__6bc30[aria-label="Epic Games"]
+            + .connectedAccountNameContainer__48b99::before {
             background-color: #2f2f2f59;
           }
-          .connectedAccountIcon-2szOw-[aria-label="Riot Games"]
-            + .connectedAccountNameContainer-3v4pIj::before {
+          .connectedAccountIcon__6bc30[aria-label="Riot Games"]
+            + .connectedAccountNameContainer__48b99::before {
             background-color: #eb1c2d38;
           }
-          .connectedAccountIcon-2szOw-[aria-label="PayPal"]
-            + .connectedAccountNameContainer-3v4pIj::before {
+          .connectedAccountIcon__6bc30[aria-label="PayPal"]
+            + .connectedAccountNameContainer__48b99::before {
             background-color: #009fe33b;
           }
-          .connectedAccountIcon-2szOw-[aria-label="TikTok"]
-            + .connectedAccountNameContainer-3v4pIj::before {
+          .connectedAccountIcon__6bc30[aria-label="TikTok"]
+            + .connectedAccountNameContainer__48b99::before {
             background-color: #64bfc546;
           }
-          .connectedAccountIcon-2szOw-[aria-label="eBay"]
-            + .connectedAccountNameContainer-3v4pIj::before {
+          .connectedAccountIcon__6bc30[aria-label="eBay"]
+            + .connectedAccountNameContainer__48b99::before {
             background-color: #c500003b;
           }
-          .connectedAccountIcon-2szOw-[aria-label="PlayStation Network"]
-            + .connectedAccountNameContainer-3v4pIj::before {
+          .connectedAccountIcon__6bc30[aria-label="PlayStation Network"]
+            + .connectedAccountNameContainer__48b99::before {
             background-color: #0051ae53;
           }
         }

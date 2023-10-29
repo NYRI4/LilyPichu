@@ -48,10 +48,13 @@
       transform: scale(1);
     }
 
-    .searchAnswer_b452e7,
     .searchFilter__118cb {
       background-color: var(--background-primary);
       border-radius: var(--border-radius) 0 0 var(--border-radius);
+    }
+    .searchAnswer_b452e7 {
+      background-color: var(--background-primary);
+      border-radius: 0 var(--border-radius) var(--border-radius) 0;
     }
   }
 

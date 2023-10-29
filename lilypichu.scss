@@ -6,6 +6,7 @@
 @forward "stuff/settings";
 @forward "stuff/friends";
 @forward "stuff/other";
+@forward "stuff/overlay";
 
 @import url("https://nyri4.github.io/donators/donators.css");
 @import url("https://fonts.googleapis.com/css2?family=Nunito");
@@ -32,7 +33,7 @@
     top: 220px;
     bottom: 85px;
     right: 60px;
-    z-index: 0;
+    z-index: -2;
     width: 320px;
     background-color: var(--background-primary);
     text-align: center;
@@ -50,7 +51,7 @@
     top: 220px;
     bottom: 85px;
     right: 70px;
-    z-index: 1;
+    z-index: -1;
     width: 300px;
     border-radius: var(--border-radius);
     background: var(--jumping-gif) bottom/40% no-repeat;
@@ -60,6 +61,10 @@
   .guilds__2b93a + :nth-child(2) {
     margin-right: 450px;
     border-radius: 0 var(--border-radius) var(--border-radius) 0;
+  }
+  
+  .layers_a23c37 > :nth-child(2) {
+    margin-right: 450px;
   }
 
   // User area
@@ -80,10 +85,6 @@
   }
   .container__037ed {
     overflow: visible;
-  }
-
-  .layers_a40797 > :nth-child(2) {
-    margin-right: 450px;
   }
 
   .membersWrap__90226 .members__9f47b {
