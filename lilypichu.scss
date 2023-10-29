@@ -12,9 +12,11 @@
 
 // Right popout
 @media (min-width: 1350px) {
-  .chatContent__5dca8 + :last-child,
+	.membersWrap__90226,
+  .profilePanel__12596,
   .container_b2ce9c {
     position: fixed;
+    z-index: 1;
     top: 280px;
     bottom: 120px;
     right: 60px;
@@ -32,7 +34,6 @@
     top: 220px;
     bottom: 85px;
     right: 60px;
-    z-index: 0;
     width: 320px;
     background-color: var(--background-primary);
     text-align: center;
@@ -50,7 +51,6 @@
     top: 220px;
     bottom: 85px;
     right: 70px;
-    z-index: 1;
     width: 300px;
     border-radius: var(--border-radius);
     background: var(--jumping-gif) bottom/40% no-repeat;
