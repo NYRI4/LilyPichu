@@ -55,6 +55,16 @@
         background-repeat: repeat-x;
       }
     }
+
+    .membersWrap__90226, .profilePanel__12596 {
+      position: fixed;
+      top: 280px;
+      bottom: 120px;
+      right: 60px;
+      width: 320px;
+      min-width: unset;
+      background-color: var(--background-primary);
+    }
   }
 
   // Friend list

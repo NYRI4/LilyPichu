@@ -270,6 +270,9 @@
 :root .container__0810b section {
   background-color: var(--background-secondary);
 }
+:root .container__590e2 > .scroller_f0f183 > .content__23cab > div:first-child[style="height: 16px;"] {
+  display: none;
+}
 
 :root .title_b7d661 {
   background-color: var(--background-primary);
@@ -1362,6 +1365,15 @@
     background-size: 21px 2px;
     background-repeat: repeat-x;
   }
+  :root .membersWrap__90226, :root .profilePanel__12596 {
+    position: fixed;
+    top: 280px;
+    bottom: 120px;
+    right: 60px;
+    width: 320px;
+    min-width: unset;
+    background-color: var(--background-primary);
+  }
 }
 :root .container__5c7e7 {
   background-color: var(--background-primary);
@@ -1473,6 +1485,9 @@
   margin: 0;
   transition: 0.15s;
   border-radius: 0;
+}
+:root .scroller__750f5 .item__183e8 .hintContainer__79e5e {
+  margin: 0 8px 0 0;
 }
 :root .scroller__750f5 .item__183e8 .iconContainer__829e7,
 :root .scroller__750f5 .item__183e8 .imageContainer_ea60f4 {
