@@ -53,7 +53,12 @@
     "BRAND_260": "#FDC7C7",
     "BRAND_360": "#C5536C",
     "BRAND_500": "#C5536C",
-    "BRAND_560": "#C66376"
+    "BRAND_560": "#C66376",
+
+    "PLUM_18": "#E2C1C7",
+    "PLUM_24": "#E2C1C7",
+    "PLUM_4": "#E2C1C7",
+    "PLUM_15": "#E2C1C7"
   },
   "spec": 2
 }
