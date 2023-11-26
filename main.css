@@ -1879,6 +1879,11 @@
   }
 }
 
+.profileBadges__7a7cb > :last-child::before,
+.badgeList_c193e3 > :last-child::before {
+  z-index: 10;
+}
+
 @media (min-width: 1350px) {
   .chatContent__5dca8 + :last-child,
   .container_b2ce9c {

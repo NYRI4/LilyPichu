@@ -11,6 +11,12 @@
 @import url("https://nyri4.github.io/donators/donators.css");
 @import url("https://fonts.googleapis.com/css2?family=Nunito");
 
+// Donators
+.profileBadges__7a7cb > :last-child::before,
+.badgeList_c193e3 > :last-child::before {
+  z-index: 10;
+}
+
 // Right popout
 @media (min-width: 1350px) {
   .chatContent__5dca8 + :last-child,
