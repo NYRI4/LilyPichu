@@ -1,10 +1,8 @@
-<img align="right" src="https://nyri4.github.io/LilyPichu/assets/preview.png" alt="Preview" width="40%">
-
 <div align="left">
-  <img align="left" src="https://i.imgur.com/2YhKmJz.png" alt="Logo" width="80" height="80">
+  <img align="left" src="./assets/logo.png" alt="Logo" width="80" height="80">
 
-  <h3 align="left">LilyPichu</h3>
-  <p align="left">A theme based on @Melonturtle_ stream design</p>
+  <h3 align="left">TokyoPichu</h3>
+  <p align="left">A remix of a theme from @NYRI4</p>
 
   <br/>
 
