@@ -1885,7 +1885,7 @@
 }
 
 @media (min-width: 1350px) {
-  .chatContent__5dca8 + :last-child,
+  .chatContent__5dca8 + :last-child:not(.profilePanel__12596),
   .container_b2ce9c {
     position: fixed;
     top: 280px;
