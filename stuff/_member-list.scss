@@ -5,12 +5,12 @@
   }
 
   @media (max-width: 1350px) {
-    .members__9f47b {
+    .members__573eb {
       border-radius: var(--border-radius) 0 0;
     }
   }
 
-  .membersWrap__90226 {
+  .membersWrap__5ca6b {
     // Header
     &::before {
       content: "Member list";
@@ -55,11 +55,11 @@
   }
 
   // -- User popout --
-  .userPopoutOuter_d739b2 {
+  .userPanelOuter_eb00b1 {
     max-height: unset !important;
   }
 
-  .userPopoutInner_f545a3 {
+  .userPanelInner_f9edb8 {
     position: relative;
     max-height: unset !important;
     overflow: hidden;
