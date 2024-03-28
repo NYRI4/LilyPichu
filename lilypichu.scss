@@ -19,8 +19,8 @@
 
 // Right popout
 @media (min-width: 1350px) {
-  .chatContent__5dca8 + :last-child,
-  .container_b2ce9c {
+  .chatContent_f087cb + :last-child, // user profile in dms
+  .container_f79ab4 { // member list
     position: fixed;
     top: 280px;
     bottom: 120px;
@@ -33,7 +33,7 @@
   }
 
   // Basic right popout when there's nothing
-  .container__037ed::after {
+  .container_d1f8f5::after {
     content: "Stay comfy";
     position: fixed;
     top: 220px;
@@ -51,7 +51,8 @@
     border-radius: var(--border-radius);
     overflow: hidden;
   }
-  .container__037ed::before {
+
+  .container_d1f8f5::before {
     content: "";
     position: fixed;
     top: 220px;
@@ -69,12 +70,13 @@
     border-radius: 0 var(--border-radius) var(--border-radius) 0;
   }
   
-  .layers_a23c37 > :nth-child(2) {
+  // settings
+  .layer_f7d46a > :nth-child(1) {
     margin-right: 450px;
   }
 
   // User area
-  .panels__58331 > .container_ca50b9 {
+  .panels__58331 > .container_debb33 {
     position: fixed;
     display: flex;
     width: 305px;
@@ -93,7 +95,7 @@
     overflow: visible;
   }
 
-  .membersWrap__90226 .members__9f47b {
+  .membersWrap__5ca6b .members__573eb {
     width: 100%;
     background-color: var(--background-primary);
 
