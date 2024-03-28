@@ -14,99 +14,105 @@
 // Donators
 .profileBadges__7a7cb > :last-child::before,
 .badgeList_c193e3 > :last-child::before {
-  z-index: 10;
+	z-index: 10;
 }
 
 // Right popout
 @media (min-width: 1350px) {
-  .chatContent_f087cb + :last-child, // user profile in dms
-  .container_f79ab4 { // member list
-    position: fixed;
-    top: 280px;
-    bottom: 120px;
-    right: 60px;
-    width: 320px;
-    height: unset;
-  }
-  .tabBody_b3d268 {
-    transform: none;
-  }
+	[class*="chatContent"] + :last-child, // user profile in dms
+	[class*="chat"] > [class*="content"] > [class*="container"]:has(> [class*="member"]) { // member list
+		position: fixed;
+		top: 280px;
+		bottom: 120px;
+		right: 60px;
+		width: 320px;
+		height: unset;
+	}
+	[class*="tabBody"] {
+		transform: none;
+	}
 
-  // Basic right popout when there's nothing
-  .container_d1f8f5::after {
-    content: "Stay comfy";
-    position: fixed;
-    top: 220px;
-    bottom: 85px;
-    right: 60px;
-    z-index: -2;
-    width: 320px;
-    background-color: var(--background-primary);
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 30px;
-    color: var(--text-normal);
-    border-radius: var(--border-radius);
-    overflow: hidden;
-  }
+	// settings
+	[class*="layers"] > [class*="layer"] > :nth-child(1) {
+		margin-right: 450px;
+	}
 
-  .container_d1f8f5::before {
-    content: "";
-    position: fixed;
-    top: 220px;
-    bottom: 85px;
-    right: 70px;
-    z-index: -1;
-    width: 300px;
-    border-radius: var(--border-radius);
-    background: var(--jumping-gif) bottom/40% no-repeat;
-  }
+	[class*="layers"] > [class*="layer"] > [class*="container"] {
+		margin-right: 450px;
+		// Basic right popout when there's nothing
+		&::after {
+			content: "Stay comfy";
+			position: fixed;
+			top: 220px;
+			bottom: 85px;
+			right: 60px;
+			z-index: -2;
+			width: 320px;
+			background-color: var(--background-primary);
+			text-align: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 30px;
+			color: var(--text-normal);
+			border-radius: var(--border-radius);
+			overflow: hidden;
+		}
 
-  // Adding space for right popout
-  .guilds__2b93a + :nth-child(2) {
-    margin-right: 450px;
-    border-radius: 0 var(--border-radius) var(--border-radius) 0;
-  }
-  
-  // settings
-  .layer_f7d46a > :nth-child(1) {
-    margin-right: 450px;
-  }
+		&::before {
+			content: "";
+			position: fixed;
+			top: 220px;
+			bottom: 85px;
+			right: 70px;
+			z-index: -1;
+			width: 300px;
+			border-radius: var(--border-radius);
+			background: var(--jumping-gif) bottom/40% no-repeat;
+		}
+	}
 
-  // User area
-  .panels__58331 > .container_debb33 {
-    position: fixed;
-    display: flex;
-    width: 305px;
-    height: 50px;
-    bottom: 28px;
-    right: 60px;
-    justify-content: space-between;
-    background-color: var(--background-primary);
-    border-radius: var(--border-radius);
+	// Adding space for right popout
+	[class*="guilds"] + :nth-child(2) {
+		margin-right: 450px;
+		border-radius: 0 var(--border-radius) var(--border-radius) 0;
+	}
 
-    .avatarWrapper_ba5175 {
-      border-radius: var(--border-radius);
-    }
-  }
-  .container__037ed {
-    overflow: visible;
-  }
 
-  .membersWrap__5ca6b .members__573eb {
-    width: 100%;
-    background-color: var(--background-primary);
+	// User area
+	[class*="panels"] > [class*="container"] {
+		position: fixed;
+		display: flex;
+		width: 305px;
+		height: 50px;
+		bottom: 28px;
+		right: 60px;
+		justify-content: space-between;
+		background-color: var(--background-primary);
+		border-radius: var(--border-radius);
 
-    .content__23cab {
-      min-height: 1000px;
-      background-color: transparent;
-    }
-    .member_aa4760 {
-      max-width: 300px;
-      border-radius: var(--border-radius);
-      background-color: var(--background-primary);
-    }
-  }
+		[class*="avatarWrapper"] {
+			border-radius: var(--border-radius);
+		}
+	}
+
+	// TODO: NOT UPDATED - what was this ???
+	.container__037ed {
+		overflow: visible;
+	}
+
+	[class*="membersWrap"] [class*="members_"] {
+		width: 100%;
+		background-color: var(--background-primary);
+
+		& > [class*="content"] {
+			min-height: 1000px;
+			background-color: transparent;
+		}
+		[class*="member_"] {
+			max-width: 300px;
+			border-radius: var(--border-radius);
+			background-color: var(--background-primary);
+		}
+	}
 }
