@@ -107,7 +107,7 @@
 :root .invalidPoop__03aa3 {
   background-color: rgba(0, 0, 0, 0.103);
 }
-:root .autocomplete_df266d,
+:root .autocomplete__743a5,
 :root .option__32fd1 {
   background-color: var(--background-secondary-alt);
 }
@@ -1886,7 +1886,7 @@
 
 @media (min-width: 1350px) {
   .chatContent_f087cb + :last-child,
-  .container_f79ab4 { /* member list */
+  .container_f79ab4 {
     position: fixed;
     top: 280px;
     bottom: 120px;
@@ -1930,7 +1930,7 @@
     margin-right: 450px;
     border-radius: 0 var(--border-radius) var(--border-radius) 0;
   }
-  .layers__1c917 > :nth-child(2) {
+  .layer_f7d46a > :nth-child(1) {
     margin-right: 450px;
   }
   .panels__58331 > .container_debb33 {

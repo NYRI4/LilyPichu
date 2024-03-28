@@ -19,8 +19,8 @@
 
 // Right popout
 @media (min-width: 1350px) {
-  .chatContent_f087cb + :last-child, /* user profile in dms */
-  .container_f79ab4 { /* member list */
+  .chatContent_f087cb + :last-child, // user profile in dms
+  .container_f79ab4 { // member list
     position: fixed;
     top: 280px;
     bottom: 120px;
@@ -51,6 +51,7 @@
     border-radius: var(--border-radius);
     overflow: hidden;
   }
+
   .container_d1f8f5::before {
     content: "";
     position: fixed;
@@ -69,7 +70,8 @@
     border-radius: 0 var(--border-radius) var(--border-radius) 0;
   }
   
-  .layers__1c917 > :nth-child(2) {
+  // settings
+  .layer_f7d46a > :nth-child(1) {
     margin-right: 450px;
   }
 
