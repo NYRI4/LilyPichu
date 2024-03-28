@@ -8,7 +8,10 @@
 
   // Friends activity
   @media (min-width: 1350px) {
-    .nowPlayingColumn_f5023f {
+    .tabBody_a90ea8 {
+      transform: none;
+    }
+    .nowPlayingColumn_b025fe {
       position: fixed;
       top: 280px;
       bottom: 120px;
@@ -108,7 +111,7 @@
   }
 
   // Friend call
-  .nowPlayingColumn_f5023f .scroller__00e7e {
+  .nowPlayingColumn_b025fe .scroller__00e7e {
     border: none;
   }
   .controlButton_ab2899 foreignObject {

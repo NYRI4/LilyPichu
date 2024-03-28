@@ -5,25 +5,25 @@
     background-color: var(--background-tertiary);
   }
 
-  .layers_a23c37 {
+  .layers__1c917 {
     margin: 20px 0 40px 0;
     z-index: 1;
-  }
-  .layers_a23c37 > .layer__2efaa:first-child {
-    opacity: 1 !important;
-    transform: scale(1) !important;
-  }
-  .layers_a23c37 > .layer__2efaa.stop-animations:first-child {
-    z-index: 1;
-    transform: scale(1) !important;
-  }
-
-  .layers_a23c37 > :nth-child(2) {
-    height: 100%;
-    left: 72px;
-    z-index: 2;
-    background-color: transparent;
-    transform: scale(1) !important;
+    & > .layer_f7d46a:first-child {
+      opacity: 1 !important;
+      transform: scale(1) !important;
+    }
+    & > .layer_f7d46a.stop-animations:first-child {
+      z-index: 1;
+      transform: scale(1) !important;
+    }
+  
+    & > :nth-child(2) {
+      height: 100%;
+      left: 72px;
+      z-index: 2;
+      background-color: transparent;
+      transform: scale(1) !important;
+    }
   }
 
   // Menu scroller

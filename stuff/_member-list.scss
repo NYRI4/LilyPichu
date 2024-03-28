@@ -55,11 +55,11 @@
   }
 
   // -- User popout --
-  .userPanelOuter_eb00b1 {
+  .userPopoutOuter__3884e {
     max-height: unset !important;
   }
 
-  .userPanelInner_f9edb8 {
+  .userPopoutInner_e90432 {
     position: relative;
     max-height: unset !important;
     overflow: hidden;
@@ -72,7 +72,7 @@
     }
 
     // Banner
-    .bannerSVGWrapper__3e7b0 {
+    .bannerSVGWrapper__8a38c {
       position: absolute;
       -webkit-mask-image: linear-gradient(to bottom, #000000, #00000000);
       mask-image: linear-gradient(to bottom, #000000, #00000000);
@@ -106,13 +106,13 @@
         }
       }
 
-      .pencilContainer-11Kuga {
+      .pencilContainer-11Kuga { // what was this??
         display: none;
       }
     }
 
     // Badges
-    .profileBadges__7a7cb {
+    .profileBadges__1f2ab {
       position: absolute;
       top: 65px;
       left: 110px;
@@ -120,7 +120,7 @@
     }
 
     // Avatar
-    .avatarWrapperNormal__0bddb {
+    .avatarWrapperNormal__36eec {
       position: relative;
       width: 80px;
       top: 16px;
@@ -131,7 +131,7 @@
         border-radius: var(--border-radius);
       }
 
-      .avatarHint__8e5b9 {
+      .avatarHint__15059 {
         border-radius: var(--border-radius);
       }
 
@@ -140,12 +140,13 @@
       }
     }
 
-    .userPopoutOverlayBackground_d8afa4 {
-      overflow: visible;
+    .userPopoutOverlayBackground_bf6444 {
+      // for some reason this one makes the profile jump when trying to hover over something
+      // overflow: visible;
       background-color: #00000011;
       backdrop-filter: blur(20px);
 
-      .usernameSection__53868 {
+      .usernameSection_dd6196 {
         & > .copiableNameTag__6b220 > .clickTarget__440f0,
         & > div > .userText__3e8b7 {
           position: absolute;
@@ -195,7 +196,7 @@
       margin-bottom: 30px;
 
       // Banner
-      .bannerSVGWrapper__3e7b0 {
+      .bannerSVGWrapper__8a38c {
         position: absolute;
         -webkit-mask-image: linear-gradient(to bottom, #000000, #00000000);
         mask-image: linear-gradient(to bottom, #000000, #00000000);

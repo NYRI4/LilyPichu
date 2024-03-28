@@ -512,80 +512,79 @@
 :root .layout_bb8e67 {
   border-radius: var(--border-radius);
 }
-:root .userPanelOuter_eb00b1 {
+:root .userPopoutOuter__3884e {
   max-height: unset !important;
 }
-:root .userPanelInner_f9edb8 {
+:root .userPopoutInner_e90432 {
   position: relative;
   max-height: unset !important;
   overflow: hidden;
   z-index: 2;
 }
-:root .userPanelInner_f9edb8::before {
+:root .userPopoutInner_e90432::before {
   z-index: -1;
   width: 100%;
   height: 100%;
 }
-:root .userPanelInner_f9edb8 .bannerSVGWrapper__3e7b0 {
+:root .userPopoutInner_e90432 .bannerSVGWrapper__8a38c {
   position: absolute;
   -webkit-mask-image: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0));
   mask-image: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0));
   background-color: #000000;
   height: 300px;
 }
-:root .userPanelInner_f9edb8 .bannerSVGWrapper__3e7b0 mask {
+:root .userPopoutInner_e90432 .bannerSVGWrapper__8a38c mask {
   display: none;
 }
-:root .userPanelInner_f9edb8 .bannerSVGWrapper__3e7b0 foreignObject {
+:root .userPopoutInner_e90432 .bannerSVGWrapper__8a38c foreignObject {
   mask: none;
 }
-:root .userPanelInner_f9edb8 .bannerSVGWrapper__3e7b0 .banner__6d414 {
+:root .userPopoutInner_e90432 .bannerSVGWrapper__8a38c .banner__6d414 {
   height: 100%;
 }
-:root .userPanelInner_f9edb8 .bannerSVGWrapper__3e7b0 .banner__6d414::before {
+:root .userPopoutInner_e90432 .bannerSVGWrapper__8a38c .banner__6d414::before {
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.1882352941);
 }
-:root .userPanelInner_f9edb8 .bannerSVGWrapper__3e7b0[viewBox="0 0 340 120"] {
+:root .userPopoutInner_e90432 .bannerSVGWrapper__8a38c[viewBox="0 0 340 120"] {
   transform: translateX(-200px);
 }
-:root .userPanelInner_f9edb8 .bannerSVGWrapper__3e7b0[viewBox="0 0 340 120"] .banner__6d414 > * {
+:root .userPopoutInner_e90432 .bannerSVGWrapper__8a38c[viewBox="0 0 340 120"] .banner__6d414 > * {
   display: none;
 }
-:root .userPanelInner_f9edb8 .bannerSVGWrapper__3e7b0 .pencilContainer-11Kuga {
+:root .userPopoutInner_e90432 .bannerSVGWrapper__8a38c .pencilContainer-11Kuga {
   display: none;
 }
-:root .userPanelInner_f9edb8 .profileBadges__7a7cb {
+:root .userPopoutInner_e90432 .profileBadges__1f2ab {
   position: absolute;
   top: 65px;
   left: 110px;
   background-color: transparent;
 }
-:root .userPanelInner_f9edb8 .avatarWrapperNormal__0bddb {
+:root .userPopoutInner_e90432 .avatarWrapperNormal__36eec {
   position: relative;
   width: 80px;
   top: 16px;
   z-index: 1;
 }
-:root .userPanelInner_f9edb8 .avatarWrapperNormal__0bddb foreignObject {
+:root .userPopoutInner_e90432 .avatarWrapperNormal__36eec foreignObject {
   mask: none;
   border-radius: var(--border-radius);
 }
-:root .userPanelInner_f9edb8 .avatarWrapperNormal__0bddb .avatarHint__8e5b9 {
+:root .userPopoutInner_e90432 .avatarWrapperNormal__36eec .avatarHint__15059 {
   border-radius: var(--border-radius);
 }
-:root .userPanelInner_f9edb8 .avatarWrapperNormal__0bddb circle {
+:root .userPopoutInner_e90432 .avatarWrapperNormal__36eec circle {
   display: none;
 }
-:root .userPanelInner_f9edb8 .userPopoutOverlayBackground_d8afa4 {
-  overflow: visible;
+:root .userPopoutInner_e90432 .userPopoutOverlayBackground_bf6444 {
   background-color: rgba(0, 0, 0, 0.0666666667);
   backdrop-filter: blur(20px);
 }
-:root .userPanelInner_f9edb8 .userPopoutOverlayBackground_d8afa4 .usernameSection__53868 > .copiableNameTag__6b220 > .clickTarget__440f0, :root .userPanelInner_f9edb8 .userPopoutOverlayBackground_d8afa4 .usernameSection__53868 > div > .userText__3e8b7 {
+:root .userPopoutInner_e90432 .userPopoutOverlayBackground_bf6444 .usernameSection_dd6196 > .copiableNameTag__6b220 > .clickTarget__440f0, :root .userPopoutInner_e90432 .userPopoutOverlayBackground_bf6444 .usernameSection_dd6196 > div > .userText__3e8b7 {
   position: absolute;
   top: -87px;
   left: 100px;
@@ -597,21 +596,21 @@
   display: block;
   color: var(--header-secondary);
 }
-:root .userPanelInner_f9edb8 .userPopoutOverlayBackground_d8afa4 .usernameSection__53868 > .copiableNameTag__6b220 > .clickTarget__440f0 > span, :root .userPanelInner_f9edb8 .userPopoutOverlayBackground_d8afa4 .usernameSection__53868 > div > .userText__3e8b7 > span {
+:root .userPopoutInner_e90432 .userPopoutOverlayBackground_bf6444 .usernameSection_dd6196 > .copiableNameTag__6b220 > .clickTarget__440f0 > span, :root .userPopoutInner_e90432 .userPopoutOverlayBackground_bf6444 .usernameSection_dd6196 > div > .userText__3e8b7 > span {
   word-break: unset;
   white-space: unset;
 }
-:root .userPanelInner_f9edb8 .userPopoutOverlayBackground_d8afa4 .usernameSection__53868 > .copiableNameTag__6b220 > .clickTarget__440f0 .discrimBase_e0c4c5, :root .userPanelInner_f9edb8 .userPopoutOverlayBackground_d8afa4 .usernameSection__53868 > div > .userText__3e8b7 .discrimBase_e0c4c5 {
+:root .userPopoutInner_e90432 .userPopoutOverlayBackground_bf6444 .usernameSection_dd6196 > .copiableNameTag__6b220 > .clickTarget__440f0 .discrimBase_e0c4c5, :root .userPopoutInner_e90432 .userPopoutOverlayBackground_bf6444 .usernameSection_dd6196 > div > .userText__3e8b7 .discrimBase_e0c4c5 {
   color: white;
 }
-:root .userPanelInner_f9edb8 .userPopoutOverlayBackground_d8afa4 .usernameSection__53868 .pronouns__8bcdb {
+:root .userPopoutInner_e90432 .userPopoutOverlayBackground_bf6444 .usernameSection_dd6196 .pronouns__8bcdb {
   padding-top: 12px;
 }
-:root .userPanelInner_f9edb8 .userPopoutOverlayBackground_d8afa4 .section__6f61e {
+:root .userPopoutInner_e90432 .userPopoutOverlayBackground_bf6444 .section__6f61e {
   padding-top: 0;
   padding-bottom: 12px;
 }
-:root .userPanelInner_f9edb8 .userPopoutOverlayBackground_d8afa4 .divider__2bbbc {
+:root .userPopoutInner_e90432 .userPopoutOverlayBackground_bf6444 .divider__2bbbc {
   display: none;
 }
 :root .root_ba16f0.root_a28985.small__05f7b {
@@ -621,33 +620,33 @@
   position: relative;
   margin-bottom: 30px;
 }
-:root .root_ba16f0.root_a28985.small__05f7b .topSection_dfb73b .bannerSVGWrapper__3e7b0 {
+:root .root_ba16f0.root_a28985.small__05f7b .topSection_dfb73b .bannerSVGWrapper__8a38c {
   position: absolute;
   -webkit-mask-image: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0));
   mask-image: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0));
   background-color: #000000;
   width: 600px;
 }
-:root .root_ba16f0.root_a28985.small__05f7b .topSection_dfb73b .bannerSVGWrapper__3e7b0 mask {
+:root .root_ba16f0.root_a28985.small__05f7b .topSection_dfb73b .bannerSVGWrapper__8a38c mask {
   display: none;
 }
-:root .root_ba16f0.root_a28985.small__05f7b .topSection_dfb73b .bannerSVGWrapper__3e7b0 foreignObject {
+:root .root_ba16f0.root_a28985.small__05f7b .topSection_dfb73b .bannerSVGWrapper__8a38c foreignObject {
   mask: none;
 }
-:root .root_ba16f0.root_a28985.small__05f7b .topSection_dfb73b .bannerSVGWrapper__3e7b0 .banner__6d414::before {
+:root .root_ba16f0.root_a28985.small__05f7b .topSection_dfb73b .bannerSVGWrapper__8a38c .banner__6d414::before {
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.1882352941);
 }
-:root .root_ba16f0.root_a28985.small__05f7b .topSection_dfb73b .bannerSVGWrapper__3e7b0[viewBox="0 0 340 120"] {
+:root .root_ba16f0.root_a28985.small__05f7b .topSection_dfb73b .bannerSVGWrapper__8a38c[viewBox="0 0 340 120"] {
   transform: translateX(-200px);
 }
-:root .root_ba16f0.root_a28985.small__05f7b .topSection_dfb73b .bannerSVGWrapper__3e7b0[viewBox="0 0 340 120"] .banner__6d414 > * {
+:root .root_ba16f0.root_a28985.small__05f7b .topSection_dfb73b .bannerSVGWrapper__8a38c[viewBox="0 0 340 120"] .banner__6d414 > * {
   display: none;
 }
-:root .root_ba16f0.root_a28985.small__05f7b .topSection_dfb73b .bannerSVGWrapper__3e7b0 .pencilContainer_d4ce8d {
+:root .root_ba16f0.root_a28985.small__05f7b .topSection_dfb73b .bannerSVGWrapper__8a38c .pencilContainer_d4ce8d {
   display: none;
 }
 :root .root_ba16f0.root_a28985.small__05f7b .topSection_dfb73b .header__7da4f .avatar__445f3 {
@@ -811,19 +810,19 @@
   margin-top: 20px;
   background-color: var(--background-tertiary);
 }
-:root .layers_a23c37 {
+:root .layers__1c917 {
   margin: 20px 0 40px 0;
   z-index: 1;
 }
-:root .layers_a23c37 > .layer__2efaa:first-child {
+:root .layers__1c917 > .layer_f7d46a:first-child {
   opacity: 1 !important;
   transform: scale(1) !important;
 }
-:root .layers_a23c37 > .layer__2efaa.stop-animations:first-child {
+:root .layers__1c917 > .layer_f7d46a.stop-animations:first-child {
   z-index: 1;
   transform: scale(1) !important;
 }
-:root .layers_a23c37 > :nth-child(2) {
+:root .layers__1c917 > :nth-child(2) {
   height: 100%;
   left: 72px;
   z-index: 2;
@@ -1326,7 +1325,10 @@
   border-radius: var(--border-radius);
 }
 @media (min-width: 1350px) {
-  :root .nowPlayingColumn_f5023f {
+  :root .tabBody_a90ea8 {
+    transform: none;
+  }
+  :root .nowPlayingColumn_b025fe {
     position: fixed;
     top: 280px;
     bottom: 120px;
@@ -1335,7 +1337,7 @@
     min-width: unset;
     background-color: var(--background-primary);
   }
-  :root .nowPlayingColumn_f5023f::before {
+  :root .nowPlayingColumn_b025fe::before {
     content: "Friends activity";
     position: absolute;
     top: -60px;
@@ -1351,7 +1353,7 @@
     background-color: var(--background-secondary);
     border-radius: var(--border-radius) var(--border-radius) 0 0;
   }
-  :root .nowPlayingColumn_f5023f::after {
+  :root .nowPlayingColumn_b025fe::after {
     content: "";
     position: absolute;
     bottom: -35px;
@@ -1406,7 +1408,7 @@
 :root .container__5c7e7 .peopleListItem_d14722:hover .actionButton__23182 {
   background-color: var(--background-secondary-alt);
 }
-:root .nowPlayingColumn_f5023f .scroller__00e7e {
+:root .nowPlayingColumn_b025fe .scroller__00e7e {
   border: none;
 }
 :root .controlButton_ab2899 foreignObject {
@@ -1634,7 +1636,7 @@
 }
 :root .select__0eb48,
 :root .popout_a6e77f,
-:root .input-3AAlUz {
+:root .input_f27786 {
   background-color: var(--background-secondary-alt);
 }
 :root .titleBar__01af6 .wordmark__0d178 {
@@ -1964,5 +1966,3 @@
     background-color: var(--background-primary);
   }
 }
-
-/*# sourceMappingURL=main.css.map */
