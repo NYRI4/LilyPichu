@@ -1,9 +1,9 @@
 @import url("https://nyri4.github.io/donators/donators.css");
 @import url("https://fonts.googleapis.com/css2?family=Nunito");
-:root [class*=content] > [class*=container]:has(> [class*=grid]) {
+:root [class*=content] > [class*=container]:has([class*=grid], [class*=list]) {
   background: var(--background-primary);
 }
-:root [class*=content] > [class*=container]:has(> [class*=grid]) [class*=mainCard] {
+:root [class*=content] > [class*=container]:has([class*=grid], [class*=list]) [class*=mainCard] {
   background-color: var(--background-secondary);
 }
 :root [class*=chatLayerWrapper] {
@@ -116,12 +116,11 @@
 :root .invalidPoop__03aa3 {
   background-color: rgba(0, 0, 0, 0.103);
 }
-:root [class*=channelTextArea] > [class*=autocomplete],
-:root [class*=channelTextArea] > [class*=autocomplete] [role=option] {
+:root [class*=channelTextArea] > [class*=autocomplete], :root [class*=channelTextArea] > [class*=autocomplete] [role=option] {
   background-color: var(--background-secondary-alt);
 }
-:root [class*=categoryHeader],
-:root [class*=selected] {
+:root [class*=channelTextArea] [class*=categoryHeader],
+:root [class*=channelTextArea] [class*=selected] {
   background-color: var(--background-tertiary);
   border-radius: var(--border-radius);
 }
@@ -155,7 +154,7 @@
 :root [class*=focusLock][aria-label=Reactions] [class*=reactorDefault] {
   box-shadow: inset 0 -1px 0 var(--background-primary);
 }
-:root [class*=focusLock] [class*=message_] {
+:root [class*=focusLock] [class*=root][class*=small] [class*=message_] {
   background: var(--background-primary);
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(56, 31, 31, 0.11);
 }
@@ -590,6 +589,7 @@
   position: absolute;
   top: 65px;
   left: 110px;
+  height: unset;
   background-color: transparent;
 }
 :root [class*=profilePanel] [class*=userPanelInner] [class*=avatarWrapperNormal],
@@ -612,18 +612,24 @@
 :root [class*=userPopoutInner] [class*=avatarWrapperNormal] circle {
   display: none;
 }
+:root [class*=profilePanel] [class*=userPanelInner] [class*=userPanelOverlayBackground],
 :root [class*=profilePanel] [class*=userPanelInner] [class*=userPopoutOverlayBackground],
+:root [class*=userPopoutInner] [class*=userPanelOverlayBackground],
 :root [class*=userPopoutInner] [class*=userPopoutOverlayBackground] {
   overflow: visible;
   background-color: rgba(0, 0, 0, 0.0666666667);
   backdrop-filter: blur(20px);
 }
-:root [class*=profilePanel] [class*=userPanelInner] [class*=userPopoutOverlayBackground] [class*=section] > [class*=copiableNameTag] > [class*=clickTarget], :root [class*=profilePanel] [class*=userPanelInner] [class*=userPopoutOverlayBackground] [class*=section] > div > [class*=userText],
+:root [class*=profilePanel] [class*=userPanelInner] [class*=userPanelOverlayBackground] [class*=section] > [class*=copiableNameTag] > [class*=clickTarget], :root [class*=profilePanel] [class*=userPanelInner] [class*=userPanelOverlayBackground] [class*=section] > div > [class*=userText],
+:root [class*=profilePanel] [class*=userPanelInner] [class*=userPopoutOverlayBackground] [class*=section] > [class*=copiableNameTag] > [class*=clickTarget],
+:root [class*=profilePanel] [class*=userPanelInner] [class*=userPopoutOverlayBackground] [class*=section] > div > [class*=userText],
+:root [class*=userPopoutInner] [class*=userPanelOverlayBackground] [class*=section] > [class*=copiableNameTag] > [class*=clickTarget],
+:root [class*=userPopoutInner] [class*=userPanelOverlayBackground] [class*=section] > div > [class*=userText],
 :root [class*=userPopoutInner] [class*=userPopoutOverlayBackground] [class*=section] > [class*=copiableNameTag] > [class*=clickTarget],
 :root [class*=userPopoutInner] [class*=userPopoutOverlayBackground] [class*=section] > div > [class*=userText] {
   position: absolute;
-  top: -87px;
   left: 100px;
+  top: -87px;
   box-sizing: border-box;
   max-width: 200px;
   text-overflow: ellipsis;
@@ -632,27 +638,41 @@
   display: block;
   color: var(--header-secondary);
 }
-:root [class*=profilePanel] [class*=userPanelInner] [class*=userPopoutOverlayBackground] [class*=section] > [class*=copiableNameTag] > [class*=clickTarget] > span, :root [class*=profilePanel] [class*=userPanelInner] [class*=userPopoutOverlayBackground] [class*=section] > div > [class*=userText] > span,
+:root [class*=profilePanel] [class*=userPanelInner] [class*=userPanelOverlayBackground] [class*=section] > [class*=copiableNameTag] > [class*=clickTarget] > span, :root [class*=profilePanel] [class*=userPanelInner] [class*=userPanelOverlayBackground] [class*=section] > div > [class*=userText] > span,
+:root [class*=profilePanel] [class*=userPanelInner] [class*=userPopoutOverlayBackground] [class*=section] > [class*=copiableNameTag] > [class*=clickTarget] > span,
+:root [class*=profilePanel] [class*=userPanelInner] [class*=userPopoutOverlayBackground] [class*=section] > div > [class*=userText] > span,
+:root [class*=userPopoutInner] [class*=userPanelOverlayBackground] [class*=section] > [class*=copiableNameTag] > [class*=clickTarget] > span,
+:root [class*=userPopoutInner] [class*=userPanelOverlayBackground] [class*=section] > div > [class*=userText] > span,
 :root [class*=userPopoutInner] [class*=userPopoutOverlayBackground] [class*=section] > [class*=copiableNameTag] > [class*=clickTarget] > span,
 :root [class*=userPopoutInner] [class*=userPopoutOverlayBackground] [class*=section] > div > [class*=userText] > span {
   word-break: unset;
   white-space: unset;
 }
-:root [class*=profilePanel] [class*=userPanelInner] [class*=userPopoutOverlayBackground] [class*=section] > [class*=copiableNameTag] > [class*=clickTarget] [class*=discrimBase], :root [class*=profilePanel] [class*=userPanelInner] [class*=userPopoutOverlayBackground] [class*=section] > div > [class*=userText] [class*=discrimBase],
+:root [class*=profilePanel] [class*=userPanelInner] [class*=userPanelOverlayBackground] [class*=section] > [class*=copiableNameTag] > [class*=clickTarget] [class*=discrimBase], :root [class*=profilePanel] [class*=userPanelInner] [class*=userPanelOverlayBackground] [class*=section] > div > [class*=userText] [class*=discrimBase],
+:root [class*=profilePanel] [class*=userPanelInner] [class*=userPopoutOverlayBackground] [class*=section] > [class*=copiableNameTag] > [class*=clickTarget] [class*=discrimBase],
+:root [class*=profilePanel] [class*=userPanelInner] [class*=userPopoutOverlayBackground] [class*=section] > div > [class*=userText] [class*=discrimBase],
+:root [class*=userPopoutInner] [class*=userPanelOverlayBackground] [class*=section] > [class*=copiableNameTag] > [class*=clickTarget] [class*=discrimBase],
+:root [class*=userPopoutInner] [class*=userPanelOverlayBackground] [class*=section] > div > [class*=userText] [class*=discrimBase],
 :root [class*=userPopoutInner] [class*=userPopoutOverlayBackground] [class*=section] > [class*=copiableNameTag] > [class*=clickTarget] [class*=discrimBase],
 :root [class*=userPopoutInner] [class*=userPopoutOverlayBackground] [class*=section] > div > [class*=userText] [class*=discrimBase] {
   color: white;
 }
+:root [class*=profilePanel] [class*=userPanelInner] [class*=userPanelOverlayBackground] [class*=section] [class*=pronouns],
 :root [class*=profilePanel] [class*=userPanelInner] [class*=userPopoutOverlayBackground] [class*=section] [class*=pronouns],
+:root [class*=userPopoutInner] [class*=userPanelOverlayBackground] [class*=section] [class*=pronouns],
 :root [class*=userPopoutInner] [class*=userPopoutOverlayBackground] [class*=section] [class*=pronouns] {
   padding-top: 12px;
 }
+:root [class*=profilePanel] [class*=userPanelInner] [class*=userPanelOverlayBackground] [class*=section],
 :root [class*=profilePanel] [class*=userPanelInner] [class*=userPopoutOverlayBackground] [class*=section],
+:root [class*=userPopoutInner] [class*=userPanelOverlayBackground] [class*=section],
 :root [class*=userPopoutInner] [class*=userPopoutOverlayBackground] [class*=section] {
   padding-top: 0;
   padding-bottom: 12px;
 }
+:root [class*=profilePanel] [class*=userPanelInner] [class*=userPanelOverlayBackground] [class*=divider],
 :root [class*=profilePanel] [class*=userPanelInner] [class*=userPopoutOverlayBackground] [class*=divider],
+:root [class*=userPopoutInner] [class*=userPanelOverlayBackground] [class*=divider],
 :root [class*=userPopoutInner] [class*=userPopoutOverlayBackground] [class*=divider] {
   display: none;
 }
@@ -665,10 +685,8 @@
 :root [class*=userPopoutInner] [class*=mutualFriendsList] {
   border-top: none;
 }
-:root [class*=profilePanel] [class*=userPanelInner] [class*=mutualGuildsList] > button, :root [class*=profilePanel] [class*=userPanelInner] [class*=mutualFriendsList] > button,
-:root [class*=userPopoutInner] [class*=mutualGuildsList] > button,
-:root [class*=userPopoutInner] [class*=mutualFriendsList] > button {
-  background-color: rgba(0, 0, 0, 0.0666666667) !important;
+:root [class*=profilePanel] [class*=userPanelInner] [class*=userPanelOverlayBackground] [class*=section] > [class*=copiableNameTag] > [class*=clickTarget], :root [class*=profilePanel] [class*=userPanelInner] [class*=userPanelOverlayBackground] [class*=section] > div > [class*=userText] {
+  top: -110px;
 }
 :root [class*=root][class*=small] {
   border-radius: var(--border-radius);
@@ -1847,7 +1865,7 @@
   [class*=tabBody] {
     transform: none;
   }
-  [class*=layers] > [class*=layer] > :nth-child(1) {
+  [class*=layers] > [class*=layer]:nth-child(2) {
     margin-right: 450px;
   }
   [class*=layers] > [class*=layer] > [class*=container] {

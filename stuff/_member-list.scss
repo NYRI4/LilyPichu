@@ -41,11 +41,7 @@
 			height: 35px;
 			background-color: var(--background-secondary);
 			border-radius: 0 0 var(--border-radius) var(--border-radius);
-			background-image: linear-gradient(
-			to right,
-			var(--header-primary) 33%,
-			rgba(255, 255, 255, 0) 0%
-			);
+			background-image: linear-gradient( to right, var(--header-primary) 33%, rgba(255, 255, 255, 0) 0%);
 			background-position: top;
 			background-size: 21px 2px;
 			background-repeat: repeat-x;
@@ -120,6 +116,7 @@
 			position: absolute;
 			top: 65px;
 			left: 110px;
+			height: unset;
 			background-color: transparent;
 		}
 
@@ -144,17 +141,18 @@
 			}
 		}
 
+
+		[class*="userPanelOverlayBackground"],
 		[class*="userPopoutOverlayBackground"] {
 			overflow: visible;
 			background-color: #00000011;
 			backdrop-filter: blur(20px);
-
 			[class*="section"] {
 				& > [class*="copiableNameTag"] > [class*="clickTarget"],
 				& > div > [class*="userText"] {
 					position: absolute;
-					top: -87px;
 					left: 100px;
+					top: -87px;
 					box-sizing: border-box;
 					max-width: 200px;
 					text-overflow: ellipsis;
@@ -195,8 +193,14 @@
 			border-top: none;
 
 			& > button {
-				background-color: rgba(0, 0, 0, 0.0666666667) !important;
+				//background-color: rgba(0, 0, 0, 0.0666666667) !important;
 			}
+		}
+	}
+	[class*="profilePanel"] [class*="userPanelInner"] [class*="userPanelOverlayBackground"] [class*="section"] {
+		& > [class*="copiableNameTag"] > [class*="clickTarget"],
+		& > div > [class*="userText"] {
+			top: -110px;
 		}
 	}
 
@@ -381,24 +385,24 @@
 						}
 					}
 					$connectionColors: (
-						"Battle.net": #1da0f248,
-						"Twitch": #601bd852,
-						"YouTube": #d9252b49,
-						"Twitter": #0098e43f,
-						"Steam": #00000034,
-						"Reddit": #fe44013d,
-						"Facebook": #2e328485,
-						"Spotify": #1ed75f34,
-						"Xbox": #5dc21e36,
-						"League of Legends": #cea14638,
-						"GitHub": #24292e62,
-						"Skype": #0076d74b,
-						"Epic Games": #2f2f2f59,
-						"Riot Games": #eb1c2d38,
-						"PayPal": #009fe33b,
-						"TikTok": #64bfc546,
-						"eBay": #c500003b,
-						"PlayStation Network": #0051ae53,
+					"Battle.net": #1da0f248,
+					"Twitch": #601bd852,
+					"YouTube": #d9252b49,
+					"Twitter": #0098e43f,
+					"Steam": #00000034,
+					"Reddit": #fe44013d,
+					"Facebook": #2e328485,
+					"Spotify": #1ed75f34,
+					"Xbox": #5dc21e36,
+					"League of Legends": #cea14638,
+					"GitHub": #24292e62,
+					"Skype": #0076d74b,
+					"Epic Games": #2f2f2f59,
+					"Riot Games": #eb1c2d38,
+					"PayPal": #009fe33b,
+					"TikTok": #64bfc546,
+					"eBay": #c500003b,
+					"PlayStation Network": #0051ae53,
 					);
 					@each $name, $color in $connectionColors {
 						[class*="connectedAccountIcon"][aria-label="#{$name}"]

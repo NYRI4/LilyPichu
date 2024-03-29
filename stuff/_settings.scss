@@ -23,6 +23,8 @@
 			z-index: 2;
 			background-color: transparent;
 			transform: scale(1) !important;
+			@media (min-width: 1350px) {
+			}
 		}
 	}
 

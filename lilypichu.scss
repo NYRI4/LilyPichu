@@ -33,7 +33,7 @@
 	}
 
 	// settings
-	[class*="layers"] > [class*="layer"] > :nth-child(1) {
+	[class*="layers"] > [class*="layer"]:nth-child(2) {
 		margin-right: 450px;
 	}
 
