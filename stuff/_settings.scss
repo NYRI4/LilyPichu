@@ -38,7 +38,7 @@
 		[class*="sidebarRegion"] {
 			flex: unset;
 
-			[class*="sidebar"] {
+			[class*="sidebarRegionScroller"] [class*="sidebar"] {
 				width: 232px;
 				padding: 60px 10px;
 			}
@@ -105,12 +105,12 @@
 	// -- 👤 User settings --
 
 	// My account
-	.accountProfileCard__22589 {
+	[class*="accountProfileCard"] {
 		background-color: var(--background-secondary-alt);
 		border-radius: var(--border-radius);
 
 		// Banner
-		.bannerSVGWrapper__3e7b0 {
+		[class*="bannerSVGWrapper"] {
 			position: absolute;
 			-webkit-mask-image: linear-gradient(to bottom, #000000, #00000000);
 			min-width: 900px !important;
@@ -124,7 +124,7 @@
 				transform: translate(-130px);
 			}
 
-			.banner__6d414 {
+			[class*="banner"] {
 				background-position: left;
 				min-width: 900px;
 
@@ -146,7 +146,7 @@
 			}
 		}
 
-		.userInfo__8f826 {
+		[class*="userInfo"] {
 			height: 100px;
 			align-items: center;
 
@@ -157,36 +157,35 @@
 			}
 		}
 
-		.background_b61fcc {
+		[class*="background"] {
 			border-radius: var(--border-radius);
 		}
 	}
 
 	// User profile
-	.profileCustomizationSection__88eff {
-		.baseLayout_b00434 {
+	[class*="profileCustomizationSection"] {
+		[class*="baseLayout"] {
 			flex-direction: column;
 
 			& > :first-child {
 				flex: 1 auto;
 			}
 
-			& > .preview__0c5fe {
+			& > [class*="preview"] {
 				margin: 0;
 			}
 
-			.profileCustomizationPreview_ccc6a9 {
+			[class*="profileCustomizationPreview"] {
 				background-color: transparent;
 				overflow: hidden;
 				border-radius: var(--border-radius);
 
-				.bannerSVGWrapper__3e7b0[viewBox="0 0 340 90"] + .avatarUploader__18c3f,
-				.bannerSVGWrapper__3e7b0[viewBox="0 0 340 120"]
-				+ .avatarUploader__18c3f {
+				[class*="bannerSVGWrapper"][viewBox="0 0 340 90"] + [class*="avatarUploader"],
+				[class*="bannerSVGWrapper"][viewBox="0 0 340 120"] + [class*="avatarUploader"] {
 					top: 16px;
 				}
 
-				.avatarUploader__18c3f {
+				[class*="avatarUploader"] {
 					position: relative;
 					width: 80px;
 					z-index: 1;
@@ -196,24 +195,24 @@
 						border-radius: var(--border-radius);
 					}
 
-					.avatarHint__8e5b9 {
+					[class*="avatarHint"] {
 						border-radius: var(--border-radius);
 					}
 
-					.status_be3f03 {
+					[class*="status"] {
 						background-color: transparent;
 					}
 
-					.imageUploaderIcon__0c13b {
+					[class*="imageUploaderIcon_"] {
 						display: none;
 					}
 
-					.imageUploaderInner_da8332 {
+					[class*="imageUploaderInner"] {
 						border-radius: var(--border-radius);
 					}
 				}
 
-				.userTagNoNickname__6b0db {
+				[class*="userTagNoNickname"] {
 					position: absolute;
 					top: -85px;
 					left: 105px;
@@ -230,7 +229,7 @@
 						white-space: unset;
 					}
 
-					.discrimBase_e0c4c5 {
+					[class*="discrimBase"] {
 						color: white;
 					}
 				}

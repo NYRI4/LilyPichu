@@ -86,15 +86,15 @@
 	}
 
 	// User profile
-	.accountProfilePopoutWrapper_af829a {
+	[class*="accountProfilePopoutWrapper"] {
 		left: -15px;
 		bottom: -5px;
 
-		.userPopoutOverlayBackground_d8afa4 {
+		[class*="userPopoutOverlayBackground"] {
 			backdrop-filter: unset;
 		}
 
-		.nameTag__693ff {
+		[class*="nameTag"] {
 			position: static !important;
 		}
 	}
@@ -106,7 +106,7 @@
 	}
 	.select__0eb48,
 	.popout_a6e77f,
-	.input_f27786 {
+	.input_f227786 {
 		background-color: var(--background-secondary-alt);
 	}
 
