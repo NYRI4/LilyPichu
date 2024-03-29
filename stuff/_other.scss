@@ -10,7 +10,7 @@
 	}
 
 	// Background
-	.bg__12180 {
+	[class*="app"] > [class*="app"] > [class*="bg"] {
 		background: var(--background-tertiary-alt);
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -29,16 +29,16 @@
 	button,
 	input,
 	textarea,
-	.menu_dc52c6 {
+	.menu_dc52c6 { // TODO: what was this?
 		border-radius: var(--border-radius) !important;
 	}
 
 	// -- Better menus --
-	.menu_dc52c6 {
+	.menu_dc52c6 { // TODO: what was this?
 		overflow: hidden;
 	}
 
-	.scroller__750f5 {
+	.scroller__750f5 { // TODO: what was this? (+everything inside)
 		padding: 0;
 
 		&::-webkit-scrollbar,
@@ -69,20 +69,29 @@
 	}
 
 	// Modals
-	.modal__060da,
-	.root_a28985,
-	.uploadModal_eae2a0 {
-		border-radius: var(--border-radius);
-		box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2),
-		0 0 0 1px rgba(56, 31, 31, 0.11);
-	}
+	[class*="layer"] [class*="focusLock"] {
+		.modal__060da, // TODO: what were these? 
+		& > [class*="root"],
+		.uploadModal_eae2a0 { // TODO: what were these?
+			border-radius: var(--border-radius);
+			box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(56, 31, 31, 0.11);
+			// Custom status modal
+			[class*="select"],
+			[class*="popout"] {
+				border: none;
+			}
+			[class*="select"],
+			[class*="popout"],
+			[class*="input"] {
+				background-color: var(--background-secondary-alt);
+			}
+		}
 
-	.footer_c793da,
-	.footer__89240 {
-		border-radius: 0 0 var(--border-radius) var(--border-radius);
-		background-color: var(--background-tertiary);
-		box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2),
-		0 0 0 1px rgba(56, 31, 31, 0.11);
+		[class*="footer"] {
+			border-radius: 0 0 var(--border-radius) var(--border-radius);
+			background-color: var(--background-tertiary);
+			box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(56, 31, 31, 0.11);
+		}
 	}
 
 	// User profile
@@ -99,17 +108,8 @@
 		}
 	}
 
-	// Custom status modal
-	.select__0eb48,
-	.popout_a6e77f {
-		border: none;
-	}
-	.select__0eb48,
-	.popout_a6e77f,
-	.input_f227786 {
-		background-color: var(--background-secondary-alt);
-	}
-
+	// TODO: everything below (200 lines)
+	
 	// Delete Discord wordmark
 	.titleBar__01af6 .wordmark__0d178 {
 		display: none;

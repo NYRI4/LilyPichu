@@ -6,11 +6,12 @@
 :root [class*=content] > [class*=container]:has(> [class*=grid]) [class*=mainCard] {
   background-color: var(--background-secondary);
 }
-:root .chatLayerWrapper__1b344 .container__694a1 {
+:root [class*=chatLayerWrapper] {
   position: fixed;
-  top: 220px;
-  bottom: 85px;
+  top: 280px;
+  bottom: 120px;
   right: 60px;
+  height: unset;
   width: 320px;
   min-width: unset;
   border-radius: var(--border-radius);
@@ -18,10 +19,18 @@
   padding-bottom: 26px;
   overflow: visible;
 }
-:root .chatLayerWrapper__1b344 .container__694a1::-webkit-scrollbar {
+:root [class*=chatLayerWrapper] > * {
+  width: 100% !important;
+  min-width: unset;
+  filter: unset;
+}
+:root [class*=chatLayerWrapper] [class*=scrollerContent] {
+  min-height: unset;
+}
+:root [class*=chatLayerWrapper]::-webkit-scrollbar {
   margin-right: 50px;
 }
-:root .chatLayerWrapper__1b344 .container__694a1::before {
+:root [class*=chatLayerWrapper]::before {
   content: "Thread";
   position: absolute;
   top: -60px;
@@ -37,7 +46,7 @@
   background-color: var(--background-secondary);
   border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
-:root .chatLayerWrapper__1b344 .container__694a1::after {
+:root [class*=chatLayerWrapper]::after {
   content: "";
   position: fixed;
   bottom: 85px;
@@ -51,12 +60,12 @@
   background-size: 21px 2px;
   background-repeat: repeat-x;
 }
-:root .embedFull__8dc21 {
+:root [class*=embedFull] {
   border: none;
   margin-left: 10px;
   border-radius: 5px var(--border-radius) var(--border-radius) 5px;
 }
-:root .embedFull__8dc21:after {
+:root [class*=embedFull]:after {
   content: "";
   position: absolute;
   top: 1px;
@@ -82,11 +91,11 @@
 :root .audioControls__9fbe9 {
   border-radius: 0 0 var(--border-radius) var(--border-radius);
 }
-:root .spoilerText-27bIiA.hidden-3B-Rum,
-:root .spoilerText-27bIiA.hidden-3B-Rum:hover {
+:root [class*=spoilerText][class*=hidden],
+:root [class*=spoilerText][class*=hidden]:hover {
   background-color: var(--background-secondary-alt);
 }
-:root .wrapper_efe67f {
+:root [class*=message-accessories] > [class*=wrapper] {
   border-radius: var(--border-radius);
 }
 :root .invite__2a93b {
@@ -107,43 +116,46 @@
 :root .invalidPoop__03aa3 {
   background-color: rgba(0, 0, 0, 0.103);
 }
-:root .autocomplete__743a5,
-:root .option__32fd1 {
+:root [class*=channelTextArea] > [class*=autocomplete],
+:root [class*=channelTextArea] > [class*=autocomplete] [role=option] {
   background-color: var(--background-secondary-alt);
 }
-:root .categoryHeader_f97a5f,
-:root .selected-3H3-RC {
+:root [class*=categoryHeader],
+:root [class*=selected] {
   background-color: var(--background-tertiary);
+  border-radius: var(--border-radius);
 }
 :root .everyonePopout-nEbJY3 {
   background-color: var(--background-primary);
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(56, 31, 31, 0.11);
 }
-:root .emojiItem_b15dee.emojiItemSelected__1a09a {
+:root #emoji-picker-tab-panel [class*=emojiItem][class*=emojiItemSelected] {
   background-color: var(--background-modifier-selected);
 }
-:root .searchBar__8f956 {
+:root #emoji-picker-tab-panel [class*=searchBar] {
   border-radius: var(--border-radius);
 }
-:root .imageLoading__37d01 {
+:root #emoji-picker-tab-panel [class*=imageLoading] {
   background-image: none !important;
   background-color: var(--background-primary);
   border-radius: 8px;
 }
-:root .scroller__5fda0 {
+:root [class*=focusLock][aria-label=Reactions] > [class*=container] > [class*=scroller] {
   background: var(--background-tertiary);
+  border-radius: var(--border-radius) 0 0 var(--border-radius);
 }
-:root .container_dc03c3,
-:root .reactors__20ab0 {
+:root [class*=focusLock][aria-label=Reactions] .container_dc03c3,
+:root [class*=focusLock][aria-label=Reactions] [class*=reactors] {
   background: var(--background-secondary);
+  border-radius: 0 var(--border-radius) var(--border-radius) 0;
 }
-:root .reactionSelected__249a7 {
+:root [class*=focusLock][aria-label=Reactions] [class*=reactionSelected] {
   background-color: rgba(110, 133, 211, 0.1294117647);
 }
-:root .reactorDefault__5b249 {
+:root [class*=focusLock][aria-label=Reactions] [class*=reactorDefault] {
   box-shadow: inset 0 -1px 0 var(--background-primary);
 }
-:root .message__04d9f {
+:root [class*=focusLock] [class*=message_] {
   background: var(--background-primary);
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(56, 31, 31, 0.11);
 }
@@ -151,51 +163,51 @@
 :root .footer__06f4b {
   border: none;
 }
-:root .popoutContainer__7b9a3 {
+:root [class*=reactionTooltip] {
   border-radius: var(--border-radius);
 }
-:root .newMessagesBar__8b6d7 {
+:root [class*=newMessagesBar] {
   top: 5px;
   border-radius: var(--border-radius);
   background-color: var(--background-accent);
   padding-top: 0;
 }
-:root .jumpToPresentBar__0ff7f {
+:root [class*=jumpToPresentBar] {
   bottom: 12px;
   padding-bottom: 0;
   border-radius: var(--border-radius);
 }
-:root .wrapper_fbbb73 {
+:root [class*=form] [class*=wrapper] {
   border-radius: var(--border-radius);
 }
-:root .reaction-2A2y9y {
+:root [class*=reactions] > div > [class*=reaction] {
   border-radius: var(--border-radius);
 }
-:root .wrapper_c727b6 {
+:root [id*=message-accessories] > [class*=button] {
   border-radius: var(--border-radius);
 }
-:root .botTagRegular_c89c9a {
+:root [class*=botTagRegular] {
   background-color: var(--background-accent);
 }
-:root .cooldownWrapper_de448f {
+:root [class*=cooldownWrapper] {
   color: var(--text-muted) !important;
 }
 
-:root .guilds__2b93a .scroller__3d071 {
+:root [class*=guilds] > ul > [class*=scroller] {
   padding: 8px 0 130px 0;
 }
-:root .guilds__2b93a .scroller__3d071 .wrapper__3af0b foreignObject {
+:root [class*=guilds] > ul > [class*=scroller] [class*=wrapper] foreignObject {
   mask: none;
   border-radius: var(--border-radius);
   transition: border-radius 0.15s;
 }
-:root .guilds__2b93a .scroller__3d071 .wrapper__3af0b foreignObject:hover {
+:root [class*=guilds] > ul > [class*=scroller] [class*=wrapper] foreignObject:hover {
   border-radius: calc(var(--border-radius) - 5px);
 }
-:root .guilds__2b93a .scroller__3d071 .folder__17546 {
+:root [class*=guilds] > ul > [class*=scroller] [class*=wrapper] foreignObject [class*=folder] {
   background-color: transparent;
 }
-:root .guilds__2b93a .scroller__3d071 .circleIconButton_d8df29 {
+:root [class*=guilds] > ul > [class*=scroller] [class*=circleIconButton] {
   color: var(--background-accent);
   background-color: var(--background-secondary-alt) !important;
 }
@@ -254,32 +266,34 @@
   opacity: 1;
 }
 
-:root [class*=content] [class*=sidebar] {
+:root [class*=content][aria-label*=Channels] [class*=sidebar] {
   border-radius: 0;
 }
-:root [class*=content] [class*=sidebar] [class*=scroller] [class*=wrapper],
-:root [class*=content] [class*=sidebar] .container-32HW5s {
+:root [class*=content][aria-label*=Channels] [class*=sidebar] [class*=scroller] [class*=wrapper],
+:root [class*=content][aria-label*=Channels] [class*=sidebar] .container-32HW5s {
   border-radius: var(--border-radius);
   overflow: hidden;
 }
-:root [class*=content] [class*=sidebar] .content_b60865 {
+:root [class*=content][aria-label*=Channels] [class*=sidebar] .content_b60865 {
   border-radius: var(--border-radius);
 }
-:root [class*=content] [class*=sidebar] .container__0810b .header-2C89wJ {
+:root [class*=content][aria-label*=Channels] [class*=sidebar] .container__0810b .header-2C89wJ {
   background-color: var(--background-tertiary);
 }
-:root [class*=content] [class*=sidebar] .container__0810b section {
+:root [class*=content][aria-label*=Channels] [class*=sidebar] .container__0810b section {
   background-color: var(--background-secondary);
 }
-:root [class*=content] [class*=sidebar] .container__590e2 > .scroller_f0f183 > .content__23cab > div:first-child[style="height: 16px;"] {
+:root [class*=content][aria-label*=Channels] [class*=sidebar] .container__590e2 > .scroller_f0f183 > .content__23cab > div:first-child[style="height: 16px;"] {
   display: none;
 }
 
-:root [class*=subtitleContainer] > [class*=title] {
+:root [class*=subtitleContainer] > [class*=title],
+:root [class*=container][aria-label*="Thread header"] {
   background-color: var(--background-primary);
 }
-:root [class*=subtitleContainer] > [class*=title] [class*=children] ::after {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(54, 57, 63, 0)), to(var(--background-primary)));
+:root [class*=subtitleContainer] > [class*=title] [class*=children]:after,
+:root [class*=container][aria-label*="Thread header"] [class*=children]:after {
+  background: none;
 }
 :root [class*=toolbar] > [href="https://support.discord.com"]:last-child, :root [class*=searchLearnMore] {
   display: none;
@@ -516,17 +530,20 @@
 :root [class*=userPopoutOuter] {
   max-height: unset !important;
 }
+:root [class*=profilePanel] [class*=userPanelInner],
 :root [class*=userPopoutInner] {
   position: relative;
   max-height: unset !important;
   overflow: hidden;
   z-index: 2;
 }
+:root [class*=profilePanel] [class*=userPanelInner]::before,
 :root [class*=userPopoutInner]::before {
   z-index: -1;
   width: 100%;
   height: 100%;
 }
+:root [class*=profilePanel] [class*=userPanelInner] [class*=bannerSVGWrapper],
 :root [class*=userPopoutInner] [class*=bannerSVGWrapper] {
   position: absolute;
   -webkit-mask-image: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0));
@@ -534,59 +551,76 @@
   background-color: #000000;
   height: 300px;
 }
+:root [class*=profilePanel] [class*=userPanelInner] [class*=bannerSVGWrapper] mask,
 :root [class*=userPopoutInner] [class*=bannerSVGWrapper] mask {
   display: none;
 }
+:root [class*=profilePanel] [class*=userPanelInner] [class*=bannerSVGWrapper] foreignObject,
 :root [class*=userPopoutInner] [class*=bannerSVGWrapper] foreignObject {
   mask: none;
 }
-:root [class*=userPopoutInner] [class*=bannerSVGWrapper] .banner__6d414 {
+:root [class*=profilePanel] [class*=userPanelInner] [class*=bannerSVGWrapper] [class*=banner],
+:root [class*=userPopoutInner] [class*=bannerSVGWrapper] [class*=banner] {
   height: 100%;
 }
-:root [class*=userPopoutInner] [class*=bannerSVGWrapper] .banner__6d414::before {
+:root [class*=profilePanel] [class*=userPanelInner] [class*=bannerSVGWrapper] [class*=banner]::before,
+:root [class*=userPopoutInner] [class*=bannerSVGWrapper] [class*=banner]::before {
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.1882352941);
 }
+:root [class*=profilePanel] [class*=userPanelInner] [class*=bannerSVGWrapper][viewBox="0 0 340 120"],
 :root [class*=userPopoutInner] [class*=bannerSVGWrapper][viewBox="0 0 340 120"] {
   transform: translateX(-200px);
 }
-:root [class*=userPopoutInner] [class*=bannerSVGWrapper][viewBox="0 0 340 120"] .banner__6d414 > * {
+:root [class*=profilePanel] [class*=userPanelInner] [class*=bannerSVGWrapper][viewBox="0 0 340 120"] [class*=banner] > *,
+:root [class*=userPopoutInner] [class*=bannerSVGWrapper][viewBox="0 0 340 120"] [class*=banner] > * {
   display: none;
 }
+:root [class*=profilePanel] [class*=userPanelInner] [class*=bannerSVGWrapper] .pencilContainer-11Kuga,
 :root [class*=userPopoutInner] [class*=bannerSVGWrapper] .pencilContainer-11Kuga {
   display: none;
 }
+:root [class*=profilePanel] [class*=userPanelInner] [class*=badgeList],
+:root [class*=profilePanel] [class*=userPanelInner] [class*=profileBadges],
+:root [class*=userPopoutInner] [class*=badgeList],
 :root [class*=userPopoutInner] [class*=profileBadges] {
   position: absolute;
   top: 65px;
   left: 110px;
   background-color: transparent;
 }
+:root [class*=profilePanel] [class*=userPanelInner] [class*=avatarWrapperNormal],
 :root [class*=userPopoutInner] [class*=avatarWrapperNormal] {
   position: relative;
   width: 80px;
   top: 16px;
   z-index: 1;
 }
+:root [class*=profilePanel] [class*=userPanelInner] [class*=avatarWrapperNormal] foreignObject,
 :root [class*=userPopoutInner] [class*=avatarWrapperNormal] foreignObject {
   mask: none;
   border-radius: var(--border-radius);
 }
+:root [class*=profilePanel] [class*=userPanelInner] [class*=avatarWrapperNormal] [class*=avatarHint],
 :root [class*=userPopoutInner] [class*=avatarWrapperNormal] [class*=avatarHint] {
   border-radius: var(--border-radius);
 }
+:root [class*=profilePanel] [class*=userPanelInner] [class*=avatarWrapperNormal] circle,
 :root [class*=userPopoutInner] [class*=avatarWrapperNormal] circle {
   display: none;
 }
+:root [class*=profilePanel] [class*=userPanelInner] [class*=userPopoutOverlayBackground],
 :root [class*=userPopoutInner] [class*=userPopoutOverlayBackground] {
   overflow: visible;
   background-color: rgba(0, 0, 0, 0.0666666667);
   backdrop-filter: blur(20px);
 }
-:root [class*=userPopoutInner] [class*=userPopoutOverlayBackground] [class*=section] > [class*=copiableNameTag] > [class*=clickTarget], :root [class*=userPopoutInner] [class*=userPopoutOverlayBackground] [class*=section] > div > [class*=userText] {
+:root [class*=profilePanel] [class*=userPanelInner] [class*=userPopoutOverlayBackground] [class*=section] > [class*=copiableNameTag] > [class*=clickTarget], :root [class*=profilePanel] [class*=userPanelInner] [class*=userPopoutOverlayBackground] [class*=section] > div > [class*=userText],
+:root [class*=userPopoutInner] [class*=userPopoutOverlayBackground] [class*=section] > [class*=copiableNameTag] > [class*=clickTarget],
+:root [class*=userPopoutInner] [class*=userPopoutOverlayBackground] [class*=section] > div > [class*=userText] {
   position: absolute;
   top: -87px;
   left: 100px;
@@ -598,22 +632,43 @@
   display: block;
   color: var(--header-secondary);
 }
-:root [class*=userPopoutInner] [class*=userPopoutOverlayBackground] [class*=section] > [class*=copiableNameTag] > [class*=clickTarget] > span, :root [class*=userPopoutInner] [class*=userPopoutOverlayBackground] [class*=section] > div > [class*=userText] > span {
+:root [class*=profilePanel] [class*=userPanelInner] [class*=userPopoutOverlayBackground] [class*=section] > [class*=copiableNameTag] > [class*=clickTarget] > span, :root [class*=profilePanel] [class*=userPanelInner] [class*=userPopoutOverlayBackground] [class*=section] > div > [class*=userText] > span,
+:root [class*=userPopoutInner] [class*=userPopoutOverlayBackground] [class*=section] > [class*=copiableNameTag] > [class*=clickTarget] > span,
+:root [class*=userPopoutInner] [class*=userPopoutOverlayBackground] [class*=section] > div > [class*=userText] > span {
   word-break: unset;
   white-space: unset;
 }
-:root [class*=userPopoutInner] [class*=userPopoutOverlayBackground] [class*=section] > [class*=copiableNameTag] > [class*=clickTarget] [class*=discrimBase], :root [class*=userPopoutInner] [class*=userPopoutOverlayBackground] [class*=section] > div > [class*=userText] [class*=discrimBase] {
+:root [class*=profilePanel] [class*=userPanelInner] [class*=userPopoutOverlayBackground] [class*=section] > [class*=copiableNameTag] > [class*=clickTarget] [class*=discrimBase], :root [class*=profilePanel] [class*=userPanelInner] [class*=userPopoutOverlayBackground] [class*=section] > div > [class*=userText] [class*=discrimBase],
+:root [class*=userPopoutInner] [class*=userPopoutOverlayBackground] [class*=section] > [class*=copiableNameTag] > [class*=clickTarget] [class*=discrimBase],
+:root [class*=userPopoutInner] [class*=userPopoutOverlayBackground] [class*=section] > div > [class*=userText] [class*=discrimBase] {
   color: white;
 }
+:root [class*=profilePanel] [class*=userPanelInner] [class*=userPopoutOverlayBackground] [class*=section] [class*=pronouns],
 :root [class*=userPopoutInner] [class*=userPopoutOverlayBackground] [class*=section] [class*=pronouns] {
   padding-top: 12px;
 }
+:root [class*=profilePanel] [class*=userPanelInner] [class*=userPopoutOverlayBackground] [class*=section],
 :root [class*=userPopoutInner] [class*=userPopoutOverlayBackground] [class*=section] {
   padding-top: 0;
   padding-bottom: 12px;
 }
+:root [class*=profilePanel] [class*=userPanelInner] [class*=userPopoutOverlayBackground] [class*=divider],
 :root [class*=userPopoutInner] [class*=userPopoutOverlayBackground] [class*=divider] {
   display: none;
+}
+:root [class*=profilePanel] [class*=userPanelInner] [class*=profilePanelConnections] > :nth-child(2),
+:root [class*=userPopoutInner] [class*=profilePanelConnections] > :nth-child(2) {
+  margin-top: 10px;
+}
+:root [class*=profilePanel] [class*=userPanelInner] [class*=mutualGuildsList], :root [class*=profilePanel] [class*=userPanelInner] [class*=mutualFriendsList],
+:root [class*=userPopoutInner] [class*=mutualGuildsList],
+:root [class*=userPopoutInner] [class*=mutualFriendsList] {
+  border-top: none;
+}
+:root [class*=profilePanel] [class*=userPanelInner] [class*=mutualGuildsList] > button, :root [class*=profilePanel] [class*=userPanelInner] [class*=mutualFriendsList] > button,
+:root [class*=userPopoutInner] [class*=mutualGuildsList] > button,
+:root [class*=userPopoutInner] [class*=mutualFriendsList] > button {
+  background-color: rgba(0, 0, 0, 0.0666666667) !important;
 }
 :root [class*=root][class*=small] {
   border-radius: var(--border-radius);
@@ -844,7 +899,10 @@
   width: 232px;
   padding: 60px 10px;
 }
-:root .contentColumn_dc7d36,
+:root [class*=standardSidebarView] > [class*=contentRegion] [class*=tabBar] [class*=tabBarItem] {
+  padding: 8px;
+}
+:root [class*=contentColumn],
 :root .customColumn_e22a6e,
 :root .hero-1aNo0v,
 :root .notificationSettings-1U0JsJ,
@@ -865,14 +923,14 @@
 :root .noticeRegion__2779f .container__467eb {
   background-color: var(--background-tertiary) !important;
 }
-:root .closeButton__34341 {
+:root [class*=closeButton] {
   border: none;
 }
-:root .closeButton__34341 svg {
+:root [class*=closeButton] svg {
   width: 23px;
   height: 23px;
 }
-:root .keybind__57645 {
+:root [class*=closeButton] + [class*=keybind] {
   display: none;
 }
 :root .perksModal-fSYqOq {
@@ -906,6 +964,7 @@
 :root [class*=accountProfileCard] [class*=bannerSVGWrapper] foreignObject {
   mask: none;
   transform: translate(-130px);
+  width: 900px;
 }
 :root [class*=accountProfileCard] [class*=bannerSVGWrapper] [class*=banner] {
   background-position: left;
@@ -1323,20 +1382,24 @@
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(56, 31, 31, 0.11);
 }
 
-:root .privateChannels__93473 .interactive-1vLZ_I {
+:root [class*=privateChannels] [class*=interactive] {
   border-radius: var(--border-radius);
 }
 @media (min-width: 1350px) {
-  :root .nowPlayingColumn_b025fe {
+  :root [class*=nowPlayingColumn] {
     position: fixed;
     top: 280px;
     bottom: 120px;
     right: 60px;
     width: 320px;
     min-width: unset;
-    background-color: var(--background-primary);
+    background-color: none;
   }
-  :root .nowPlayingColumn_b025fe::before {
+  :root [class*=nowPlayingColumn] [class*=scroller] {
+    border-left: none;
+    margin-left: 0;
+  }
+  :root [class*=nowPlayingColumn]::before {
     content: "Friends activity";
     position: absolute;
     top: -60px;
@@ -1352,7 +1415,7 @@
     background-color: var(--background-secondary);
     border-radius: var(--border-radius) var(--border-radius) 0 0;
   }
-  :root .nowPlayingColumn_b025fe::after {
+  :root [class*=nowPlayingColumn]::after {
     content: "";
     position: absolute;
     bottom: -35px;
@@ -1366,45 +1429,36 @@
     background-size: 21px 2px;
     background-repeat: repeat-x;
   }
-  :root .profilePanel__12596 {
+  :root [class*=content] > [class*=profilePanel] {
     position: fixed;
     top: 220px;
     right: 60px;
-    bottom: 80px;
+    bottom: 85px;
     width: 320px;
     border-radius: var(--border-radius);
     overflow: hidden;
   }
-  :root .membersWrap__90226 {
-    position: fixed;
-    top: 280px;
-    bottom: 120px;
-    right: 60px;
-    width: 320px;
-    min-width: unset;
-    background-color: var(--background-primary);
-  }
 }
-:root .container__5c7e7 {
+:root main[class*=container][aria-label=Friends] {
   background-color: var(--background-primary);
 }
-:root .container__5c7e7 .searchBar_ff8800 {
+:root main[class*=container][aria-label=Friends] [class*=searchBar] {
   background-color: var(--background-secondary);
 }
-:root .container__5c7e7 .children__32014:after {
+:root main[class*=container][aria-label=Friends] [class*=upperContainer] > [class*=children]:after {
   content: none;
 }
-:root .container__5c7e7 .container__11d72 {
+:root main[class*=container][aria-label=Friends] [class*=peopleColumn] {
   background: unset;
 }
-:root .container__5c7e7 .peopleListItem_d14722 {
+:root main[class*=container][aria-label=Friends] [class*=peopleListItem] {
   border-radius: var(--border-radius);
   border-top: none;
   background: var(--background-modifier-hover);
   margin: 8px 10px 8px 20px;
   padding: 16px 10px;
 }
-:root .container__5c7e7 .peopleListItem_d14722:hover .actionButton__23182 {
+:root main[class*=container][aria-label=Friends] [class*=peopleListItem]:hover [class*=actionButton] {
   background-color: var(--background-secondary-alt);
 }
 :root .nowPlayingColumn_b025fe .scroller__00e7e {
@@ -1419,24 +1473,23 @@
 :root .wrapper_bd2abe {
   background-color: var(--background-tertiary);
 }
-:root .inset__0bfb3 {
+:root [class*=nowPlayingColumn] [class*=inset] {
   background-color: var(--background-primary);
 }
-:root .separator_c2ecc6 {
+:root [class*=nowPlayingColumn] .separator_c2ecc6 {
   display: none;
 }
-:root .voiceSectionIconWrapper_c50254 {
+:root [class*=nowPlayingColumn] .voiceSectionIconWrapper_c50254 {
   background-color: var(--background-tertiary);
 }
-:root .outer_a41cf3.active__76f42,
-:root .outer_a41cf3.interactive__01cfa:hover {
+:root [class*=nowPlayingColumn] [class*=outer][class*=interactive]:hover {
   background-color: var(--activity-card-background);
 }
-:root .itemCard__1f162 {
+:root [class*=nowPlayingColumn] [class*=itemCard] {
   border: none;
   border-radius: var(--border-radius);
 }
-:root .itemCard__1f162 .body__83069 {
+:root [class*=nowPlayingColumn] [class*=itemCard] [class*=body] {
   border-radius: calc(var(--border-radius) - 10px);
 }
 :root .quickSelectPopout_c0cf80.regionSelectPopout__0127b {
@@ -1444,115 +1497,6 @@
 }
 :root .profilePanelConnections__3c232 {
   background-color: transparent;
-}
-:root .userPanelInner_eddf4c {
-  position: relative;
-  max-height: unset !important;
-  overflow: hidden;
-  z-index: 2;
-}
-:root .userPanelInner_eddf4c::before {
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-}
-:root .userPanelInner_eddf4c .bannerSVGWrapper__3e7b0 {
-  position: absolute;
-  -webkit-mask-image: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0));
-  mask-image: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0));
-  background-color: #000000;
-  height: 300px;
-}
-:root .userPanelInner_eddf4c .bannerSVGWrapper__3e7b0 mask {
-  display: none;
-}
-:root .userPanelInner_eddf4c .bannerSVGWrapper__3e7b0 foreignObject {
-  mask: none;
-}
-:root .userPanelInner_eddf4c .bannerSVGWrapper__3e7b0 .banner__6d414 {
-  height: 100%;
-}
-:root .userPanelInner_eddf4c .bannerSVGWrapper__3e7b0 .banner__6d414::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.1882352941);
-}
-:root .userPanelInner_eddf4c .bannerSVGWrapper__3e7b0[viewBox="0 0 340 120"] {
-  transform: translateX(-200px);
-}
-:root .userPanelInner_eddf4c .bannerSVGWrapper__3e7b0[viewBox="0 0 340 120"] .banner__6d414 > * {
-  display: none;
-}
-:root .userPanelInner_eddf4c .bannerSVGWrapper__3e7b0 .pencilContainer-11Kuga {
-  display: none;
-}
-:root .userPanelInner_eddf4c .badgeList_ef4131 {
-  position: absolute;
-  top: 65px;
-  left: 110px;
-  height: unset;
-  background-color: transparent;
-}
-:root .userPanelInner_eddf4c .avatarWrapperNormal__0bddb {
-  position: relative;
-  width: 80px;
-  top: 16px;
-  z-index: 1;
-}
-:root .userPanelInner_eddf4c .avatarWrapperNormal__0bddb foreignObject {
-  mask: none;
-  border-radius: var(--border-radius);
-}
-:root .userPanelInner_eddf4c .avatarWrapperNormal__0bddb .avatarHint__8e5b9 {
-  border-radius: var(--border-radius);
-}
-:root .userPanelInner_eddf4c .avatarWrapperNormal__0bddb circle {
-  display: none;
-}
-:root .userPanelInner_eddf4c .userPanelOverlayBackground__34fc8:nth-child(2) {
-  overflow: visible;
-  background-color: rgba(0, 0, 0, 0.0666666667);
-  backdrop-filter: blur(20px);
-}
-:root .userPanelInner_eddf4c .userPanelOverlayBackground__34fc8:nth-child(2) .section__6f61e > .copiableNameTag__6b220 > .clickTarget__440f0, :root .userPanelInner_eddf4c .userPanelOverlayBackground__34fc8:nth-child(2) .section__6f61e > div > .userText__3e8b7 {
-  position: absolute;
-  top: -110px;
-  left: 100px;
-  box-sizing: border-box;
-  max-width: 200px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  display: block;
-  color: var(--header-secondary);
-}
-:root .userPanelInner_eddf4c .userPanelOverlayBackground__34fc8:nth-child(2) .section__6f61e > .copiableNameTag__6b220 > .clickTarget__440f0 > span, :root .userPanelInner_eddf4c .userPanelOverlayBackground__34fc8:nth-child(2) .section__6f61e > div > .userText__3e8b7 > span {
-  word-break: unset;
-  white-space: unset;
-}
-:root .userPanelInner_eddf4c .userPanelOverlayBackground__34fc8:nth-child(2) .section__6f61e > .copiableNameTag__6b220 > .clickTarget__440f0 .discrimBase_e0c4c5, :root .userPanelInner_eddf4c .userPanelOverlayBackground__34fc8:nth-child(2) .section__6f61e > div > .userText__3e8b7 .discrimBase_e0c4c5 {
-  color: white;
-}
-:root .userPanelInner_eddf4c .userPanelOverlayBackground__34fc8:nth-child(2) .section__6f61e .pronouns__8bcdb {
-  padding-top: 12px;
-}
-:root .userPanelInner_eddf4c .userPanelOverlayBackground__34fc8:nth-child(2) .section__6f61e {
-  padding-top: 0;
-  padding-bottom: 12px;
-}
-:root .userPanelInner_eddf4c .userPanelOverlayBackground__34fc8:nth-child(2) .divider__2bbbc {
-  display: none;
-}
-:root .userPanelInner_eddf4c .profilePanelConnections__3c232 > :nth-child(2) {
-  margin-top: 10px;
-}
-:root .userPanelInner_eddf4c .mutualGuildsList__6e961, :root .userPanelInner_eddf4c .mutualFriendsList__632b5 {
-  border-top: none;
-}
-:root .userPanelInner_eddf4c .mutualGuildsList__6e961 > button, :root .userPanelInner_eddf4c .mutualFriendsList__632b5 > button {
-  background-color: rgba(0, 0, 0, 0.0666666667) !important;
 }
 
 :root ::-webkit-input-placeholder,
@@ -1563,7 +1507,7 @@
 :root textarea {
   font-family: "Nunito" !important;
 }
-:root .bg__12180 {
+:root [class*=app] > [class*=app] > [class*=bg] {
   background: var(--background-tertiary-alt);
   background-size: cover;
   background-repeat: no-repeat;
@@ -1607,14 +1551,29 @@
 :root .scroller__750f5 .submenuPaddingContainer__12a9d {
   margin: 0 -8px;
 }
-:root .modal__060da,
-:root .root_a28985,
-:root .uploadModal_eae2a0 {
+:root [class*=layer] [class*=focusLock] .modal__060da, :root [class*=layer] [class*=focusLock] > [class*=root],
+:root [class*=layer] [class*=focusLock] .uploadModal_eae2a0 {
   border-radius: var(--border-radius);
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(56, 31, 31, 0.11);
 }
-:root .footer_c793da,
-:root .footer__89240 {
+:root [class*=layer] [class*=focusLock] .modal__060da [class*=select],
+:root [class*=layer] [class*=focusLock] .modal__060da [class*=popout], :root [class*=layer] [class*=focusLock] > [class*=root] [class*=select],
+:root [class*=layer] [class*=focusLock] > [class*=root] [class*=popout],
+:root [class*=layer] [class*=focusLock] .uploadModal_eae2a0 [class*=select],
+:root [class*=layer] [class*=focusLock] .uploadModal_eae2a0 [class*=popout] {
+  border: none;
+}
+:root [class*=layer] [class*=focusLock] .modal__060da [class*=select],
+:root [class*=layer] [class*=focusLock] .modal__060da [class*=popout],
+:root [class*=layer] [class*=focusLock] .modal__060da [class*=input], :root [class*=layer] [class*=focusLock] > [class*=root] [class*=select],
+:root [class*=layer] [class*=focusLock] > [class*=root] [class*=popout],
+:root [class*=layer] [class*=focusLock] > [class*=root] [class*=input],
+:root [class*=layer] [class*=focusLock] .uploadModal_eae2a0 [class*=select],
+:root [class*=layer] [class*=focusLock] .uploadModal_eae2a0 [class*=popout],
+:root [class*=layer] [class*=focusLock] .uploadModal_eae2a0 [class*=input] {
+  background-color: var(--background-secondary-alt);
+}
+:root [class*=layer] [class*=focusLock] [class*=footer] {
   border-radius: 0 0 var(--border-radius) var(--border-radius);
   background-color: var(--background-tertiary);
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(56, 31, 31, 0.11);
@@ -1628,15 +1587,6 @@
 }
 :root [class*=accountProfilePopoutWrapper] [class*=nameTag] {
   position: static !important;
-}
-:root .select__0eb48,
-:root .popout_a6e77f {
-  border: none;
-}
-:root .select__0eb48,
-:root .popout_a6e77f,
-:root .input_f227786 {
-  background-color: var(--background-secondary-alt);
 }
 :root .titleBar__01af6 .wordmark__0d178 {
   display: none;
@@ -1801,78 +1751,77 @@
   border-radius: var(--border-radius);
 }
 
-:root .app_b1f720::before, :root .app_b1f720::after, :root .app_de4237::after, :root .app_de4237::before, :root .layers__1c917::before, :root .layers__1c917::after, :root .app_b1f720::before, :root .bg__12180::after, :root .bg__12180::before {
+:root .app_b1f720::before, :root .app_b1f720::after,
+:root .app_de4237::before,
+:root .app_de4237::after,
+:root .layers__1c917::before,
+:root .layers__1c917::after,
+:root .bg__12180::before,
+:root .bg__12180::after {
   content: "";
   position: fixed;
   z-index: 1;
   pointer-events: none;
+  background-size: 100% !important;
 }
-:root .app_b1f720::before {
+:root [class*=notAppAsidePanel] > [class*=app]::before {
   left: 0;
   top: 0;
   width: 250px;
   height: 250px;
   background: url("https://i.imgur.com/jTpFJuI.png") no-repeat;
-  background-size: 100%;
 }
-:root .app_b1f720::after {
+:root [class*=notAppAsidePanel] > [class*=app]::after {
   z-index: 0;
   left: 50px;
   bottom: 0;
   width: 490px;
   height: 40px;
   background: url("https://i.imgur.com/KQQWcTY.png") no-repeat;
-  background-size: 100%;
 }
-:root .app_de4237::before {
+:root [class*=notAppAsidePanel] > [class*=app] > [class*=app]::before {
   top: 80px;
   right: 116px;
   width: 200px;
   height: 120px;
   background: url("https://i.imgur.com/0nsnP69.png") no-repeat;
-  background-size: 100%;
 }
-:root .app_de4237::after {
+:root [class*=notAppAsidePanel] > [class*=app] > [class*=app]::after {
   bottom: 20px;
   right: 45%;
   width: 40px;
   height: 40px;
   background: url("https://i.imgur.com/OBSWYht.png");
-  background-size: 100%;
 }
-:root .layers__1c917::before {
+:root [class*=notAppAsidePanel] > [class*=app] > [class*=app] > [class*=layers]::before {
   z-index: 0;
   bottom: 75px;
   right: 0;
   width: 20px;
   height: 50px;
   background: url("https://i.imgur.com/WveiFXb.png") no-repeat;
-  background-size: 100%;
 }
-:root .layers__1c917::after {
+:root [class*=notAppAsidePanel] > [class*=app] > [class*=app] > [class*=layers]::after {
   bottom: 15px;
   right: 100px;
   width: 25px;
   height: 25px;
   background: url("https://i.imgur.com/WBUag7e.png") no-repeat;
-  background-size: 100%;
 }
-:root .bg__12180::after {
+:root [class*=notAppAsidePanel] > [class*=app] > [class*=app] > [class*=bg]::after {
   top: 45px;
   right: 385px;
   width: 30px;
   height: 30px;
   background: url("https://i.imgur.com/aOYvahh.png") no-repeat;
-  background-size: 100%;
 }
-:root .bg__12180::before {
+:root [class*=notAppAsidePanel] > [class*=app] > [class*=app] > [class*=bg]::before {
   z-index: 2;
   bottom: 30%;
   right: 430px;
   width: 30px;
   height: 40px;
   background: url("https://i.imgur.com/JMoXBIs.png") no-repeat;
-  background-size: 100%;
 }
 @media (max-width: 1350px) {
   :root .bg__12180::before {

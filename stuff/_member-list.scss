@@ -61,6 +61,7 @@
 		max-height: unset !important;
 	}
 
+	[class*="profilePanel"] [class*="userPanelInner"],
 	[class*="userPopoutInner"] {
 		position: relative;
 		max-height: unset !important;
@@ -88,7 +89,7 @@
 				mask: none;
 			}
 
-			.banner__6d414 {
+			[class*="banner"] {
 				height: 100%;
 
 				&::before {
@@ -103,7 +104,7 @@
 			&[viewBox="0 0 340 120"] {
 				transform: translateX(-200px);
 
-				.banner__6d414 > * {
+				[class*="banner"] > * {
 					display: none;
 				}
 			}
@@ -114,6 +115,7 @@
 		}
 
 		// Badges
+		[class*="badgeList"],
 		[class*="profileBadges"] {
 			position: absolute;
 			top: 65px;
@@ -183,6 +185,17 @@
 
 			[class*="divider"] {
 				display: none;
+			}
+		}
+		[class*="profilePanelConnections"] > :nth-child(2) {
+			margin-top: 10px;
+		}
+
+		[class*="mutualGuildsList"], [class*="mutualFriendsList"] {
+			border-top: none;
+
+			& > button {
+				background-color: rgba(0, 0, 0, 0.0666666667) !important;
 			}
 		}
 	}

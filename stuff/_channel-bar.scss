@@ -1,9 +1,10 @@
 :root  {
-	[class*="subtitleContainer"] > [class*="title"] {
+	[class*="subtitleContainer"] > [class*="title"],
+	[class*="container"][aria-label*="Thread header"] {
 		background-color: var(--background-primary);
 
-		[class*="children"] ::after { 
-			background: -webkit-gradient(linear,left top,right top,from(rgba(54,57,63,0)),to(var(--background-primary)));
+		[class*="children"]:after { 
+			background: none;
 		}
 	}
 
@@ -96,7 +97,7 @@
 		}
 	}
 
-	// Calendar
+	// Calendar TODO: looks weird? not sure how it was b4
 	[class*="calendarPicker"] {
 		.react-datepicker {
 			background-color: var(--background-secondary-alt);

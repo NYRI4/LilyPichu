@@ -43,11 +43,14 @@
 				padding: 60px 10px;
 			}
 		}
+		& > [class*="contentRegion"] [class*="tabBar"] [class*="tabBarItem"] {
+			padding: 8px;
+		}
 	}
 
 	// Widder settings
-	.contentColumn_dc7d36,
-	.customColumn_e22a6e,
+	[class*="contentColumn"],
+	.customColumn_e22a6e, // TODO: are the other ones needed? 
 	.hero-1aNo0v,
 	.notificationSettings-1U0JsJ,
 	.noticeRegion__2779f,
@@ -55,7 +58,7 @@
 	.userSettingsVoice-1_dzjw {
 		max-width: 95%;
 	}
-	.featuresHeader-2bjq5B {
+	.featuresHeader-2bjq5B { // TODO: a ton below here (600 lines)
 		text-align: center;
 	}
 	.userSettingsVoice-1_dzjw
@@ -73,16 +76,16 @@
 	}
 
 	// Close button
-	.closeButton__34341 {
+	[class*="closeButton"] {
 		border: none;
 
 		svg {
 			width: 23px;
 			height: 23px;
 		}
-	}
-	.keybind__57645 {
-		display: none;
+		& + [class*="keybind"] {
+			display: none;
+		}
 	}
 
 	// Boost
@@ -122,6 +125,7 @@
 			foreignObject {
 				mask: none;
 				transform: translate(-130px);
+				width: 900px;
 			}
 
 			[class*="banner"] {
@@ -163,75 +167,73 @@
 	}
 
 	// User profile
-	[class*="profileCustomizationSection"] {
-		[class*="baseLayout"] {
-			flex-direction: column;
+	[class*="profileCustomizationSection"] [class*="baseLayout"] {
+		flex-direction: column;
 
-			& > :first-child {
-				flex: 1 auto;
+		& > :first-child {
+			flex: 1 auto;
+		}
+
+		& > [class*="preview"] {
+			margin: 0;
+		}
+
+		[class*="profileCustomizationPreview"] {
+			background-color: transparent;
+			overflow: hidden;
+			border-radius: var(--border-radius);
+
+			[class*="bannerSVGWrapper"][viewBox="0 0 340 90"] + [class*="avatarUploader"],
+			[class*="bannerSVGWrapper"][viewBox="0 0 340 120"] + [class*="avatarUploader"] {
+				top: 16px;
 			}
 
-			& > [class*="preview"] {
-				margin: 0;
+			[class*="avatarUploader"] {
+				position: relative;
+				width: 80px;
+				z-index: 1;
+
+				foreignObject {
+					mask: none;
+					border-radius: var(--border-radius);
+				}
+
+				[class*="avatarHint"] {
+					border-radius: var(--border-radius);
+				}
+
+				[class*="status"] {
+					background-color: transparent;
+				}
+
+				[class*="imageUploaderIcon_"] {
+					display: none;
+				}
+
+				[class*="imageUploaderInner"] {
+					border-radius: var(--border-radius);
+				}
 			}
 
-			[class*="profileCustomizationPreview"] {
-				background-color: transparent;
+			[class*="userTagNoNickname"] {
+				position: absolute;
+				top: -85px;
+				left: 105px;
+				box-sizing: border-box;
+				max-width: 200px;
+				text-overflow: ellipsis;
+				white-space: nowrap;
 				overflow: hidden;
-				border-radius: var(--border-radius);
+				display: block;
+				color: var(--header-secondary);
 
-				[class*="bannerSVGWrapper"][viewBox="0 0 340 90"] + [class*="avatarUploader"],
-				[class*="bannerSVGWrapper"][viewBox="0 0 340 120"] + [class*="avatarUploader"] {
-					top: 16px;
+				& > span {
+					word-break: unset;
+					white-space: unset;
 				}
 
-				[class*="avatarUploader"] {
-					position: relative;
-					width: 80px;
-					z-index: 1;
-
-					foreignObject {
-						mask: none;
-						border-radius: var(--border-radius);
-					}
-
-					[class*="avatarHint"] {
-						border-radius: var(--border-radius);
-					}
-
-					[class*="status"] {
-						background-color: transparent;
-					}
-
-					[class*="imageUploaderIcon_"] {
-						display: none;
-					}
-
-					[class*="imageUploaderInner"] {
-						border-radius: var(--border-radius);
-					}
-				}
-
-				[class*="userTagNoNickname"] {
-					position: absolute;
-					top: -85px;
-					left: 105px;
-					box-sizing: border-box;
-					max-width: 200px;
-					text-overflow: ellipsis;
-					white-space: nowrap;
-					overflow: hidden;
-					display: block;
-					color: var(--header-secondary);
-
-					& > span {
-						word-break: unset;
-						white-space: unset;
-					}
-
-					[class*="discrimBase"] {
-						color: white;
-					}
+				[class*="discrimBase"] {
+					color: white;
 				}
 			}
 		}

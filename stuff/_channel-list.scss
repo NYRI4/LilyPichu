@@ -1,26 +1,26 @@
-:root [class*="content"] [class*="sidebar"] {
+:root [class*="content"][aria-label*="Channels"] [class*="sidebar"] {
 	border-radius: 0;
 	// Channels
 	[class*="scroller"] [class*="wrapper"],
-	.container-32HW5s {
+	.container-32HW5s { // TODO
 		border-radius: var(--border-radius);
 		overflow: hidden;
 	}
 
 	// Voice call
-	.content_b60865 {
+	.content_b60865 { // TODO: dont have friends, nobody can call me
 		border-radius: var(--border-radius);
 	}
 
 	// SCTR connection
-	.container__0810b .header-2C89wJ {
+	.container__0810b .header-2C89wJ { // TODO
 		background-color: var(--background-tertiary);
 	}
-	.container__0810b section {
+	.container__0810b section { // TODO
 		background-color: var(--background-secondary);
 	}
 
-	.container__590e2 > .scroller_f0f183 > .content__23cab > div:first-child[style="height: 16px;"] {
+	.container__590e2 > .scroller_f0f183 > .content__23cab > div:first-child[style="height: 16px;"] { // TODO
 		display: none;
 	}
 }
