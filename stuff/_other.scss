@@ -82,12 +82,12 @@
 			}
 			[class*="select"],
 			[class*="popout"],
-			[class*="input"] {
+			[class*="input_"] {
 				background-color: var(--background-secondary-alt);
 			}
 		}
 
-		[class*="footer"] {
+		div[class*="footer"] {
 			border-radius: 0 0 var(--border-radius) var(--border-radius);
 			background-color: var(--background-tertiary);
 			box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(56, 31, 31, 0.11);

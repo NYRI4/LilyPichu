@@ -1583,15 +1583,15 @@
 }
 :root [class*=layer] [class*=focusLock] .modal__060da [class*=select],
 :root [class*=layer] [class*=focusLock] .modal__060da [class*=popout],
-:root [class*=layer] [class*=focusLock] .modal__060da [class*=input], :root [class*=layer] [class*=focusLock] > [class*=root] [class*=select],
+:root [class*=layer] [class*=focusLock] .modal__060da [class*=input_], :root [class*=layer] [class*=focusLock] > [class*=root] [class*=select],
 :root [class*=layer] [class*=focusLock] > [class*=root] [class*=popout],
-:root [class*=layer] [class*=focusLock] > [class*=root] [class*=input],
+:root [class*=layer] [class*=focusLock] > [class*=root] [class*=input_],
 :root [class*=layer] [class*=focusLock] .uploadModal_eae2a0 [class*=select],
 :root [class*=layer] [class*=focusLock] .uploadModal_eae2a0 [class*=popout],
-:root [class*=layer] [class*=focusLock] .uploadModal_eae2a0 [class*=input] {
+:root [class*=layer] [class*=focusLock] .uploadModal_eae2a0 [class*=input_] {
   background-color: var(--background-secondary-alt);
 }
-:root [class*=layer] [class*=focusLock] [class*=footer] {
+:root [class*=layer] [class*=focusLock] div[class*=footer] {
   border-radius: 0 0 var(--border-radius) var(--border-radius);
   background-color: var(--background-tertiary);
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(56, 31, 31, 0.11);
