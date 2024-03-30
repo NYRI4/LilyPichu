@@ -1,12 +1,12 @@
 @import url("https://nyri4.github.io/donators/donators.css");
 @import url("https://fonts.googleapis.com/css2?family=Nunito");
-:root [class*=content] > [class*=container]:has([class*=grid], [class*=list]) {
+:root [class*=chat] [class*=content] > [class*=container]:has([class*=grid], [class*=list]) {
   background: var(--background-primary);
 }
-:root [class*=content] > [class*=container]:has([class*=grid], [class*=list]) [class*=mainCard] {
+:root [class*=chat] [class*=content] > [class*=container]:has([class*=grid], [class*=list]) [class*=mainCard] {
   background-color: var(--background-secondary);
 }
-:root [class*=chatLayerWrapper] {
+:root [class*=chat] [class*=chatLayerWrapper] {
   position: fixed;
   top: 280px;
   bottom: 120px;
@@ -19,18 +19,18 @@
   padding-bottom: 26px;
   overflow: visible;
 }
-:root [class*=chatLayerWrapper] > * {
+:root [class*=chat] [class*=chatLayerWrapper] > * {
   width: 100% !important;
   min-width: unset;
   filter: unset;
 }
-:root [class*=chatLayerWrapper] [class*=scrollerContent] {
+:root [class*=chat] [class*=chatLayerWrapper] [class*=scrollerContent] {
   min-height: unset;
 }
-:root [class*=chatLayerWrapper]::-webkit-scrollbar {
+:root [class*=chat] [class*=chatLayerWrapper]::-webkit-scrollbar {
   margin-right: 50px;
 }
-:root [class*=chatLayerWrapper]::before {
+:root [class*=chat] [class*=chatLayerWrapper]::before {
   content: "Thread";
   position: absolute;
   top: -60px;
@@ -46,7 +46,7 @@
   background-color: var(--background-secondary);
   border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
-:root [class*=chatLayerWrapper]::after {
+:root [class*=chat] [class*=chatLayerWrapper]::after {
   content: "";
   position: fixed;
   bottom: 85px;
@@ -60,12 +60,12 @@
   background-size: 21px 2px;
   background-repeat: repeat-x;
 }
-:root [class*=embedFull] {
+:root [class*=chat] [class*=embedFull] {
   border: none;
   margin-left: 10px;
   border-radius: 5px var(--border-radius) var(--border-radius) 5px;
 }
-:root [class*=embedFull]:after {
+:root [class*=chat] [class*=embedFull]:after {
   content: "";
   position: absolute;
   top: 1px;
@@ -77,118 +77,118 @@
   border-color: inherit;
   border-radius: var(--border-radius);
 }
-:root .hljs {
+:root [class*=chat] .hljs {
   border: none;
   border-radius: var(--border-radius);
 }
-:root .wrapperAudio__555ce {
+:root [class*=chat] .wrapperAudio__555ce {
   padding: 10px 0 0 0;
   border-radius: var(--border-radius);
 }
-:root .audioMetadata_e546a8 {
+:root [class*=chat] .audioMetadata_e546a8 {
   padding: 5px 10px;
 }
-:root .audioControls__9fbe9 {
+:root [class*=chat] .audioControls__9fbe9 {
   border-radius: 0 0 var(--border-radius) var(--border-radius);
 }
-:root [class*=spoilerText][class*=hidden],
-:root [class*=spoilerText][class*=hidden]:hover {
+:root [class*=chat] [class*=spoilerText][class*=hidden],
+:root [class*=chat] [class*=spoilerText][class*=hidden]:hover {
   background-color: var(--background-secondary-alt);
 }
-:root [class*=message-accessories] > [class*=wrapper] {
+:root [class*=chat] [class*=message-accessories] > [class*=wrapper] {
   border-radius: var(--border-radius);
 }
-:root .invite__2a93b {
+:root [class*=chat] .invite__2a93b {
   background-color: var(--background-secondary);
   border: none;
   border-radius: var(--border-radius);
 }
-:root .embedSpotify_d58077 {
+:root [class*=chat] .embedSpotify_d58077 {
   border-radius: var(--border-radius);
 }
-:root .tile_ebc93b {
+:root [class*=chat] .tile_ebc93b {
   background-color: var(--background-secondary);
   border-radius: var(--border-radius);
 }
-:root .tileHorizontal_f83028.tile_ebc93b:hover {
+:root [class*=chat] .tileHorizontal_f83028.tile_ebc93b:hover {
   background-color: var(--background-secondary-alt);
 }
-:root .invalidPoop__03aa3 {
+:root [class*=chat] .invalidPoop__03aa3 {
   background-color: rgba(0, 0, 0, 0.103);
 }
-:root [class*=channelTextArea] > [class*=autocomplete], :root [class*=channelTextArea] > [class*=autocomplete] [role=option] {
+:root [class*=chat] [class*=channelTextArea] > [class*=autocomplete], :root [class*=chat] [class*=channelTextArea] > [class*=autocomplete] [role=option] {
   background-color: var(--background-secondary-alt);
 }
-:root [class*=channelTextArea] [class*=categoryHeader],
-:root [class*=channelTextArea] [class*=selected] {
+:root [class*=chat] [class*=channelTextArea] [class*=categoryHeader],
+:root [class*=chat] [class*=channelTextArea] [class*=selected] {
   background-color: var(--background-tertiary);
   border-radius: var(--border-radius);
 }
-:root .everyonePopout-nEbJY3 {
+:root [class*=chat] .everyonePopout-nEbJY3 {
   background-color: var(--background-primary);
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(56, 31, 31, 0.11);
 }
-:root #emoji-picker-tab-panel [class*=emojiItem][class*=emojiItemSelected] {
+:root [class*=chat] #emoji-picker-tab-panel [class*=emojiItem][class*=emojiItemSelected] {
   background-color: var(--background-modifier-selected);
 }
-:root #emoji-picker-tab-panel [class*=searchBar] {
+:root [class*=chat] #emoji-picker-tab-panel [class*=searchBar] {
   border-radius: var(--border-radius);
 }
-:root #emoji-picker-tab-panel [class*=imageLoading] {
+:root [class*=chat] #emoji-picker-tab-panel [class*=imageLoading] {
   background-image: none !important;
   background-color: var(--background-primary);
   border-radius: 8px;
 }
-:root [class*=focusLock][aria-label=Reactions] > [class*=container] > [class*=scroller] {
+:root [class*=chat] [class*=focusLock][aria-label=Reactions] > [class*=container] > [class*=scroller] {
   background: var(--background-tertiary);
   border-radius: var(--border-radius) 0 0 var(--border-radius);
 }
-:root [class*=focusLock][aria-label=Reactions] .container_dc03c3,
-:root [class*=focusLock][aria-label=Reactions] [class*=reactors] {
+:root [class*=chat] [class*=focusLock][aria-label=Reactions] .container_dc03c3,
+:root [class*=chat] [class*=focusLock][aria-label=Reactions] [class*=reactors] {
   background: var(--background-secondary);
   border-radius: 0 var(--border-radius) var(--border-radius) 0;
 }
-:root [class*=focusLock][aria-label=Reactions] [class*=reactionSelected] {
+:root [class*=chat] [class*=focusLock][aria-label=Reactions] [class*=reactionSelected] {
   background-color: rgba(110, 133, 211, 0.1294117647);
 }
-:root [class*=focusLock][aria-label=Reactions] [class*=reactorDefault] {
+:root [class*=chat] [class*=focusLock][aria-label=Reactions] [class*=reactorDefault] {
   box-shadow: inset 0 -1px 0 var(--background-primary);
 }
-:root [class*=focusLock] [class*=root][class*=small] [class*=message_] {
+:root [class*=chat] [class*=focusLock] [class*=root][class*=small] [class*=message_] {
   background: var(--background-primary);
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(56, 31, 31, 0.11);
 }
-:root .textContainer__709ff,
-:root .footer__06f4b {
+:root [class*=chat] .textContainer__709ff,
+:root [class*=chat] .footer__06f4b {
   border: none;
 }
-:root [class*=reactionTooltip] {
+:root [class*=chat] [class*=reactionTooltip] {
   border-radius: var(--border-radius);
 }
-:root [class*=newMessagesBar] {
+:root [class*=chat] [class*=newMessagesBar] {
   top: 5px;
   border-radius: var(--border-radius);
   background-color: var(--background-accent);
   padding-top: 0;
 }
-:root [class*=jumpToPresentBar] {
+:root [class*=chat] [class*=jumpToPresentBar] {
   bottom: 12px;
   padding-bottom: 0;
   border-radius: var(--border-radius);
 }
-:root [class*=form] [class*=wrapper] {
+:root [class*=chat] [class*=form] [class*=wrapper] {
   border-radius: var(--border-radius);
 }
-:root [class*=reactions] > div > [class*=reaction] {
+:root [class*=chat] [class*=reactions] > div > [class*=reaction] {
   border-radius: var(--border-radius);
 }
-:root [id*=message-accessories] > [class*=button] {
+:root [class*=chat] [id*=message-accessories] > [class*=button] {
   border-radius: var(--border-radius);
 }
-:root [class*=botTagRegular] {
+:root [class*=chat] [class*=botTagRegular] {
   background-color: var(--background-accent);
 }
-:root [class*=cooldownWrapper] {
+:root [class*=chat] [class*=cooldownWrapper] {
   color: var(--text-muted) !important;
 }
 

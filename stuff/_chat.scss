@@ -1,4 +1,4 @@
-:root {
+:root [class*="chat"] {
 	// Forums
 	[class*="content"] > [class*="container"]:has([class*="grid"], [class*="list"]) {
 		background: var(--background-primary);
