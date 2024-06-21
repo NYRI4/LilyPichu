@@ -1,7 +1,8 @@
-:root [class*="content"][aria-label*="Channels"] [class*="sidebar"] {
+@use '../selectors';
+:root #{selectors.$content}[aria-label*="Channels"] #{selectors.$sidebar} {
 	border-radius: 0;
 	// Channels
-	[class*="scroller"] [class*="wrapper"],
+	#{selectors.$scroller} #{selectors.$wrapper},
 	.container-32HW5s { // TODO
 		border-radius: var(--border-radius);
 		overflow: hidden;

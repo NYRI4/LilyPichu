@@ -1,22 +1,23 @@
-:root [class*="chat"] {
+@use '../selectors';
+:root #{selectors.$chat} {
 	// Forums
-	[class*="content"] > [class*="container"]:has([class*="grid"], [class*="list"]) {
+	#{selectors.$content} > #{selectors.$container}:has(#{selectors.$grid}, #{selectors.$list}) {
 		background: var(--background-primary);
 
-		[class*="mainCard"] {
+		#{selectors.$mainCard} {
 			background-color: var(--background-secondary);
 		}
 	}
 
 	// Threads
-	[class*="chatLayerWrapper"] {
+	#{selectors.$chatLayerWrapper} {
 		& > * {
 			width: 100%!important;
 			min-width: unset;
 			filter:unset;
 			//max-width: inherit;
 		}
-		[class*="scrollerContent"] {
+		#{selectors.$scrollerContent} {
 			min-height: unset;
 		}
 		position: fixed;
@@ -71,7 +72,7 @@
 	}
 
 	// Embed
-	[class*="embedFull"] {
+	#{selectors.$embedFull} {
 		border: none;
 		margin-left: 10px;
 		border-radius: 5px var(--border-radius) var(--border-radius) 5px;
@@ -109,13 +110,13 @@
 	}
 
 	// Spoiler
-	[class*="spoilerText"][class*="hidden"],
-	[class*="spoilerText"][class*="hidden"]:hover {
+	#{selectors.$spoilerText}#{selectors.$hidden},
+	#{selectors.$spoilerText}#{selectors.$hidden}:hover {
 		background-color: var(--background-secondary-alt);
 	}
 
 	// Discord invite
-	[class*="message-accessories"] > [class*="wrapper"] {
+	[class*="message-accessories"] > #{selectors.$wrapper} {
 		border-radius: var(--border-radius);
 	}
 
@@ -144,13 +145,13 @@
 	}
 
 	// # @ / autocomplete menu
-	[class*="channelTextArea"] {
-		& > [class*="autocomplete"],
-		& > [class*="autocomplete"] [role="option"] {
+	#{selectors.$channelTextArea} {
+		& > #{selectors.$autocomplete},
+		& > #{selectors.$autocomplete} [role="option"] {
 			background-color: var(--background-secondary-alt);
 		}
-		[class*="categoryHeader"],
-		[class*="selected"] {
+		#{selectors.$categoryHeader},
+		#{selectors.$selected} {
 			background-color: var(--background-tertiary);
 			border-radius: var(--border-radius);
 		}
@@ -164,14 +165,14 @@
 
 	// Emoji picker
 	#emoji-picker-tab-panel {
-		[class*="emojiItem"][class*="emojiItemSelected"] {
+		#{selectors.$emojiItem}#{selectors.$emojiItemSelected} {
 			background-color: var(--background-modifier-selected);
 		}
-		[class*="searchBar"] {
+		#{selectors.$searchBar} {
 			border-radius: var(--border-radius);
 		}
 
-		[class*="imageLoading"] {
+		#{selectors.$imageLoading} {
 			background-image: none !important;
 			background-color: var(--background-primary);
 			border-radius: 8px;
@@ -179,42 +180,42 @@
 	}
 
 	// Reactions modal
-	[class*="focusLock"][aria-label="Reactions"] {
-		& > [class*="container"] > [class*="scroller"] {
+	#{selectors.$focusLock}[aria-label="Reactions"] {
+		& > #{selectors.$container} > #{selectors.$scroller} {
 			background: var(--background-tertiary);
 			border-radius:  var(--border-radius) 0 0 var(--border-radius);
 		}
 		.container_dc03c3, // what was this?? TODO
-		[class*="reactors"] {
+		#{selectors.$reactors} {
 			background: var(--background-secondary);
 			border-radius: 0 var(--border-radius) var(--border-radius) 0;
 		}
-		[class*="reactionSelected"] {
+		#{selectors.$reactionSelected} {
 			background-color: #6e85d321;
 		}
-		[class*="reactorDefault"] {
+		#{selectors.$reactorDefault} {
 			box-shadow: inset 0 -1px 0 var(--background-primary);
 		}
 	}
 	// Deleting message modal // TODO: what did this do?
-	[class*="focusLock"] [class*="root"][class*="small"] [class*="message_"] {
+	#{selectors.$focusLock} #{selectors.$root}#{selectors.$small} #{selectors.$message_} {
 		background: var(--background-primary);
 		box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(56, 31, 31, 0.11);
 	}
 
-	// Attachements
+	// Attachements // TODO
 	.textContainer__709ff,
 	.footer__06f4b {
 		border: none;
 	}
 
 	// Emoji popout
-	[class*="reactionTooltip"] {
+	#{selectors.$reactionTooltip} {
 		border-radius: var(--border-radius);
 	}
 
 	// New message bar
-	[class*="newMessagesBar"] {
+	#{selectors.$newMessagesBar} {
 		top: 5px;
 		border-radius: var(--border-radius);
 		background-color: var(--background-accent);
@@ -222,34 +223,34 @@
 	}
 
 	// Jump to present bar
-	[class*="jumpToPresentBar"] {
+	#{selectors.$jumpToPresentBar} {
 		bottom: 12px;
 		padding-bottom: 0;
 		border-radius: var(--border-radius);
 	}
 
 	// News chat bar
-	[class*="form"] [class*="wrapper"] {
+	#{selectors.$form} #{selectors.$wrapper} {
 		border-radius: var(--border-radius);
 	}
 
 	// Reactions
-	[class*="reactions"] > div > [class*="reaction"] {
+	#{selectors.$reactions} > div > #{selectors.$reaction} {
 		border-radius: var(--border-radius);
 	}
 
 	// Buttons on messages
-	[id*="message-accessories"] > [class*="button"] {
+	[id*="message-accessories"] > #{selectors.$button} {
 		border-radius: var(--border-radius);
 	}
 
 	// Bot tag
-	[class*="botTagRegular"] {
+	#{selectors.$botTagRegular} {
 		background-color: var(--background-accent);
 	}
 
 	// Slow mode
-	[class*="cooldownWrapper"] {
+	#{selectors.$cooldownWrapper} {
 		color: var(--text-muted) !important;
 	}
 }

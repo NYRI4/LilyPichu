@@ -1,3 +1,4 @@
+@use 'selectors';
 @forward "stuff/chat";
 @forward "stuff/server-list";
 @forward "stuff/channel-list";
@@ -6,21 +7,20 @@
 @forward "stuff/settings";
 @forward "stuff/friends";
 @forward "stuff/other";
-@forward "stuff/overlay";
 
 @import url("https://nyri4.github.io/donators/donators.css");
 @import url("https://fonts.googleapis.com/css2?family=Nunito");
 
 // Donators
-.profileBadges__7a7cb > :last-child::before,
-.badgeList_c193e3 > :last-child::before {
+#{selectors.$profileBadges} > :last-child::before,
+#{selectors.$badgeList} > :last-child::before {
 	z-index: 10;
 }
 
 // Right popout
 @media (min-width: 1350px) {
-	[class*="chatContent"] + :last-child, // user profile in dms
-	[class*="chat"] > [class*="content"] > [class*="container"]:has(> [class*="member"]) { // member list
+	#{selectors.$chatContent} + :last-child, // user profile in dms
+	#{selectors.$memberListContainer} { // member list
 		position: fixed;
 		top: 280px;
 		bottom: 120px;
@@ -28,16 +28,16 @@
 		width: 320px;
 		height: unset;
 	}
-	[class*="tabBody"] {
+	#{selectors.$tabBody} { // wrapper around friend list in starting screen
 		transform: none;
 	}
 
 	// settings
-	[class*="layers"] > [class*="layer"]:nth-child(2) {
+	#{selectors.$layers} > #{selectors.$layer}:nth-child(2) {
 		margin-right: 450px;
 	}
 
-	[class*="layers"] > [class*="layer"] > [class*="container"] {
+	#{selectors.$layers} > #{selectors.$layer} > #{selectors.$container} {
 		margin-right: 450px;
 		// Basic right popout when there's nothing
 		&::after {
@@ -73,14 +73,14 @@
 	}
 
 	// Adding space for right popout
-	[class*="guilds"] + :nth-child(2) {
+	#{selectors.$guilds} + :nth-child(2) {
 		margin-right: 450px;
 		border-radius: 0 var(--border-radius) var(--border-radius) 0;
 	}
 
 
 	// User area
-	[class*="panels"] > [class*="container"] {
+	#{selectors.$panels} > :last-child {
 		position: fixed;
 		display: flex;
 		width: 305px;
@@ -91,7 +91,7 @@
 		background-color: var(--background-primary);
 		border-radius: var(--border-radius);
 
-		[class*="avatarWrapper"] {
+		#{selectors.$avatarWrapper} {
 			border-radius: var(--border-radius);
 		}
 	}
@@ -101,15 +101,15 @@
 		overflow: visible;
 	}
 
-	[class*="membersWrap"] [class*="members_"] {
+	#{selectors.$membersWrap} > #{selectors.$members} {
 		width: 100%;
 		background-color: var(--background-primary);
 
-		& > [class*="content"] {
+		& > #{selectors.$content} {
 			min-height: 1000px;
 			background-color: transparent;
 		}
-		[class*="member_"] {
+		[role='list'] > div#{selectors.$member} {
 			max-width: 300px;
 			border-radius: var(--border-radius);
 			background-color: var(--background-primary);

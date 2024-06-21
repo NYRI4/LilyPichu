@@ -1,14 +1,15 @@
+@use '../selectors';
 :root {
 	// Right friend list
-	[class*="privateChannels"] {
-		[class*="interactive"] {
+	#{selectors.$privateChannels} {
+		#{selectors.$interactive} {
 			border-radius: var(--border-radius);
 		}
 	}
 
 	// Friends activity
 	@media (min-width: 1350px) {
-		[class*="nowPlayingColumn"] {
+		#{selectors.$nowPlayingColumn} {
 			position: fixed;
 			top: 280px;
 			bottom: 120px;
@@ -17,7 +18,7 @@
 			min-width: unset;
 			background-color: none;
 
-			[class*="scroller"] {
+			#{selectors.$scroller} {
 				border-left: none;
 				margin-left: 0;
 			}
@@ -57,7 +58,7 @@
 			}
 		}
 
-		[class*="content"] > [class*="profilePanel"] {
+		#{selectors.$content} > #{selectors.$profilePanel} {
 			position: fixed;
 			top: 220px;
 			right: 60px;
@@ -70,28 +71,28 @@
 	}
 
 	// Friend list
-	main[class*="container"][aria-label="Friends"] {
+	main#{selectors.$container}[aria-label="Friends"] {
 		background-color: var(--background-primary);
 
-		[class*="searchBar"] {
+		#{selectors.$searchBar} {
 			background-color: var(--background-secondary);
 		}
 
-		[class*="upperContainer"] > [class*="children"]:after {
+		#{selectors.$upperContainer} > #{selectors.$children}:after {
 			content: none;
 		}
-		[class*="peopleColumn"] {
+		#{selectors.$peopleColumn} {
 			background: unset;
 		}
 
-		[class*="peopleListItem"] {
+		#{selectors.$peopleListItem} {
 			border-radius: var(--border-radius);
 			border-top: none;
 			background: var(--background-modifier-hover);
 			margin: 8px 10px 8px 20px;
 			padding: 16px 10px;
 
-			&:hover [class*="actionButton"] {
+			&:hover #{selectors.$actionButton} {
 				background-color: var(--background-secondary-alt);
 			}
 		}
@@ -112,8 +113,8 @@
 	}
 
 	// Friend activity
-	[class*="nowPlayingColumn"] {
-		[class*="inset"] {
+	#{selectors.$nowPlayingColumn} {
+		#{selectors.$inset} {
 			background-color: var(--background-primary);
 		}
 		.separator_c2ecc6 { // TODO: what was this? cant find any separators?
@@ -122,14 +123,14 @@
 		.voiceSectionIconWrapper_c50254 {
 			background-color: var(--background-tertiary);
 		}
-		[class*="outer"][class*="interactive"]:hover {
+		#{selectors.$outer}#{selectors.$interactive}:hover {
 			background-color: var(--activity-card-background);
 		}
-		[class*="itemCard"] {
+		#{selectors.$itemCard} {
 			border: none;
 			border-radius: var(--border-radius);
 
-			[class*="body"] {
+			#{selectors.$body} {
 				border-radius: calc(var(--border-radius) - 10px);
 			}
 		}

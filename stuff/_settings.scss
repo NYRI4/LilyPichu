@@ -1,3 +1,4 @@
+@use '../selectors';
 :root {
 	// Support for macOS
 	.typeMacOS__496b0 {
@@ -5,14 +6,14 @@
 		background-color: var(--background-tertiary);
 	}
 
-	[class*="layers"] {
+	#{selectors.$layers} {
 		margin: 20px 0 40px 0;
 		z-index: 1;
-		& > [class*="layer"]:first-child {
+		& > #{selectors.$layer}:first-child {
 			opacity: 1 !important;
 			transform: scale(1) !important;
 		}
-		& > [class*="layer"].stop-animations:first-child {
+		& > #{selectors.$layer}.stop-animations:first-child {
 			z-index: 1;
 			transform: scale(1) !important;
 		}
@@ -23,35 +24,48 @@
 			z-index: 2;
 			background-color: transparent;
 			transform: scale(1) !important;
-			@media (min-width: 1350px) {
+
+			// Close button
+			#{selectors.$closeButton} {
+				border: none;
+
+				svg {
+					width: 23px;
+					height: 23px;
+				}
+				& + #{selectors.$keybind} {
+					display: none;
+				}
 			}
 		}
+
+
 	}
 
 	// Menu scroller
 	@media (min-width: 1350px) {
-		[class*="standardSidebarView"] {
+		#{selectors.$standardSidebarView} {
 			border-radius: 0 var(--border-radius) var(--border-radius) 0;
 			overflow: hidden;
 		}
 	}
 
-	[class*="standardSidebarView"] {
-		[class*="sidebarRegion"] {
+	#{selectors.$standardSidebarView} {
+		#{selectors.$sidebarRegion} {
 			flex: unset;
 
-			[class*="sidebarRegionScroller"] [class*="sidebar"] {
+			#{selectors.$sidebarRegionScroller} #{selectors.$sidebar} {
 				width: 232px;
 				padding: 60px 10px;
 			}
 		}
-		& > [class*="contentRegion"] [class*="tabBar"] [class*="tabBarItem"] {
+		& > #{selectors.$contentRegion} #{selectors.$tabBar} #{selectors.$tabBarItem} {
 			padding: 8px;
 		}
 	}
 
 	// Widder settings
-	[class*="contentColumn"],
+	#{selectors.$contentColumn},
 	.customColumn_e22a6e, // TODO: are the other ones needed? 
 	.hero-1aNo0v,
 	.notificationSettings-1U0JsJ,
@@ -77,19 +91,6 @@
 		}
 	}
 
-	// Close button
-	[class*="closeButton"] {
-		border: none;
-
-		svg {
-			width: 23px;
-			height: 23px;
-		}
-		& + [class*="keybind"] {
-			display: none;
-		}
-	}
-
 	// Boost
 	.perksModal-fSYqOq {
 		background: var(--background-primary);
@@ -110,12 +111,12 @@
 	// -- 👤 User settings --
 
 	// My account
-	[class*="accountProfileCard"] {
+	#{selectors.$accountProfileCard} {
 		background-color: var(--background-secondary-alt);
 		border-radius: var(--border-radius);
 
 		// Banner
-		[class*="bannerSVGWrapper"] {
+		#{selectors.$bannerSVGWrapper} {
 			position: absolute;
 			-webkit-mask-image: linear-gradient(to bottom, #000000, #00000000);
 			min-width: 900px !important;
@@ -130,7 +131,7 @@
 				width: 900px;
 			}
 
-			[class*="banner"] {
+			#{selectors.$banner} {
 				background-position: left;
 				min-width: 900px;
 
@@ -152,45 +153,45 @@
 			}
 		}
 
-		[class*="userInfo"] {
+		#{selectors.$userInfo} {
 			height: 100px;
 			align-items: center;
 
-			.avatar__6c108 {
+			#{selectors.$avatar} {
 				top: 8px;
 				border-color: transparent;
 				background-color: transparent;
 			}
 		}
 
-		[class*="background"] {
+		#{selectors.$background} {
 			border-radius: var(--border-radius);
 		}
 	}
 
 	// User profile
-	[class*="profileCustomizationSection"] [class*="baseLayout"] {
+	#{selectors.$profileCustomizationSection} #{selectors.$baseLayout} {
 		flex-direction: column;
 
 		& > :first-child {
 			flex: 1 auto;
 		}
 
-		& > [class*="preview"] {
+		& > #{selectors.$preview} {
 			margin: 0;
 		}
 
-		[class*="profileCustomizationPreview"] {
+		#{selectors.$profileCustomizationPreview} {
 			background-color: transparent;
 			overflow: hidden;
 			border-radius: var(--border-radius);
 
-			[class*="bannerSVGWrapper"][viewBox="0 0 340 90"] + [class*="avatarUploader"],
-			[class*="bannerSVGWrapper"][viewBox="0 0 340 120"] + [class*="avatarUploader"] {
+			#{selectors.$bannerSVGWrapper}[viewBox="0 0 340 90"] + #{selectors.$avatarUploader},
+			#{selectors.$bannerSVGWrapper}[viewBox="0 0 340 120"] + #{selectors.$avatarUploader} {
 				top: 16px;
 			}
 
-			[class*="avatarUploader"] {
+			#{selectors.$avatarUploader} {
 				position: relative;
 				width: 80px;
 				z-index: 1;
@@ -200,24 +201,24 @@
 					border-radius: var(--border-radius);
 				}
 
-				[class*="avatarHint"] {
+				#{selectors.$avatarHint} {
 					border-radius: var(--border-radius);
 				}
 
-				[class*="status"] {
+				#{selectors.$status} {
 					background-color: transparent;
 				}
 
-				[class*="imageUploaderIcon_"] {
+				#{selectors.$imageUploaderIcon_} {
 					display: none;
 				}
 
-				[class*="imageUploaderInner"] {
+				#{selectors.$imageUploaderInner} {
 					border-radius: var(--border-radius);
 				}
 			}
 
-			[class*="userTagNoNickname"] {
+			#{selectors.$userTagNoNickname} {
 				position: absolute;
 				top: -85px;
 				left: 105px;
@@ -234,7 +235,7 @@
 					white-space: unset;
 				}
 
-				[class*="discrimBase"] {
+				#{selectors.$discrimBase} {
 					color: white;
 				}
 			}

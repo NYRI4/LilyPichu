@@ -1,104 +1,105 @@
+@use '../selectors';
 :root  {
-	[class*="subtitleContainer"] > [class*="title"],
-	[class*="container"][aria-label*="Thread header"] {
+	#{selectors.$subtitleContainer} > #{selectors.$title},
+	#{selectors.$container}[aria-label*="Thread header"] {
 		background-color: var(--background-primary);
 
-		[class*="children"]:after { 
+		#{selectors.$children}:after { 
 			background: none;
 		}
 	}
 
 	// Removing help buttons
-	[class*="toolbar"] > [href="https://support.discord.com"]:last-child, [class*="searchLearnMore"] {
+	#{selectors.$toolbar} > [href="https://support.discord.com"]:last-child, #{selectors.$searchLearnMore} {
 		display: none;
 	}
 
 	// -- Search bar part --
-	[class*="chat"] [class*="search"] {
+	#{selectors.$chat} #{selectors.$search} {
 		order: 1;
 		margin-left: 0;
-		[class*="focused"] [class*="searchBar"],
-		[class*="open"] [class*="searchBar"] {
+		#{selectors.$focused} #{selectors.$searchBar},
+		#{selectors.$open} #{selectors.$searchBar} {
 			width: 320px;
 			border-radius: var(--border-radius);
 		}
-		[class*="search"]:not([class*="open"]){
-			[class*="searchBar"] {
+		#{selectors.$search}:not(#{selectors.$open}){
+			#{selectors.$searchBar} {
 				width: 27px;
 				transition: 0.25s;
 				background-color: transparent;
 			}
-			[class*="iconContainer"] {
+			#{selectors.$iconContainer} {
 				transform: scale(1.3);
 				transition: 0.25s;
-				[class*="icon"] {
+				#{selectors.$icon} {
 					color: var(--interactive-normal) !important;
 				}
 			}
 			&:hover {
-				[class*="searchBar"] {
+				#{selectors.$searchBar} {
 					width: 240px;
 					background-color: var(--background-tertiary);
 					border-radius: var(--border-radius);
 				}
-				[class*="iconContainer"] {
+				#{selectors.$iconContainer} {
 					transform: scale(1);
 				}
 			}
 		}
 
 
-		[class*="searchFilter"] {
+		#{selectors.$searchFilter} {
 			background-color: var(--background-primary);
 			border-radius: var(--border-radius) 0 0 var(--border-radius);
 		}
-		[class*="searchAnswer"] {
+		#{selectors.$searchAnswer} {
 			background-color: var(--background-primary);
 			border-radius: 0 var(--border-radius) var(--border-radius) 0;
 		}
 	}
 
 	// Search popout
-	[id*="popout"] [class*="container"]:has([class*="search"]) {
+	[id*="popout"] #{selectors.$container}:has(#{selectors.$search}) {
 		box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2),
 		0 0 0 1px rgba(56, 31, 31, 0.11);
 		background-color: var(--background-secondary);
 		border-radius: var(--border-radius);
 
-		[class*="queryContainer"] {
+		#{selectors.$queryContainer} {
 			border-bottom: none;
 		}
-		[class*="focused"] {
+		#{selectors.$focused} {
 			background-color: var(--background-secondary-alt);
 			border-bottom: none;
 		}
 
-		[class*="resultsGroup"] {
+		#{selectors.$resultsGroup} {
 			&::before {
 				display: none;
 			}
 
-			[class*="header"] {
+			#{selectors.$header} {
 				text-align: center;
 			}
 		}
 
 		// Options
-		[class*="option"] {
+		#{selectors.$option} {
 			border-radius: var(--border-radius);
 
 			&:after {
 				background: linear-gradient( 90deg, rgba(54, 57, 63, 0), var(--background-secondary) 80%);
 			}
 
-			[class*="answer"] {
+			#{selectors.$answer} {
 				color: var(--interactive-muted);
 			}
 		}
 	}
 
 	// Calendar TODO: looks weird? not sure how it was b4
-	[class*="calendarPicker"] {
+	#{selectors.$calendarPicker} {
 		.react-datepicker {
 			background-color: var(--background-secondary-alt);
 		}
@@ -113,17 +114,17 @@
 			}
 		}
 	}
-	[class*="datePicker"] [class*="datePickerHint"] [class*="hintValue"],
-	[class*="datePicker"] [class*="datePickerHint"] [class*="hintValue"]:hover {
+	#{selectors.$datePicker} #{selectors.$datePickerHint} #{selectors.$hintValue},
+	#{selectors.$datePicker} #{selectors.$datePickerHint} #{selectors.$hintValue}:hover {
 		background-color: var(--background-accent);
 	}
 
-	[class*="searchLearnMore"] {
+	#{selectors.$searchLearnMore} {
 		display: none;
 	}
 
 	// Search result popout
-	[class*="searchResultsWrap"] {
+	#{selectors.$searchResultsWrap} {
 		overflow: visible;
 
 		// Added header
@@ -161,7 +162,7 @@
 		}
 
 		// Header
-		[class*="searchHeader"] {
+		#{selectors.$searchHeader} {
 			display: grid;
 			grid-template-columns: auto auto auto;
 			grid-gap: 10px;
@@ -172,27 +173,27 @@
 			}
 
 			// Total results
-			[class*="totalResults"] {
+			#{selectors.$totalResults} {
 				grid-column: 1/4;
 			}
 
 			// Parameters
-			[class*="tab"] {
+			#{selectors.$tab} {
 				padding: 0;
 				margin: 0;
 			}
 		}
 
 		// Scroller
-		[class*="scroller"] {
+		#{selectors.$scroller} {
 			padding: 8px 0;
 
-			[class*="searchResultGroup"] {
+			#{selectors.$searchResultGroup} {
 				padding: 0 2px 0 8px;
 			}
 
 			// Reply
-			[class*="repliedMessage"] {
+			#{selectors.$repliedMessage} {
 				margin-left: 8px;
 
 				&::before {
@@ -201,11 +202,11 @@
 			}
 
 			// Message
-			[class*="wrapper"] {
+			#{selectors.$wrapper} {
 				padding: 0;
 			}
 
-			.contents_d3ae0d {
+			#{selectors.$content} {
 				display: grid;
 				grid-template-columns: 40px auto;
 				grid-gap: 8px;
@@ -214,41 +215,41 @@
 
 				/*
 				// Username + timestamp
-				[class*="header"] {
+				{selectors.$header} {
 					display: flex;
 					flex-direction: column;
 
-					[class*="timestamp"] {
+					{selectors.$timestamp} {
 						margin-left: 0;
 					}
 				}*/
 
 				// Avatar
-				[class*="avatar"] {
+				#{selectors.$avatar} {
 					position: static;
 					margin-top: 0;
 				}
 
 				// Content
-				[class*="messageContent"] {
+				#{selectors.$messageContent} {
 					grid-column: 1/3;
 					padding-left: 10px;
 					margin: 0;
 					padding: 0;
 				}
 			}
-			[class*="embedWrapper"] {
+			#{selectors.$embedWrapper} {
 				margin-left: 5px;
 			}
 
 			// Page control
-			[class*="pageControl"] {
+			#{selectors.$pageControl} {
 				width: 100%;
 			}
 		}
 	}
 
-	[class*="messagesPopoutWrap"] {
+	#{selectors.$messagesPopoutWrap} {
 		border-radius: var(--border-radius);
 	}
 

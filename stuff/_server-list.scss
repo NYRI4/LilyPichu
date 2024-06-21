@@ -1,8 +1,9 @@
+@use '../selectors';
 :root {
-	[class*="guilds"] > ul >  [class*="scroller"] {
+	#{selectors.$guilds} > ul >  #{selectors.$scroller} {
 		padding: 8px 0 130px 0;
 
-		[class*="wrapper"] foreignObject {
+		#{selectors.$wrapper} foreignObject {
 			mask: none;
 			border-radius: var(--border-radius);
 			transition: border-radius 0.15s;
@@ -10,14 +11,14 @@
 			&:hover {
 				border-radius: calc(var(--border-radius) - 5px);
 			}
-			[class*="folder"] {
+			#{selectors.$folder} {
 				background-color: transparent;
 			}
 		}
 
 
 		// Discover + create a server buttons
-		[class*="circleIconButton"] {
+		#{selectors.$circleIconButton} {
 			color: var(--background-accent);
 			background-color: var(--background-secondary-alt) !important;
 		}

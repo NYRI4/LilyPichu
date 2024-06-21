@@ -1,3 +1,4 @@
+@use '../selectors';
 :root {
 	// Adding a custom font
 	::-webkit-input-placeholder,
@@ -10,7 +11,7 @@
 	}
 
 	// Background
-	[class*="app"] > [class*="app"] > [class*="bg"] {
+	#{selectors.$app} > #{selectors.$app} > #{selectors.$bg} {
 		background: var(--background-tertiary-alt);
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -69,25 +70,25 @@
 	}
 
 	// Modals
-	[class*="layer"] [class*="focusLock"] {
+	#{selectors.$layer} #{selectors.$focusLock} {
 		.modal__060da, // TODO: what were these? 
-		& > [class*="root"],
+		& > #{selectors.$root},
 		.uploadModal_eae2a0 { // TODO: what were these?
 			border-radius: var(--border-radius);
 			box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(56, 31, 31, 0.11);
 			// Custom status modal
-			[class*="select"],
-			[class*="popout"] {
+			#{selectors.$select},
+			#{selectors.$popout} {
 				border: none;
 			}
-			[class*="select"],
-			[class*="popout"],
-			[class*="input_"] {
+			#{selectors.$select},
+			#{selectors.$popout},
+			#{selectors.$input_} {
 				background-color: var(--background-secondary-alt);
 			}
 		}
 
-		div[class*="footer"] {
+		div#{selectors.$footer} {
 			border-radius: 0 0 var(--border-radius) var(--border-radius);
 			background-color: var(--background-tertiary);
 			box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(56, 31, 31, 0.11);
@@ -95,15 +96,15 @@
 	}
 
 	// User profile
-	[class*="accountProfilePopoutWrapper"] {
+	#{selectors.$accountProfilePopoutWrapper} {
 		left: -15px;
 		bottom: -5px;
 
-		[class*="userPopoutOverlayBackground"] {
+		#{selectors.$userPopoutOverlayBackground} {
 			backdrop-filter: unset;
 		}
 
-		[class*="nameTag"] {
+		#{selectors.$nameTag} {
 			position: static !important;
 		}
 	}
