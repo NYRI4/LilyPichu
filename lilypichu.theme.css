@@ -3,7 +3,7 @@
 * @author Nyria#3863
 * @description A theme based on @Melonturtle_ stream design
 * @invite rtBQX5D3bD
-* @version 1.4
+* @version 1.5
 * @donate https://ko-fi.com/nyria
 */
 @import url("https://nyri4.github.io/LilyPichu/main.css");
@@ -57,6 +57,8 @@
   --toast-contents: #49292f !important;
   --toast-border: #49292f !important;
   --input-background: var(--background-secondary);
+  --green-360: var(--text-normal);
+  --white-500: var(--background-primary);
 
   /* Scrollbar */
   --scrollbar-auto-thumb: var(--background-tertiary);
@@ -120,6 +122,8 @@
   --background-modifier-hover: rgba(56, 31, 31, 0.062);
   --background-modifier-active: rgba(19, 12, 12, 0.123);
   --background-modifier-selected: rgba(31, 21, 21, 0.11);
+  --green-360: var(--text-normal);
+  --white-500: var(--background-primary);
 
   /* Scrollbar */
   --scrollbar-auto-thumb: var(--background-tertiary);
@@ -153,4 +157,42 @@
 .colorDefault-CDqZdO.focused-3qFvc8,
 .colorDefault-CDqZdO:active:not(.hideInteraction-2jPGL_) {
   color: var(--interactive-normal);
+}
+
+.container_a4d4d9 {
+  margin-left: 60px;
+}
+
+.guilds_a4d4d9 {
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+}
+
+.sidebar_a4d4d9 {
+  border-radius: unset !important;
+}
+
+.content_a4d4d9 {
+  margin-right: 60px;
+}
+
+.barFill_c7a159 {
+  background-color: var(--text-normal);
+}
+
+.chat_a7d72e, .container_c2739c {
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+}
+
+.scrollableContainer_d0696b, .container_c18ec9 {
+  border-radius: var(--border-radius);
+}
+
+.wrapper_f90abb:hover .childWrapper_f90abb, .wrapper_f90abb.selected_f90abb .childWrapper_f90abb {
+  background-color: var(--text-normal);
+}
+
+.wrapper_f90abb:hover .childWrapper_f90abb, .wrapper_f90abb.selected_f90abb .childWrapper_f90abb {
+  color: var(--background-primary)
 }
